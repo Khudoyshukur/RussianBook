@@ -1,0 +1,96 @@
+{
+  "day": 1,
+  "phase": 1,
+  "title": "First Day at the Startup",
+  "difficultyLevel": "A2-",
+  "textRussian": "Алекс <strong>программист</strong>. Он работает в <strong>стартапе</strong>. Сегодня его <strong>первый день</strong>. Утром он приходит в <strong>офис</strong>. Его <strong>коллега</strong> Дмитрий говорит: «Привет! Добро пожаловать в команду!» Алекс счастлив. Он открывает <strong>ноутбук</strong> и видит <strong>код</strong>. Дмитрий показывает <strong>проект</strong>. «Это наш <strong>репозиторий</strong>», — говорит он. Алекс читает код. Код простой. Он понимает логику. День начинается хорошо.",
+  "textEnglish": "Alex is a programmer. He works at a startup. Today is his first day. In the morning he arrives at the office. His colleague Dmitry says: \"Hello! Welcome to the team!\" Alex is happy. He opens his laptop and sees code. Dmitry shows him the project. \"This is our repository,\" he says. Alex reads the code. The code is simple. He understands the logic. The day starts well.",
+  "vocabulary": [
+    {
+      "russian": "программи́ст",
+      "english": "programmer / software developer",
+      "context": "The core profession. In Russian tech, commonly used interchangeably with 'разработчик' (developer)."
+    },
+    {
+      "russian": "ста́ртап",
+      "english": "startup",
+      "context": "Borrowed from English, widely used in Russian tech culture with the same meaning."
+    },
+    {
+      "russian": "пе́рвый день",
+      "english": "first day",
+      "context": "Common phrase for onboarding. 'Первый' (first) agrees with 'день' (day) in gender/case."
+    },
+    {
+      "russian": "колле́га",
+      "english": "colleague / coworker",
+      "context": "Neutral term for team member. Used in both formal and informal settings."
+    },
+    {
+      "russian": "ноутбу́к",
+      "english": "laptop",
+      "context": "Direct borrowing from English 'notebook'. Essential dev workspace vocabulary."
+    },
+    {
+      "russian": "код",
+      "english": "code",
+      "context": "Same as English. Masculine noun. 'Писать код' = to write code."
+    },
+    {
+      "russian": "репозито́рий",
+      "english": "repository (git repo)",
+      "context": "Technical term for code storage. Often shortened to 'репо' in casual speech."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс работает в _______. Сегодня его первый _______.",
+      "wordBank": ["стартапе", "день", "офис", "проект"],
+      "correctAnswer": "стартапе, день",
+      "explanation": "The sentence means: 'Alex works at a startup. Today is his first day.' Note the prepositional case ending '-е' for 'стартап' after 'в'."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Dmitry show to Alex on the first day?",
+      "options": [
+        "Репозиторий (repository)",
+        "Тесты (tests)",
+        "Документацию (documentation)",
+        "Сервер (server)"
+      ],
+      "correctAnswer": "Репозиторий (repository)",
+      "explanation": "Dmitry says: 'Это наш репозиторий' (This is our repository)."
+    },
+    {
+      "type": "code-debugging",
+      "question": "Find the error: 'Алекс программисты. Он работает в офис.'",
+      "options": [
+        "программисты → программист",
+        "работает → работать",
+        "в офис → в офисе",
+        "Both A and C"
+      ],
+      "correctAnswer": "Both A and C",
+      "explanation": "'Программисты' is plural, should be 'программист' (singular). Also, after 'в' (in/at) we need prepositional case: 'в офисе' not 'в офис'."
+    },
+    {
+      "type": "translation",
+      "question": "Translate to Russian: 'My colleague is a programmer.'",
+      "correctAnswer": "Мой коллега программист.",
+      "explanation": "Note: No article needed in Russian. 'Мой' (my) agrees with masculine 'коллега'."
+    }
+  ],
+  "pronunciation": [
+    {
+      "word": "репозиторий",
+      "ipa": "rʲɪpəzʲɪˈtorʲɪj",
+      "phonetic": "reh-poh-zee-TOR-eey",
+      "pitfalls": "Stress on the second 'o'. English speakers often stress the first syllable incorrectly."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Introduction to the tech startup world. Alex begins his journey.",
+  "wordCount": 68,
+  "estimatedMinutes": 15
+}

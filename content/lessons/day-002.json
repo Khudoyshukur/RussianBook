@@ -1,0 +1,97 @@
+{
+  "day": 2,
+  "phase": 1,
+  "title": "Setting Up the Dev Environment",
+  "difficultyLevel": "A2-",
+  "textRussian": "Дмитрий помогает Алексу. «Сначала установи <strong>Git</strong>», — говорит он. Алекс открывает <strong>терминал</strong>. Он вводит <strong>команду</strong>: git clone. <strong>Проект</strong> загружается. «Теперь установи <strong>зависимости</strong>», — продолжает Дмитрий. Алекс запускает npm install. <strong>Консоль</strong> показывает много текста. Установка занимает пять минут. «Отлично!» — говорит Дмитрий. «Теперь запусти <strong>сервер разработки</strong>». Алекс вводит npm run dev. <strong>Сервер</strong> стартует. В <strong>браузере</strong> открывается приложение. Алекс видит главную страницу. Всё работает! Он готов писать код.",
+  "textEnglish": "Dmitry helps Alex. \"First install Git,\" he says. Alex opens the terminal. He enters a command: git clone. The project downloads. \"Now install the dependencies,\" Dmitry continues. Alex runs npm install. The console shows a lot of text. Installation takes five minutes. \"Excellent!\" says Dmitry. \"Now start the dev server.\" Alex types npm run dev. The server starts. The application opens in the browser. Alex sees the home page. Everything works! He's ready to write code.",
+  "vocabulary": [
+    {
+      "russian": "термина́л",
+      "english": "terminal / command line",
+      "context": "Essential dev tool. Also called 'консоль' (console) or 'командная строка' (command line).",
+      "reactivatedFrom": 1
+    },
+    {
+      "russian": "кома́нда",
+      "english": "command (CLI command)",
+      "context": "Not to be confused with 'команда' (team). Context makes the difference clear."
+    },
+    {
+      "russian": "зави́симости",
+      "english": "dependencies (npm/package dependencies)",
+      "context": "Plural of 'зависимость'. Critical concept in modern development."
+    },
+    {
+      "russian": "консо́ль",
+      "english": "console",
+      "context": "Both browser console and terminal. 'Консоль показывает' = console shows."
+    },
+    {
+      "russian": "се́рвер разрабо́тки",
+      "english": "development server (dev server)",
+      "context": "Two-word compound. 'Локальный сервер' = local server."
+    },
+    {
+      "russian": "бра́узер",
+      "english": "browser",
+      "context": "Direct borrowing from English. 'В браузере' = in the browser (prepositional case)."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс открывает _______. Он вводит _______: git clone.",
+      "wordBank": ["терминал", "команду", "браузер", "файл"],
+      "correctAnswer": "терминал, команду",
+      "explanation": "Alex opens the terminal and enters a command. Note 'команду' is accusative case (direct object)."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Alex run to install project dependencies?",
+      "options": [
+        "npm run dev",
+        "npm install",
+        "git clone",
+        "npm start"
+      ],
+      "correctAnswer": "npm install",
+      "explanation": "Dmitry says: 'Теперь установи зависимости' and Alex runs npm install."
+    },
+    {
+      "type": "code-debugging",
+      "question": "Fix the error: 'Сервер стартует. В браузер открывается приложение.'",
+      "options": [
+        "Change 'в браузер' to 'в браузере'",
+        "Change 'стартует' to 'старт'",
+        "Change 'открывается' to 'открыть'",
+        "No error"
+      ],
+      "correctAnswer": "Change 'в браузер' to 'в браузере'",
+      "explanation": "After 'в' (in) we need prepositional case: 'в браузере' (in the browser), not accusative 'в браузер'."
+    },
+    {
+      "type": "translation",
+      "question": "Translate: 'The console shows text.'",
+      "correctAnswer": "Консоль показывает текст.",
+      "explanation": "'Показывает' is 3rd person singular of 'показывать' (to show). No article needed."
+    }
+  ],
+  "pronunciation": [
+    {
+      "word": "зависимости",
+      "ipa": "zəvʲɪˈsʲiməsʲtʲɪ",
+      "phonetic": "zah-VEE-see-mos-tee",
+      "pitfalls": "Stress on the second syllable. Don't stress the first 'за-' as English speakers tend to do."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Command Line Culture",
+    "content": "Russian developers often use English CLI commands but discuss them in Russian. You'll hear hybrid phrases like 'запустить npm install' (run npm install) or 'сделать git push' (do git push)."
+  },
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Development environment setup - a universal developer experience.",
+  "wordCount": 95,
+  "estimatedMinutes": 18,
+  "previousDayReferences": [1]
+}
