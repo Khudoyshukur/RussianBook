@@ -233,6 +233,19 @@ function renderExerciseInput(
 function checkAnswer(exercise: Exercise, userAnswer: string | string[] | undefined): boolean {
   if (!userAnswer) return false;
 
+  // For sentence reordering, check if words are in correct order
+  if (exercise.type === 'sentence-reordering') {
+    if (!Array.isArray(userAnswer) || !Array.isArray(exercise.correctAnswer)) return false;
+    return userAnswer.join(' ') === exercise.correctAnswer.join(' ');
+  }
+
+  // For matching, check if all pairs match correctly
+  if (exercise.type === 'matching') {
+    if (!Array.isArray(userAnswer) || !Array.isArray(exercise.correctAnswer)) return false;
+    return userAnswer.sort().join(',') === exercise.correctAnswer.sort().join(',');
+  }
+
+  // For other array answers (multiple selection)
   if (Array.isArray(exercise.correctAnswer)) {
     return (
       Array.isArray(userAnswer) &&
@@ -240,7 +253,8 @@ function checkAnswer(exercise: Exercise, userAnswer: string | string[] | undefin
     );
   }
 
-  return userAnswer === exercise.correctAnswer;
+  // For string answers, trim whitespace and compare
+  return userAnswer.toString().trim() === exercise.correctAnswer.toString().trim();
 }
 
 function formatExerciseType(type: string): string {
@@ -248,4 +262,196 @@ function formatExerciseType(type: string): string {
     .split('-')
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
+}
+
+// Sentence Reordering Component
+function SentenceReordering({
+  exercise,
+  value,
+  onChange,
+  disabled,
+}: {
+  exercise: Exercise;
+  value: string[];
+  onChange: (value: string[]) => void;
+  disabled: boolean;
+}) {
+  const [selectedWords, setSelectedWords] = useState<string[]>(value);
+  const [availableWords, setAvailableWords] = useState<string[]>(
+    exercise.scrambledWords || []
+  );
+
+  const handleWordClick = (word: string, fromAvailable: boolean) => {
+    if (disabled) return;
+
+    if (fromAvailable) {
+      const newSelected = [...selectedWords, word];
+      const newAvailable = availableWords.filter((w, i) =>
+        i !== availableWords.indexOf(word)
+      );
+      setSelectedWords(newSelected);
+      setAvailableWords(newAvailable);
+      onChange(newSelected);
+    } else {
+      const newAvailable = [...availableWords, word];
+      const newSelected = selectedWords.filter((w, i) =>
+        i !== selectedWords.indexOf(word)
+      );
+      setSelectedWords(newSelected);
+      setAvailableWords(newAvailable);
+      onChange(newSelected);
+    }
+  };
+
+  return (
+    <div className="space-y-4">
+      {/* Scrambled words area */}
+      <div className="bg-gray-100 p-4 rounded-lg">
+        <p className="text-xs font-semibold text-gray-600 mb-2">
+          Available Words (click to add):
+        </p>
+        <div className="flex flex-wrap gap-2 min-h-[40px]">
+          {availableWords.map((word, i) => (
+            <button
+              key={`avail-${i}`}
+              onClick={() => handleWordClick(word, true)}
+              disabled={disabled}
+              className="px-3 py-2 bg-white border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {word}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Sentence construction area */}
+      <div className="bg-blue-50 p-4 rounded-lg border-2 border-blue-200">
+        <p className="text-xs font-semibold text-blue-900 mb-2">
+          Your Sentence (click to remove):
+        </p>
+        <div className="flex flex-wrap gap-2 min-h-[40px]">
+          {selectedWords.length === 0 ? (
+            <p className="text-gray-500 italic text-sm">Click words above to build your sentence...</p>
+          ) : (
+            selectedWords.map((word, i) => (
+              <button
+                key={`sel-${i}`}
+                onClick={() => handleWordClick(word, false)}
+                disabled={disabled}
+                className="px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {word}
+              </button>
+            ))
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Matching Exercise Component
+function MatchingExercise({
+  exercise,
+  value,
+  onChange,
+  disabled,
+}: {
+  exercise: Exercise;
+  value: string[];
+  onChange: (value: string[]) => void;
+  disabled: boolean;
+}) {
+  const [matches, setMatches] = useState<Record<number, number>>(
+    value.reduce((acc, match, idx) => {
+      const [russianIdx, englishIdx] = match.split('-').map(Number);
+      acc[russianIdx] = englishIdx;
+      return acc;
+    }, {} as Record<number, number>)
+  );
+  const [selectedRussian, setSelectedRussian] = useState<number | null>(null);
+
+  const handleRussianClick = (index: number) => {
+    if (disabled) return;
+    setSelectedRussian(index);
+  };
+
+  const handleEnglishClick = (index: number) => {
+    if (disabled || selectedRussian === null) return;
+
+    const newMatches = { ...matches, [selectedRussian]: index };
+    setMatches(newMatches);
+
+    // Convert to array format for validation
+    const matchArray = Object.entries(newMatches).map(
+      ([rIdx, eIdx]) => `${rIdx}-${eIdx}`
+    );
+    onChange(matchArray);
+    setSelectedRussian(null);
+  };
+
+  const pairs = exercise.pairs || [];
+  const russianItems = pairs.map((p) => p.russian);
+  const englishItems = [...pairs.map((p) => p.english)].sort(() => Math.random() - 0.5);
+
+  return (
+    <div className="grid md:grid-cols-2 gap-4">
+      {/* Russian column */}
+      <div className="space-y-2">
+        <p className="text-xs font-semibold text-gray-600 mb-2">Russian:</p>
+        {russianItems.map((russian, idx) => {
+          const isMatched = matches[idx] !== undefined;
+          const isSelected = selectedRussian === idx;
+
+          return (
+            <button
+              key={idx}
+              onClick={() => handleRussianClick(idx)}
+              disabled={disabled || isMatched}
+              className={`w-full text-left p-3 rounded-lg border-2 transition-colors ${
+                isSelected
+                  ? 'border-blue-500 bg-blue-50'
+                  : isMatched
+                  ? 'border-green-500 bg-green-50'
+                  : 'border-gray-300 hover:border-blue-400 bg-white'
+              } ${disabled || isMatched ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer'}`}
+            >
+              <div className="flex items-center justify-between">
+                <span className="font-medium">{russian}</span>
+                {isMatched && <span className="text-green-600">✓</span>}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* English column */}
+      <div className="space-y-2">
+        <p className="text-xs font-semibold text-gray-600 mb-2">English:</p>
+        {englishItems.map((english, idx) => {
+          const isMatched = Object.values(matches).includes(idx);
+
+          return (
+            <button
+              key={idx}
+              onClick={() => handleEnglishClick(idx)}
+              disabled={disabled || isMatched || selectedRussian === null}
+              className={`w-full text-left p-3 rounded-lg border-2 transition-colors ${
+                isMatched
+                  ? 'border-green-500 bg-green-50'
+                  : selectedRussian !== null
+                  ? 'border-blue-400 hover:bg-blue-50 bg-white'
+                  : 'border-gray-300 bg-white'
+              } ${disabled || isMatched || selectedRussian === null ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer'}`}
+            >
+              <div className="flex items-center justify-between">
+                <span>{english}</span>
+                {isMatched && <span className="text-green-600">✓</span>}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
 }

@@ -47,34 +47,30 @@
       "explanation": "Alex opens the terminal and enters a command. Note 'команду' is accusative case (direct object)."
     },
     {
-      "type": "context-selection",
-      "question": "What does Alex run to install project dependencies?",
-      "options": [
-        "npm run dev",
-        "npm install",
-        "git clone",
-        "npm start"
-      ],
-      "correctAnswer": "npm install",
-      "explanation": "Dmitry says: 'Теперь установи зависимости' and Alex runs npm install."
+      "type": "verb-conjugation",
+      "question": "Fill in the correct verb form: Дмитрий _______ (помогать) Алексу.",
+      "wordBank": ["помогает", "помогать", "помогал", "помогают"],
+      "correctAnswer": "помогает",
+      "explanation": "Present tense, 3rd person singular: 'помогает' (helps). The ending '-ет' is typical for many verbs in this form."
     },
     {
-      "type": "code-debugging",
-      "question": "Fix the error: 'Сервер стартует. В браузер открывается приложение.'",
-      "options": [
-        "Change 'в браузер' to 'в браузере'",
-        "Change 'стартует' to 'старт'",
-        "Change 'открывается' to 'открыть'",
-        "No error"
-      ],
-      "correctAnswer": "Change 'в браузер' to 'в браузере'",
-      "explanation": "After 'в' (in) we need prepositional case: 'в браузере' (in the browser), not accusative 'в браузер'."
+      "type": "sentence-reordering",
+      "question": "Arrange these words to form a correct sentence:",
+      "scrambledWords": ["запускает", "Алекс", "npm", "install"],
+      "correctAnswer": ["Алекс", "запускает", "npm", "install"],
+      "explanation": "The correct sentence is: 'Алекс запускает npm install' (Alex runs npm install). Subject-Verb-Object word order."
     },
     {
-      "type": "translation",
-      "question": "Translate: 'The console shows text.'",
-      "correctAnswer": "Консоль показывает текст.",
-      "explanation": "'Показывает' is 3rd person singular of 'показывать' (to show). No article needed."
+      "type": "case-selection",
+      "question": "Choose the correct form: 'В _____ открывается приложение.'",
+      "options": [
+        "браузер (nominative)",
+        "браузере (prepositional)",
+        "браузера (genitive)",
+        "браузером (instrumental)"
+      ],
+      "correctAnswer": "браузере (prepositional)",
+      "explanation": "After 'в' (in) referring to location, we use prepositional case: 'в браузере' (in the browser)."
     }
   ],
   "pronunciation": [
