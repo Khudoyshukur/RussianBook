@@ -1,0 +1,104 @@
+{
+  "day": 43,
+  "phase": 2,
+  "title": "Proof of Concept",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Через неделю команда собралась <strong>обсудить</strong> результаты proof of concept. Елена начала презентацию: «Я <strong>построила</strong> прототип с Zustand. Это <strong>заняло</strong> всего три часа!» Она показала код на экране: «Смотрите, как просто <strong>создать</strong> store. Никакого boilerplate!» Игорь был следующим: «Мой POC с Jotai тоже <strong>получился</strong> хорошо. Особенно мне <strong>понравилась</strong> интеграция с TypeScript». Он запустил демо: «Я <strong>протестировал</strong> производительность — рендеринг очень быстрый». Максим показал улучшенную версию Redux: «Я <strong>добавил</strong> Redux Toolkit и <strong>упростил</strong> наш код на тридцать процентов». Дмитрий внимательно изучал все три варианта. «Каждое решение имеет свои <strong>возможности</strong>», — заметил он задумчиво. Аня спросила практичный вопрос: «А что с миграцией? Сколько времени <strong>займёт</strong> переход?» Елена ответила: «С Zustand миграция будет постепенной. Мы можем <strong>начать</strong> с новых фич». Алекс поднял важный момент: «А как это <strong>повлияет</strong> на нашу команду? Игорь только <strong>присоединился</strong> и уже знает Zustand». Команда обсуждала плюсы и минусы. В конце Дмитрий <strong>подвёл</strong> итоги: «Я <strong>предлагаю</strong> использовать Zustand для новых модулей. Это <strong>покажет</strong> его возможности в реальном проекте». «Через два месяца мы <strong>оценим</strong> результаты и решим о полной миграции», — добавил он. Все согласились с таким постепенным подходом.",
+
+  "textEnglish": "A week later, the team gathered to discuss the proof of concept results. Elena began the presentation: 'I built a prototype with Zustand. It took only three hours!' She showed code on the screen: 'Look how easy it is to create a store. No boilerplate!' Igor was next: 'My POC with Jotai turned out well too. I especially liked the TypeScript integration.' He ran the demo: 'I tested performance - rendering is very fast.' Maxim showed an improved Redux version: 'I added Redux Toolkit and simplified our code by thirty percent.' Dmitry carefully studied all three options. 'Each solution has its capabilities,' he noted thoughtfully. Anya asked a practical question: 'What about migration? How long will the transition take?' Elena answered: 'With Zustand, migration will be gradual. We can start with new features.' Alex raised an important point: 'How will this affect our team? Igor just joined and already knows Zustand.' The team discussed pros and cons. At the end, Dmitry summarized: 'I suggest using Zustand for new modules. This will show its capabilities in a real project.' 'In two months we'll evaluate the results and decide on full migration,' he added. Everyone agreed with such a gradual approach.",
+
+  "vocabulary": [
+    {
+      "russian": "proof of concept / прото́тип",
+      "english": "proof of concept / prototype",
+      "context": "Often used in English form. 'Построить прототип' = to build a prototype."
+    },
+    {
+      "russian": "постро́ила (постро́ить)",
+      "english": "built",
+      "context": "Past perfective feminine. Building/constructing something from scratch."
+    },
+    {
+      "russian": "заня́ло (заня́ть)",
+      "english": "took (time)",
+      "context": "Past perfective neuter. 'Заняло три часа' = took three hours."
+    },
+    {
+      "russian": "протести́ровал (протести́ровать)",
+      "english": "tested",
+      "context": "Past perfective. Testing something thoroughly."
+    },
+    {
+      "russian": "возмо́жности",
+      "english": "capabilities / possibilities",
+      "context": "Plural noun. 'Показать возможности' = to show capabilities."
+    },
+    {
+      "russian": "займёт (заня́ть)",
+      "english": "will take (time)",
+      "context": "Future perfective, 3rd person singular. Future form of 'заняло'."
+    },
+    {
+      "russian": "повлия́ет (повлия́ть)",
+      "english": "will affect / will influence",
+      "context": "Future perfective, 3rd person singular. 'Повлиять на команду' = to affect the team."
+    },
+    {
+      "russian": "оце́ним (оцени́ть)",
+      "english": "we will evaluate / assess",
+      "context": "Future perfective, 1st person plural. Evaluating results or performance."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the proof of concept vocabulary:",
+      "pairs": [
+        { "russian": "прототип", "english": "prototype" },
+        { "russian": "протестировать", "english": "to test" },
+        { "russian": "возможности", "english": "capabilities" },
+        { "russian": "показать", "english": "to show" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for building and demonstrating proof of concepts."
+    },
+    {
+      "type": "context-selection",
+      "question": "What decision did the team make?",
+      "options": [
+        "Использовать Zustand для новых модулей и оценить через два месяца",
+        "Немедленно мигрировать весь проект на Zustand",
+        "Остаться на Redux",
+        "Попробовать все три библиотеки одновременно"
+      ],
+      "correctAnswer": "Использовать Zustand для новых модулей и оценить через два месяца",
+      "explanation": "The team decided to use Zustand for new modules and evaluate results in two months."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Я _______ прототип с Zustand. Это _______ всего три часа.",
+      "wordBank": ["построила", "заняло", "построил", "занял"],
+      "correctAnswer": "построила, заняло",
+      "explanation": "'Построила' (built - feminine) and 'заняло' (took - neuter for time) match the context."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the future form: Через два месяца мы _______ (оценить) результаты.",
+      "wordBank": ["оценим", "оцениваем", "оценили", "оценить"],
+      "correctAnswer": "оценим",
+      "explanation": "Future perfective of 'оценить' (to evaluate) is 'оценим' (we will evaluate)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Proof of Concept in Russian Tech Culture",
+    "content": "Russian developers often use 'proof of concept' (pronounced as in English) or 'прототип' (prototype). POCs are popular for evaluating new technologies before full adoption. Teams typically prefer gradual migrations ('постепенная миграция') rather than big rewrites. This pragmatic approach is summarized in the saying: 'Семь раз отмерь, один раз отрежь' (Measure seven times, cut once)."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)", "Игорь (Igor)"],
+  "storyArc": "The team presents their proof of concepts for different state management solutions and decides to gradually adopt Zustand for new modules.",
+  "wordCount": 177,
+  "estimatedMinutes": 20
+}

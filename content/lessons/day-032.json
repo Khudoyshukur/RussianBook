@@ -1,0 +1,104 @@
+{
+  "day": 32,
+  "phase": 2,
+  "title": "After the Demo",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "После демо команда была в отличном настроении. «Это был большой <strong>успех</strong>!» — воскликнул Дмитрий радостно. «<strong>Клиенты довольны</strong> результатом». Он открыл Slack <strong>и</strong> прочитал сообщение от клиента. «Слушайте! Они написали: 'Превосходная работа! Мы впечатлены качеством'», — зачитал он вслух гордо. Команда начала <strong>праздновать</strong>. Максим заказал пиццу для всех. «Мы заслужили это!» — сказал он весело. Аня предложила: «Давайте созвонимся вечером <strong>и</strong> отметим вместе». Алекс <strong>чувствовал</strong> себя очень довольным. «Я так волновался вчера, <strong>а</strong> сегодня всё прошло идеально», — признался он с облегчением. «Вы все меня поддержали». На следующий день пришла <strong>обратная связь</strong> от клиентов. Дмитрий собрал команду. «Клиенты дали детальные комментарии», — объявил он серьёзно. «Им очень понравился новый дизайн <strong>и</strong> быстрая работа приложения». «<strong>Но</strong> они хотят добавить ещё несколько функций», — добавил он, листая письмо. Елена спросила: «Какие именно?» «Экспорт данных в Excel <strong>и</strong> групповые уведомления», — ответил Дмитрий. «Это вполне реально». Команда обсудила <strong>следующие шаги</strong>. «Я создам задачи в Jira», — сказал Дмитрий. «<strong>Когда</strong> начнём следующий спринт, возьмём эти фичи». Аня согласилась: «Звучит как план!» Все понимали: проект <strong>будет</strong> развиваться дальше.",
+
+  "textEnglish": "After the demo, the team was in an excellent mood. 'This was a big success!' Dmitry exclaimed joyfully. 'The clients are satisfied with the result.' He opened Slack and read a message from the client. 'Listen! They wrote: 'Superb work! We're impressed with the quality,'' he read aloud proudly. The team started to celebrate. Maxim ordered pizza for everyone. 'We earned this!' he said cheerfully. Anya suggested: 'Let's have a call tonight and celebrate together.' Alex felt very satisfied. 'I was so worried yesterday, but today everything went perfectly,' he admitted with relief. 'You all supported me.' The next day, feedback came from the clients. Dmitry gathered the team. 'The clients gave detailed comments,' he announced seriously. 'They really liked the new design and the fast performance of the application.' 'But they want to add a few more features,' he added, scrolling through the email. Elena asked: 'Which ones exactly?' 'Data export to Excel and group notifications,' Dmitry replied. 'That's quite feasible.' The team discussed the next steps. 'I'll create tasks in Jira,' Dmitry said. 'When we start the next sprint, we'll take on these features.' Anya agreed: 'Sounds like a plan!' Everyone understood: the project will continue to develop.",
+
+  "vocabulary": [
+    {
+      "russian": "успе́х",
+      "english": "success",
+      "context": "Masculine noun. 'Большой успех' = big success."
+    },
+    {
+      "russian": "клие́нты до́вольны",
+      "english": "clients are satisfied / happy",
+      "context": "Short form adjective. 'Довольны результатом' = satisfied with the result."
+    },
+    {
+      "russian": "обра́тная связь",
+      "english": "feedback",
+      "context": "Literal: 'reverse connection'. Common IT term for feedback."
+    },
+    {
+      "russian": "пра́здновать",
+      "english": "to celebrate",
+      "context": "Imperfective verb. 'Праздновать успех' = to celebrate success."
+    },
+    {
+      "russian": "сле́дующие шаги́",
+      "english": "next steps",
+      "context": "Common business phrase. 'Обсудить следующие шаги' = discuss next steps."
+    },
+    {
+      "russian": "чу́вствовал (чу́вствовать)",
+      "english": "felt / was feeling",
+      "context": "Past imperfective. 'Чувствовать себя' = to feel (oneself)."
+    },
+    {
+      "russian": "бу́дет (быть)",
+      "english": "will be",
+      "context": "Future tense, 3rd person singular. 'Проект будет развиваться' = the project will develop."
+    },
+    {
+      "russian": "а",
+      "english": "but / whereas / and",
+      "context": "Conjunction for contrast. 'Волновался вчера, а сегодня...' = worried yesterday, but today..."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the post-demo vocabulary:",
+      "pairs": [
+        { "russian": "успех", "english": "success" },
+        { "russian": "обратная связь", "english": "feedback" },
+        { "russian": "праздновать", "english": "to celebrate" },
+        { "russian": "следующие шаги", "english": "next steps" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for discussing project success and planning next steps."
+    },
+    {
+      "type": "context-selection",
+      "question": "What additional features did clients request?",
+      "options": [
+        "Экспорт данных в Excel и групповые уведомления",
+        "Новый дизайн и быструю работу",
+        "Авторизацию через Google",
+        "Интерактивные графики"
+      ],
+      "correctAnswer": "Экспорт данных в Excel и групповые уведомления",
+      "explanation": "Clients requested data export to Excel and group notifications."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Я волновался вчера, _______ сегодня всё прошло идеально.",
+      "wordBank": ["а", "и", "но", "потому что"],
+      "correctAnswer": "а",
+      "explanation": "'А' (but/whereas) shows contrast between yesterday's worry and today's success."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the past tense: Клиенты _______ (дать) детальные комментарии.",
+      "wordBank": ["дали", "дадут", "дают", "давали"],
+      "correctAnswer": "дали",
+      "explanation": "Past perfective of 'дать' (to give) is 'дали' for completed action."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Russian Celebration Culture",
+    "content": "Russian tech teams often celebrate project milestones with food and informal gatherings. Pizza is popular, but traditional celebrations might include чай с тортом (tea with cake). The phrase 'мы заслужили это' (we earned this) reflects the strong team spirit in Russian work culture."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team celebrates their successful demo, receives positive client feedback, and plans next steps based on new feature requests.",
+  "wordCount": 178,
+  "estimatedMinutes": 20
+}

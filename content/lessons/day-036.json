@@ -1,0 +1,104 @@
+{
+  "day": 36,
+  "phase": 2,
+  "title": "Monitoring and Alerts",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "После инцидента Дмитрий <strong>решил</strong> улучшить <strong>мониторинг</strong>. «Нам <strong>нужно</strong> узнавать о проблемах быстрее», — сказал он на встрече команды. «Мы должны настроить лучшие <strong>алерты</strong>». Елена <strong>согласилась</strong>: «Да, пятничный баг мы <strong>заметили</strong> только <strong>когда</strong> пользователи начали жаловаться». «Это слишком поздно», — добавила она обеспокоенно. Алекс <strong>спросил</strong>: «Какие <strong>метрики</strong> мы <strong>будем</strong> <strong>отслеживать</strong>?» Дмитрий объяснил: «Время ответа сервера, процент ошибок, количество активных пользователей». «Также <strong>нужно</strong> мониторить использование памяти и CPU», — добавил Максим. Аня <strong>предложила</strong> настроить <strong>уведомления</strong> в Slack. «<strong>Когда</strong> метрика превысит порог, система <strong>отправит</strong> сообщение в специальный канал», — объяснила она. «Хорошо! А кто <strong>будет</strong> дежурить?» — спросила Елена. Дмитрий <strong>создал</strong> график on-call ротации: каждую неделю один разработчик отвечает за алерты. Алекс немного нервничал: «Что <strong>если</strong> я не <strong>смогу</strong> решить проблему ночью?» «Не волнуйся», — успокоил его Дмитрий. «Есть эскалация. <strong>Если</strong> проблема серьёзная, ты позовёшь senior разработчика». Команда <strong>начала</strong> настраивать Prometheus и Grafana. «Через неделю у нас <strong>будут</strong> дашборды со всеми важными метриками», — пообещал Максим с энтузиазмом. Алекс <strong>понял</strong>, что хороший мониторинг — это не роскошь, а <strong>необходимость</strong>.",
+
+  "textEnglish": "After the incident, Dmitry decided to improve monitoring. 'We need to learn about problems faster,' he said at the team meeting. 'We must set up better alerts.' Elena agreed: 'Yes, we only noticed the Friday bug when users started complaining.' 'That's too late,' she added worriedly. Alex asked: 'Which metrics will we track?' Dmitry explained: 'Server response time, error percentage, number of active users.' 'We also need to monitor memory and CPU usage,' Maxim added. Anya suggested setting up notifications in Slack. 'When a metric exceeds the threshold, the system will send a message to a special channel,' she explained. 'Good! And who will be on call?' Elena asked. Dmitry created an on-call rotation schedule: each week one developer is responsible for alerts. Alex was a bit nervous: 'What if I can't solve a problem at night?' 'Don't worry,' Dmitry reassured him. 'There's escalation. If the problem is serious, you'll call a senior developer.' The team started configuring Prometheus and Grafana. 'In a week we'll have dashboards with all important metrics,' Maxim promised with enthusiasm. Alex understood that good monitoring isn't a luxury, but a necessity.",
+
+  "vocabulary": [
+    {
+      "russian": "мониторинг",
+      "english": "monitoring",
+      "context": "Noun from English 'monitoring'. System observation and tracking."
+    },
+    {
+      "russian": "алерты",
+      "english": "alerts",
+      "context": "Plural from English 'alert'. Automated notifications about system problems."
+    },
+    {
+      "russian": "уведомления",
+      "english": "notifications",
+      "context": "Plural noun. 'Отправить уведомление' = to send a notification."
+    },
+    {
+      "russian": "отслеживать",
+      "english": "to track / to monitor",
+      "context": "Imperfective verb. 'Отслеживать метрики' = to track metrics."
+    },
+    {
+      "russian": "метрики",
+      "english": "metrics",
+      "context": "Plural from English 'metric'. Measurable values that indicate system health."
+    },
+    {
+      "russian": "нужно",
+      "english": "necessary / need to",
+      "context": "Predicate expressing necessity. 'Нам нужно' = we need to."
+    },
+    {
+      "russian": "будем / будут",
+      "english": "will be / will (future tense)",
+      "context": "Future tense of 'быть' (to be). 'Мы будем отслеживать' = we will track."
+    },
+    {
+      "russian": "отправит (отправить)",
+      "english": "will send",
+      "context": "Future perfective of 'отправить' (to send). 'Отправить сообщение' = to send a message."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the monitoring vocabulary:",
+      "pairs": [
+        { "russian": "мониторинг", "english": "monitoring" },
+        { "russian": "алерты", "english": "alerts" },
+        { "russian": "метрики", "english": "metrics" },
+        { "russian": "уведомления", "english": "notifications" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential terms for system monitoring and alerting infrastructure."
+    },
+    {
+      "type": "context-selection",
+      "question": "What did Anya suggest for alerts?",
+      "options": [
+        "Настроить уведомления в Slack",
+        "Отправлять email каждую минуту",
+        "Звонить всем разработчикам",
+        "Ничего не делать"
+      ],
+      "correctAnswer": "Настроить уведомления в Slack",
+      "explanation": "Anya suggested setting up notifications in Slack for alerts."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Нам _______ узнавать о проблемах быстрее.",
+      "wordBank": ["нужно", "можно", "нельзя", "трудно"],
+      "correctAnswer": "нужно",
+      "explanation": "'Нужно' (need to/necessary) expresses necessity in this context."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the future form: Система _______ (отправить) сообщение в канал.",
+      "wordBank": ["отправит", "отправила", "отправляет", "отправлять"],
+      "correctAnswer": "отправит",
+      "explanation": "Future perfective of 'отправить' (to send) is 'отправит' (will send)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "On-Call Culture in Russia",
+    "content": "Russian developers use the English term 'on-call' or say 'дежурный' (on duty). The rotation is called 'ротация дежурств'. Many Russian companies are adopting Western practices like PagerDuty and incident response playbooks. The phrase 'быть на подхвате' (to be on standby) is also commonly used."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team sets up comprehensive monitoring and alerting to catch production issues faster.",
+  "wordCount": 176,
+  "estimatedMinutes": 20
+}

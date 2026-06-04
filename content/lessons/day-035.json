@@ -1,0 +1,104 @@
+{
+  "day": 35,
+  "phase": 2,
+  "title": "Root Cause Analysis",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "В понедельник утром команда <strong>собралась</strong>, <strong>чтобы</strong> провести <strong>анализ</strong> инцидента. Дмитрий открыл <strong>логи</strong> на большом экране. «Давайте <strong>выясним</strong> <strong>причину</strong> проблемы», — сказал он сосредоточенно. Елена <strong>изучала</strong> код авторизации внимательно. «Смотрите, здесь <strong>ошибка конфигурации</strong>», — показала она. «Переменная окружения не была установлена в продакшне». Алекс <strong>удивился</strong>: «Но <strong>почему</strong> тесты не поймали эту проблему?» «<strong>Потому что</strong> в тестовой среде переменная была», — объяснила Аня. «Конфигурация продакшна отличается от тестовой». Максим нашёл момент деплоя в логах. «Вот! Ошибка появилась сразу <strong>после</strong> деплоя», — сказал он, указывая на экран. «Это точно <strong>из-за</strong> новой версии». Дмитрий кивнул: «Теперь понятно. Мы забыли добавить переменную в production deployment скрипт». Елена записывала выводы: «Значит, нужна проверка конфигурации <strong>перед</strong> деплоем». Алекс <strong>предложил</strong>: «Можем автоматизировать проверку environment переменных?» «Отличная идея!» — согласился Дмитрий. «Это <strong>предотвратит</strong> похожие проблемы в будущем». Аня создала задачи: проверить все env переменные и добавить автоматическую валидацию. Команда <strong>поняла</strong>, что инцидент <strong>произошёл</strong> <strong>из-за</strong> человеческой ошибки, <strong>но</strong> его можно было избежать с лучшими процессами.",
+
+  "textEnglish": "On Monday morning, the team gathered to conduct an incident analysis. Dmitry opened the logs on the big screen. 'Let's find out the cause of the problem,' he said with focus. Elena studied the authorization code carefully. 'Look, here's a configuration error,' she showed. 'The environment variable wasn't set in production.' Alex was surprised: 'But why didn't the tests catch this problem?' 'Because the test environment had the variable,' Anya explained. 'The production configuration differs from the test one.' Maxim found the deployment moment in the logs. 'Here! The error appeared immediately after the deployment,' he said, pointing at the screen. 'It's definitely because of the new version.' Dmitry nodded: 'Now it's clear. We forgot to add the variable to the production deployment script.' Elena wrote down conclusions: 'So, we need configuration checks before deployment.' Alex suggested: 'Can we automate the checking of environment variables?' 'Great idea!' Dmitry agreed. 'This will prevent similar problems in the future.' Anya created tasks: check all env variables and add automatic validation. The team understood that the incident happened due to human error, but it could have been avoided with better processes.",
+
+  "vocabulary": [
+    {
+      "russian": "причина",
+      "english": "cause / reason",
+      "context": "Noun. 'Причина проблемы' = the cause of the problem. Used in root cause analysis."
+    },
+    {
+      "russian": "анализ",
+      "english": "analysis",
+      "context": "Noun. 'Провести анализ' = to conduct an analysis. 'Root cause analysis' = анализ первопричины."
+    },
+    {
+      "russian": "логи",
+      "english": "logs",
+      "context": "Plural from borrowed 'log'. System logs that record events and errors."
+    },
+    {
+      "russian": "выяснить / выясним",
+      "english": "to find out / let's find out",
+      "context": "Perfective verb. Future: 'выясним' = we will find out. Used for investigation."
+    },
+    {
+      "russian": "ошибка конфигурации",
+      "english": "configuration error",
+      "context": "Compound term. 'Ошибка' = error, 'конфигурация' = configuration."
+    },
+    {
+      "russian": "потому что",
+      "english": "because",
+      "context": "Conjunction expressing causation. Used to explain reasons."
+    },
+    {
+      "russian": "из-за",
+      "english": "because of / due to",
+      "context": "Preposition + genitive case. 'Из-за ошибки' = because of the error."
+    },
+    {
+      "russian": "предотвратит (предотвратить)",
+      "english": "will prevent",
+      "context": "Future perfective of 'предотвратить' (to prevent). 'Предотвратить проблему' = to prevent a problem."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the investigation vocabulary:",
+      "pairs": [
+        { "russian": "причина", "english": "cause" },
+        { "russian": "логи", "english": "logs" },
+        { "russian": "анализ", "english": "analysis" },
+        { "russian": "ошибка конфигурации", "english": "configuration error" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for investigating and analyzing technical problems."
+    },
+    {
+      "type": "context-selection",
+      "question": "Why didn't the tests catch the problem?",
+      "options": [
+        "Потому что в тестовой среде переменная была",
+        "Потому что тесты не работали",
+        "Из-за плохого кода",
+        "Потому что никто не запускал тесты"
+      ],
+      "correctAnswer": "Потому что в тестовой среде переменная была",
+      "explanation": "The tests didn't catch it because the test environment had the variable set."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Инцидент произошёл _______ человеческой ошибки.",
+      "wordBank": ["из-за", "потому что", "для", "без"],
+      "correctAnswer": "из-за",
+      "explanation": "'Из-за' (because of/due to) is used with nouns to express causation."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the future form: Это _______ (предотвратить) похожие проблемы.",
+      "wordBank": ["предотвратит", "предотвратил", "предотвращает", "предотвращать"],
+      "correctAnswer": "предотвратит",
+      "explanation": "Future perfective of 'предотвратить' (to prevent) is 'предотвратит' (will prevent)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "RCA Culture in Russian Tech",
+    "content": "Russian tech teams often use the English acronym 'RCA' or translate it as 'анализ первопричины' (root cause analysis). The phrase 'разбор полётов' (literally 'flight debriefing') is also commonly used for post-incident analysis, coming from aviation terminology. Blame-free culture is called 'культура без обвинений'."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team investigates the production bug and discovers it was caused by a missing environment variable configuration.",
+  "wordCount": 171,
+  "estimatedMinutes": 20
+}

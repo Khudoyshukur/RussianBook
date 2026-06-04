@@ -1,0 +1,104 @@
+{
+  "day": 29,
+  "phase": 2,
+  "title": "Retrospective Meeting",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "После завершения спринта команда собралась на <strong>ретроспективу</strong>. «Давайте <strong>обсудим</strong>, что прошло хорошо <strong>и</strong> что прошло плохо», — сказал Дмитрий серьёзно. Он открыл доску в Miro. Аня начала первой: «Мне понравилось, что мы <strong>помогали</strong> друг другу с код-ревью». «Это <strong>улучшило</strong> качество кода», — добавила она довольно. Максим согласился: «Да, <strong>а</strong> ещё мы <strong>закончили</strong> все задачи вовремя. Это большой успех!» Елена подняла руку: «<strong>Но</strong> у меня есть проблема. Документация неполная. Мне было <strong>трудно</strong> тестировать новые фичи». «Вы правы», — признал Алекс виновато. «Я <strong>должен</strong> был писать документацию сразу, а не в конце». Дмитрий записал это в раздел «улучшить». «<strong>В следующий раз</strong> давайте сделаем документацию частью Definition of Done», — предложил он. «Что ещё мы <strong>можем</strong> улучшить?» — спросил он команду. «Я думаю, нам <strong>надо</strong> больше автоматизации в тестировании», — сказала Елена уверенно. «Ручное тестирование занимает слишком много времени». Команда обсуждала предложения сорок минут. <strong>Все</strong> чувствовали, что их мнение важно. «Отличная ретроспектива! Спасибо всем», — закончил Дмитрий с улыбкой.",
+
+  "textEnglish": "After completing the sprint, the team gathered for a retrospective. 'Let's discuss what went well and what went badly,' Dmitry said seriously. He opened the board in Miro. Anya started first: 'I liked that we helped each other with code reviews.' 'This improved code quality,' she added contentedly. Maxim agreed: 'Yes, and we also finished all tasks on time. That's a big success!' Elena raised her hand: 'But I have a problem. The documentation is incomplete. It was difficult for me to test new features.' 'You're right,' Alex admitted guiltily. 'I should have written documentation immediately, not at the end.' Dmitry wrote this in the 'improve' section. 'Next time let's make documentation part of the Definition of Done,' he suggested. 'What else can we improve?' he asked the team. 'I think we need more automation in testing,' Elena said confidently. 'Manual testing takes too much time.' The team discussed suggestions for forty minutes. Everyone felt that their opinion mattered. 'Great retrospective! Thank you everyone,' Dmitry concluded with a smile.",
+
+  "vocabulary": [
+    {
+      "russian": "ретроспекти́ва",
+      "english": "retrospective",
+      "context": "Agile ceremony for reflecting on the sprint. Also called 'ретро' informally."
+    },
+    {
+      "russian": "обсу́дим (обсуди́ть)",
+      "english": "let's discuss / we will discuss",
+      "context": "Future perfective, 1st person plural. Used for suggestions."
+    },
+    {
+      "russian": "улу́чшило (улу́чшить)",
+      "english": "improved",
+      "context": "Past perfective. 'Улучшить качество' = to improve quality."
+    },
+    {
+      "russian": "до́лжен",
+      "english": "should / must / ought to",
+      "context": "Modal word expressing obligation. 'Я должен был' = I should have."
+    },
+    {
+      "russian": "в сле́дующий раз",
+      "english": "next time",
+      "context": "Common phrase for discussing future improvements."
+    },
+    {
+      "russian": "мо́жем (мочь)",
+      "english": "we can / are able to",
+      "context": "Modal verb. 'Что мы можем улучшить?' = What can we improve?"
+    },
+    {
+      "russian": "на́до",
+      "english": "need to / necessary",
+      "context": "Impersonal modal. 'Нам надо' = we need to."
+    },
+    {
+      "russian": "все",
+      "english": "everyone / all",
+      "context": "Pronoun. 'Все чувствовали' = everyone felt."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the retrospective vocabulary:",
+      "pairs": [
+        { "russian": "ретроспектива", "english": "retrospective" },
+        { "russian": "обсудить", "english": "to discuss" },
+        { "russian": "улучшить", "english": "to improve" },
+        { "russian": "в следующий раз", "english": "next time" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for sprint retrospectives and continuous improvement."
+    },
+    {
+      "type": "context-selection",
+      "question": "What problem did Elena raise?",
+      "options": [
+        "Документация была неполная",
+        "Код-ревью занимали много времени",
+        "Команда не закончила задачи",
+        "Автоматизация не работала"
+      ],
+      "correctAnswer": "Документация была неполная",
+      "explanation": "Elena said documentation was incomplete, making it difficult to test new features."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Мы помогали друг другу, _______ это _______ качество кода.",
+      "wordBank": ["и", "а", "но", "улучшило"],
+      "correctAnswer": "и, улучшило",
+      "explanation": "'И' (and) connects related positive statements; 'улучшило' (improved) is past perfective."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the modal verb: Я _______ (должен) был писать документацию сразу.",
+      "wordBank": ["должен", "могу", "хочу", "надо"],
+      "correctAnswer": "должен",
+      "explanation": "'Должен был' expresses past obligation (should have). Modal 'должен' agrees with subject."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Russian Retrospective Culture",
+    "content": "Russian teams often make retrospectives very honest and direct, sometimes more so than Western teams. There's less emphasis on 'positive framing' - people say what didn't work plainly. The phrase 'что прошло хорошо/плохо' (what went well/badly) is standard."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team reflects on their sprint, identifying successes and areas for improvement, particularly around documentation.",
+  "wordCount": 172,
+  "estimatedMinutes": 20
+}

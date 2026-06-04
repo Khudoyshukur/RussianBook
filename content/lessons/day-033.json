@@ -1,0 +1,104 @@
+{
+  "day": 33,
+  "phase": 2,
+  "title": "New Requirements",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Через неделю клиент прислал письмо с новыми <strong>требованиями</strong>. Дмитрий собрал срочную встречу. «У нас проблема», — начал он обеспокоенно. «Клиент хочет большие <strong>изменения</strong> в проекте». Он открыл документ <strong>и</strong> начал читать. «Они хотят добавить мобильную версию, систему ролей <strong>и</strong> интеграцию с CRM», — перечислил он медленно. «<strong>И</strong> всё это <strong>должно</strong> быть готово за два месяца». Команда замолчала в шоке. «Это слишком много!» — воскликнула Аня. «<strong>Объём работы</strong> увеличился вдвое». Максим согласился: «Да, <strong>а</strong> у нас нет дополнительных разработчиков». Алекс спросил: «<strong>Можем</strong> мы сделать это поэтапно? Сначала одну фичу, потом другую?» Дмитрий кивнул: «Хорошая мысль. Нам <strong>надо</strong> <strong>согласовать</strong> <strong>приоритеты</strong> с клиентом». Он написал письмо клиенту. «Давайте спросим, что самое важное», — предложил он разумно. На следующий день пришёл ответ. «Клиент согласен работать поэтапно!» — сообщил Дмитрий радостно. «Сначала мобильная версия, <strong>потому что</strong> их пользователи часто работают с телефонов». Елена <strong>чувствовала</strong> облегчение: «Это более реально. Я <strong>могу</strong> начать тестирование мобильной версии через три недели». Аня добавила: «Я создам мобильный дизайн сначала, <strong>а</strong> потом систему ролей». Команда обсудила новый план. «<strong>Когда</strong> мы согласуем все детали, я обновлю роадмап», — сказал Дмитрий. Алекс понял важный урок: <strong>необходимо</strong> управлять ожиданиями клиента <strong>и</strong> защищать команду от перегрузки.",
+
+  "textEnglish": "A week later, the client sent an email with new requirements. Dmitry called an urgent meeting. 'We have a problem,' he began worriedly. 'The client wants big changes to the project.' He opened the document and started reading. 'They want to add a mobile version, role system, and CRM integration,' he listed slowly. 'And all this must be ready in two months.' The team fell silent in shock. 'That's too much!' Anya exclaimed. 'The scope of work has doubled.' Maxim agreed: 'Yes, and we don't have additional developers.' Alex asked: 'Can we do this in stages? First one feature, then another?' Dmitry nodded: 'Good idea. We need to agree on priorities with the client.' He wrote an email to the client. 'Let's ask what's most important,' he suggested reasonably. The next day a response came. 'The client agreed to work in stages!' Dmitry reported joyfully. 'First the mobile version, because their users often work from phones.' Elena felt relief: 'That's more realistic. I can start testing the mobile version in three weeks.' Anya added: 'I'll create the mobile design first, and then the role system.' The team discussed the new plan. 'When we agree on all the details, I'll update the roadmap,' Dmitry said. Alex learned an important lesson: it's necessary to manage client expectations and protect the team from overload.",
+
+  "vocabulary": [
+    {
+      "russian": "тре́бования",
+      "english": "requirements",
+      "context": "Plural of 'требование'. 'Новые требования' = new requirements."
+    },
+    {
+      "russian": "измене́ния",
+      "english": "changes",
+      "context": "Plural of 'изменение'. 'Большие изменения' = big changes."
+    },
+    {
+      "russian": "объём рабо́ты",
+      "english": "scope of work / workload",
+      "context": "Fixed phrase. 'Объём работы увеличился' = the scope increased."
+    },
+    {
+      "russian": "согласова́ть",
+      "english": "to agree / to coordinate / to align",
+      "context": "Perfective verb. 'Согласовать приоритеты' = to agree on priorities."
+    },
+    {
+      "russian": "приорите́ты",
+      "english": "priorities",
+      "context": "Borrowed from English. Common in project management."
+    },
+    {
+      "russian": "необходи́мо",
+      "english": "necessary / it is necessary",
+      "context": "Impersonal modal. 'Необходимо управлять' = it's necessary to manage."
+    },
+    {
+      "russian": "до́лжно (до́лжен)",
+      "english": "must / should",
+      "context": "Neuter form of modal 'должен'. 'Должно быть готово' = must be ready."
+    },
+    {
+      "russian": "мо́жем (мочь)",
+      "english": "we can",
+      "context": "Modal verb, 1st person plural. 'Можем мы сделать?' = Can we do?"
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the project management vocabulary:",
+      "pairs": [
+        { "russian": "требования", "english": "requirements" },
+        { "russian": "объём работы", "english": "scope of work" },
+        { "russian": "согласовать", "english": "to agree/coordinate" },
+        { "russian": "приоритеты", "english": "priorities" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for managing project scope and client requirements."
+    },
+    {
+      "type": "context-selection",
+      "question": "What was Alex's suggestion?",
+      "options": [
+        "Сделать изменения поэтапно",
+        "Нанять больше разработчиков",
+        "Отказаться от проекта",
+        "Работать сверхурочно"
+      ],
+      "correctAnswer": "Сделать изменения поэтапно",
+      "explanation": "Alex suggested doing the changes in stages, one feature at a time."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Всё это _______ быть готово за два месяца.",
+      "wordBank": ["должно", "может", "хочет", "надо"],
+      "correctAnswer": "должно",
+      "explanation": "'Должно' (must) expresses obligation. Neuter form agrees with 'всё' (everything)."
+    },
+    {
+      "type": "code-debugging",
+      "question": "Fix the conjunction: Объём работы большой, и у нас нет разработчиков.",
+      "codeSnippet": "Объём работы большой, и у нас нет разработчиков.",
+      "correctAnswer": "Объём работы большой, а у нас нет разработчиков.",
+      "explanation": "Use 'а' (not 'и') to contrast two opposing facts: large workload vs. no developers."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Scope Creep in Russian Projects",
+    "content": "Scope creep ('расширение объёма') is common in Russian IT projects. The phrase 'работать поэтапно' (work in stages) is a diplomatic way to negotiate. Russian project managers often use 'необходимо согласовать' (it's necessary to coordinate) to maintain professional boundaries with clients."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team faces scope creep when clients request major changes, but negotiates a phased approach to manage the workload.",
+  "wordCount": 180,
+  "estimatedMinutes": 20
+}

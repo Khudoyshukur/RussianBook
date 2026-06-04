@@ -1,0 +1,104 @@
+{
+  "day": 34,
+  "phase": 2,
+  "title": "Urgent Bug in Production",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "В пятницу вечером Алекс <strong>получил</strong> срочное уведомление. <strong>Продакшн</strong> сломался! Пользователи не <strong>могли</strong> войти в систему. «Это <strong>критический баг</strong>!» — написала Аня в чате встревоженно. Дмитрий быстро <strong>проверил</strong> логи. «Проблема в новом коде авторизации», — <strong>сказал</strong> он серьёзно. «Мы <strong>задеплоили</strong> его два часа назад». Максим паниковал: «Что нам делать? Сайт не работает!» Елена <strong>предложила</strong> решение: «Нужно <strong>срочно</strong> сделать <strong>откат</strong>». «Давайте вернёмся к предыдущей версии», — добавила она спокойно. Алекс <strong>согласился</strong>: «Да, нужен <strong>горячий фикс</strong>». Он <strong>быстро</strong> откатил деплой на старую версию. Система <strong>заработала</strong> снова! Пользователи смогли войти. «Фух, <strong>исправили</strong>!» — написал Максим с облегчением. <strong>Но</strong> проблема ещё не решена полностью. «Теперь нужно <strong>выяснить</strong>, почему код сломался», — сказал Дмитрий устало. «Завтра утром сделаем полный анализ». Аня создала задачу в Jira: «Исследовать баг авторизации». Алекс чувствовал стресс, <strong>но</strong> также <strong>понял</strong> важность быстрой реакции на инциденты. «Хорошо, что мы <strong>смогли</strong> быстро откатиться», — подумал он с благодарностью. Команда работала до поздней ночи, <strong>чтобы</strong> убедиться, что всё стабильно.",
+
+  "textEnglish": "On Friday evening, Alex received an urgent notification. Production broke! Users couldn't log into the system. 'This is a critical bug!' Anya wrote in the chat anxiously. Dmitry quickly checked the logs. 'The problem is in the new authorization code,' he said seriously. 'We deployed it two hours ago.' Maxim panicked: 'What should we do? The site isn't working!' Elena suggested a solution: 'We need to urgently do a rollback.' 'Let's return to the previous version,' she added calmly. Alex agreed: 'Yes, we need a hotfix.' He quickly rolled back the deployment to the old version. The system worked again! Users were able to log in. 'Phew, we fixed it!' Maxim wrote with relief. But the problem isn't fully solved yet. 'Now we need to find out why the code broke,' Dmitry said tiredly. 'Tomorrow morning we'll do a full analysis.' Anya created a task in Jira: 'Investigate authorization bug.' Alex felt stress, but also understood the importance of quick incident response. 'Good thing we were able to roll back quickly,' he thought gratefully. The team worked until late at night to make sure everything was stable.",
+
+  "vocabulary": [
+    {
+      "russian": "продакшн",
+      "english": "production (environment)",
+      "context": "Borrowed from English 'production'. The live environment where users access the application."
+    },
+    {
+      "russian": "критический баг",
+      "english": "critical bug",
+      "context": "A severe bug that prevents core functionality. 'Критический' = critical, severe."
+    },
+    {
+      "russian": "срочно",
+      "english": "urgently / immediately",
+      "context": "Adverb expressing urgency. 'Срочно исправить' = to fix urgently."
+    },
+    {
+      "russian": "исправить / исправили",
+      "english": "to fix / fixed",
+      "context": "Perfective verb. 'Исправить баг' = to fix a bug. Past: 'исправили' = we fixed."
+    },
+    {
+      "russian": "откатить / откат",
+      "english": "to roll back / rollback",
+      "context": "Tech term. 'Откатить деплой' = to roll back deployment. Noun: 'откат' = rollback."
+    },
+    {
+      "russian": "горячий фикс",
+      "english": "hotfix",
+      "context": "Direct translation: 'hot fix'. An urgent fix deployed quickly to production."
+    },
+    {
+      "russian": "задеплоили (задеплоить)",
+      "english": "deployed",
+      "context": "Past perfective from borrowed 'deploy'. Created verb in Russian tech slang."
+    },
+    {
+      "russian": "выяснить",
+      "english": "to find out / to determine",
+      "context": "Perfective verb. 'Выяснить причину' = to find out the cause."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the production incident vocabulary:",
+      "pairs": [
+        { "russian": "продакшн", "english": "production" },
+        { "russian": "критический баг", "english": "critical bug" },
+        { "russian": "откат", "english": "rollback" },
+        { "russian": "горячий фикс", "english": "hotfix" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential terms for handling production incidents and urgent fixes."
+    },
+    {
+      "type": "context-selection",
+      "question": "What did Elena suggest to fix the problem?",
+      "options": [
+        "Сделать откат на предыдущую версию",
+        "Переписать весь код",
+        "Подождать до понедельника",
+        "Выключить сайт"
+      ],
+      "correctAnswer": "Сделать откат на предыдущую версию",
+      "explanation": "Elena suggested doing a rollback to the previous version as a quick solution."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Нужно _______ выяснить, почему код _______.",
+      "wordBank": ["срочно", "сломался", "медленно", "работает"],
+      "correctAnswer": "срочно, сломался",
+      "explanation": "'Срочно выяснить' (urgently find out) and 'сломался' (broke) describe the situation."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the past form: Мы _______ (задеплоить) код два часа назад.",
+      "wordBank": ["задеплоили", "деплоим", "задеплоим", "деплоить"],
+      "correctAnswer": "задеплоили",
+      "explanation": "Past perfective plural of 'задеплоить' (to deploy) is 'задеплоили' (we deployed)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Production Incidents in Russian Tech",
+    "content": "Russian developers use terms like 'продакшн упал' (production fell/crashed) and 'всё сломалось' (everything broke). The phrase 'горячий фикс' is preferred over 'хотфикс', showing translation preference. Friday deployments are jokingly called 'пятничный деплой' and are often avoided due to weekend incident risks."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "Alex experiences his first production emergency and learns the importance of quick rollback procedures.",
+  "wordCount": 174,
+  "estimatedMinutes": 20
+}

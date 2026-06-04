@@ -1,0 +1,104 @@
+{
+  "day": 30,
+  "phase": 2,
+  "title": "Demo Day Preparation",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Завтра команда <strong>будет показывать</strong> <strong>демо</strong> <strong>клиентам</strong>. Дмитрий организовал встречу для <strong>подготовки</strong>. «Это важная <strong>презентация</strong>», — сказал он серьёзно. «Клиент <strong>должен</strong> увидеть все новые функции». Алекс <strong>волновался</strong>. «Я никогда не делал демо раньше», — признался он нервно. «Что, <strong>если</strong> что-то сломается?» Аня успокоила его: «Не волнуйся! Мы <strong>подготовились</strong> хорошо. Всё <strong>будет</strong> работать». «Я <strong>надеюсь</strong>, что клиентам понравится новый дизайн», — добавила она с оптимизмом. Максим проверял deployment на staging сервере. «Я <strong>хочу</strong> убедиться, что нет багов», — объяснил он внимательно. «<strong>Потому что</strong> демо на production делать опасно». Елена составила список сценариев для демонстрации. «Мы <strong>покажем</strong> авторизацию, дашборд <strong>и</strong> новые графики», — сказала она уверенно. «Вся презентация займёт двадцать минут». Дмитрий одобрил план: «Отлично! <strong>Когда</strong> закончим демо, я попрошу клиентов дать обратную связь». Команда репетировала презентацию три раза. Алекс <strong>чувствовал</strong> себя более уверенно после репетиции. «Я думаю, мы готовы», — сказал он с улыбкой. «Завтра <strong>будет</strong> успешный день!» — воскликнул Максим оптимистично.",
+
+  "textEnglish": "Tomorrow the team will show a demo to clients. Dmitry organized a meeting for preparation. 'This is an important presentation,' he said seriously. 'The client must see all the new features.' Alex was worried. 'I've never done a demo before,' he admitted nervously. 'What if something breaks?' Anya reassured him: 'Don't worry! We prepared well. Everything will work.' 'I hope the clients will like the new design,' she added optimistically. Maxim was checking deployment on the staging server. 'I want to make sure there are no bugs,' he explained attentively. 'Because doing demos on production is dangerous.' Elena compiled a list of scenarios for demonstration. 'We will show authorization, dashboard, and new charts,' she said confidently. 'The whole presentation will take twenty minutes.' Dmitry approved the plan: 'Excellent! When we finish the demo, I'll ask clients to give feedback.' The team rehearsed the presentation three times. Alex felt more confident after the rehearsal. 'I think we're ready,' he said with a smile. 'Tomorrow will be a successful day!' Maxim exclaimed optimistically.",
+
+  "vocabulary": [
+    {
+      "russian": "де́мо",
+      "english": "demo / demonstration",
+      "context": "Borrowed from English. Also 'демонстрация' for formal usage."
+    },
+    {
+      "russian": "презента́ция",
+      "english": "presentation",
+      "context": "Direct from English. 'Делать презентацию' = to give a presentation."
+    },
+    {
+      "russian": "клие́нты",
+      "english": "clients / customers",
+      "context": "Plural of 'клиент'. In IT, refers to customers or client companies."
+    },
+    {
+      "russian": "волнова́лся (волнова́ться)",
+      "english": "was worried / was nervous",
+      "context": "Past imperfective reflexive. Shows state of being anxious."
+    },
+    {
+      "russian": "подгото́вились (подгото́виться)",
+      "english": "prepared / got ready",
+      "context": "Past perfective reflexive. 'Подготовиться к демо' = to prepare for demo."
+    },
+    {
+      "russian": "наде́юсь (наде́яться)",
+      "english": "I hope",
+      "context": "Present tense reflexive. 'Я надеюсь, что...' = I hope that..."
+    },
+    {
+      "russian": "пока́жем (показа́ть)",
+      "english": "we will show",
+      "context": "Future perfective, 1st person plural. 'Показать демо' = to show a demo."
+    },
+    {
+      "russian": "потому́ что",
+      "english": "because",
+      "context": "Conjunction for explaining reasons. Can be split: 'потому, что...'."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the demo preparation vocabulary:",
+      "pairs": [
+        { "russian": "демо", "english": "demo" },
+        { "russian": "презентация", "english": "presentation" },
+        { "russian": "подготовиться", "english": "to prepare" },
+        { "russian": "волноваться", "english": "to worry" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for preparing and presenting demos to clients."
+    },
+    {
+      "type": "context-selection",
+      "question": "Why did Maxim check the staging server?",
+      "options": [
+        "Потому что демо на production делать опасно",
+        "Потому что клиенты просили",
+        "Потому что Дмитрий сказал",
+        "Потому что он волновался"
+      ],
+      "correctAnswer": "Потому что демо на production делать опасно",
+      "explanation": "Maxim explained that doing demos on production is dangerous, so he checked staging."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Я _______, что клиентам _______ новый дизайн.",
+      "wordBank": ["надеюсь", "понравится", "хочу", "нравится"],
+      "correctAnswer": "надеюсь, понравится",
+      "explanation": "'Надеюсь' (I hope) + 'понравится' (will like - future perfective)."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Put the words in the correct order:",
+      "words": ["завтра", "будет", "команда", "показывать", "демо"],
+      "correctAnswer": "завтра команда будет показывать демо",
+      "explanation": "Future tense structure: 'завтра' (tomorrow) + subject + 'будет' + infinitive."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Russian Business Presentations",
+    "content": "Russian tech presentations tend to be more technical and detailed than Western ones. Clients expect to see actual functionality, not just slides. The word 'демо' is widely used, though formal presentations might use 'демонстрация продукта'."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team prepares for an important client demo, with Alex feeling nervous but gaining confidence through rehearsal.",
+  "wordCount": 174,
+  "estimatedMinutes": 20
+}

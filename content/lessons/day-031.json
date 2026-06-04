@@ -1,0 +1,104 @@
+{
+  "day": 31,
+  "phase": 2,
+  "title": "The Demo Presentation",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Настал день <strong>демонстрации</strong>. Клиенты подключились к видеозвонку ровно в десять утра. «Добрый день! Мы рады вас видеть», — поздоровался Дмитрий профессионально. «Сегодня мы <strong>покажем</strong> новую <strong>функциональность</strong>». Алекс начал демо. Он открыл приложение <strong>и</strong> вошёл в систему. «Вот новая страница авторизации», — <strong>объяснил</strong> он уверенно. «Теперь пользователи <strong>могут</strong> войти через Google <strong>или</strong> email». Клиенты внимательно смотрели. Аня показала новый дизайн дашборда. «Мы добавили интерактивные графики <strong>и</strong> улучшили навигацию», — сказала она гордо. «Всё <strong>работает</strong> быстро <strong>и</strong> красиво». Один клиент поднял руку: «У меня есть <strong>вопрос</strong>. <strong>Можно</strong> экспортировать эти графики в PDF?» Максим быстро ответил: «Да, конечно! Позвольте я покажу». Он нажал кнопку экспорта <strong>и</strong> файл скачался моментально. «<strong>Отлично</strong>!» — воскликнул клиент довольно. Елена продемонстрировала систему уведомлений. «<strong>Когда</strong> происходит важное событие, пользователь получает уведомление», — <strong>объяснила</strong> она чётко. Другой клиент спросил: «А можно настроить, какие уведомления получать?» «Да, у нас есть страница настроек для этого», — ответила Елена, открывая её. Демо прошло <strong>успешно</strong>. Никаких ошибок не было. Клиенты аплодировали в конце. «Превосходная работа!» — сказал главный клиент восхищённо. Команда облегчённо выдохнула.",
+
+  "textEnglish": "The day of the demonstration arrived. Clients connected to the video call at exactly ten in the morning. 'Good afternoon! We're glad to see you,' Dmitry greeted professionally. 'Today we will show new functionality.' Alex started the demo. He opened the application and logged into the system. 'Here's the new authorization page,' he explained confidently. 'Now users can log in through Google or email.' The clients watched attentively. Anya showed the new dashboard design. 'We added interactive charts and improved navigation,' she said proudly. 'Everything works quickly and beautifully.' One client raised his hand: 'I have a question. Can you export these charts to PDF?' Maxim quickly answered: 'Yes, of course! Let me show you.' He clicked the export button and the file downloaded instantly. 'Excellent!' the client exclaimed contentedly. Elena demonstrated the notification system. 'When an important event happens, the user receives a notification,' she explained clearly. Another client asked: 'Can you configure which notifications to receive?' 'Yes, we have a settings page for that,' Elena replied, opening it. The demo went successfully. There were no errors. The clients applauded at the end. 'Superb work!' the main client said admiringly. The team breathed a sigh of relief.",
+
+  "vocabulary": [
+    {
+      "russian": "демонстра́ция",
+      "english": "demonstration / demo",
+      "context": "More formal than 'демо'. 'День демонстрации' = demo day."
+    },
+    {
+      "russian": "функциона́льность",
+      "english": "functionality / features",
+      "context": "IT term. 'Новая функциональность' = new functionality/features."
+    },
+    {
+      "russian": "объясни́л (объясни́ть)",
+      "english": "explained",
+      "context": "Past perfective. 'Объяснить клиентам' = to explain to clients."
+    },
+    {
+      "russian": "вопро́с",
+      "english": "question",
+      "context": "Singular noun. 'У меня есть вопрос' = I have a question."
+    },
+    {
+      "russian": "мо́жно",
+      "english": "is it possible / can one",
+      "context": "Impersonal modal. 'Можно экспортировать?' = Can you export? / Is it possible to export?"
+    },
+    {
+      "russian": "отли́чно",
+      "english": "excellent / great",
+      "context": "Adverb for expressing approval. Common positive response."
+    },
+    {
+      "russian": "успе́шно",
+      "english": "successfully",
+      "context": "Adverb. 'Демо прошло успешно' = the demo went successfully."
+    },
+    {
+      "russian": "когда́",
+      "english": "when",
+      "context": "Conjunction. 'Когда происходит событие' = when an event happens."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the presentation vocabulary:",
+      "pairs": [
+        { "russian": "демонстрация", "english": "demonstration" },
+        { "russian": "функциональность", "english": "functionality" },
+        { "russian": "вопрос", "english": "question" },
+        { "russian": "успешно", "english": "successfully" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for presenting and demonstrating software to clients."
+    },
+    {
+      "type": "context-selection",
+      "question": "What did the first client ask about?",
+      "options": [
+        "Можно ли экспортировать графики в PDF",
+        "Можно ли войти через Google",
+        "Можно ли настроить уведомления",
+        "Можно ли изменить дизайн"
+      ],
+      "correctAnswer": "Можно ли экспортировать графики в PDF",
+      "explanation": "The first client asked if they could export the charts to PDF."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: _______ происходит событие, пользователь получает уведомление.",
+      "wordBank": ["когда", "если", "потому что", "но"],
+      "correctAnswer": "когда",
+      "explanation": "'Когда' (when) introduces a time clause describing when notifications are sent."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the present tense: Всё _______ (работать) быстро и красиво.",
+      "wordBank": ["работает", "работало", "будет работать", "работать"],
+      "correctAnswer": "работает",
+      "explanation": "Present tense 3rd person singular: 'всё работает' = everything works."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Russian Demo Culture",
+    "content": "In Russian tech demos, clients often ask direct, technical questions during the presentation. Interruptions are normal and expected. Saying 'Позвольте я покажу' (Let me show you) is a polite way to demonstrate something immediately rather than deferring questions."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team successfully presents their demo to clients, handling questions confidently and receiving positive feedback.",
+  "wordCount": 177,
+  "estimatedMinutes": 20
+}

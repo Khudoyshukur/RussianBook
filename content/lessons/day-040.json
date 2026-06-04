@@ -1,0 +1,104 @@
+{
+  "day": 40,
+  "phase": 2,
+  "title": "Onboarding the New Developer",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "На следующий день Алекс <strong>начал</strong> онбординг Игоря. «Давай я <strong>покажу</strong> тебе наш проект», — сказал Алекс. Они открыли репозиторий на GitHub. «Наша <strong>архитектура</strong> основана на микросервисах», — <strong>объяснил</strong> Алекс, показывая диаграмму. «Frontend использует Next.js, а backend — Node.js с PostgreSQL». Игорь внимательно слушал и <strong>делал</strong> заметки. «Где находится <strong>документация</strong>?» — спросил он. Алекс открыл Confluence: «Здесь мы <strong>храним</strong> всю техническую документацию. Посмотри раздел 'Архитектура' сначала». Дмитрий присоединился к разговору: «Я <strong>объясню</strong> нашу систему деплоя. Мы <strong>используем</strong> CI/CD pipeline в GitLab». Он показал конфигурационные файлы: «Каждый merge в main автоматически <strong>деплоится</strong> на staging». Елена добавила: «А для production нам <strong>нужно</strong> создать release tag». Игорь кивнул: «Понятно. А какие <strong>соглашения</strong> по коду у вас есть?» Максим ответил: «Мы следуем Airbnb style guide. ESLint и Prettier <strong>настроены</strong> в проекте». «Также у нас есть pre-commit hooks», — добавил Алекс. «Они <strong>проверяют</strong> код перед каждым коммитом». Игорь был впечатлён организацией проекта. «Спасибо за подробное объяснение!» — <strong>поблагодарил</strong> он команду.",
+
+  "textEnglish": "The next day, Alex began Igor's onboarding. 'Let me show you our project,' Alex said. They opened the repository on GitHub. 'Our architecture is based on microservices,' Alex explained, showing a diagram. 'Frontend uses Next.js, and backend uses Node.js with PostgreSQL.' Igor listened carefully and took notes. 'Where is the documentation?' he asked. Alex opened Confluence: 'Here we store all technical documentation. Look at the Architecture section first.' Dmitry joined the conversation: 'I'll explain our deployment system. We use a CI/CD pipeline in GitLab.' He showed configuration files: 'Every merge to main is automatically deployed to staging.' Elena added: 'And for production we need to create a release tag.' Igor nodded: 'I see. What code conventions do you have?' Maxim answered: 'We follow the Airbnb style guide. ESLint and Prettier are configured in the project.' 'Also we have pre-commit hooks,' Alex added. 'They check the code before each commit.' Igor was impressed by the project organization. 'Thank you for the detailed explanation!' he thanked the team.",
+
+  "vocabulary": [
+    {
+      "russian": "онбо́рдинг",
+      "english": "onboarding",
+      "context": "Borrowed from English. Process of integrating a new employee."
+    },
+    {
+      "russian": "покажу́ (показа́ть)",
+      "english": "I will show",
+      "context": "Future perfective, 1st person singular. 'Показать проект' = to show a project."
+    },
+    {
+      "russian": "объясни́л (объясни́ть)",
+      "english": "explained",
+      "context": "Past perfective. 'Объяснить что-то кому-то' = to explain something to someone."
+    },
+    {
+      "russian": "архитекту́ра",
+      "english": "architecture",
+      "context": "Feminine noun. In tech context, refers to system architecture."
+    },
+    {
+      "russian": "документа́ция",
+      "english": "documentation",
+      "context": "Feminine noun. Technical documentation of a project."
+    },
+    {
+      "russian": "храни́м (храни́ть)",
+      "english": "store / keep",
+      "context": "Present tense, 1st person plural. 'Хранить документацию' = to store documentation."
+    },
+    {
+      "russian": "соглаше́ния",
+      "english": "conventions / agreements",
+      "context": "Plural noun. 'Соглашения по коду' = code conventions."
+    },
+    {
+      "russian": "поблагодари́л (поблагодари́ть)",
+      "english": "thanked",
+      "context": "Past perfective. Formal way to express gratitude."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the onboarding vocabulary:",
+      "pairs": [
+        { "russian": "архитектура", "english": "architecture" },
+        { "russian": "документация", "english": "documentation" },
+        { "russian": "объяснить", "english": "to explain" },
+        { "russian": "показать", "english": "to show" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for explaining projects and onboarding new team members."
+    },
+    {
+      "type": "context-selection",
+      "question": "What tech stack does the project use?",
+      "options": [
+        "Next.js для frontend, Node.js с PostgreSQL для backend",
+        "React для frontend, Python для backend",
+        "Angular для frontend, Java для backend",
+        "Vue.js для frontend, Ruby для backend"
+      ],
+      "correctAnswer": "Next.js для frontend, Node.js с PostgreSQL для backend",
+      "explanation": "The project uses Next.js for frontend and Node.js with PostgreSQL for backend."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Давай я _______ тебе наш проект. Я _______ нашу систему деплоя.",
+      "wordBank": ["покажу", "объясню", "покажи", "объясни"],
+      "correctAnswer": "покажу, объясню",
+      "explanation": "Both are future perfective: 'покажу' (I will show) and 'объясню' (I will explain)."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the present form: Мы _______ (хранить) всю документацию в Confluence.",
+      "wordBank": ["храним", "хранили", "будем хранить", "хранить"],
+      "correctAnswer": "храним",
+      "explanation": "Present tense, 1st person plural of 'хранить' (to store) is 'храним' (we store)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Russian Tech Onboarding Practices",
+    "content": "Russian tech companies typically have thorough onboarding processes. New developers are often assigned a 'buddy' (наставник) who helps them understand the codebase. Documentation is usually stored in tools like Confluence or Notion. Russians value detailed explanations and prefer to understand the full architecture before starting to code."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Максим (Maxim)", "Елена (Elena)", "Игорь (Igor)"],
+  "storyArc": "Alex onboards Igor by explaining the project architecture, documentation, deployment system, and code conventions.",
+  "wordCount": 176,
+  "estimatedMinutes": 20
+}

@@ -1,0 +1,99 @@
+{
+  "day": 26,
+  "phase": 2,
+  "title": "Code Review Feedback",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Алекс <strong>отправил</strong> <strong>pull request</strong> на ревью утром. Он волновался, потому что это был его первый большой фиче. Дмитрий <strong>посмотрел</strong> код внимательно и <strong>оставил</strong> несколько комментариев. «Этот метод <strong>слишком длинный</strong>», — написал он. «<strong>Нужно</strong> разделить его на несколько функций. Сейчас трудно понять логику». Алекс <strong>согласился</strong>, <strong>но</strong> не знал, как лучше сделать рефакторинг. Он <strong>попросил</strong>: «Можешь показать пример?» Дмитрий <strong>предложил</strong> использовать паттерн Strategy для разделения ответственности. «Я <strong>читал</strong> о нём в книге, <strong>но</strong> никогда не использовал на практике», — честно ответил Алекс. Дмитрий <strong>объяснил</strong> подробно и <strong>добавил</strong> пример кода прямо в комментарий к PR. Алекс внимательно изучил пример и <strong>понял</strong> идею. Он <strong>переписал</strong> свой код, разделив большой метод на четыре маленьких функции. Через час он <strong>запушил</strong> изменения. Дмитрий <strong>проверил</strong> снова. «Теперь гораздо лучше! Код читается легко. <strong>Апрувлю</strong>», — написал он с удовлетворением. Алекс радостно <strong>смёрджил</strong> PR. Его код стал чище и понятнее <strong>благодаря</strong> конструктивному ревью.",
+
+  "textEnglish": "Alex sent a pull request for review in the morning. He was nervous because this was his first big feature. Dmitry looked at the code carefully and left several comments. 'This method is too long,' he wrote. 'You need to split it into several functions. Right now it's hard to understand the logic.' Alex agreed, but didn't know how to do the refactoring better. He asked: 'Can you show an example?' Dmitry suggested using the Strategy pattern to separate responsibilities. 'I read about it in a book, but never used it in practice,' Alex honestly replied. Dmitry explained in detail and added a code example right in the PR comment. Alex carefully studied the example and understood the idea. He rewrote his code, splitting the large method into four small functions. An hour later he pushed the changes. Dmitry checked again. 'Now it's much better! The code reads easily. I approve,' he wrote with satisfaction. Alex happily merged the PR. His code became cleaner and more understandable thanks to the constructive review.",
+
+  "vocabulary": [
+    {
+      "russian": "отпра́вил (отпра́вить)",
+      "english": "sent",
+      "context": "Past perfective. 'Отправить PR' = to send a pull request."
+    },
+    {
+      "russian": "оста́вил (оста́вить)",
+      "english": "left (left a comment)",
+      "context": "Past perfective. 'Оставить комментарий' = to leave a comment."
+    },
+    {
+      "russian": "сли́шком",
+      "english": "too / too much",
+      "context": "Adverb. 'Слишком длинный' = too long."
+    },
+    {
+      "russian": "согласи́лся (согласи́ться)",
+      "english": "agreed",
+      "context": "Past perfective reflexive. Shows agreement was reached."
+    },
+    {
+      "russian": "предложи́л (предложи́ть)",
+      "english": "suggested / proposed",
+      "context": "Past perfective. 'Предложить решение' = to suggest a solution."
+    },
+    {
+      "russian": "переписа́л (переписа́ть)",
+      "english": "rewrote",
+      "context": "Past perfective. 'Переписать код' = to rewrite code."
+    },
+    {
+      "russian": "запу́шил (запу́шить)",
+      "english": "pushed (git push)",
+      "context": "Colloquial from 'push'. Russian verb created from English term."
+    },
+    {
+      "russian": "благодаря́",
+      "english": "thanks to",
+      "context": "Preposition + dative case. 'Благодаря ревью' = thanks to the review."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the code review verbs:",
+      "pairs": [
+        { "russian": "отправил", "english": "sent" },
+        { "russian": "оставил", "english": "left" },
+        { "russian": "переписал", "english": "rewrote" },
+        { "russian": "смёрджил", "english": "merged" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All past perfective verbs related to code review workflow."
+    },
+    {
+      "type": "context-selection",
+      "question": "What pattern did Dmitry suggest?",
+      "options": [
+        "Strategy",
+        "Factory",
+        "Singleton",
+        "Observer"
+      ],
+      "correctAnswer": "Strategy",
+      "explanation": "Dmitry suggested using the Strategy pattern to refactor the long method."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange the code review steps in order:",
+      "scrambledWords": ["отправил", "посмотрел", "переписал", "смёрджил"],
+      "correctAnswer": ["отправил", "посмотрел", "переписал", "смёрджил"],
+      "explanation": "Correct order: sent (PR) → reviewed → rewrote → merged."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Этот метод _______ длинный. Нужно разделить его.",
+      "wordBank": ["слишком", "очень", "много", "мало"],
+      "correctAnswer": "слишком",
+      "explanation": "'Слишком' (too) indicates excess, perfect for describing code that needs refactoring."
+    }
+  ],
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Alex receives detailed code review feedback and learns to refactor using design patterns.",
+  "wordCount": 165,
+  "estimatedMinutes": 20
+}

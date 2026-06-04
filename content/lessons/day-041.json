@@ -1,0 +1,104 @@
+{
+  "day": 41,
+  "phase": 2,
+  "title": "Knowledge Sharing Session",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "В пятницу команда <strong>организовала</strong> tech talk. «Сегодня Елена <strong>поделится</strong> своим опытом с микрофронтендами», — объявил Дмитрий. Елена открыла презентацию на большом экране. «Год назад мы <strong>столкнулись</strong> с проблемой: наше приложение <strong>стало</strong> слишком большим», — начала она. «Я <strong>исследовала</strong> разные подходы и выбрала Module Federation». Она показала диаграмму архитектуры: «Мы <strong>разделили</strong> монолит на несколько независимых приложений. Каждая команда теперь <strong>разрабатывает</strong> свой модуль отдельно». Игорь поднял руку: «Как вы <strong>решили</strong> проблему с общими зависимостями?» Елена улыбнулась: «Отличный вопрос! Мы <strong>создали</strong> shared библиотеку с общими компонентами». Максим добавил из своего опыта: «Я тоже <strong>работал</strong> с микрофронтендами в прошлом. Самой трудной частью была координация между командами». Аня спросила: «Какие преимущества вы <strong>увидели</strong> после миграции?» Елена ответила с энтузиазмом: «Deployment <strong>стал</strong> намного быстрее! Теперь мы можем <strong>обновлять</strong> каждый модуль независимо». Алекс <strong>узнал</strong> много нового о микрофронтендах. «Спасибо за презентацию! Я <strong>хочу</strong> попробовать этот подход в нашем проекте», — сказал он. После презентации команда обсуждала применение этих идей. Все <strong>согласились</strong>, что регулярные tech talks <strong>помогают</strong> команде расти профессионально.",
+
+  "textEnglish": "On Friday, the team organized a tech talk. 'Today Elena will share her experience with microfrontends,' Dmitry announced. Elena opened a presentation on the big screen. 'A year ago we faced a problem: our application became too large,' she began. 'I researched different approaches and chose Module Federation.' She showed an architecture diagram: 'We split the monolith into several independent applications. Each team now develops their module separately.' Igor raised his hand: 'How did you solve the problem with shared dependencies?' Elena smiled: 'Great question! We created a shared library with common components.' Maxim added from his experience: 'I also worked with microfrontends in the past. The hardest part was coordination between teams.' Anya asked: 'What benefits did you see after migration?' Elena answered with enthusiasm: 'Deployment became much faster! Now we can update each module independently.' Alex learned a lot new about microfrontends. 'Thanks for the presentation! I want to try this approach in our project,' he said. After the presentation, the team discussed applying these ideas. Everyone agreed that regular tech talks help the team grow professionally.",
+
+  "vocabulary": [
+    {
+      "russian": "поде́лится (подели́ться)",
+      "english": "will share",
+      "context": "Future perfective reflexive. 'Поделиться опытом' = to share experience."
+    },
+    {
+      "russian": "презента́ция",
+      "english": "presentation",
+      "context": "Feminine noun. Common in business and tech contexts."
+    },
+    {
+      "russian": "иссле́довала (иссле́довать)",
+      "english": "researched / investigated",
+      "context": "Past imperfective. Shows thorough research process."
+    },
+    {
+      "russian": "раздели́ли (раздели́ть)",
+      "english": "split / divided",
+      "context": "Past perfective. 'Разделить на части' = to split into parts."
+    },
+    {
+      "russian": "разраба́тывает (разраба́тывать)",
+      "english": "develops / is developing",
+      "context": "Present tense, 3rd person singular. Ongoing development process."
+    },
+    {
+      "russian": "зави́симости",
+      "english": "dependencies",
+      "context": "Plural noun. In programming context, refers to code dependencies."
+    },
+    {
+      "russian": "узна́л (узна́ть)",
+      "english": "learned / found out",
+      "context": "Past perfective. Acquiring new knowledge or information."
+    },
+    {
+      "russian": "помога́ют (помога́ть)",
+      "english": "help / assist",
+      "context": "Present tense, 3rd person plural. Continuous helping action."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the knowledge sharing vocabulary:",
+      "pairs": [
+        { "russian": "презентация", "english": "presentation" },
+        { "russian": "поделиться опытом", "english": "to share experience" },
+        { "russian": "tech talk", "english": "tech talk" },
+        { "russian": "узнать новое", "english": "to learn something new" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for knowledge sharing sessions and presentations."
+    },
+    {
+      "type": "context-selection",
+      "question": "What technology did Elena choose for splitting the monolith?",
+      "options": [
+        "Module Federation",
+        "Docker containers",
+        "Kubernetes",
+        "Serverless functions"
+      ],
+      "correctAnswer": "Module Federation",
+      "explanation": "Elena researched different approaches and chose Module Federation to split the monolith."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Я _______ разные подходы и _______ Module Federation.",
+      "wordBank": ["исследовала", "выбрала", "исследовал", "выберу"],
+      "correctAnswer": "исследовала, выбрала",
+      "explanation": "Both are past perfective feminine forms: 'исследовала' (researched) and 'выбрала' (chose)."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the future form: Елена _______ (поделиться) своим опытом.",
+      "wordBank": ["поделится", "делится", "делилась", "поделилась"],
+      "correctAnswer": "поделится",
+      "explanation": "Future perfective of 'поделиться' (to share) is 'поделится' (will share)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Tech Talks in Russian Companies",
+    "content": "Russian tech companies often organize 'tech talks' (pronounced as in English) or 'технические презентации'. These sessions are usually held on Fridays. Developers share their experiences with new technologies, architecture decisions, or lessons learned from projects. It's considered good practice to ask questions during and after presentations."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)", "Игорь (Igor)"],
+  "storyArc": "Elena gives a tech talk about splitting a monolith into microfrontends using Module Federation, and the team learns from her experience.",
+  "wordCount": 180,
+  "estimatedMinutes": 20
+}

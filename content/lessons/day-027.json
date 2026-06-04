@@ -1,0 +1,104 @@
+{
+  "day": 27,
+  "phase": 2,
+  "title": "Pair Programming",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "После успешного ревью Дмитрий <strong>предложил</strong> Алексу попробовать <strong>парное программирование</strong>. «Давай вместе <strong>напишем</strong> сложный компонент для новой фичи», — сказал он энтузиазмом. Алекс <strong>согласился</strong>, хотя <strong>немного нервничал</strong>. Он раньше никогда не программировал вместе с кем-то. Они устроились за одним компьютером и начали работать над формой регистрации. Дмитрий был <strong>драйвером</strong> — он печатал код на клавиатуре. Алекс был <strong>навигатором</strong> — он <strong>думал</strong> о логике, смотрел на архитектуру и <strong>искал</strong> потенциальные ошибки. «Здесь <strong>нужна</strong> валидация email перед отправкой», — заметил Алекс внимательно. «Хорошая идея! Точно, <strong>добавим</strong> проверку прямо сейчас», — ответил Дмитрий. Через двадцать минут они <strong>поменялись</strong> ролями. Теперь Алекс печатал код, <strong>а</strong> Дмитрий наблюдал и давал советы. «Не забудь обработать ошибки сети», — мягко напомнил Дмитрий. Алекс кивнул и <strong>добавил</strong> try-catch блок для обработки исключений. За час они <strong>написали</strong> весь компонент с тестами. «Парное программирование действительно <strong>эффективно</strong>!» — искренне удивился Алекс. Они <strong>нашли</strong> три серьёзных бага сразу, <strong>когда</strong> писали код, а не потом на ревью.",
+
+  "textEnglish": "After the successful review, Dmitry suggested to Alex to try pair programming. 'Let's write a complex component for the new feature together,' he said with enthusiasm. Alex agreed, although he was a bit nervous. He had never programmed together with someone before. They settled at one computer and started working on the registration form. Dmitry was the driver - he typed the code on the keyboard. Alex was the navigator - he thought about the logic, looked at the architecture and looked for potential errors. 'Here we need email validation before sending,' Alex noticed carefully. 'Good idea! Exactly, let's add the check right now,' Dmitry replied. After twenty minutes they switched roles. Now Alex was typing the code, and Dmitry was watching and giving advice. 'Don't forget to handle network errors,' Dmitry gently reminded. Alex nodded and added a try-catch block for exception handling. In an hour they wrote the entire component with tests. 'Pair programming is really effective!' Alex was genuinely surprised. They found three serious bugs right away, when they were writing code, not later during review.",
+
+  "vocabulary": [
+    {
+      "russian": "па́рное программи́рование",
+      "english": "pair programming",
+      "context": "Direct translation of agile practice. 'Парное' = paired/pair."
+    },
+    {
+      "russian": "напи́шем (написа́ть)",
+      "english": "let's write / we will write",
+      "context": "Future perfective, 1st person plural. Used for suggestions."
+    },
+    {
+      "russian": "немно́го нервнича́л",
+      "english": "was a bit nervous",
+      "context": "'Немного' = a little bit. 'Нервничал' = was nervous (past imperfective)."
+    },
+    {
+      "russian": "дра́йвер",
+      "english": "driver (in pair programming)",
+      "context": "Borrowed term. Person typing the code."
+    },
+    {
+      "russian": "навига́тор",
+      "english": "navigator (in pair programming)",
+      "context": "Borrowed term. Person thinking about logic and finding errors."
+    },
+    {
+      "russian": "помени́лись (поменя́ться)",
+      "english": "switched / exchanged",
+      "context": "Past perfective reflexive. 'Поменяться ролями' = to switch roles."
+    },
+    {
+      "russian": "а",
+      "english": "and / but / whereas",
+      "context": "Conjunction showing contrast or transition. 'Алекс печатал, а Дмитрий наблюдал'."
+    },
+    {
+      "russian": "эффекти́вно",
+      "english": "effective / efficient",
+      "context": "Adverb. 'Действительно эффективно' = really effective."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match pair programming terms:",
+      "pairs": [
+        { "russian": "драйвер", "english": "driver" },
+        { "russian": "навигатор", "english": "navigator" },
+        { "russian": "поменялись ролями", "english": "switched roles" },
+        { "russian": "парное программирование", "english": "pair programming" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for pair programming practice in Russian."
+    },
+    {
+      "type": "context-selection",
+      "question": "Who was the driver at the beginning?",
+      "options": [
+        "Дмитрий",
+        "Алекс",
+        "Оба",
+        "Никто"
+      ],
+      "correctAnswer": "Дмитрий",
+      "explanation": "Dmitry was the driver at first - he typed the code while Alex was the navigator."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete using conjunctions: Алекс печатал, _______ Дмитрий наблюдал.",
+      "wordBank": ["а", "и", "но", "потому что"],
+      "correctAnswer": "а",
+      "explanation": "'А' shows contrast/transition between two simultaneous actions."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Complete the suggestion: Давай вместе _______ (написать) сложный компонент.",
+      "wordBank": ["напишем", "написали", "пишем", "писать"],
+      "correctAnswer": "напишем",
+      "explanation": "'Давай + future perfective' (напишем) is used for suggestions: 'Let's write'."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Pair Programming in Russia",
+    "content": "Pair programming is gaining popularity in Russian tech companies, especially in agile teams. Russians often use English terms 'driver' and 'navigator' directly, or translate them as 'драйвер' and 'навигатор'. The phrase 'поменяться ролями' (to switch roles) is used frequently."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Alex tries pair programming for the first time and discovers its effectiveness.",
+  "wordCount": 174,
+  "estimatedMinutes": 20
+}

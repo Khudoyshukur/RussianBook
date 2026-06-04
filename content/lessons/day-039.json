@@ -1,0 +1,104 @@
+{
+  "day": 39,
+  "phase": 2,
+  "title": "New Team Member",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "В понедельник к команде <strong>присоединился</strong> новый разработчик. «Привет! Меня <strong>зовут</strong> Игорь», — <strong>представился</strong> он дружелюбно. «Я frontend разработчик с пятилетним <strong>опытом</strong>». Дмитрий улыбнулся: «Добро пожаловать в команду! <strong>Расскажи</strong> немного о себе». Игорь начал: «Я <strong>работал</strong> в стартапе, где мы делали SaaS платформу. Там я <strong>изучил</strong> React, TypeScript и GraphQL». «Интересно! Мы тоже <strong>используем</strong> эти технологии», — сказала Елена с интересом. Аня спросила: «Какие проекты тебе больше всего <strong>понравились</strong>?» Игорь подумал: «Мне <strong>нравится</strong> создавать интерактивные интерфейсы. Недавно я <strong>построил</strong> сложный dashboard с реальным временем обновления данных». Максим кивнул одобрительно: «Отлично! У нас как раз есть похожие задачи». Алекс <strong>хотел</strong> узнать больше: «С какими вызовами ты <strong>сталкивался</strong> в прошлых проектах?» Игорь честно ответил: «Производительность была большой проблемой. Я <strong>научился</strong> оптимизировать рендеринг и использовать мемоизацию». «Это <strong>важные</strong> навыки для нашего проекта», — <strong>заметил</strong> Дмитрий. Команда была рада новому коллеге с таким опытом и энтузиазмом.",
+
+  "textEnglish": "On Monday, a new developer joined the team. 'Hello! My name is Igor,' he introduced himself in a friendly way. 'I'm a frontend developer with five years of experience.' Dmitry smiled: 'Welcome to the team! Tell us a bit about yourself.' Igor began: 'I worked at a startup where we built a SaaS platform. There I learned React, TypeScript, and GraphQL.' 'Interesting! We also use these technologies,' Elena said with interest. Anya asked: 'Which projects did you like the most?' Igor thought: 'I like creating interactive interfaces. Recently I built a complex dashboard with real-time data updates.' Maxim nodded approvingly: 'Excellent! We have similar tasks.' Alex wanted to know more: 'What challenges did you face in past projects?' Igor answered honestly: 'Performance was a big problem. I learned to optimize rendering and use memoization.' 'These are important skills for our project,' Dmitry noted. The team was happy about the new colleague with such experience and enthusiasm.",
+
+  "vocabulary": [
+    {
+      "russian": "присоедини́лся (присоедини́ться)",
+      "english": "joined",
+      "context": "Past perfective reflexive. 'Присоединиться к команде' = to join the team."
+    },
+    {
+      "russian": "зову́т (зва́ть)",
+      "english": "call / name",
+      "context": "Present tense, 3rd person plural. 'Меня зовут...' = My name is... (literally: they call me)"
+    },
+    {
+      "russian": "предста́вился (предста́виться)",
+      "english": "introduced himself",
+      "context": "Past perfective reflexive. Used for self-introduction."
+    },
+    {
+      "russian": "о́пыт",
+      "english": "experience",
+      "context": "Masculine noun. 'С пятилетним опытом' = with five years of experience."
+    },
+    {
+      "russian": "расскажи́ (рассказа́ть)",
+      "english": "tell (imperative)",
+      "context": "Imperative perfective. 'Расскажи о себе' = tell about yourself."
+    },
+    {
+      "russian": "изучи́л (изучи́ть)",
+      "english": "learned / studied",
+      "context": "Past perfective. Implies thorough learning of something."
+    },
+    {
+      "russian": "сталкива́лся (сталкива́ться)",
+      "english": "faced / encountered",
+      "context": "Past imperfective reflexive. 'Сталкиваться с проблемой' = to face a problem."
+    },
+    {
+      "russian": "научи́лся (научи́ться)",
+      "english": "learned / mastered",
+      "context": "Past perfective reflexive. Emphasizes acquiring a skill."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the introduction vocabulary:",
+      "pairs": [
+        { "russian": "новый коллега", "english": "new colleague" },
+        { "russian": "опыт", "english": "experience" },
+        { "russian": "представился", "english": "introduced himself" },
+        { "russian": "команда", "english": "team" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for introducing yourself and meeting new team members."
+    },
+    {
+      "type": "context-selection",
+      "question": "What was Igor's specialty?",
+      "options": [
+        "Frontend разработка и интерактивные интерфейсы",
+        "Backend разработка и базы данных",
+        "DevOps и deployment",
+        "Мобильная разработка"
+      ],
+      "correctAnswer": "Frontend разработка и интерактивные интерфейсы",
+      "explanation": "Igor is a frontend developer who likes creating interactive interfaces."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Меня _______ Игорь. Я frontend разработчик с пятилетним _______.",
+      "wordBank": ["зовут", "опытом", "называют", "знанием"],
+      "correctAnswer": "зовут, опытом",
+      "explanation": "'Меня зовут' (my name is) and 'с опытом' (with experience) are standard phrases."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the past form: Я _______ (изучить) React, TypeScript и GraphQL.",
+      "wordBank": ["изучил", "изучаю", "изучал", "буду изучать"],
+      "correctAnswer": "изучил",
+      "explanation": "Past perfective of 'изучить' (to learn/study) is 'изучил' (learned)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Russian Workplace Introductions",
+    "content": "In Russian tech companies, new team members typically introduce themselves with 'Меня зовут...' and share their experience. It's common to use informal 'ты' (you) rather than formal 'вы' in tech teams, even from the first day. Russians often ask about previous projects and challenges to understand a colleague's expertise."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)", "Игорь (Igor)"],
+  "storyArc": "A new frontend developer named Igor joins the team and introduces himself, sharing his experience with React and building interactive dashboards.",
+  "wordCount": 172,
+  "estimatedMinutes": 20
+}

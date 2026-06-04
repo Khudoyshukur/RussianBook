@@ -1,0 +1,104 @@
+{
+  "day": 38,
+  "phase": 2,
+  "title": "Improving Team Processes",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Через неделю после инцидента команда <strong>встретилась</strong>, <strong>чтобы</strong> обсудить <strong>улучшения</strong> <strong>процессов</strong>. «Мы <strong>извлекли</strong> важные уроки из постмортема», — начал Дмитрий. «Теперь давайте <strong>внедрим</strong> изменения». Елена <strong>предложила</strong> создать deployment <strong>checklist</strong>. «Перед каждым деплоем мы <strong>будем</strong> проверять: тесты прошли, конфигурация проверена, команда уведомлена», — перечислила она. «Также нужно проверить, что есть plan отката», — добавил Максим. Аня показала новый инструмент <strong>автоматизации</strong>: «Я написала скрипт, который <strong>проверит</strong> все environment переменные <strong>перед</strong> деплоем». «<strong>Если</strong> какой-то переменной не хватает, деплой не <strong>запустится</strong>», — объяснила она с гордостью. «Отлично!» — похвалил Дмитрий. Алекс <strong>предложил</strong> улучшить <strong>code review</strong> процесс: «Может, добавим пункт о проверке конфигурации в <strong>code review политику</strong>?» «Хорошая идея», — согласилась Елена. «Также <strong>предлагаю</strong> делать более тщательный staging тест перед production деплоем». Дмитрий записывал все предложения. «Мы <strong>создадим</strong> рабочую группу по <strong>улучшению</strong> DevOps процессов», — объявил он. «Каждый месяц <strong>будем</strong> пересматривать и обновлять наши практики». Максим <strong>поднял</strong> вопрос об обучении: «Нужно провести тренинг для всей команды по incident response». Команда <strong>согласилась</strong>. Алекс чувствовал, что компания становится более зрелой. «Мы не просто чиним баги, мы <strong>улучшаем</strong> систему», — подумал он с удовлетворением. Через месяц новые процессы <strong>помогут</strong> команде работать увереннее и безопаснее.",
+
+  "textEnglish": "A week after the incident, the team met to discuss process improvements. 'We learned important lessons from the postmortem,' Dmitry began. 'Now let's implement changes.' Elena suggested creating a deployment checklist. 'Before each deployment we will check: tests passed, configuration verified, team notified,' she listed. 'We also need to check that there's a rollback plan,' Maxim added. Anya showed a new automation tool: 'I wrote a script that will check all environment variables before deployment.' 'If any variable is missing, the deployment won't start,' she explained proudly. 'Excellent!' Dmitry praised. Alex suggested improving the code review process: 'Maybe we should add a point about configuration checking to the code review policy?' 'Good idea,' Elena agreed. 'I also suggest doing more thorough staging testing before production deployment.' Dmitry wrote down all suggestions. 'We'll create a working group for improving DevOps processes,' he announced. 'Each month we'll review and update our practices.' Maxim raised the question of training: 'We need to conduct training for the whole team on incident response.' The team agreed. Alex felt that the company was becoming more mature. 'We don't just fix bugs, we improve the system,' he thought with satisfaction. In a month, the new processes will help the team work more confidently and safely.",
+
+  "vocabulary": [
+    {
+      "russian": "процессы",
+      "english": "processes",
+      "context": "Plural noun. 'Рабочие процессы' = work processes, workflows."
+    },
+    {
+      "russian": "улучшения",
+      "english": "improvements",
+      "context": "Plural noun from 'улучшить' (to improve). 'Внедрить улучшения' = to implement improvements."
+    },
+    {
+      "russian": "автоматизация",
+      "english": "automation",
+      "context": "Noun. The use of technology to reduce manual work. 'Автоматизировать процесс' = to automate."
+    },
+    {
+      "russian": "checklist / чеклист",
+      "english": "checklist",
+      "context": "Borrowed from English. A list of items to verify. Also written as 'чек-лист'."
+    },
+    {
+      "russian": "code review политика",
+      "english": "code review policy",
+      "context": "Mixed English-Russian term. Guidelines for reviewing code before merging."
+    },
+    {
+      "russian": "внедрим (внедрить)",
+      "english": "we will implement",
+      "context": "Future perfective of 'внедрить' (to implement/introduce). 'Внедрить изменения' = implement changes."
+    },
+    {
+      "russian": "запустится (запуститься)",
+      "english": "will start / will launch",
+      "context": "Future perfective reflexive. 'Не запустится' = won't start/launch."
+    },
+    {
+      "russian": "извлекли (извлечь)",
+      "english": "extracted / learned",
+      "context": "Past perfective. 'Извлечь уроки' = to learn lessons, to extract lessons."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the process improvement vocabulary:",
+      "pairs": [
+        { "russian": "процессы", "english": "processes" },
+        { "russian": "улучшения", "english": "improvements" },
+        { "russian": "автоматизация", "english": "automation" },
+        { "russian": "checklist", "english": "checklist" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential terms for improving team workflows and implementing better practices."
+    },
+    {
+      "type": "context-selection",
+      "question": "What will happen if an environment variable is missing?",
+      "options": [
+        "Деплой не запустится",
+        "Скрипт исправит переменную",
+        "Команда получит warning",
+        "Ничего не произойдёт"
+      ],
+      "correctAnswer": "Деплой не запустится",
+      "explanation": "Anya's script prevents deployment from starting if any variable is missing."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Команда встретилась, _______ обсудить улучшения процессов.",
+      "wordBank": ["чтобы", "потому что", "когда", "если"],
+      "correctAnswer": "чтобы",
+      "explanation": "'Чтобы' (in order to) expresses the purpose of the meeting."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the future form: Мы _______ (внедрить) эти изменения на следующей неделе.",
+      "wordBank": ["внедрим", "внедрили", "внедряем", "внедрять"],
+      "correctAnswer": "внедрим",
+      "explanation": "Future perfective of 'внедрить' (to implement) is 'внедрим' (we will implement)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "DevOps Culture in Russian Tech",
+    "content": "Russian tech companies are rapidly adopting DevOps culture and terminology. 'Чеклист' (checklist), 'code review', and 'CI/CD' are commonly used. The phrase 'культура непрерывного улучшения' (culture of continuous improvement) is gaining popularity. Many Russian companies are moving from traditional 'водопад' (waterfall) to agile and DevOps practices."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team implements concrete improvements based on lessons learned, making their development process more robust and reliable.",
+  "wordCount": 177,
+  "estimatedMinutes": 20
+}

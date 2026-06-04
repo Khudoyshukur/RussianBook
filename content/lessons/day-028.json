@@ -1,0 +1,104 @@
+{
+  "day": 28,
+  "phase": 2,
+  "title": "Technical Debt Discussion",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "На встрече команда <strong>обсуждала</strong> <strong>технический долг</strong>. Дмитрий открыл список проблем в коде. «У нас <strong>накопилось</strong> много старого кода», — сказал он обеспокоенно. «Его <strong>трудно</strong> поддерживать». Максим <strong>жаловался</strong>, что deployment скрипты написаны три года назад. «Они <strong>работали</strong> раньше, <strong>но</strong> теперь постоянно ломаются», — объяснил он устало. «Я <strong>хочу</strong> переписать их на Docker Compose». Елена добавила, что автоматические тесты очень медленные. «Они <strong>выполняются</strong> сорок минут! Это <strong>слишком</strong> долго», — сказала она с разочарованием. Аня спросила: «<strong>Когда</strong> мы <strong>найдём</strong> время на рефакторинг? У нас столько новых фич». Дмитрий <strong>предложил</strong> разумное решение: «Давайте <strong>выделим</strong> двадцать процентов времени каждого спринта на технический долг». «Это <strong>поможет</strong> нам избежать больших проблем в будущем», — добавил он убедительно. Команда <strong>согласилась</strong>. Алекс <strong>понял</strong>, что рефакторинг <strong>важен</strong> так же, как новые фичи. «Я <strong>возьму</strong> задачу оптимизации тестов», — <strong>сказал</strong> он с энтузиазмом. Максим обрадовался: «А я начну миграцию на Docker». Все чувствовали, что приняли правильное решение для здоровья проекта.",
+
+  "textEnglish": "At the meeting, the team discussed technical debt. Dmitry opened the list of code problems. 'We have accumulated a lot of old code,' he said worriedly. 'It's difficult to maintain.' Maxim complained that deployment scripts were written three years ago. 'They worked before, but now they constantly break,' he explained tiredly. 'I want to rewrite them in Docker Compose.' Elena added that automated tests are very slow. 'They run for forty minutes! That's too long,' she said with disappointment. Anya asked: 'When will we find time for refactoring? We have so many new features.' Dmitry suggested a reasonable solution: 'Let's allocate twenty percent of each sprint's time to technical debt.' 'This will help us avoid big problems in the future,' he added convincingly. The team agreed. Alex understood that refactoring is as important as new features. 'I'll take the test optimization task,' he said with enthusiasm. Maxim was happy: 'And I'll start the migration to Docker.' Everyone felt that they made the right decision for the project's health.",
+
+  "vocabulary": [
+    {
+      "russian": "обсужда́ла (обсужда́ть)",
+      "english": "discussed / was discussing",
+      "context": "Past imperfective. 'Обсуждать проблему' = to discuss a problem."
+    },
+    {
+      "russian": "техни́ческий долг",
+      "english": "technical debt",
+      "context": "Direct translation from English. Code problems that accumulate over time."
+    },
+    {
+      "russian": "накопи́лось (накопи́ться)",
+      "english": "accumulated / piled up",
+      "context": "Past perfective reflexive. 'Накопиться' = to accumulate."
+    },
+    {
+      "russian": "тру́дно",
+      "english": "difficult / hard",
+      "context": "Adverb. 'Трудно поддерживать' = difficult to maintain."
+    },
+    {
+      "russian": "жа́ловался (жа́ловаться)",
+      "english": "complained / was complaining",
+      "context": "Past imperfective reflexive. Shows repeated or ongoing complaining."
+    },
+    {
+      "russian": "вы́полняются (выполня́ться)",
+      "english": "execute / run / are performed",
+      "context": "Present tense, 3rd person plural reflexive. 'Тесты выполняются' = tests run."
+    },
+    {
+      "russian": "вы́делим (вы́делить)",
+      "english": "let's allocate / we will allocate",
+      "context": "Future perfective, 1st person plural. Used for suggestions."
+    },
+    {
+      "russian": "возьму́ (взять)",
+      "english": "I will take",
+      "context": "Future perfective, 1st person singular. 'Взять задачу' = to take a task."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the technical debt vocabulary:",
+      "pairs": [
+        { "russian": "технический долг", "english": "technical debt" },
+        { "russian": "накопилось", "english": "accumulated" },
+        { "russian": "рефакторинг", "english": "refactoring" },
+        { "russian": "поддерживать", "english": "to maintain" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for discussing code quality and technical debt."
+    },
+    {
+      "type": "context-selection",
+      "question": "What solution did Dmitry propose?",
+      "options": [
+        "Выделить 20% времени каждого спринта на технический долг",
+        "Прекратить делать новые фичи",
+        "Переписать весь код",
+        "Нанять больше разработчиков"
+      ],
+      "correctAnswer": "Выделить 20% времени каждого спринта на технический долг",
+      "explanation": "Dmitry suggested allocating 20% of each sprint to technical debt."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Deployment скрипты _______ раньше, _______ теперь ломаются.",
+      "wordBank": ["работали", "но", "и", "работают"],
+      "correctAnswer": "работали, но",
+      "explanation": "'Работали' (worked - past) contrasts with present using 'но' (but)."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the future form: Я _______ (взять) задачу оптимизации.",
+      "wordBank": ["возьму", "взял", "беру", "брать"],
+      "correctAnswer": "возьму",
+      "explanation": "Future perfective of 'взять' (to take) is 'возьму' (I will take)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Technical Debt in Russian Dev Culture",
+    "content": "Russian developers often use 'технический долг' (technical debt) and 'легаси код' (legacy code). There's a common saying: 'Работает — не трогай' (It works - don't touch it), which explains why old code often accumulates without refactoring."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team discusses accumulated technical debt and decides to allocate time for refactoring.",
+  "wordCount": 178,
+  "estimatedMinutes": 20
+}

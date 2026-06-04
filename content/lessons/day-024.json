@@ -1,0 +1,104 @@
+{
+  "day": 24,
+  "phase": 2,
+  "title": "Sprint Planning",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Сегодня команда <strong>планировала</strong> новый двухнедельный <strong>спринт</strong>. Все собрались в конференц-зале. Аня открыла Jira и показала <strong>беклог</strong> задач на большом экране. «Нам <strong>нужно</strong> сделать три важные фичи в этом спринте», — объяснила она серьёзно. «Это приоритет от клиента». Дмитрий внимательно изучил задачи и спросил: «Сколько времени это <strong>займёт</strong>? У нас только десять рабочих дней». Алекс <strong>подумал</strong> несколько секунд и сказал: «Я <strong>смогу</strong> закончить компонент авторизации за три дня, может быть четыре». «Мне ещё <strong>нужно</strong> изучить OAuth библиотеку», — добавил он. Елена <strong>должна</strong> протестировать каждую фичу перед релизом. «Но я <strong>не смогу</strong> тестировать всё одновременно», — предупредила она. «Давайте делать по очереди». Максим сказал, что <strong>хочет</strong> улучшить наш CI/CD <strong>pipeline</strong> между задачами. «Это <strong>поможет</strong> нам деплоить быстрее и безопаснее», — объяснил он с энтузиазмом. После долгого обсуждения команда <strong>договорилась</strong>: сначала делаем авторизацию, потом новый дашборд для аналитики, а в конце — оптимизацию производительности. Аня быстро создала все <strong>тикеты</strong> в Jira и назначила их на команду. «Отличный план! Теперь все понимают задачи?» — спросил Дмитрий. Все кивнули головами. Команда была готова начать работу с понедельника.",
+
+  "textEnglish": "Today the team planned a new two-week sprint. Everyone gathered in the conference room. Anya opened Jira and showed the task backlog on a large screen. 'We need to do three important features in this sprint,' she explained seriously. 'This is a priority from the client.' Dmitry carefully studied the tasks and asked: 'How much time will this take? We only have ten working days.' Alex thought for a few seconds and said: 'I will be able to finish the authorization component in three days, maybe four.' 'I still need to study the OAuth library,' he added. Elena must test each feature before release. 'But I won't be able to test everything simultaneously,' she warned. 'Let's do them one by one.' Maxim said that he wants to improve our CI/CD pipeline between tasks. 'This will help us deploy faster and more safely,' he explained enthusiastically. After a long discussion, the team agreed: first we do authorization, then a new dashboard for analytics, and at the end - performance optimization. Anya quickly created all the tickets in Jira and assigned them to the team. 'Excellent plan! Now does everyone understand the tasks?' asked Dmitry. Everyone nodded their heads. The team was ready to start working on Monday.",
+
+  "vocabulary": [
+    {
+      "russian": "спринт",
+      "english": "sprint (agile sprint)",
+      "context": "Borrowed from English. Time-boxed iteration in agile development."
+    },
+    {
+      "russian": "бе́клог",
+      "english": "backlog (product backlog)",
+      "context": "Direct borrowing. 'Беклог задач' = task backlog."
+    },
+    {
+      "russian": "ну́жно",
+      "english": "it is necessary / we need to",
+      "context": "Impersonal modal. 'Нам нужно сделать' = we need to do."
+    },
+    {
+      "russian": "займёт (заня́ть)",
+      "english": "will take (to take time)",
+      "context": "Future perfective. 'Сколько времени займёт?' = How much time will it take?"
+    },
+    {
+      "russian": "смогу́ (мочь)",
+      "english": "will be able to / can (future)",
+      "context": "Future of 'мочь'. 'Я смогу' = I will be able to."
+    },
+    {
+      "russian": "до́лжна (до́лжен)",
+      "english": "must / should (feminine form)",
+      "context": "Modal obligation. 'Должна/должен/должны' changes by gender/number."
+    },
+    {
+      "russian": "догово́рились (договори́ться)",
+      "english": "agreed / reached agreement",
+      "context": "Past perfective reflexive. Shows mutual agreement was reached."
+    },
+    {
+      "russian": "тике́ты",
+      "english": "tickets (Jira/project tickets)",
+      "context": "Plural of 'тикет'. Borrowed from English 'ticket'."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the modal verbs with their meanings:",
+      "pairs": [
+        { "russian": "нужно", "english": "it is necessary" },
+        { "russian": "смогу", "english": "will be able to" },
+        { "russian": "должна", "english": "must" },
+        { "russian": "хочет", "english": "wants" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "These are key modal verbs for expressing necessity, ability, obligation, and desire."
+    },
+    {
+      "type": "context-selection",
+      "question": "What did the team agree to do first?",
+      "options": [
+        "Авторизацию",
+        "Новый дашборд",
+        "Оптимизацию",
+        "Тестирование"
+      ],
+      "correctAnswer": "Авторизацию",
+      "explanation": "The team agreed: first authorization (авторизация), then dashboard, then optimization."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Нам _______ сделать три фичи. Я _______ закончить за три дня.",
+      "wordBank": ["нужно", "смогу", "хочу", "должен"],
+      "correctAnswer": "нужно, смогу",
+      "explanation": "'Нужно' (necessary) for what needs to be done, 'смогу' (will be able) for future ability."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Choose the correct form: Елена _______ протестировать каждую фичу.",
+      "wordBank": ["должна", "должен", "должны", "должно"],
+      "correctAnswer": "должна",
+      "explanation": "Елена is feminine, so we use 'должна' (not должен for masculine or должны for plural)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Agile in Russia",
+    "content": "Russian tech companies widely adopted agile methodologies, often mixing English terms (sprint, backlog, standup) with Russian. However, planning meetings tend to be more direct and less ceremonial than in Western companies. The phrase 'договорились' (we agreed) is commonly used to conclude decisions."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team plans a new sprint, introducing modal verbs through task assignments and time estimates.",
+  "wordCount": 178,
+  "estimatedMinutes": 20
+}

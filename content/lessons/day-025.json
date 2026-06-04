@@ -1,0 +1,109 @@
+{
+  "day": 25,
+  "phase": 2,
+  "title": "Slack Miscommunication",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Утром Алекс пил кофе и открыл <strong>Slack</strong> на своём ноутбуке. Внезапно он <strong>получил</strong> срочное сообщение от Максима. Максим написал с восклицательным знаком: «Алекс, ты уже <strong>обновил</strong> базу данных? Клиенты жалуются!» Алекс <strong>не понял</strong> вопрос и растерялся. Какую именно базу данных? О чём говорит Максим? Он быстро <strong>ответил</strong>: «Максим, я совсем не знал, что <strong>нужно было</strong> обновить какую-то базу данных. Никто мне не говорил об этом». Максим <strong>удивился</strong> и даже немного расстроился: «Как?! Но Аня чётко <strong>написала</strong> об этом вчера вечером в канале #backend!» Алекс срочно <strong>проверил</strong> рабочий канал #backend и начал scrollить историю сообщений. Действительно, там было важное сообщение от Ани о миграции базы данных. Но он полностью <strong>пропустил</strong> его вчера, <strong>потому что</strong> в Slack было слишком много уведомлений от разных каналов. Его отвлекали мемы из канала #random. «Извини, Максим! Я действительно <strong>не видел</strong> это сообщение среди всех нотификаций», — написал Алекс виновато. Максим успокоился и терпеливо <strong>объяснил</strong>, что сейчас срочно <strong>нужно</strong> запустить миграцию базы данных для production. Алекс немедленно и быстро <strong>сделал</strong> это через терминал. Через несколько минут миграция завершилась. «Проверил — теперь всё работает нормально! Клиенты могут работать», — <strong>подтвердил</strong> Максим с облегчением. Алекс <strong>понял</strong> важный урок: <strong>важно</strong> всегда внимательно читать все сообщения в критических рабочих каналах. Он сразу включил специальные push-уведомления и звуковые алерты только для канала #backend, чтобы больше никогда не пропустить важную информацию.",
+
+  "textEnglish": "In the morning Alex was drinking coffee and opened Slack on his laptop. Suddenly he received an urgent message from Maxim. Maxim wrote with an exclamation mark: 'Alex, have you already updated the database? Clients are complaining!' Alex didn't understand the question and got confused. Which exact database? What is Maxim talking about? He quickly replied: 'Maxim, I had absolutely no idea that it was necessary to update some database. Nobody told me about this.' Maxim was surprised and even a bit upset: 'What?! But Anya clearly wrote about this yesterday evening in the #backend channel!' Alex urgently checked the work channel #backend and started scrolling through the message history. Indeed, there was an important message from Anya about database migration. But he completely missed it yesterday because there were too many notifications in Slack from different channels. He was distracted by memes from the #random channel. 'Sorry, Maxim! I really didn't see this message among all the notifications,' Alex wrote guiltily. Maxim calmed down and patiently explained that now it's urgently necessary to run a database migration for production. Alex immediately and quickly did this through the terminal. In a few minutes the migration completed. 'Checked - now everything works normally! Clients can work,' confirmed Maxim with relief. Alex understood an important lesson: it's important to always carefully read all messages in critical work channels. He immediately turned on special push notifications and sound alerts only for the #backend channel, so that he would never again miss important information.",
+
+  "vocabulary": [
+    {
+      "russian": "получи́л (получи́ть)",
+      "english": "received / got",
+      "context": "Past perfective. 'Получить сообщение' = to receive a message."
+    },
+    {
+      "russian": "обнови́л (обнови́ть)",
+      "english": "updated",
+      "context": "Past perfective. 'Обновить базу данных' = to update the database."
+    },
+    {
+      "russian": "не по́нял (поня́ть)",
+      "english": "didn't understand",
+      "context": "Past perfective with negation. 'Понять' = to understand/grasp."
+    },
+    {
+      "russian": "ну́жно бы́ло",
+      "english": "it was necessary / needed to",
+      "context": "Past form of impersonal 'нужно'. Shows past necessity."
+    },
+    {
+      "russian": "пропусти́л (пропусти́ть)",
+      "english": "missed / skipped",
+      "context": "Past perfective. 'Пропустить сообщение' = to miss a message."
+    },
+    {
+      "russian": "потому́ что",
+      "english": "because",
+      "context": "Conjunction for expressing reason/cause. Essential for complex sentences."
+    },
+    {
+      "russian": "подтверди́л (подтверди́ть)",
+      "english": "confirmed",
+      "context": "Past perfective. 'Подтвердить' = to confirm/verify."
+    },
+    {
+      "russian": "ва́жно",
+      "english": "it's important",
+      "context": "Impersonal expression. 'Важно читать' = it's important to read."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the past tense verbs:",
+      "pairs": [
+        { "russian": "получил", "english": "received" },
+        { "russian": "обновил", "english": "updated" },
+        { "russian": "пропустил", "english": "missed" },
+        { "russian": "подтвердил", "english": "confirmed" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All are past perfective forms showing completed actions."
+    },
+    {
+      "type": "context-selection",
+      "question": "Why did Alex miss Anya's message?",
+      "options": [
+        "Потому что было слишком много уведомлений",
+        "Потому что он не работал вчера",
+        "Потому что Slack не работал",
+        "Потому что он был в отпуске"
+      ],
+      "correctAnswer": "Потому что было слишком много уведомлений",
+      "explanation": "Alex missed it because there were too many notifications (слишком много уведомлений)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete with conjunction: Он пропустил сообщение, _______ было слишком много уведомлений.",
+      "wordBank": ["потому что", "когда", "если", "но"],
+      "correctAnswer": "потому что",
+      "explanation": "'Потому что' (because) is used to explain the reason why he missed the message."
+    },
+    {
+      "type": "code-debugging",
+      "question": "Fix the sentence: 'Я не знал, что нужно обновить база данных.'",
+      "options": [
+        "Change 'база данных' to 'базу данных'",
+        "Change 'нужно' to 'нужен'",
+        "Change 'обновить' to 'обновил'",
+        "No error"
+      ],
+      "correctAnswer": "Change 'база данных' to 'базу данных'",
+      "explanation": "After 'обновить' we need accusative case: 'базу данных' (not nominative 'база данных')."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Russian Slack Culture",
+    "content": "Russian dev teams heavily use Slack with a mix of Russian and English. Channel names often stay in English (#backend, #frontend) while messages mix both languages. The phrase 'потому что было слишком много' (because there were too many) is a common excuse for missing messages!"
+  },
+
+  "characters": ["Алекс (Alex)", "Максим (Maxim)", "Аня (Anya)"],
+  "storyArc": "Alex misses an important Slack message, learning about past tense and the conjunction 'потому что'.",
+  "wordCount": 180,
+  "estimatedMinutes": 20
+}

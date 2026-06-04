@@ -1,0 +1,104 @@
+{
+  "day": 37,
+  "phase": 2,
+  "title": "Writing Postmortem",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "В среду команда <strong>писала</strong> <strong>постмортем</strong> о пятничном <strong>инциденте</strong>. «Постмортем нужен, <strong>чтобы</strong> <strong>документировать</strong> что произошло и как мы это решили», — объяснил Дмитрий. Он открыл шаблон документа. Елена <strong>начала</strong> с описания инцидента: «В пятницу в 18:30 пользователи не <strong>могли</strong> войти в систему». «<strong>Инцидент</strong> длился тридцать минут», — добавила она. Алекс записывал таймлайн событий: «18:30 — первые жалобы пользователей. 18:35 — команда начала расследование. 18:45 — нашли проблему. 19:00 — откатили деплой». Максим описал <strong>причину</strong>: «Отсутствовала environment переменная в production конфигурации». «Это <strong>произошло</strong>, <strong>потому что</strong> мы не проверили конфигурацию перед деплоем», — написал он честно. Аня добавила раздел «<strong>Выводы</strong>»: «Нужна автоматическая проверка env переменных. Нужен лучший мониторинг. Нужен чеклист перед деплоем». Дмитрий <strong>подчеркнул</strong> важный момент: «Постмортем должен быть без обвинений. Мы анализируем процессы, не людей». Елена <strong>согласилась</strong>: «Да, цель — <strong>предотвратить</strong> похожие проблемы в будущем, не найти виноватого». Алекс <strong>создал</strong> action items: настроить валидацию конфигурации, добавить алерты, обновить deployment checklist. «Каждый action item должен иметь ответственного и deadline», — напомнил Дмитрий. Команда <strong>опубликовала</strong> постмортем в wiki. «Теперь все в компании могут <strong>учиться</strong> на нашем опыте», — сказала Аня удовлетворённо.",
+
+  "textEnglish": "On Wednesday, the team was writing a postmortem about Friday's incident. 'A postmortem is needed to document what happened and how we solved it,' Dmitry explained. He opened the document template. Elena started with the incident description: 'On Friday at 18:30, users couldn't log into the system.' 'The incident lasted thirty minutes,' she added. Alex recorded the timeline of events: '18:30 - first user complaints. 18:35 - team started investigation. 18:45 - found the problem. 19:00 - rolled back the deployment.' Maxim described the cause: 'The environment variable was missing in production configuration.' 'This happened because we didn't check the configuration before deployment,' he wrote honestly. Anya added the 'Lessons Learned' section: 'Need automatic env variable checking. Need better monitoring. Need a checklist before deployment.' Dmitry emphasized an important point: 'The postmortem should be blameless. We analyze processes, not people.' Elena agreed: 'Yes, the goal is to prevent similar problems in the future, not to find someone to blame.' Alex created action items: set up configuration validation, add alerts, update deployment checklist. 'Each action item should have an owner and deadline,' Dmitry reminded. The team published the postmortem in the wiki. 'Now everyone in the company can learn from our experience,' Anya said with satisfaction.",
+
+  "vocabulary": [
+    {
+      "russian": "постмортем",
+      "english": "postmortem",
+      "context": "From English 'postmortem'. A document analyzing an incident after it's resolved."
+    },
+    {
+      "russian": "инцидент",
+      "english": "incident",
+      "context": "Noun. A production issue or outage. 'Инцидент произошёл' = the incident occurred."
+    },
+    {
+      "russian": "выводы",
+      "english": "conclusions / lessons learned",
+      "context": "Plural noun. 'Сделать выводы' = to draw conclusions. Key learnings from an incident."
+    },
+    {
+      "russian": "документировать",
+      "english": "to document",
+      "context": "Imperfective verb from 'документ'. To record information formally."
+    },
+    {
+      "russian": "предотвратить",
+      "english": "to prevent",
+      "context": "Perfective verb. 'Предотвратить проблему' = to prevent a problem from happening."
+    },
+    {
+      "russian": "произошло (произойти)",
+      "english": "occurred / happened",
+      "context": "Past neuter of 'произойти' (to occur/happen). Used with 'что' (what) or events."
+    },
+    {
+      "russian": "подчеркнул (подчеркнуть)",
+      "english": "emphasized / underlined",
+      "context": "Past perfective of 'подчеркнуть'. To emphasize or stress an important point."
+    },
+    {
+      "russian": "учиться",
+      "english": "to learn",
+      "context": "Imperfective reflexive verb. 'Учиться на опыте' = to learn from experience."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the postmortem vocabulary:",
+      "pairs": [
+        { "russian": "постмортем", "english": "postmortem" },
+        { "russian": "инцидент", "english": "incident" },
+        { "russian": "выводы", "english": "lessons learned" },
+        { "russian": "документировать", "english": "to document" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for writing incident postmortems and documenting learnings."
+    },
+    {
+      "type": "context-selection",
+      "question": "What did Dmitry say about the postmortem approach?",
+      "options": [
+        "Постмортем должен быть без обвинений",
+        "Нужно найти виноватого",
+        "Постмортем не важен",
+        "Нужно наказать разработчика"
+      ],
+      "correctAnswer": "Постмортем должен быть без обвинений",
+      "explanation": "Dmitry emphasized that the postmortem should be blameless, focusing on processes not people."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Постмортем нужен, _______ документировать что произошло.",
+      "wordBank": ["чтобы", "потому что", "если", "когда"],
+      "correctAnswer": "чтобы",
+      "explanation": "'Чтобы' (in order to) expresses purpose - why the postmortem is needed."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the past form: Инцидент _______ (произойти) в пятницу вечером.",
+      "wordBank": ["произошёл", "произошла", "происходит", "произойдёт"],
+      "correctAnswer": "произошёл",
+      "explanation": "Past masculine of 'произойти' (to occur) is 'произошёл' for masculine noun 'инцидент'."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Postmortem Culture in Russian Tech",
+    "content": "Russian tech companies are increasingly adopting 'постмортем' culture from Western practices. The concept of 'культура без обвинений' (blameless culture) is still relatively new in Russia, where traditionally finding 'виноватого' (the guilty party) was common. Modern Russian tech companies like Yandex and VK promote psychological safety and learning from failures."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team writes a blameless postmortem document to capture learnings from the production incident.",
+  "wordCount": 179,
+  "estimatedMinutes": 20
+}

@@ -1,0 +1,104 @@
+{
+  "day": 42,
+  "phase": 2,
+  "title": "Choosing New Technology",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "На планировании команда <strong>обсуждала</strong> выбор новой технологии для state management. «Наш текущий подход с Redux <strong>стал</strong> слишком сложным», — начал Дмитрий. «Я <strong>предлагаю</strong> рассмотреть альтернативы». Елена выступила первой: «Я <strong>думаю</strong>, что нам <strong>нужно</strong> попробовать Zustand. Он намного проще, чем Redux». Она показала примеры кода: «Посмотрите, как мало boilerplate кода!» Максим не согласился: «Но Redux имеет <strong>преимущества</strong>! У него отличные DevTools и огромное сообщество». «Это правда», — <strong>признала</strong> Елена. «Но давайте <strong>сравним</strong> производительность и удобство разработки». Игорь поделился своим мнением: «В моей прошлой компании мы <strong>использовали</strong> Jotai. Он хорошо <strong>работает</strong> с React Concurrent Mode». Аня добавила: «А я <strong>слышала</strong> много хорошего о Recoil от Facebook». Алекс попытался найти компромисс: «Каждая библиотека имеет свои <strong>недостатки</strong>. Может быть, нам <strong>стоит</strong> построить proof of concept с несколькими вариантами?» Дмитрий кивнул: «Хорошая идея! Давайте <strong>разделим</strong> задачи. Елена <strong>попробует</strong> Zustand, Игорь — Jotai, а Максим <strong>улучшит</strong> наш текущий Redux». «Через неделю мы <strong>сравним</strong> результаты и <strong>примем</strong> решение», — заключил он. Команда была рада такому демократичному подходу к выбору технологий.",
+
+  "textEnglish": "At planning, the team discussed choosing a new technology for state management. 'Our current approach with Redux has become too complex,' Dmitry began. 'I suggest we consider alternatives.' Elena spoke first: 'I think we need to try Zustand. It's much simpler than Redux.' She showed code examples: 'Look at how little boilerplate code!' Maxim disagreed: 'But Redux has advantages! It has excellent DevTools and a huge community.' 'That's true,' Elena admitted. 'But let's compare performance and development convenience.' Igor shared his opinion: 'In my previous company we used Jotai. It works well with React Concurrent Mode.' Anya added: 'And I heard a lot of good things about Recoil from Facebook.' Alex tried to find a compromise: 'Each library has its disadvantages. Maybe we should build a proof of concept with several options?' Dmitry nodded: 'Good idea! Let's divide the tasks. Elena will try Zustand, Igor - Jotai, and Maxim will improve our current Redux.' 'In a week we'll compare results and make a decision,' he concluded. The team was happy with such a democratic approach to choosing technologies.",
+
+  "vocabulary": [
+    {
+      "russian": "предлага́ю (предлага́ть)",
+      "english": "I suggest / propose",
+      "context": "Present tense, 1st person singular. 'Предлагать решение' = to propose a solution."
+    },
+    {
+      "russian": "преиму́щества",
+      "english": "advantages / benefits",
+      "context": "Plural noun. 'Иметь преимущества' = to have advantages."
+    },
+    {
+      "russian": "сравни́м (сравни́ть)",
+      "english": "let's compare / we will compare",
+      "context": "Future perfective, 1st person plural. Used for suggestions or future plans."
+    },
+    {
+      "russian": "призна́ла (призна́ть)",
+      "english": "admitted / acknowledged",
+      "context": "Past perfective feminine. Acknowledging someone's point."
+    },
+    {
+      "russian": "недоста́тки",
+      "english": "disadvantages / drawbacks",
+      "context": "Plural noun. Opposite of 'преимущества' (advantages)."
+    },
+    {
+      "russian": "сто́ит (сто́ить)",
+      "english": "is worth / should",
+      "context": "Present tense, 3rd person singular. 'Нам стоит' = we should / it's worth for us."
+    },
+    {
+      "russian": "попро́бует (попро́бовать)",
+      "english": "will try",
+      "context": "Future perfective, 3rd person singular. Trying something as an experiment."
+    },
+    {
+      "russian": "при́мем (приня́ть)",
+      "english": "we will make / accept",
+      "context": "Future perfective, 1st person plural. 'Принять решение' = to make a decision."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the debate vocabulary:",
+      "pairs": [
+        { "russian": "преимущества", "english": "advantages" },
+        { "russian": "недостатки", "english": "disadvantages" },
+        { "russian": "сравнить", "english": "to compare" },
+        { "russian": "библиотека", "english": "library" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Key terms for discussing and comparing technology choices."
+    },
+    {
+      "type": "context-selection",
+      "question": "What solution did Dmitry propose?",
+      "options": [
+        "Построить proof of concept с несколькими вариантами",
+        "Сразу перейти на Zustand",
+        "Остаться на Redux",
+        "Нанять консультанта"
+      ],
+      "correctAnswer": "Построить proof of concept с несколькими вариантами",
+      "explanation": "Dmitry suggested building proof of concepts with several options and comparing results."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Каждая библиотека имеет свои _______. Redux имеет _______ — отличные DevTools.",
+      "wordBank": ["недостатки", "преимущества", "проблемы", "возможности"],
+      "correctAnswer": "недостатки, преимущества",
+      "explanation": "'Недостатки' (disadvantages) and 'преимущества' (advantages) are opposite terms."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the future form: Через неделю мы _______ (сравнить) результаты.",
+      "wordBank": ["сравним", "сравниваем", "сравнивали", "сравнить"],
+      "correctAnswer": "сравним",
+      "explanation": "Future perfective of 'сравнить' (to compare) is 'сравним' (we will compare)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Decision Making in Russian Tech Teams",
+    "content": "Russian tech teams often have healthy debates about technology choices. It's common to discuss 'преимущества и недостатки' (advantages and disadvantages) thoroughly. Many teams use a democratic approach where multiple developers build proof of concepts (POC) and then compare results. This approach respects everyone's opinion and leads to data-driven decisions."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)", "Игорь (Igor)"],
+  "storyArc": "The team debates which state management library to use, discussing advantages and disadvantages, and decides to build multiple proof of concepts to compare.",
+  "wordCount": 178,
+  "estimatedMinutes": 20
+}

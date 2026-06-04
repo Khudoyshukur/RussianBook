@@ -1,0 +1,104 @@
+{
+  "day": 45,
+  "phase": 2,
+  "title": "Planning Next Quarter",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Руководство компании <strong>пригласило</strong> команду на встречу по планированию <strong>квартала</strong>. «Следующие три <strong>месяца</strong> очень важны», — <strong>начал</strong> директор серьёзно. «Нам <strong>нужно</strong> определить <strong>цели</strong> и <strong>приоритеты</strong>». Дмитрий <strong>открыл</strong> презентацию с <strong>roadmap</strong>: «Я <strong>предлагаю</strong> три ключевые инициативы. <strong>Во-первых</strong>, мы <strong>запустим</strong> мобильное приложение. <strong>Во-вторых</strong>, <strong>улучшим</strong> безопасность системы. <strong>В-третьих</strong>, <strong>внедрим</strong> аналитику пользователей». Алекс <strong>спросил</strong>: «Когда мы <strong>начнём</strong> работу над мобильным приложением?» «Мы <strong>начнём</strong> в первую неделю <strong>квартала</strong>», — <strong>ответил</strong> Дмитрий уверенно. «Это наш главный <strong>приоритет</strong>». Аня <strong>поинтересовалась</strong> ресурсами: «<strong>Будут</strong> ли новые разработчики в команде?» «Да, мы <strong>наймём</strong> двух опытных iOS и Android разработчиков», — <strong>пообещал</strong> директор. Максим <strong>задумался</strong> о безопасности: «Я <strong>проведу</strong> аудит системы в феврале. Мы <strong>исправим</strong> все уязвимости». Елена <strong>добавила</strong>: «Для аналитики я <strong>интегрирую</strong> Amplitude. Это <strong>поможет</strong> нам понять поведение пользователей». «Какие <strong>метрики</strong> мы <strong>будем</strong> отслеживать?» — <strong>спросила</strong> Аня практично. «Активные пользователи, retention, и engagement», — <strong>перечислил</strong> Дмитрий. В конце встречи все <strong>понимали</strong> <strong>планы</strong> на квартал. «Это амбициозные цели, <strong>но</strong> мы <strong>справимся</strong>», — <strong>сказал</strong> Алекс с энтузиазмом. «Давайте <strong>сделаем</strong> этот квартал успешным!»",
+
+  "textEnglish": "Company management invited the team to a quarterly planning meeting. 'The next three months are very important,' the director began seriously. 'We need to define goals and priorities.' Dmitry opened a presentation with a roadmap: 'I propose three key initiatives. First, we will launch a mobile application. Second, we'll improve system security. Third, we'll implement user analytics.' Alex asked: 'When will we start work on the mobile application?' 'We'll start in the first week of the quarter,' Dmitry answered confidently. 'This is our main priority.' Anya inquired about resources: 'Will there be new developers on the team?' 'Yes, we'll hire two experienced iOS and Android developers,' the director promised. Maxim thought about security: 'I'll conduct a system audit in February. We'll fix all vulnerabilities.' Elena added: 'For analytics, I'll integrate Amplitude. This will help us understand user behavior.' 'What metrics will we track?' Anya asked practically. 'Active users, retention, and engagement,' Dmitry listed. At the end of the meeting, everyone understood the quarterly plans. 'These are ambitious goals, but we'll manage,' Alex said with enthusiasm. 'Let's make this quarter successful!'",
+
+  "vocabulary": [
+    {
+      "russian": "кварта́л",
+      "english": "quarter (3 months)",
+      "context": "Business term. 'Первый квартал' = Q1, 'планирование квартала' = quarterly planning."
+    },
+    {
+      "russian": "це́ли",
+      "english": "goals / objectives",
+      "context": "Plural of 'цель'. 'Определить цели' = to define goals."
+    },
+    {
+      "russian": "приорите́ты",
+      "english": "priorities",
+      "context": "Plural of 'приоритет'. Direct borrowing from Latin via English."
+    },
+    {
+      "russian": "roadmap",
+      "english": "roadmap",
+      "context": "English loanword used as-is in Russian tech companies. Also 'дорожная карта'."
+    },
+    {
+      "russian": "за́пустим (запусти́ть)",
+      "english": "we will launch",
+      "context": "Future perfective, 1st person plural. 'Запустить продукт' = to launch a product."
+    },
+    {
+      "russian": "вне́дрим (внедри́ть)",
+      "english": "we will implement / deploy",
+      "context": "Future perfective. 'Внедрить систему' = to implement/deploy a system."
+    },
+    {
+      "russian": "наймём (наня́ть)",
+      "english": "we will hire",
+      "context": "Future perfective of 'нанять'. 'Нанять разработчика' = to hire a developer."
+    },
+    {
+      "russian": "ме́трики",
+      "english": "metrics",
+      "context": "Plural of 'метрика'. Used in analytics and measurement contexts."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the planning vocabulary:",
+      "pairs": [
+        { "russian": "квартал", "english": "quarter" },
+        { "russian": "цели", "english": "goals" },
+        { "russian": "приоритеты", "english": "priorities" },
+        { "russian": "метрики", "english": "metrics" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Core vocabulary for strategic planning and goal-setting discussions."
+    },
+    {
+      "type": "context-selection",
+      "question": "What is the team's main priority for the quarter?",
+      "options": [
+        "Запустить мобильное приложение",
+        "Улучшить безопасность",
+        "Нанять новых разработчиков",
+        "Внедрить аналитику"
+      ],
+      "correctAnswer": "Запустить мобильное приложение",
+      "explanation": "Dmitry stated that launching the mobile application is the main priority for the quarter."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Во-первых, мы _______. Во-вторых, мы _______. В-третьих, мы _______.",
+      "wordBank": ["запустим", "улучшим", "внедрим", "сделаем"],
+      "correctAnswer": "запустим, улучшим, внедрим",
+      "explanation": "Future perfective verbs: 'запустим' (will launch), 'улучшим' (will improve), 'внедрим' (will implement)."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the future form: Мы _______ (нанять) двух опытных разработчиков.",
+      "wordBank": ["наймём", "наняли", "нанимаем", "нанять"],
+      "correctAnswer": "наймём",
+      "explanation": "Future perfective of 'нанять' (to hire) is 'наймём' (we will hire)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Quarterly Planning in Russian Tech",
+    "content": "Russian tech companies use both 'квартал' (quarter) and English 'Q1, Q2' interchangeably. 'Roadmap' is often used as-is, though 'дорожная карта' exists. Structured planning with OKRs (цели и ключевые результаты) has become standard in modern Russian startups, especially in Moscow and St. Petersburg tech hubs."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)", "Директор (Director)"],
+  "storyArc": "The team participates in quarterly planning, defining ambitious goals for mobile app launch, security improvements, and user analytics implementation.",
+  "wordCount": 176,
+  "estimatedMinutes": 22
+}

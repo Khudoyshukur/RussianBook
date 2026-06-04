@@ -1,0 +1,99 @@
+{
+  "day": 23,
+  "phase": 2,
+  "title": "Daily Standup",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Сегодня утром была <strong>ежедневная планёрка</strong>. Вся команда собралась в <strong>зуме</strong>. Дмитрий <strong>вёл</strong> встречу, как обычно. «Доброе утро всем! Начинаем», — сказал он бодро. «Алекс, что ты <strong>делал</strong> вчера?» — спросил он. «Я <strong>закончил</strong> компонент авторизации», — ответил Алекс с гордостью. «Потратил на это весь день, но всё работает». «А сегодня я <strong>буду</strong> писать unit тесты для этого компонента». Аня сказала, что она <strong>работала</strong> над дизайном новой фичи и создала три варианта макета. «Отправила их в Figma», — добавила она. Максим выглядел уставшим. Он <strong>исправил</strong> критический баг в продакшене ночью. «Я не спал до трёх часов утра!» — пожаловался он. «Пользователи не могли войти в систему». Елена <strong>планирует</strong> тестировать следующий релиз в пятницу. «Подготовила тест-кейсы вчера», — сказала она. Дмитрий спросил: «У кого-нибудь есть <strong>блокеры</strong>? Что-то мешает работе?» Все молчали и качали головами. «Отлично! Тогда <strong>продолжаем</strong> работать. Удачи всем!» — сказал Дмитрий с улыбкой. Встреча <strong>закончилась</strong> ровно за пятнадцать минут. Алекс закрыл зум и сразу вернулся к своему коду.",
+
+  "textEnglish": "This morning there was a daily standup. The whole team gathered on Zoom. Dmitry led the meeting, as usual. 'Good morning everyone! Let's start,' he said cheerfully. 'Alex, what did you do yesterday?' he asked. 'I finished the authorization component,' Alex replied with pride. 'Spent the whole day on it, but everything works.' 'And today I will write unit tests for this component.' Anya said that she worked on the design of a new feature and created three mockup variants. 'Sent them to Figma,' she added. Maxim looked tired. He fixed a critical bug in production at night. 'I didn't sleep until three in the morning!' he complained. 'Users couldn't log into the system.' Elena plans to test the next release on Friday. 'Prepared test cases yesterday,' she said. Dmitry asked: 'Does anyone have blockers? Is something blocking your work?' Everyone was silent and shook their heads. 'Great! Then we continue working. Good luck everyone!' said Dmitry with a smile. The meeting ended in exactly fifteen minutes. Alex closed Zoom and immediately returned to his code.",
+
+  "vocabulary": [
+    {
+      "russian": "ежедне́вная планёрка",
+      "english": "daily standup / daily meeting",
+      "context": "Common agile ceremony. 'Планёрка' is colloquial for planning meeting."
+    },
+    {
+      "russian": "вёл (вести́)",
+      "english": "led / conducted (to lead)",
+      "context": "Past tense. 'Вести встречу' = to lead/run a meeting."
+    },
+    {
+      "russian": "де́лал (де́лать)",
+      "english": "did / was doing (to do)",
+      "context": "Past tense imperfective. Shows ongoing or repeated action."
+    },
+    {
+      "russian": "зако́нчил (зако́нчить)",
+      "english": "finished (to finish)",
+      "context": "Past tense perfective. Shows completed action."
+    },
+    {
+      "russian": "бу́ду (быть)",
+      "english": "will be",
+      "context": "Future tense. 'Я буду писать' = I will write/be writing."
+    },
+    {
+      "russian": "бло́керы",
+      "english": "blockers (impediments)",
+      "context": "Agile term borrowed from English. Things blocking progress."
+    },
+    {
+      "russian": "продолжа́ем (продолжа́ть)",
+      "english": "we continue / keep going",
+      "context": "First person plural present. 'Продолжать работать' = continue working."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the Russian verbs with their English meanings:",
+      "pairs": [
+        { "russian": "делал", "english": "was doing" },
+        { "russian": "закончил", "english": "finished" },
+        { "russian": "буду писать", "english": "will write" },
+        { "russian": "планирует", "english": "plans" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Past imperfective (делал), past perfective (закончил), future (буду), and present (планирует)."
+    },
+    {
+      "type": "context-selection",
+      "question": "What did Maxim do last night?",
+      "options": [
+        "Он исправил баг в продакшене",
+        "Он писал тесты",
+        "Он работал над дизайном",
+        "Он вёл планёрку"
+      ],
+      "correctAnswer": "Он исправил баг в продакшене",
+      "explanation": "Maxim fixed a bug in production at night and didn't sleep until 3 AM."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Что ты _______ вчера? Я _______ компонент авторизации.",
+      "wordBank": ["делал", "закончил", "буду делать", "делаю"],
+      "correctAnswer": "делал, закончил",
+      "explanation": "Past imperfective for 'what were you doing' and past perfective for completed action 'I finished'."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the correct future form: Сегодня я _______ (писать) тесты.",
+      "wordBank": ["буду писать", "писал", "пишу", "написал"],
+      "correctAnswer": "буду писать",
+      "explanation": "Future tense formed with 'буду' + imperfective infinitive for ongoing future action."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Russian Standup Culture",
+    "content": "Russian dev teams often keep standups very brief and informal. Unlike some Western companies, they rarely use the 'three questions' format strictly. Meetings often end with 'Всё?' (Everything? / That's all?) rather than a formal conclusion."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "Alex participates in his first daily standup, learning about past and future tenses through team updates.",
+  "wordCount": 175,
+  "estimatedMinutes": 20
+}

@@ -1,0 +1,104 @@
+{
+  "day": 44,
+  "phase": 2,
+  "title": "End of Sprint Reflection",
+  "difficultyLevel": "A2+",
+
+  "textRussian": "Команда <strong>собралась</strong> на финальную ретроспективу спринта. «Спринт <strong>завершён</strong>!» — <strong>объявил</strong> Дмитрий радостно. «Давайте <strong>обсудим</strong>, что мы <strong>сделали</strong> и что <strong>узнали</strong>». Алекс <strong>начал</strong> с <strong>достижений</strong>: «Мы <strong>реализовали</strong> все запланированные фичи. Новая система аутентификации <strong>работает</strong> отлично». Аня <strong>добавила</strong>: «Мы <strong>улучшили</strong> производительность API на тридцать процентов. Это большой <strong>прогресс</strong>». Максим <strong>поделился</strong> опытом: «Я <strong>научился</strong> работать с Kubernetes. Это <strong>было</strong> трудно, <strong>но</strong> очень полезно». Елена <strong>рассказала</strong> о командной работе: «Мы <strong>стали</strong> лучше коммуницировать. Парное программирование действительно <strong>помогает</strong>». «Что <strong>можно</strong> улучшить?» — <strong>спросил</strong> Дмитрий. «Daily встречи <strong>были</strong> иногда слишком долгими», — <strong>признался</strong> Максим честно. «Согласен. Давайте <strong>будем</strong> более фокусированными», — <strong>предложил</strong> Дмитрий. Алекс <strong>заметил</strong>: «Мы <strong>выполнили</strong> всё вовремя, <strong>но</strong> в конце <strong>пришлось</strong> работать по вечерам. Нужно лучше планировать». Аня <strong>согласилась</strong>: «Да, мы <strong>недооценили</strong> сложность некоторых задач». В конце ретроспективы все <strong>чувствовали</strong> гордость за проделанную работу. «Мы <strong>сделали</strong> отличную работу вместе», — <strong>сказала</strong> Елена с улыбкой. «Следующий спринт <strong>будет</strong> ещё лучше!» — <strong>добавил</strong> Дмитрий уверенно.",
+
+  "textEnglish": "The team gathered for the final sprint retrospective. 'The sprint is complete!' Dmitry announced joyfully. 'Let's discuss what we did and what we learned.' Alex started with achievements: 'We implemented all the planned features. The new authentication system works excellently.' Anya added: 'We improved API performance by thirty percent. That's great progress.' Maxim shared his experience: 'I learned to work with Kubernetes. It was difficult, but very useful.' Elena talked about teamwork: 'We've become better at communicating. Pair programming really helps.' 'What can we improve?' Dmitry asked. 'Daily meetings were sometimes too long,' Maxim admitted honestly. 'I agree. Let's be more focused,' Dmitry suggested. Alex noticed: 'We completed everything on time, but at the end we had to work in the evenings. We need to plan better.' Anya agreed: 'Yes, we underestimated the complexity of some tasks.' At the end of the retrospective, everyone felt proud of the work done. 'We did excellent work together,' Elena said with a smile. 'The next sprint will be even better!' Dmitry added confidently.",
+
+  "vocabulary": [
+    {
+      "russian": "спринт завершён",
+      "english": "sprint is complete",
+      "context": "Past passive participle. 'Завершён' = completed/finished."
+    },
+    {
+      "russian": "достиже́ния",
+      "english": "achievements / accomplishments",
+      "context": "Plural noun. 'Достижение' = achievement, from 'достигать' (to achieve)."
+    },
+    {
+      "russian": "реализова́ли (реализова́ть)",
+      "english": "implemented / realized",
+      "context": "Past perfective. 'Реализовать фичу' = to implement a feature."
+    },
+    {
+      "russian": "про́гресс",
+      "english": "progress",
+      "context": "Direct borrowing from English. Used in professional contexts."
+    },
+    {
+      "russian": "поделился (подели́ться)",
+      "english": "shared",
+      "context": "Past perfective reflexive. 'Поделиться опытом' = to share experience."
+    },
+    {
+      "russian": "научи́лся (научи́ться)",
+      "english": "learned / mastered",
+      "context": "Past perfective reflexive. 'Научиться + infinitive' = to learn how to do something."
+    },
+    {
+      "russian": "недооцени́ли (недооцени́ть)",
+      "english": "underestimated",
+      "context": "Past perfective. 'Недо-' prefix means 'under-', 'оценить' = to estimate."
+    },
+    {
+      "russian": "что сде́лали, что узна́ли",
+      "english": "what we did, what we learned",
+      "context": "Past tense summary phrases common in retrospectives."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the retrospective vocabulary:",
+      "pairs": [
+        { "russian": "достижения", "english": "achievements" },
+        { "russian": "прогресс", "english": "progress" },
+        { "russian": "завершён", "english": "completed" },
+        { "russian": "научился", "english": "learned" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential vocabulary for discussing sprint outcomes and learnings."
+    },
+    {
+      "type": "context-selection",
+      "question": "What improvement area did the team identify?",
+      "options": [
+        "Daily встречи были слишком долгими",
+        "Код был плохого качества",
+        "Команда не коммуницировала",
+        "Фичи не работали"
+      ],
+      "correctAnswer": "Daily встречи были слишком долгими",
+      "explanation": "The team agreed that daily meetings were sometimes too long and needed to be more focused."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Мы _______ все запланированные фичи. Это большой _______.",
+      "wordBank": ["реализовали", "прогресс", "работа", "делали"],
+      "correctAnswer": "реализовали, прогресс",
+      "explanation": "'Реализовали' (implemented) is past perfective, 'прогресс' (progress) describes the achievement."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the past form: Я _______ (научиться) работать с Kubernetes.",
+      "wordBank": ["научился", "учился", "научу", "учу"],
+      "correctAnswer": "научился",
+      "explanation": "Past perfective reflexive of 'научиться' (to learn/master) is 'научился'."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Retrospectives in Russian Tech Teams",
+    "content": "Russian tech teams often call retrospectives 'ретро' (retro) or 'ретроспектива'. The format mirrors Western agile practices, but discussions tend to be more direct and honest. Phrases like 'что сделали, что узнали, что улучшим' (what we did, learned, will improve) are standard."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team conducts their final sprint retrospective, celebrating achievements and identifying improvements for the next sprint.",
+  "wordCount": 172,
+  "estimatedMinutes": 22
+}
