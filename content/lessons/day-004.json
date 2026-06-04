@@ -1,0 +1,90 @@
+{
+  "day": 4,
+  "phase": 1,
+  "title": "Team Lunch",
+  "difficultyLevel": "A2-",
+  "textRussian": "Сегодня <strong>обед</strong>. <strong>Команда</strong> идёт в кафе. Там Алекс встречает Аню. Аня — <strong>продакт-менеджер</strong>. «Привет, Алекс! Как дела?» — спрашивает она. «Хорошо. Я исправил баг», — отвечает Алекс. «Молодец!» — говорит Аня. Они заказывают <strong>еду</strong>. Дмитрий берёт пиццу. Аня берёт салат. Алекс берёт бургер. Они говорят о <strong>проекте</strong>. Аня объясняет новую <strong>функцию</strong>. «Нам нужна форма регистрации», — говорит она. Алекс слушает внимательно. Обед приятный. Команда дружная.",
+  "textEnglish": "Today is lunch. The team goes to a cafe. There Alex meets Anya. Anya is a product manager. 'Hi, Alex! How are you?' she asks. 'Good. I fixed a bug,' Alex replies. 'Well done!' says Anya. They order food. Dmitry gets pizza. Anya gets a salad. Alex gets a burger. They talk about the project. Anya explains a new feature. 'We need a registration form,' she says. Alex listens attentively. Lunch is pleasant. The team is friendly.",
+  "vocabulary": [
+    {
+      "russian": "обе́д",
+      "english": "lunch",
+      "context": "Midday meal. 'На обед' = for lunch, 'Обеденный перерыв' = lunch break."
+    },
+    {
+      "russian": "кома́нда",
+      "english": "team",
+      "context": "Both sports team and work team. 'Моя команда' = my team.",
+      "reactivatedFrom": 1
+    },
+    {
+      "russian": "про́дакт-ме́неджер",
+      "english": "product manager",
+      "context": "Borrowed role title. Also called 'менеджер продукта'. Key role in tech startups."
+    },
+    {
+      "russian": "еда́",
+      "english": "food",
+      "context": "General term for food. 'Заказать еду' = to order food."
+    },
+    {
+      "russian": "прое́кт",
+      "english": "project",
+      "context": "Same as English. 'Работать над проектом' = to work on a project.",
+      "reactivatedFrom": 1
+    },
+    {
+      "russian": "фу́нкция",
+      "english": "function / feature",
+      "context": "Can mean programming function or product feature. Context makes it clear."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the team members with their roles:",
+      "pairs": [
+        { "russian": "Алекс", "english": "programmer" },
+        { "russian": "Аня", "english": "product manager" },
+        { "russian": "Дмитрий", "english": "colleague/mentor" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2"],
+      "explanation": "Alex is the programmer, Anya is the product manager, and Dmitry is Alex's colleague and mentor."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Anya want the team to build?",
+      "options": [
+        "Форму регистрации (registration form)",
+        "Базу данных (database)",
+        "Тесты (tests)",
+        "Документацию (documentation)"
+      ],
+      "correctAnswer": "Форму регистрации (registration form)",
+      "explanation": "Anya says: 'Нам нужна форма регистрации' (We need a registration form)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Команда идёт в _______. Они заказывают _______.",
+      "wordBank": ["кафе", "еду", "офис", "проект"],
+      "correctAnswer": "кафе, еду",
+      "explanation": "The team goes to a cafe. They order food. Simple present tense actions."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words to form a correct sentence:",
+      "scrambledWords": ["Аня", "объясняет", "новую", "функцию"],
+      "correctAnswer": ["Аня", "объясняет", "новую", "функцию"],
+      "explanation": "The correct sentence is: 'Аня объясняет новую функцию' (Anya explains a new feature). Subject-Verb-Adjective-Noun order."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Russian Workplace Meals",
+    "content": "In Russian tech companies, lunch breaks are social events. Teams often eat together at nearby cafes or in the office kitchen. It's common to discuss work during meals, but in a relaxed way."
+  },
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya) - Product Manager"],
+  "storyArc": "Alex meets Anya, the product manager, and learns about the next feature to build.",
+  "wordCount": 95,
+  "estimatedMinutes": 17,
+  "previousDayReferences": [1, 3]
+}

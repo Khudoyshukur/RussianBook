@@ -1,0 +1,97 @@
+{
+  "day": 17,
+  "phase": 1,
+  "title": "Performance Optimization",
+  "difficultyLevel": "A2",
+  "textRussian": "Приложение работает медленно. Алекс открывает <strong>профайлер</strong>. Он видит проблему. Функция renderList() занимает много <strong>времени</strong>. «Это <strong>узкое место</strong>», — понимает Алекс. Он смотрит код. Функция рендерит 1000 <strong>элементов</strong>. Слишком много! Алекс ищет <strong>решение</strong>. Находит библиотеку react-window. Это <strong>виртуальный скроллинг</strong>. Рендерятся только видимые элементы. Алекс интегрирует библиотеку. Тестирует. Вау! Приложение быстрое! renderList() теперь занимает 50 мс вместо 2000 мс. «<strong>Оптимизация</strong> важна», — думает Алекс. Дмитрий одобряет изменения.",
+  "textEnglish": "The application works slowly. Alex opens the profiler. He sees the problem. The renderList() function takes a lot of time. 'This is a bottleneck,' Alex understands. He looks at the code. The function renders 1000 elements. Too many! Alex searches for a solution. Finds the react-window library. It's virtual scrolling. Only visible elements are rendered. Alex integrates the library. Tests. Wow! The application is fast! renderList() now takes 50ms instead of 2000ms. 'Optimization is important,' thinks Alex. Dmitry approves the changes.",
+  "vocabulary": [
+    {
+      "russian": "профа́йлер",
+      "english": "profiler (performance profiler)",
+      "context": "From English 'profiler'. Tool for performance analysis."
+    },
+    {
+      "russian": "вре́мя",
+      "english": "time",
+      "context": "'Занимает много времени' = takes a lot of time. Genitive case after 'много'."
+    },
+    {
+      "russian": "у́зкое ме́сто",
+      "english": "bottleneck",
+      "context": "Literal: 'narrow place'. Performance bottleneck in code."
+    },
+    {
+      "russian": "элеме́нты",
+      "english": "elements",
+      "context": "DOM elements or list items. Singular: 'элемент'."
+    },
+    {
+      "russian": "реше́ние",
+      "english": "solution",
+      "context": "'Искать решение' = to search for a solution. 'Найти решение' = to find a solution."
+    },
+    {
+      "russian": "виртуа́льный скро́ллинг",
+      "english": "virtual scrolling",
+      "context": "Performance technique. Renders only visible items in long lists."
+    },
+    {
+      "russian": "оптимиза́ция",
+      "english": "optimization",
+      "context": "Performance optimization. 'Делать оптимизацию' = to do optimization."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "context-selection",
+      "question": "What was the bottleneck?",
+      "options": [
+        "Функция renderList() (renderList function)",
+        "База данных (database)",
+        "Сервер (server)",
+        "Браузер (browser)"
+      ],
+      "correctAnswer": "Функция renderList() (renderList function)",
+      "explanation": "The renderList() function was the bottleneck, taking 2000ms."
+    },
+    {
+      "type": "matching",
+      "question": "Match the performance terms:",
+      "pairs": [
+        { "russian": "профайлер", "english": "profiler" },
+        { "russian": "узкое место", "english": "bottleneck" },
+        { "russian": "оптимизация", "english": "optimization" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2"],
+      "explanation": "Essential performance optimization vocabulary."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс открывает _______. Функция занимает много _______.",
+      "wordBank": ["профайлер", "времени", "код", "тест"],
+      "correctAnswer": "профайлер, времени",
+      "explanation": "Alex opens the profiler. The function takes a lot of time."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in: Алекс _______ (интегрировать) библиотеку.",
+      "wordBank": ["интегрирует", "интегрировать", "интегрировал", "интегрируют"],
+      "correctAnswer": "интегрирует",
+      "explanation": "Present tense, 3rd person singular: 'интегрирует' (integrates)."
+    }
+  ],
+  "pronunciation": [
+    {
+      "word": "оптимизация",
+      "ipa": "ɐptʲɪmʲɪˈzatsɨjə",
+      "phonetic": "op-tee-mee-ZAH-tsee-yuh",
+      "pitfalls": "Stress on 'за' syllable. Long word, practice the rhythm."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Alex identifies and fixes a performance bottleneck using virtual scrolling.",
+  "wordCount": 103,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [8, 9]
+}

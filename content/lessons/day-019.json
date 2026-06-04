@@ -1,0 +1,101 @@
+{
+  "day": 19,
+  "phase": 1,
+  "title": "Security Review",
+  "difficultyLevel": "A2",
+  "textRussian": "Максим проводит <strong>ревью безопасности</strong>. Он проверяет код Алекса. «Смотри здесь», — говорит Максим. «У тебя нет <strong>валидации</strong> на сервере». Алекс смотрит. Только клиентская валидация! «Это <strong>уязвимость</strong>», — объясняет Максим. «Злоумышленник может обойти клиент». Алекс понимает. Он добавляет валидацию на <strong>бэкенде</strong>. Проверяет все <strong>входные данные</strong>. Максим продолжает. «И ещё — нужна <strong>защита</strong> от SQL injection». Алекс добавляет <strong>параметризованные запросы</strong>. «Теперь безопасно», — одобряет Максим. «<strong>Безопасность</strong> — это не опция, это обязанность», — говорит он. Алекс запоминает урок.",
+  "textEnglish": "Maxim conducts a security review. He checks Alex's code. 'Look here,' says Maxim. 'You don't have validation on the server.' Alex looks. Only client-side validation! 'This is a vulnerability,' Maxim explains. 'An attacker can bypass the client.' Alex understands. He adds validation on the backend. Checks all input data. Maxim continues. 'And also - you need protection from SQL injection.' Alex adds parameterized queries. 'Now it's secure,' Maxim approves. 'Security is not an option, it's a responsibility,' he says. Alex remembers the lesson.",
+  "vocabulary": [
+    {
+      "russian": "ревью́ безопа́сности",
+      "english": "security review",
+      "context": "Two-word compound. Security audit or review of code."
+    },
+    {
+      "russian": "валида́ция",
+      "english": "validation",
+      "context": "Input validation. 'Серверная валидация' = server-side validation.",
+      "reactivatedFrom": 6
+    },
+    {
+      "russian": "уязви́мость",
+      "english": "vulnerability (security)",
+      "context": "Security vulnerability. 'Найти уязвимость' = to find a vulnerability."
+    },
+    {
+      "russian": "бэке́нд",
+      "english": "backend",
+      "context": "From English. Server-side. 'На бэкенде' = on the backend."
+    },
+    {
+      "russian": "входны́е да́нные",
+      "english": "input data",
+      "context": "Two-word compound. User input or incoming data."
+    },
+    {
+      "russian": "защи́та",
+      "english": "protection / defense",
+      "context": "'Защита от атак' = protection from attacks. Security protection."
+    },
+    {
+      "russian": "параметризо́ванные запро́сы",
+      "english": "parameterized queries",
+      "context": "SQL parameterized queries. Protection against SQL injection."
+    },
+    {
+      "russian": "безопа́сность",
+      "english": "security / safety",
+      "context": "Information security or code security.",
+      "reactivatedFrom": 15
+    }
+  ],
+  "exercises": [
+    {
+      "type": "context-selection",
+      "question": "What vulnerability did Maxim find?",
+      "options": [
+        "Нет валидации на сервере (no server validation)",
+        "Медленный код (slow code)",
+        "Нет тестов (no tests)",
+        "Плохой дизайн (bad design)"
+      ],
+      "correctAnswer": "Нет валидации на сервере (no server validation)",
+      "explanation": "Maxim found that there was only client-side validation, not server-side."
+    },
+    {
+      "type": "matching",
+      "question": "Match the security terms:",
+      "pairs": [
+        { "russian": "уязвимость", "english": "vulnerability" },
+        { "russian": "защита", "english": "protection" },
+        { "russian": "бэкенд", "english": "backend" },
+        { "russian": "входные данные", "english": "input data" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential security vocabulary for backend development."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Максим проводит ревью _______. Алекс добавляет _______ на бэкенде.",
+      "wordBank": ["безопасности", "валидацию", "тест", "дизайн"],
+      "correctAnswer": "безопасности, валидацию",
+      "explanation": "Maxim conducts a security review. Alex adds validation on the backend."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words:",
+      "scrambledWords": ["Безопасность", "это", "не", "опция"],
+      "correctAnswer": ["Безопасность", "это", "не", "опция"],
+      "explanation": "'Безопасность — это не опция' (Security is not an option). Important lesson about priorities."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Security Culture in Russian Tech",
+    "content": "Security is increasingly important in Russian tech companies, especially those handling payments or personal data. Code reviews often include security checks."
+  },
+  "characters": ["Алекс (Alex)", "Максим (Maxim)"],
+  "storyArc": "Alex learns about security vulnerabilities and how to protect against them.",
+  "wordCount": 105,
+  "estimatedMinutes": 20,
+  "previousDayReferences": [7, 12]
+}

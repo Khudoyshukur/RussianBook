@@ -1,0 +1,90 @@
+{
+  "day": 12,
+  "phase": 1,
+  "title": "API Integration",
+  "difficultyLevel": "A2",
+  "textRussian": "Сегодня Алекс работает с <strong>API</strong>. Нужно интегрировать <strong>платёжную систему</strong>. Алекс читает <strong>документацию</strong> API. Он видит <strong>эндпоинты</strong>: /payment/create, /payment/status. «Понятно», — думает Алекс. Он пишет <strong>функцию</strong>. Функция отправляет <strong>HTTP-запрос</strong>. Алекс использует метод POST. Он добавляет <strong>заголовки</strong>. Нужен API-ключ в header. Алекс тестирует запрос. <strong>Ответ</strong> приходит! Статус код 200. «Отлично!» — радуется Алекс. <strong>JSON</strong> в ответе содержит payment_id. Интеграция работает. Аня довольна. «Теперь пользователи могут платить», — говорит она.",
+  "textEnglish": "Today Alex is working with an API. He needs to integrate a payment system. Alex reads the API documentation. He sees the endpoints: /payment/create, /payment/status. 'Clear,' thinks Alex. He writes a function. The function sends an HTTP request. Alex uses the POST method. He adds headers. An API key is needed in the header. Alex tests the request. A response comes! Status code 200. 'Excellent!' Alex rejoices. The JSON in the response contains payment_id. The integration works. Anya is pleased. 'Now users can pay,' she says.",
+  "vocabulary": [
+    {
+      "russian": "API",
+      "english": "API",
+      "context": "Used in English form. Pronounced 'эй-пи-ай'. Russian: 'программный интерфейс'."
+    },
+    {
+      "russian": "платёжная систе́ма",
+      "english": "payment system",
+      "context": "Two-word compound. 'Интегрировать платёжную систему' = to integrate payment system."
+    },
+    {
+      "russian": "эндпо́инт",
+      "english": "endpoint (API endpoint)",
+      "context": "From English. Plural: 'эндпоинты'. Russian: 'конечная точка'."
+    },
+    {
+      "russian": "HTTP-запро́с",
+      "english": "HTTP request",
+      "context": "Combined term. 'Отправить HTTP-запрос' = to send HTTP request."
+    },
+    {
+      "russian": "заголо́вки",
+      "english": "headers (HTTP headers)",
+      "context": "Plural. Singular: 'заголовок'. 'Добавить заголовки' = to add headers."
+    },
+    {
+      "russian": "отве́т",
+      "english": "response",
+      "context": "HTTP response or general answer. 'Получить ответ' = to get a response."
+    },
+    {
+      "russian": "JSON",
+      "english": "JSON",
+      "context": "Pronounced 'джейсон' or 'джей-эс-он'. Data format."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the API terms:",
+      "pairs": [
+        { "russian": "эндпоинт", "english": "endpoint" },
+        { "russian": "заголовки", "english": "headers" },
+        { "russian": "ответ", "english": "response" },
+        { "russian": "запрос", "english": "request" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Core API integration vocabulary."
+    },
+    {
+      "type": "context-selection",
+      "question": "What status code does Alex receive?",
+      "options": [
+        "200 (success)",
+        "404 (not found)",
+        "500 (server error)",
+        "401 (unauthorized)"
+      ],
+      "correctAnswer": "200 (success)",
+      "explanation": "The text states: 'Статус код 200' (Status code 200 - success)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Функция отправляет _______. _______ в ответе содержит payment_id.",
+      "wordBank": ["HTTP-запрос", "JSON", "код", "тест"],
+      "correctAnswer": "HTTP-запрос, JSON",
+      "explanation": "The function sends an HTTP request. The JSON in the response contains payment_id."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words:",
+      "scrambledWords": ["Алекс", "работает", "с", "API"],
+      "correctAnswer": ["Алекс", "работает", "с", "API"],
+      "explanation": "'Алекс работает с API' (Alex is working with an API). Verb + с + instrumental case."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Аня (Anya)"],
+  "storyArc": "Alex successfully integrates a payment API into the application.",
+  "wordCount": 103,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [4, 9]
+}

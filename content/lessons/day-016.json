@@ -1,0 +1,95 @@
+{
+  "day": 16,
+  "phase": 1,
+  "title": "Responsive Design",
+  "difficultyLevel": "A2",
+  "textRussian": "Алекс работает над <strong>дизайном</strong>. Приложение должно работать на <strong>мобильных</strong> устройствах. Он открывает Chrome DevTools. Переключает на <strong>мобильный режим</strong>. «О нет!» — думает Алекс. Всё сломано! Кнопки слишком большие. <strong>Текст</strong> не помещается. Алекс изучает <strong>CSS</strong>. Он добавляет <strong>media queries</strong>. @media (max-width: 768px) { }. Изменяет <strong>размеры</strong>. Теперь кнопки маленькие. Текст читается хорошо. Он тестирует на iPhone. Отлично! Тестирует на Android. Тоже работает! Аня проверяет. «Идеально!» — говорит она. <strong>Адаптивный дизайн</strong> готов.",
+  "textEnglish": "Alex is working on the design. The application must work on mobile devices. He opens Chrome DevTools. Switches to mobile mode. 'Oh no!' thinks Alex. Everything is broken! Buttons are too big. Text doesn't fit. Alex studies CSS. He adds media queries. @media (max-width: 768px) { }. Changes the sizes. Now buttons are small. Text reads well. He tests on iPhone. Excellent! Tests on Android. Also works! Anya checks. 'Perfect!' she says. The responsive design is ready.",
+  "vocabulary": [
+    {
+      "russian": "диза́йн",
+      "english": "design",
+      "context": "UI/UX design. 'Работать над дизайном' = to work on design."
+    },
+    {
+      "russian": "моби́льные",
+      "english": "mobile (adjective)",
+      "context": "'Мобильные устройства' = mobile devices. Singular: 'мобильный'."
+    },
+    {
+      "russian": "моби́льный ре́жим",
+      "english": "mobile mode",
+      "context": "DevTools mobile mode for testing responsive design."
+    },
+    {
+      "russian": "текст",
+      "english": "text",
+      "context": "Written text or content. 'Читать текст' = to read text."
+    },
+    {
+      "russian": "CSS",
+      "english": "CSS",
+      "context": "Pronounced 'си-эс-эс' or 'цэ-эс-эс'. Cascading Style Sheets."
+    },
+    {
+      "russian": "media queries",
+      "english": "media queries",
+      "context": "Used in English. CSS responsive design feature."
+    },
+    {
+      "russian": "разме́ры",
+      "english": "sizes / dimensions",
+      "context": "Plural of 'размер'. 'Изменить размеры' = to change sizes."
+    },
+    {
+      "russian": "адапти́вный диза́йн",
+      "english": "responsive design",
+      "context": "Two-word compound. Design that adapts to different screen sizes."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the design terms:",
+      "pairs": [
+        { "russian": "дизайн", "english": "design" },
+        { "russian": "мобильные", "english": "mobile" },
+        { "russian": "размеры", "english": "sizes" },
+        { "russian": "адаптивный", "english": "responsive" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential responsive design vocabulary."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Alex add to fix the design?",
+      "options": [
+        "Media queries",
+        "JavaScript",
+        "Новые кнопки (new buttons)",
+        "Картинки (images)"
+      ],
+      "correctAnswer": "Media queries",
+      "explanation": "Alex adds media queries to make the design responsive."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Приложение должно работать на _______ устройствах. Алекс добавляет _______.",
+      "wordBank": ["мобильных", "media queries", "сервер", "тест"],
+      "correctAnswer": "мобильных, media queries",
+      "explanation": "The application must work on mobile devices. Alex adds media queries."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words:",
+      "scrambledWords": ["Алекс", "работает", "над", "дизайном"],
+      "correctAnswer": ["Алекс", "работает", "над", "дизайном"],
+      "explanation": "'Алекс работает над дизайном' (Alex is working on the design). 'Работать над' + instrumental case."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Аня (Anya)"],
+  "storyArc": "Alex learns responsive design and makes the app work on mobile devices.",
+  "wordCount": 103,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [6, 9]
+}

@@ -1,0 +1,98 @@
+{
+  "day": 9,
+  "phase": 1,
+  "title": "Learning React",
+  "difficultyLevel": "A2",
+  "textRussian": "Алекс изучает <strong>React</strong>. Он читает <strong>документацию</strong>. React — это <strong>библиотека</strong> для UI. «Интересно!» — думает Алекс. Он создаёт первый <strong>компонент</strong>. Это Button компонент. Он пишет <strong>JSX</strong>. JSX похож на HTML. Алекс добавляет <strong>пропсы</strong>. Компонент принимает текст и цвет. Он тестирует компонент. Кнопка появляется на <strong>экране</strong>! Она красная и говорит «Нажми меня». Алекс нажимает. Работает <strong>обработчик</strong> события. В консоли появляется сообщение. «React действительно удобный», — решает Алекс. Он хочет учиться больше.",
+  "textEnglish": "Alex is learning React. He reads the documentation. React is a library for UI. 'Interesting!' thinks Alex. He creates his first component. It's a Button component. He writes JSX. JSX is similar to HTML. Alex adds props. The component accepts text and color. He tests the component. The button appears on the screen! It's red and says 'Click me'. Alex clicks. The event handler works. A message appears in the console. 'React is really convenient,' Alex decides. He wants to learn more.",
+  "vocabulary": [
+    {
+      "russian": "React",
+      "english": "React",
+      "context": "JavaScript library. Pronounced as in English. Used without translation."
+    },
+    {
+      "russian": "документа́ция",
+      "english": "documentation",
+      "context": "'Читать документацию' = to read docs. 'Писать документацию' = to write docs."
+    },
+    {
+      "russian": "библиоте́ка",
+      "english": "library (code library)",
+      "context": "Software library. Also means physical library. 'Подключить библиотеку' = to import library."
+    },
+    {
+      "russian": "компоне́нт",
+      "english": "component",
+      "context": "React/UI component. 'Создать компонент' = to create a component."
+    },
+    {
+      "russian": "JSX",
+      "english": "JSX",
+      "context": "JavaScript XML syntax. Pronounced as letters: 'джей-эс-икс'."
+    },
+    {
+      "russian": "про́псы",
+      "english": "props (React props)",
+      "context": "From English 'props'. Formal: 'свойства'. 'Передать пропсы' = to pass props."
+    },
+    {
+      "russian": "обрабо́тчик",
+      "english": "handler (event handler)",
+      "context": "'Обработчик события' = event handler. 'Обработчик ошибок' = error handler."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the React terms:",
+      "pairs": [
+        { "russian": "компонент", "english": "component" },
+        { "russian": "пропсы", "english": "props" },
+        { "russian": "библиотека", "english": "library" },
+        { "russian": "обработчик", "english": "handler" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential React vocabulary for frontend development."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Alex's first component accept?",
+      "options": [
+        "Текст и цвет (text and color)",
+        "Размер и стиль (size and style)",
+        "Название и ID (name and ID)",
+        "Данные и функции (data and functions)"
+      ],
+      "correctAnswer": "Текст и цвет (text and color)",
+      "explanation": "The component accepts text and color: 'Компонент принимает текст и цвет'."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "React — это _______ для UI. Алекс создаёт первый _______.",
+      "wordBank": ["библиотека", "компонент", "сервер", "тест"],
+      "correctAnswer": "библиотека, компонент",
+      "explanation": "React is a library for UI. Alex creates his first component."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in: Алекс _______ (изучать) React.",
+      "wordBank": ["изучает", "изучать", "изучал", "изучают"],
+      "correctAnswer": "изучает",
+      "explanation": "Present tense, 3rd person singular: 'изучает' (is learning/studies)."
+    }
+  ],
+  "pronunciation": [
+    {
+      "word": "библиотека",
+      "ipa": "bʲɪblʲɪɐˈtʲekə",
+      "phonetic": "beeb-lee-ah-TYEH-kuh",
+      "pitfalls": "Stress on 'те' syllable. Many syllables can be tricky for learners."
+    }
+  ],
+  "characters": ["Алекс (Alex)"],
+  "storyArc": "Alex starts learning React and creates his first component.",
+  "wordCount": 95,
+  "estimatedMinutes": 18,
+  "previousDayReferences": [6]
+}

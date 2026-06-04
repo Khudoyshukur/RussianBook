@@ -1,0 +1,85 @@
+{
+  "day": 11,
+  "phase": 1,
+  "title": "Meeting Elena the QA",
+  "difficultyLevel": "A2",
+  "textRussian": "В понедельник Алекс встречает Елену. Елена — <strong>тестировщик</strong>. Она работает в <strong>QA</strong>. «Привет! Я Елена», — говорит она. «Я тестирую ваш код». Алекс интересуется. «Какие <strong>тесты</strong> ты делаешь?» — спрашивает он. «Разные», — отвечает Елена. «<strong>Функциональные</strong> тесты, <strong>регрессионные</strong> тесты, <strong>интеграционные</strong> тесты». Алекс впечатлён. Елена показывает список <strong>багов</strong>. «Смотри, я нашла пять багов в твоей форме», — говорит она. Алекс немного грустный. «Не переживай», — успокаивает Елена. «Баги — это нормально. Лучше найти их сейчас». Алекс улыбается. Он понимает — QA помогает.",
+  "textEnglish": "On Monday Alex meets Elena. Elena is a tester. She works in QA. 'Hi! I'm Elena,' she says. 'I test your code.' Alex is interested. 'What tests do you do?' he asks. 'Different ones,' Elena answers. 'Functional tests, regression tests, integration tests.' Alex is impressed. Elena shows a list of bugs. 'Look, I found five bugs in your form,' she says. Alex is a bit sad. 'Don't worry,' Elena reassures. 'Bugs are normal. Better to find them now.' Alex smiles. He understands - QA helps.",
+  "vocabulary": [
+    {
+      "russian": "тестиро́вщик",
+      "english": "tester / QA engineer",
+      "context": "Person who tests software. Feminine: 'тестировщица'. Also called 'QA-инженер'."
+    },
+    {
+      "russian": "QA",
+      "english": "QA (Quality Assurance)",
+      "context": "Used in English form. Pronounced 'кью-эй'. Russian: 'обеспечение качества'."
+    },
+    {
+      "russian": "функциона́льные",
+      "english": "functional",
+      "context": "Adjective. 'Функциональные тесты' = functional tests. Tests basic features."
+    },
+    {
+      "russian": "регрессио́нные",
+      "english": "regression",
+      "context": "'Регрессионные тесты' = regression tests. Check if old features still work."
+    },
+    {
+      "russian": "интеграцио́нные",
+      "english": "integration",
+      "context": "'Интеграционные тесты' = integration tests. Test system integration."
+    },
+    {
+      "russian": "ба́ги",
+      "english": "bugs",
+      "context": "Plural of 'баг'. 'Находить баги' = to find bugs.",
+      "reactivatedFrom": 3
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the test types:",
+      "pairs": [
+        { "russian": "функциональные", "english": "functional" },
+        { "russian": "регрессионные", "english": "regression" },
+        { "russian": "интеграционные", "english": "integration" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2"],
+      "explanation": "Three main types of software testing."
+    },
+    {
+      "type": "context-selection",
+      "question": "How many bugs did Elena find?",
+      "options": [
+        "Пять (five)",
+        "Три (three)",
+        "Десять (ten)",
+        "Два (two)"
+      ],
+      "correctAnswer": "Пять (five)",
+      "explanation": "Elena says: 'я нашла пять багов' (I found five bugs)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Елена — _______. Она работает в _______.",
+      "wordBank": ["тестировщик", "QA", "DevOps", "программист"],
+      "correctAnswer": "тестировщик, QA",
+      "explanation": "Elena is a tester. She works in QA (Quality Assurance)."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in: Елена _______ (тестировать) код.",
+      "wordBank": ["тестирует", "тестировать", "тестировал", "тестируют"],
+      "correctAnswer": "тестирует",
+      "explanation": "Present tense, 3rd person singular: 'тестирует' (tests)."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Елена (Elena) - QA Engineer"],
+  "storyArc": "Alex meets Elena from QA and learns about different types of testing.",
+  "wordCount": 103,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [3, 6]
+}

@@ -1,0 +1,103 @@
+{
+  "day": 20,
+  "phase": 1,
+  "title": "Refactoring Legacy Code",
+  "difficultyLevel": "A2",
+  "textRussian": "Алекс смотрит на старый <strong>код</strong>. Это <strong>легаси</strong>. Код написан три года назад. Много дублирования. Функции длинные. <strong>Переменные</strong> имеют плохие <strong>названия</strong>. Алекс решает сделать <strong>рефакторинг</strong>. Он создаёт новую <strong>ветку</strong>: git checkout -b refactor/user-service. Начинает работу. Разбивает большую функцию на маленькие. Переименовывает переменные. data1 становится userData. Удаляет дублированный код. Создаёт <strong>утилитные функции</strong>. Добавляет <strong>комментарии</strong>. Запускает тесты. Всё проходит! Дмитрий проверяет. «Теперь код <strong>читаемый</strong>!» — говорит он. Алекс рад. <strong>Рефакторинг</strong> успешен!",
+  "textEnglish": "Alex looks at old code. It's legacy. The code was written three years ago. Lots of duplication. Functions are long. Variables have bad names. Alex decides to do refactoring. He creates a new branch: git checkout -b refactor/user-service. Starts work. Breaks down a big function into small ones. Renames variables. data1 becomes userData. Removes duplicated code. Creates utility functions. Adds comments. Runs tests. Everything passes! Dmitry checks. 'Now the code is readable!' he says. Alex is happy. The refactoring is successful!",
+  "vocabulary": [
+    {
+      "russian": "код",
+      "english": "code",
+      "context": "'Старый код' = old code. 'Чистый код' = clean code.",
+      "reactivatedFrom": 1
+    },
+    {
+      "russian": "ле́гаси",
+      "english": "legacy (legacy code)",
+      "context": "From English 'legacy'. Old code that's hard to maintain."
+    },
+    {
+      "russian": "переме́нные",
+      "english": "variables",
+      "context": "Programming variables.",
+      "reactivatedFrom": 14
+    },
+    {
+      "russian": "назва́ния",
+      "english": "names",
+      "context": "Variable names, function names. Singular: 'название'."
+    },
+    {
+      "russian": "рефакто́ринг",
+      "english": "refactoring",
+      "context": "Code restructuring. 'Делать рефакторинг' = to do refactoring."
+    },
+    {
+      "russian": "ветка",
+      "english": "branch (git branch)",
+      "context": "Git branch. 'Создать ветку' = to create a branch."
+    },
+    {
+      "russian": "утили́тные фу́нкции",
+      "english": "utility functions",
+      "context": "Helper functions. 'Создать утилитную функцию' = to create utility function."
+    },
+    {
+      "russian": "коммента́рии",
+      "english": "comments",
+      "context": "Code comments.",
+      "reactivatedFrom": 5
+    },
+    {
+      "russian": "читаемый",
+      "english": "readable",
+      "context": "Adjective. 'Читаемый код' = readable code. From 'читать' (to read)."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the refactoring terms:",
+      "pairs": [
+        { "russian": "легаси", "english": "legacy" },
+        { "russian": "рефакторинг", "english": "refactoring" },
+        { "russian": "ветка", "english": "branch" },
+        { "russian": "читаемый", "english": "readable" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential refactoring and clean code vocabulary."
+    },
+    {
+      "type": "context-selection",
+      "question": "What was wrong with the old code?",
+      "options": [
+        "Много дублирования, плохие названия (lots of duplication, bad names)",
+        "Нет тестов (no tests)",
+        "Медленно работает (works slowly)",
+        "Нет документации (no documentation)"
+      ],
+      "correctAnswer": "Много дублирования, плохие названия (lots of duplication, bad names)",
+      "explanation": "The code had lots of duplication and variables with bad names."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс создаёт новую _______. Теперь код _______!",
+      "wordBank": ["ветку", "читаемый", "тест", "сервер"],
+      "correctAnswer": "ветку, читаемый",
+      "explanation": "Alex creates a new branch. Now the code is readable!"
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in: Алекс _______ (решать) сделать рефакторинг.",
+      "wordBank": ["решает", "решать", "решил", "решают"],
+      "correctAnswer": "решает",
+      "explanation": "Present tense, 3rd person singular: 'решает' (decides)."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Alex tackles legacy code and successfully refactors it to be more maintainable.",
+  "wordCount": 104,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [5, 13]
+}

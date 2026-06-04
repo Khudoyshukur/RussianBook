@@ -276,10 +276,16 @@ function SentenceReordering({
   onChange: (value: string[]) => void;
   disabled: boolean;
 }) {
-  const [selectedWords, setSelectedWords] = useState<string[]>(value);
-  const [availableWords, setAvailableWords] = useState<string[]>(
-    exercise.scrambledWords || []
-  );
+  // Initialize state only once on mount
+  const [selectedWords, setSelectedWords] = useState<string[]>(() => value || []);
+  const [availableWords, setAvailableWords] = useState<string[]>(() => {
+    if (value && value.length > 0) {
+      // If there's already a value, calculate available words by removing selected ones
+      const scrambled = exercise.scrambledWords || [];
+      return scrambled.filter(word => !value.includes(word));
+    }
+    return exercise.scrambledWords || [];
+  });
 
   const handleWordClick = (word: string, fromAvailable: boolean) => {
     if (disabled) return;
@@ -362,6 +368,14 @@ function MatchingExercise({
   onChange: (value: string[]) => void;
   disabled: boolean;
 }) {
+  const pairs = exercise.pairs || [];
+  const russianItems = pairs.map((p) => p.russian);
+
+  // Shuffle English items only once when component mounts
+  const [englishItems] = useState(() =>
+    [...pairs.map((p) => p.english)].sort(() => Math.random() - 0.5)
+  );
+
   const [matches, setMatches] = useState<Record<number, number>>(
     value.reduce((acc, match, idx) => {
       const [russianIdx, englishIdx] = match.split('-').map(Number);
@@ -389,10 +403,6 @@ function MatchingExercise({
     onChange(matchArray);
     setSelectedRussian(null);
   };
-
-  const pairs = exercise.pairs || [];
-  const russianItems = pairs.map((p) => p.russian);
-  const englishItems = [...pairs.map((p) => p.english)].sort(() => Math.random() - 0.5);
 
   return (
     <div className="grid md:grid-cols-2 gap-4">

@@ -1,0 +1,75 @@
+{
+  "day": 8,
+  "phase": 1,
+  "title": "Database Problem",
+  "difficultyLevel": "A2",
+  "textRussian": "Сегодня проблема с <strong>базой данных</strong>. Приложение работает медленно. Пользователи жалуются. Алекс открывает <strong>логи</strong>. Он видит много <strong>запросов</strong>. «Это странно», — думает он. Он спрашивает Максима. «Посмотри на <strong>индексы</strong>», — советует Максим. Алекс проверяет базу данных. Индексов нет! Это проблема. Без индексов <strong>запросы</strong> медленные. Алекс создаёт <strong>индекс</strong> на колонку user_id. Он запускает запрос снова. Теперь быстро! Запрос выполняется за 50 <strong>миллисекунд</strong>. «Отлично!» — радуется Алекс. Максим одобряет. Приложение снова работает хорошо.",
+  "textEnglish": "Today there's a problem with the database. The application works slowly. Users are complaining. Alex opens the logs. He sees many queries. 'This is strange,' he thinks. He asks Maxim. 'Look at the indexes,' Maxim advises. Alex checks the database. There are no indexes! That's the problem. Without indexes, queries are slow. Alex creates an index on the user_id column. He runs the query again. Now it's fast! The query executes in 50 milliseconds. 'Excellent!' Alex rejoices. Maxim approves. The application works well again.",
+  "vocabulary": [
+    {
+      "russian": "ба́за да́нных",
+      "english": "database",
+      "context": "Two-word compound. Often abbreviated as 'БД'. 'Работать с базой данных' = to work with database."
+    },
+    {
+      "russian": "запро́с",
+      "english": "query / request",
+      "context": "Database query or HTTP request. 'SQL-запрос' = SQL query. Plural: 'запросы'.",
+      "reactivatedFrom": 3
+    },
+    {
+      "russian": "и́ндекс",
+      "english": "index (database index)",
+      "context": "Database index. Plural: 'индексы'. 'Создать индекс' = to create an index."
+    },
+    {
+      "russian": "миллисеку́нда",
+      "english": "millisecond",
+      "context": "Time unit. Abbreviated: 'мс'. Performance measurement."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "context-selection",
+      "question": "What was missing from the database?",
+      "options": [
+        "Индексы (indexes)",
+        "Таблицы (tables)",
+        "Данные (data)",
+        "Колонки (columns)"
+      ],
+      "correctAnswer": "Индексы (indexes)",
+      "explanation": "The text states: 'Индексов нет!' (There are no indexes!)."
+    },
+    {
+      "type": "matching",
+      "question": "Match the database terms:",
+      "pairs": [
+        { "russian": "база данных", "english": "database" },
+        { "russian": "запрос", "english": "query" },
+        { "russian": "индекс", "english": "index" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2"],
+      "explanation": "Core database vocabulary for backend development."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс создаёт _______ на колонку user_id. Запрос выполняется за 50 _______.",
+      "wordBank": ["индекс", "миллисекунд", "логи", "тест"],
+      "correctAnswer": "индекс, миллисекунд",
+      "explanation": "Alex creates an index on the user_id column. The query executes in 50 milliseconds."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words:",
+      "scrambledWords": ["Приложение", "работает", "медленно"],
+      "correctAnswer": ["Приложение", "работает", "медленно"],
+      "explanation": "'Приложение работает медленно' (The application works slowly). Subject-Verb-Adverb order."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Максим (Maxim)"],
+  "storyArc": "Alex solves a database performance problem by adding indexes.",
+  "wordCount": 98,
+  "estimatedMinutes": 18,
+  "previousDayReferences": [3, 7]
+}

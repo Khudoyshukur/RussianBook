@@ -1,0 +1,113 @@
+{
+  "day": 22,
+  "phase": 1,
+  "title": "Reflection and Growth",
+  "difficultyLevel": "A2+",
+  "textRussian": "Три недели прошли быстро. Алекс <strong>размышляет</strong> о своём <strong>прогрессе</strong>. Он выучил много нового. Исправил десятки <strong>багов</strong>. Написал сотни строк кода. Интегрировал API. Оптимизировал производительность. Улучшил безопасность. Написал документацию. Дмитрий зовёт Алекса. «У нас <strong>one-on-one встреча</strong>», — говорит он. Они обсуждают работу. «Ты делаешь большой прогресс», — говорит Дмитрий. «Твой код становится лучше каждый день». Алекс благодарен. «Спасибо за <strong>помощь</strong> и <strong>наставничество</strong>», — отвечает он. Дмитрий улыбается. «Теперь ты готов к более сложным <strong>задачам</strong>». Алекс взволнован. Новые <strong>вызовы</strong> ждут впереди!",
+  "textEnglish": "Three weeks passed quickly. Alex reflects on his progress. He learned a lot of new things. Fixed dozens of bugs. Wrote hundreds of lines of code. Integrated APIs. Optimized performance. Improved security. Wrote documentation. Dmitry calls Alex. 'We have a one-on-one meeting,' he says. They discuss work. 'You're making great progress,' says Dmitry. 'Your code is getting better every day.' Alex is grateful. 'Thank you for your help and mentorship,' he replies. Dmitry smiles. 'Now you're ready for more complex tasks.' Alex is excited. New challenges await ahead!",
+  "vocabulary": [
+    {
+      "russian": "размышля́ет",
+      "english": "reflects / thinks about",
+      "context": "From 'размышлять' (to reflect). 'Размышлять о прогрессе' = to reflect on progress."
+    },
+    {
+      "russian": "прогре́сс",
+      "english": "progress",
+      "context": "'Делать прогресс' = to make progress. 'Большой прогресс' = great progress."
+    },
+    {
+      "russian": "ба́ги",
+      "english": "bugs",
+      "context": "Plural of 'баг'.",
+      "reactivatedFrom": 3
+    },
+    {
+      "russian": "one-on-one встре́ча",
+      "english": "one-on-one meeting",
+      "context": "English term used in Russian. Individual meeting with manager."
+    },
+    {
+      "russian": "по́мощь",
+      "english": "help / assistance",
+      "context": "Feminine noun. 'Спасибо за помощь' = thank you for help."
+    },
+    {
+      "russian": "наста́вничество",
+      "english": "mentorship",
+      "context": "'Наставник' = mentor. 'Наставничество' = mentorship process."
+    },
+    {
+      "russian": "зада́чи",
+      "english": "tasks",
+      "context": "Work tasks or assignments. Singular: 'задача'. 'Сложные задачи' = complex tasks."
+    },
+    {
+      "russian": "вы́зовы",
+      "english": "challenges",
+      "context": "Challenges or calls. Singular: 'вызов'. 'Новые вызовы' = new challenges."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the reflection words:",
+      "pairs": [
+        { "russian": "прогресс", "english": "progress" },
+        { "russian": "помощь", "english": "help" },
+        { "russian": "наставничество", "english": "mentorship" },
+        { "russian": "вызовы", "english": "challenges" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Vocabulary for discussing professional growth."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Dmitry say about Alex?",
+      "options": [
+        "Ты делаешь большой прогресс (You're making great progress)",
+        "Тебе нужно больше учиться (You need to learn more)",
+        "Твой код плохой (Your code is bad)",
+        "Ты работаешь медленно (You work slowly)"
+      ],
+      "correctAnswer": "Ты делаешь большой прогресс (You're making great progress)",
+      "explanation": "Dmitry praises Alex: 'Ты делаешь большой прогресс' (You're making great progress)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Три недели прошли быстро. Алекс размышляет о своём _______.",
+      "wordBank": ["прогрессе", "коде", "тесте", "багах"],
+      "correctAnswer": "прогрессе",
+      "explanation": "Alex reflects on his progress. Note 'прогрессе' is prepositional case after 'о' (about)."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form: 'Спасибо за _____.'",
+      "options": [
+        "помощь (accusative)",
+        "помощи (genitive)",
+        "помощью (instrumental)",
+        "помощи (prepositional)"
+      ],
+      "correctAnswer": "помощь (accusative)",
+      "explanation": "After 'за' (for) we use accusative case: 'Спасибо за помощь' (Thank you for help)."
+    }
+  ],
+  "pronunciation": [
+    {
+      "word": "наставничество",
+      "ipa": "nəˈstavnʲɪt͡ɕɪstvə",
+      "phonetic": "nah-STAHV-nee-chest-voh",
+      "pitfalls": "Stress on second syllable 'став'. Long word with many consonants."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "One-on-One Meetings",
+    "content": "One-on-one meetings between developers and managers are becoming standard practice in Russian tech companies, adopted from Western practices. They're used for feedback and career development."
+  },
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Alex reflects on his first three weeks and receives positive feedback from his mentor Dmitry.",
+  "wordCount": 107,
+  "estimatedMinutes": 20,
+  "previousDayReferences": [1, 3, 5, 12, 17, 19, 18]
+}

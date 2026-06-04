@@ -1,0 +1,90 @@
+{
+  "day": 5,
+  "phase": 1,
+  "title": "Code Review",
+  "difficultyLevel": "A2",
+  "textRussian": "Алекс делает <strong>pull request</strong>. Дмитрий делает <strong>code review</strong>. Он смотрит код Алекса. «Код выглядит хорошо», — пишет Дмитрий в <strong>комментарии</strong>. Но есть маленькая <strong>рекомендация</strong>. «Добавь <strong>константу</strong> для этого значения», — советует он. Алекс понимает. Это хорошая <strong>практика</strong>. Он изменяет код. Он добавляет константу MAX_RETRIES. Теперь код более читаемый. Дмитрий одобряет pull request. «Approved!» — пишет он. Алекс нажимает кнопку <strong>merge</strong>. Его код теперь в master-ветке. Алекс рад. Он учится быстро.",
+  "textEnglish": "Alex makes a pull request. Dmitry does a code review. He looks at Alex's code. 'Code looks good,' Dmitry writes in a comment. But there's a small recommendation. 'Add a constant for this value,' he advises. Alex understands. This is a good practice. He changes the code. He adds a MAX_RETRIES constant. Now the code is more readable. Dmitry approves the pull request. 'Approved!' he writes. Alex presses the merge button. His code is now in the master branch. Alex is happy. He learns quickly.",
+  "vocabulary": [
+    {
+      "russian": "pull request",
+      "english": "pull request (PR)",
+      "context": "Used in English form in Russian tech companies. Sometimes abbreviated as PR."
+    },
+    {
+      "russian": "code review",
+      "english": "code review",
+      "context": "Often used in English. Russian alternative: 'ревью кода' or 'проверка кода'."
+    },
+    {
+      "russian": "коммента́рий",
+      "english": "comment",
+      "context": "Both code comment and review comment. Plural: 'комментарии'."
+    },
+    {
+      "russian": "рекоменда́ция",
+      "english": "recommendation / suggestion",
+      "context": "Formal way to suggest improvements. 'Давать рекомендацию' = to give a recommendation."
+    },
+    {
+      "russian": "конста́нта",
+      "english": "constant (programming)",
+      "context": "Programming constant. 'Объявить константу' = to declare a constant."
+    },
+    {
+      "russian": "пра́ктика",
+      "english": "practice / approach",
+      "context": "'Хорошая практика' = best practice. 'Плохая практика' = bad practice."
+    },
+    {
+      "russian": "merge",
+      "english": "merge (git merge)",
+      "context": "Used in English. Russian: 'слияние' or 'мёрдж'. Verb: 'мёрджить'."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "context-selection",
+      "question": "What does Dmitry recommend Alex to add?",
+      "options": [
+        "Константу (a constant)",
+        "Комментарий (a comment)",
+        "Тест (a test)",
+        "Функцию (a function)"
+      ],
+      "correctAnswer": "Константу (a constant)",
+      "explanation": "Dmitry says: 'Добавь константу для этого значения' (Add a constant for this value)."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words to form a correct sentence:",
+      "scrambledWords": ["Алекс", "делает", "pull", "request"],
+      "correctAnswer": ["Алекс", "делает", "pull", "request"],
+      "explanation": "The correct sentence is: 'Алекс делает pull request' (Alex makes a pull request). English tech terms integrated into Russian grammar."
+    },
+    {
+      "type": "matching",
+      "question": "Match the code review terms:",
+      "pairs": [
+        { "russian": "комментарий", "english": "comment" },
+        { "russian": "рекомендация", "english": "recommendation" },
+        { "russian": "константа", "english": "constant" },
+        { "russian": "практика", "english": "practice" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential code review vocabulary used in daily development work."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Дмитрий делает _______. Алекс нажимает кнопку _______.",
+      "wordBank": ["code review", "merge", "тест", "баг"],
+      "correctAnswer": "code review, merge",
+      "explanation": "Dmitry does a code review. Alex presses the merge button. Both English terms commonly used in Russian tech."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Alex completes his first code review cycle, learning best practices from Dmitry.",
+  "wordCount": 98,
+  "estimatedMinutes": 18,
+  "previousDayReferences": [1, 3]
+}

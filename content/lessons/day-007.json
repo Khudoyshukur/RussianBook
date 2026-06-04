@@ -1,0 +1,94 @@
+{
+  "day": 7,
+  "phase": 1,
+  "title": "Meeting Maxim from DevOps",
+  "difficultyLevel": "A2",
+  "textRussian": "Утром Алекс встречает Максима. Максим работает в <strong>DevOps</strong>. «Привет! Я Максим», — говорит он. «Я настраиваю <strong>серверы</strong> и <strong>деплой</strong>». Алекс интересуется. «Что такое DevOps?» — спрашивает он. «Мы автоматизируем <strong>процессы</strong>», — объясняет Максим. «Например, <strong>CI/CD pipeline</strong>». Алекс понимает. «Это важно!» — говорит он. Максим показывает <strong>мониторинг</strong>. На <strong>экране</strong> много <strong>графиков</strong>. «Смотри, это нагрузка на сервер», — говорит Максим. Алекс видит красную линию. «Это плохо?» — спрашивает он. «Нет, это нормально», — успокаивает Максим. Алекс узнаёт много нового.",
+  "textEnglish": "In the morning Alex meets Maxim. Maxim works in DevOps. 'Hi! I'm Maxim,' he says. 'I configure servers and deployment.' Alex is interested. 'What is DevOps?' he asks. 'We automate processes,' Maxim explains. 'For example, CI/CD pipeline.' Alex understands. 'That's important!' he says. Maxim shows monitoring. On the screen there are many graphs. 'Look, this is server load,' says Maxim. Alex sees a red line. 'Is that bad?' he asks. 'No, that's normal,' Maxim reassures. Alex learns a lot of new things.",
+  "vocabulary": [
+    {
+      "russian": "DevOps",
+      "english": "DevOps",
+      "context": "Used in English form. Key role combining development and operations."
+    },
+    {
+      "russian": "се́рвер",
+      "english": "server",
+      "context": "Plural: 'серверы'. 'Перезагрузить сервер' = to reboot server."
+    },
+    {
+      "russian": "деплой",
+      "english": "deployment (deploy)",
+      "context": "From English 'deploy'. Verb: 'деплоить'. Formal: 'развёртывание'."
+    },
+    {
+      "russian": "проце́сс",
+      "english": "process",
+      "context": "Both business process and system process. 'Автоматизировать процесс' = to automate a process."
+    },
+    {
+      "russian": "мо́ниторинг",
+      "english": "monitoring",
+      "context": "System monitoring. 'Настроить мониторинг' = to set up monitoring."
+    },
+    {
+      "russian": "экра́н",
+      "english": "screen / display",
+      "context": "Computer screen. 'На экране' = on the screen."
+    },
+    {
+      "russian": "гра́фик",
+      "english": "graph / chart",
+      "context": "Data visualization. Plural: 'графики'. Also means 'schedule'."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the DevOps terms:",
+      "pairs": [
+        { "russian": "сервер", "english": "server" },
+        { "russian": "деплой", "english": "deployment" },
+        { "russian": "мониторинг", "english": "monitoring" },
+        { "russian": "график", "english": "graph" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential DevOps vocabulary for infrastructure and deployment."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Maxim show to Alex?",
+      "options": [
+        "Мониторинг (monitoring)",
+        "Код (code)",
+        "Тесты (tests)",
+        "Документацию (documentation)"
+      ],
+      "correctAnswer": "Мониторинг (monitoring)",
+      "explanation": "Maxim shows monitoring: 'Максим показывает мониторинг'."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Максим настраивает _______ и _______.",
+      "wordBank": ["серверы", "деплой", "тесты", "код"],
+      "correctAnswer": "серверы, деплой",
+      "explanation": "Maxim configures servers and deployment. DevOps responsibilities."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in the correct verb form: Максим _______ (объяснять) процессы.",
+      "wordBank": ["объясняет", "объяснять", "объяснял", "объясняют"],
+      "correctAnswer": "объясняет",
+      "explanation": "Present tense, 3rd person singular: 'объясняет' (explains)."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "DevOps in Russian Tech",
+    "content": "DevOps is a rapidly growing field in Russian tech companies. Many terms are borrowed directly from English (CI/CD, pipeline, deploy) rather than using Russian equivalents."
+  },
+  "characters": ["Алекс (Alex)", "Максим (Maxim) - DevOps Engineer"],
+  "storyArc": "Alex meets Maxim and learns about DevOps, servers, and monitoring.",
+  "wordCount": 105,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [1]
+}

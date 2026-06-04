@@ -1,0 +1,97 @@
+{
+  "day": 18,
+  "phase": 1,
+  "title": "Writing Documentation",
+  "difficultyLevel": "A2",
+  "textRussian": "Аня просит Алекса написать <strong>документацию</strong>. «Нужен README для нового API», — говорит она. Алекс открывает <strong>редактор</strong>. Создаёт файл README.md. Пишет <strong>заголовок</strong>: # Payment API. Добавляет <strong>описание</strong>. Объясняет, как использовать API. Пишет <strong>примеры кода</strong>. ```javascript const response = await fetch('/api/payment')```. Добавляет список <strong>параметров</strong>. Описывает каждый эндпоинт. Включает <strong>примеры ответов</strong>. Добавляет секцию об <strong>ошибках</strong>. Елена проверяет документацию. «Очень понятно!» — говорит она. «Хорошая документация помогает всем», — отвечает Алекс. Аня довольна. Документация готова!",
+  "textEnglish": "Anya asks Alex to write documentation. 'We need a README for the new API,' she says. Alex opens the editor. Creates a README.md file. Writes a heading: # Payment API. Adds a description. Explains how to use the API. Writes code examples. ```javascript const response = await fetch('/api/payment')```. Adds a list of parameters. Describes each endpoint. Includes response examples. Adds a section about errors. Elena checks the documentation. 'Very clear!' she says. 'Good documentation helps everyone,' Alex replies. Anya is pleased. The documentation is ready!",
+  "vocabulary": [
+    {
+      "russian": "документа́ция",
+      "english": "documentation",
+      "context": "'Писать документацию' = to write documentation. 'Читать документацию' = to read docs.",
+      "reactivatedFrom": 9
+    },
+    {
+      "russian": "реда́ктор",
+      "english": "editor (text/code editor)",
+      "context": "Code editor or text editor. 'Открыть в редакторе' = to open in editor."
+    },
+    {
+      "russian": "заголо́вок",
+      "english": "heading / title / header",
+      "context": "Markdown heading or page title. Plural: 'заголовки'."
+    },
+    {
+      "russian": "описа́ние",
+      "english": "description",
+      "context": "'Добавить описание' = to add a description. 'Описание функции' = function description."
+    },
+    {
+      "russian": "приме́ры ко́да",
+      "english": "code examples",
+      "context": "Two-word compound. 'Писать примеры кода' = to write code examples."
+    },
+    {
+      "russian": "пара́метры",
+      "english": "parameters",
+      "context": "Function or API parameters. Singular: 'параметр'."
+    },
+    {
+      "russian": "приме́ры отве́тов",
+      "english": "response examples",
+      "context": "API response examples in documentation."
+    },
+    {
+      "russian": "оши́бки",
+      "english": "errors",
+      "context": "Plural of 'ошибка'. Error handling documentation.",
+      "reactivatedFrom": 3
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the documentation terms:",
+      "pairs": [
+        { "russian": "редактор", "english": "editor" },
+        { "russian": "заголовок", "english": "heading" },
+        { "russian": "описание", "english": "description" },
+        { "russian": "параметры", "english": "parameters" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential documentation writing vocabulary."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Alex write?",
+      "options": [
+        "Документацию для API (API documentation)",
+        "Тесты (tests)",
+        "Код (code)",
+        "Баг-репорт (bug report)"
+      ],
+      "correctAnswer": "Документацию для API (API documentation)",
+      "explanation": "Anya asks for a README for the new API."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс создаёт файл README.md. Пишет _______: # Payment API.",
+      "wordBank": ["заголовок", "описание", "тест", "код"],
+      "correctAnswer": "заголовок",
+      "explanation": "Alex writes a heading: # Payment API (Markdown syntax)."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words:",
+      "scrambledWords": ["Документация", "готова", "Аня", "довольна"],
+      "correctAnswer": ["Документация", "готова", "Аня", "довольна"],
+      "explanation": "'Документация готова. Аня довольна' (The documentation is ready. Anya is pleased). Two simple sentences."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Аня (Anya)", "Елена (Elena)"],
+  "storyArc": "Alex writes clear API documentation, learning the importance of good docs.",
+  "wordCount": 102,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [11, 12]
+}

@@ -1,0 +1,100 @@
+{
+  "day": 21,
+  "phase": 1,
+  "title": "Team Celebration",
+  "difficultyLevel": "A2",
+  "textRussian": "Сегодня <strong>особенный день</strong>! Команда запускает первую версию приложения. <strong>MVP</strong> готов! Все собираются в <strong>конференц-зале</strong>. Аня делает <strong>презентацию</strong>. Показывает все <strong>функции</strong>. «Вот форма регистрации, которую сделал Алекс», — говорит она. Все аплодируют. «Вот API интеграция». Снова аплодисменты. Максим показывает <strong>метрики</strong>. Приложение быстрое и стабильное. Елена докладывает: «Тесты проходят, багов нет!» Команда счастлива. Вечером они идут в <strong>ресторан</strong>. Празднуют успех. «Спасибо всем за <strong>работу</strong>!» — говорит Аня. Алекс чувствует себя частью команды. Отличный день!",
+  "textEnglish": "Today is a special day! The team is launching the first version of the application. The MVP is ready! Everyone gathers in the conference room. Anya does a presentation. Shows all the features. 'Here's the registration form that Alex made,' she says. Everyone applauds. 'Here's the API integration.' Applause again. Maxim shows metrics. The application is fast and stable. Elena reports: 'Tests pass, no bugs!' The team is happy. In the evening they go to a restaurant. Celebrate success. 'Thank you all for your work!' says Anya. Alex feels like part of the team. Great day!",
+  "vocabulary": [
+    {
+      "russian": "осо́бенный день",
+      "english": "special day",
+      "context": "Two-word phrase. 'Особенный' = special, unique."
+    },
+    {
+      "russian": "MVP",
+      "english": "MVP (Minimum Viable Product)",
+      "context": "Used in English form. Pronounced 'эм-ви-пи'. First working version."
+    },
+    {
+      "russian": "конфере́нц-зал",
+      "english": "conference room",
+      "context": "Meeting room. 'В конференц-зале' = in the conference room."
+    },
+    {
+      "russian": "презента́ция",
+      "english": "presentation",
+      "context": "'Делать презентацию' = to give a presentation."
+    },
+    {
+      "russian": "фу́нкции",
+      "english": "functions / features",
+      "context": "App features or programming functions.",
+      "reactivatedFrom": 4
+    },
+    {
+      "russian": "ме́трики",
+      "english": "metrics",
+      "context": "Performance metrics. Singular: 'метрика'. 'Смотреть на метрики' = to look at metrics."
+    },
+    {
+      "russian": "рестора́н",
+      "english": "restaurant",
+      "context": "'Идти в ресторан' = to go to a restaurant. 'В ресторане' = in the restaurant."
+    },
+    {
+      "russian": "рабо́та",
+      "english": "work / job",
+      "context": "'Спасибо за работу' = thank you for your work. Common phrase."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "context-selection",
+      "question": "What does the team celebrate?",
+      "options": [
+        "Запуск MVP (launching the MVP)",
+        "Новый офис (new office)",
+        "День рождения (birthday)",
+        "Новый сотрудник (new employee)"
+      ],
+      "correctAnswer": "Запуск MVP (launching the MVP)",
+      "explanation": "The team celebrates launching the first version of the application - the MVP."
+    },
+    {
+      "type": "matching",
+      "question": "Match the celebration words:",
+      "pairs": [
+        { "russian": "особенный день", "english": "special day" },
+        { "russian": "презентация", "english": "presentation" },
+        { "russian": "метрики", "english": "metrics" },
+        { "russian": "ресторан", "english": "restaurant" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Vocabulary from the team celebration."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "_______ готов! Команда собирается в _______.",
+      "wordBank": ["MVP", "конференц-зале", "офисе", "тест"],
+      "correctAnswer": "MVP, конференц-зале",
+      "explanation": "The MVP is ready! The team gathers in the conference room."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words:",
+      "scrambledWords": ["Алекс", "чувствует", "себя", "частью", "команды"],
+      "correctAnswer": ["Алекс", "чувствует", "себя", "частью", "команды"],
+      "explanation": "'Алекс чувствует себя частью команды' (Alex feels like part of the team). Reflexive verb construction."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Team Celebrations",
+    "content": "Russian tech teams often celebrate major milestones like MVP launches or successful releases with team dinners or outings. It's important for team bonding."
+  },
+  "characters": ["Алекс (Alex)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)", "Дмитрий (Dmitry)"],
+  "storyArc": "The team celebrates launching their MVP, and Alex feels fully integrated into the team.",
+  "wordCount": 107,
+  "estimatedMinutes": 20,
+  "previousDayReferences": [4, 7, 10, 11]
+}

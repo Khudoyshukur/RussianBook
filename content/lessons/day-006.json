@@ -1,0 +1,99 @@
+{
+  "day": 6,
+  "phase": 1,
+  "title": "Testing the Feature",
+  "difficultyLevel": "A2",
+  "textRussian": "Сегодня Алекс тестирует новую функцию. Он открывает <strong>браузер</strong>. Он переходит на <strong>страницу</strong> регистрации. <strong>Форма</strong> загружается. Алекс вводит <strong>email</strong>. Он вводит пароль. Он нажимает <strong>кнопку</strong> «Регистрация». Что-то не так! Появляется <strong>ошибка</strong>: «Invalid email». Алекс проверяет код. Проблема в <strong>валидации</strong>. <strong>Регулярное выражение</strong> неправильное. Алекс исправляет regex. Он тестирует снова. Теперь всё работает! Регистрация успешна. «Отлично», — думает Алекс. Он закрывает <strong>браузер</strong>.",
+  "textEnglish": "Today Alex is testing the new feature. He opens the browser. He navigates to the registration page. The form loads. Alex enters an email. He enters a password. He presses the 'Register' button. Something is wrong! An error appears: 'Invalid email'. Alex checks the code. The problem is in the validation. The regular expression is incorrect. Alex fixes the regex. He tests again. Now everything works! Registration is successful. 'Excellent,' thinks Alex. He closes the browser.",
+  "vocabulary": [
+    {
+      "russian": "бра́узер",
+      "english": "browser",
+      "context": "Direct borrowing. 'Открыть в браузере' = to open in browser.",
+      "reactivatedFrom": 2
+    },
+    {
+      "russian": "страни́ца",
+      "english": "page (web page)",
+      "context": "Can mean book page or web page. 'Главная страница' = home page."
+    },
+    {
+      "russian": "фо́рма",
+      "english": "form (web form)",
+      "context": "HTML form. 'Заполнить форму' = to fill out a form."
+    },
+    {
+      "russian": "email / и́мейл",
+      "english": "email",
+      "context": "Both spellings used. Also 'электронная почта' (formal)."
+    },
+    {
+      "russian": "кно́пка",
+      "english": "button",
+      "context": "UI button. 'Нажать кнопку' = to press/click a button."
+    },
+    {
+      "russian": "валида́ция",
+      "english": "validation",
+      "context": "Input validation. 'Проверка валидации' = validation check."
+    },
+    {
+      "russian": "регуля́рное выраже́ние",
+      "english": "regular expression (regex)",
+      "context": "Formal term. Colloquially: 'регулярка' or 'regex'."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс открывает _______. Он переходит на _______ регистрации.",
+      "wordBank": ["браузер", "страницу", "форму", "кнопку"],
+      "correctAnswer": "браузер, страницу",
+      "explanation": "Alex opens the browser. He navigates to the registration page. Note 'страницу' is accusative case (direct object of motion)."
+    },
+    {
+      "type": "context-selection",
+      "question": "What was wrong with the code?",
+      "options": [
+        "Регулярное выражение неправильное (regex is incorrect)",
+        "Браузер не работает (browser doesn't work)",
+        "Email слишком длинный (email is too long)",
+        "Кнопка сломана (button is broken)"
+      ],
+      "correctAnswer": "Регулярное выражение неправильное (regex is incorrect)",
+      "explanation": "The text states: 'Регулярное выражение неправильное' (The regular expression is incorrect)."
+    },
+    {
+      "type": "matching",
+      "question": "Match the UI elements with their Russian names:",
+      "pairs": [
+        { "russian": "форма", "english": "form" },
+        { "russian": "кнопка", "english": "button" },
+        { "russian": "страница", "english": "page" },
+        { "russian": "валидация", "english": "validation" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential UI/UX vocabulary for web development."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words to form a correct sentence:",
+      "scrambledWords": ["Алекс", "тестирует", "новую", "функцию"],
+      "correctAnswer": ["Алекс", "тестирует", "новую", "функцию"],
+      "explanation": "The correct sentence is: 'Алекс тестирует новую функцию' (Alex is testing the new feature)."
+    }
+  ],
+  "pronunciation": [
+    {
+      "word": "валидация",
+      "ipa": "vəlʲɪˈdatsɨjə",
+      "phonetic": "vuh-lee-DAH-tsee-yuh",
+      "pitfalls": "Stress on 'да' syllable. The ending '-ция' is always pronounced 'tsee-yuh'."
+    }
+  ],
+  "characters": ["Алекс (Alex)"],
+  "storyArc": "Alex independently tests a feature, finds and fixes a regex bug.",
+  "wordCount": 90,
+  "estimatedMinutes": 17,
+  "previousDayReferences": [2, 4]
+}

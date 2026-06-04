@@ -1,0 +1,86 @@
+{
+  "day": 13,
+  "phase": 1,
+  "title": "Git Conflict",
+  "difficultyLevel": "A2",
+  "textRussian": "Алекс делает git pull. Появляется <strong>конфликт</strong>! «CONFLICT in login.js», — показывает <strong>терминал</strong>. Алекс паникует немного. Он зовёт Дмитрия. «Не волнуйся», — говорит Дмитрий. «Это <strong>merge conflict</strong>. Бывает часто». Они открывают файл. Видят <strong>маркеры</strong>: <<<<<<, ======, >>>>>>. «Твой код здесь, мой код там», — объясняет Дмитрий. Алекс понимает. Он выбирает правильный <strong>вариант</strong>. Удаляет маркеры. Сохраняет файл. Делает git add и git commit. «Готово!» — говорит Алекс. «Видишь? Легко», — улыбается Дмитрий. Алекс учится работать в <strong>команде</strong>.",
+  "textEnglish": "Alex does a git pull. A conflict appears! 'CONFLICT in login.js,' the terminal shows. Alex panics a bit. He calls Dmitry. 'Don't worry,' says Dmitry. 'It's a merge conflict. Happens often.' They open the file. They see markers: <<<<<<, ======, >>>>>>. 'Your code here, my code there,' Dmitry explains. Alex understands. He chooses the correct version. Deletes the markers. Saves the file. Does git add and git commit. 'Done!' says Alex. 'See? Easy,' Dmitry smiles. Alex is learning to work in a team.",
+  "vocabulary": [
+    {
+      "russian": "конфли́кт",
+      "english": "conflict (merge conflict)",
+      "context": "'Git conflict' or 'merge conflict'. 'Разрешить конфликт' = to resolve a conflict."
+    },
+    {
+      "russian": "термина́л",
+      "english": "terminal",
+      "context": "Command line terminal.",
+      "reactivatedFrom": 2
+    },
+    {
+      "russian": "merge conflict",
+      "english": "merge conflict",
+      "context": "Used in English. Russian: 'конфликт слияния'. Common in git workflows."
+    },
+    {
+      "russian": "ма́ркеры",
+      "english": "markers (conflict markers)",
+      "context": "Git conflict markers. Singular: 'маркер'."
+    },
+    {
+      "russian": "вариа́нт",
+      "english": "version / variant / option",
+      "context": "'Выбрать вариант' = to choose a version. Multiple meanings depending on context."
+    },
+    {
+      "russian": "кома́нда",
+      "english": "team",
+      "context": "'Работать в команде' = to work in a team.",
+      "reactivatedFrom": 4
+    }
+  ],
+  "exercises": [
+    {
+      "type": "context-selection",
+      "question": "What does Alex see in the file?",
+      "options": [
+        "Маркеры конфликта (conflict markers)",
+        "Ошибки синтаксиса (syntax errors)",
+        "Комментарии (comments)",
+        "Тесты (tests)"
+      ],
+      "correctAnswer": "Маркеры конфликта (conflict markers)",
+      "explanation": "They see markers: <<<<<<, ======, >>>>>>."
+    },
+    {
+      "type": "matching",
+      "question": "Match the git terms:",
+      "pairs": [
+        { "russian": "конфликт", "english": "conflict" },
+        { "russian": "маркеры", "english": "markers" },
+        { "russian": "вариант", "english": "version" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2"],
+      "explanation": "Essential git conflict resolution vocabulary."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс делает git pull. Появляется _______!",
+      "wordBank": ["конфликт", "ошибка", "тест", "баг"],
+      "correctAnswer": "конфликт",
+      "explanation": "Alex does git pull. A conflict appears!"
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in: Дмитрий _______ (объяснять) конфликт.",
+      "wordBank": ["объясняет", "объяснять", "объяснял", "объясняют"],
+      "correctAnswer": "объясняет",
+      "explanation": "Present tense, 3rd person singular: 'объясняет' (explains)."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Alex encounters and resolves his first git merge conflict with Dmitry's help.",
+  "wordCount": 101,
+  "estimatedMinutes": 18,
+  "previousDayReferences": [1, 5]
+}

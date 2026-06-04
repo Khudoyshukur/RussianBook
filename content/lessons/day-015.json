@@ -1,0 +1,95 @@
+{
+  "day": 15,
+  "phase": 1,
+  "title": "Coffee Break Chat",
+  "difficultyLevel": "A2",
+  "textRussian": "Перерыв на <strong>кофе</strong>. Алекс идёт на <strong>кухню</strong>. Там Дмитрий и Аня пьют кофе. «Привет!» — говорит Алекс. Он наливает кофе. «Как <strong>проект</strong>?» — спрашивает Аня. «Хорошо! Я исправил много багов», — отвечает Алекс. «Молодец!» — говорит Дмитрий. Они говорят о технологиях. «Ты знаешь TypeScript?» — спрашивает Дмитрий. «Немного», — отвечает Алекс. «Мы скоро будем его <strong>использовать</strong>», — объясняет Аня. «Это даёт <strong>типизацию</strong>». Алекс заинтересован. «<strong>Безопасность</strong> кода лучше?» — спрашивает он. «Да! Меньше ошибок», — говорит Дмитрий. Перерыв <strong>приятный</strong>. Алекс любит команду.",
+  "textEnglish": "Coffee break. Alex goes to the kitchen. There Dmitry and Anya are drinking coffee. 'Hi!' says Alex. He pours coffee. 'How's the project?' asks Anya. 'Good! I fixed many bugs,' Alex replies. 'Well done!' says Dmitry. They talk about technologies. 'Do you know TypeScript?' asks Dmitry. 'A little,' Alex answers. 'We'll be using it soon,' Anya explains. 'It provides typing.' Alex is interested. 'Is code safety better?' he asks. 'Yes! Fewer errors,' says Dmitry. The break is pleasant. Alex loves the team.",
+  "vocabulary": [
+    {
+      "russian": "ко́фе",
+      "english": "coffee",
+      "context": "Indeclinable noun (doesn't change form). 'Пить кофе' = to drink coffee."
+    },
+    {
+      "russian": "ку́хня",
+      "english": "kitchen",
+      "context": "Office kitchen or home kitchen. 'На кухне' = in the kitchen (prepositional case)."
+    },
+    {
+      "russian": "прое́кт",
+      "english": "project",
+      "context": "'Как проект?' = How's the project? Casual question about work progress.",
+      "reactivatedFrom": 4
+    },
+    {
+      "russian": "испо́льзовать",
+      "english": "to use",
+      "context": "Infinitive. 'Использовать технологию' = to use a technology."
+    },
+    {
+      "russian": "типиза́ция",
+      "english": "typing (type system)",
+      "context": "Static typing. 'Строгая типизация' = strong typing."
+    },
+    {
+      "russian": "безопа́сность",
+      "english": "safety / security",
+      "context": "'Безопасность кода' = code safety. 'Информационная безопасность' = information security."
+    },
+    {
+      "russian": "прия́тный",
+      "english": "pleasant / nice",
+      "context": "Adjective. 'Приятный перерыв' = pleasant break. 'Приятно познакомиться' = nice to meet you."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "context-selection",
+      "question": "What will the team use soon?",
+      "options": [
+        "TypeScript",
+        "Python",
+        "Java",
+        "PHP"
+      ],
+      "correctAnswer": "TypeScript",
+      "explanation": "Anya says: 'Мы скоро будем его использовать' about TypeScript."
+    },
+    {
+      "type": "matching",
+      "question": "Match the words:",
+      "pairs": [
+        { "russian": "кофе", "english": "coffee" },
+        { "russian": "типизация", "english": "typing" },
+        { "russian": "безопасность", "english": "safety" },
+        { "russian": "приятный", "english": "pleasant" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Vocabulary from the coffee break conversation."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Перерыв на _______. Алекс идёт на _______.",
+      "wordBank": ["кофе", "кухню", "сервер", "тест"],
+      "correctAnswer": "кофе, кухню",
+      "explanation": "Coffee break. Alex goes to the kitchen. Note 'кухню' is accusative (direction)."
+    },
+    {
+      "type": "verb-conjugation",
+      "question": "Fill in: Аня _______ (объяснять) типизацию.",
+      "wordBank": ["объясняет", "объяснять", "объяснил", "объясняют"],
+      "correctAnswer": "объясняет",
+      "explanation": "Present tense, 3rd person singular: 'объясняет' (explains)."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Russian Office Culture",
+    "content": "Coffee breaks are important social time in Russian offices. Colleagues discuss work informally, share knowledge, and build relationships over tea or coffee in the kitchen."
+  },
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)"],
+  "storyArc": "Alex bonds with the team during a coffee break and learns about TypeScript.",
+  "wordCount": 103,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [1, 4]
+}

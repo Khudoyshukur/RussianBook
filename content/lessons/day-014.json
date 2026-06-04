@@ -1,0 +1,93 @@
+{
+  "day": 14,
+  "phase": 1,
+  "title": "Debugging Session",
+  "difficultyLevel": "A2",
+  "textRussian": "Приложение падает. Алекс открывает <strong>дебаггер</strong>. Он ставит <strong>breakpoint</strong> на строке 45. Запускает приложение. Код останавливается! Алекс смотрит <strong>переменные</strong>. Видит: userData = undefined. «Вот проблема!» — думает Алекс. Он проверяет <strong>стек вызовов</strong>. Функция getUserData() не возвращает данные. Алекс находит баг. В <strong>условии</strong> опечатка: if (user.id == null). Должно быть !== null. Он исправляет. Убирает breakpoint. Запускает снова. Приложение работает! Переменная userData теперь заполнена. «Дебаггер — очень полезный <strong>инструмент</strong>», — понимает Алекс.",
+  "textEnglish": "The application crashes. Alex opens the debugger. He sets a breakpoint on line 45. Runs the application. The code stops! Alex looks at the variables. He sees: userData = undefined. 'That's the problem!' thinks Alex. He checks the call stack. The getUserData() function doesn't return data. Alex finds the bug. There's a typo in the condition: if (user.id == null). Should be !== null. He fixes it. Removes the breakpoint. Runs again. The application works! The userData variable is now filled. 'The debugger is a very useful tool,' Alex understands.",
+  "vocabulary": [
+    {
+      "russian": "деба́ггер",
+      "english": "debugger",
+      "context": "From English 'debugger'. Tool for debugging. Verb: 'дебажить' (to debug)."
+    },
+    {
+      "russian": "breakpoint / брейкпо́инт",
+      "english": "breakpoint",
+      "context": "Used in English or transliterated. 'Поставить breakpoint' = to set a breakpoint."
+    },
+    {
+      "russian": "переме́нные",
+      "english": "variables",
+      "context": "Plural of 'переменная'. Programming variables. 'Проверить переменные' = to check variables."
+    },
+    {
+      "russian": "стек вызо́вов",
+      "english": "call stack",
+      "context": "Two-word compound. Shows function call hierarchy in debugger."
+    },
+    {
+      "russian": "усло́вие",
+      "english": "condition (if-statement)",
+      "context": "Conditional statement. 'В условии' = in the condition. Also means 'term' or 'requirement'."
+    },
+    {
+      "russian": "инструме́нт",
+      "english": "tool / instrument",
+      "context": "Both physical tool and software tool. Plural: 'инструменты'."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the debugging terms:",
+      "pairs": [
+        { "russian": "дебаггер", "english": "debugger" },
+        { "russian": "breakpoint", "english": "breakpoint" },
+        { "russian": "переменные", "english": "variables" },
+        { "russian": "стек вызовов", "english": "call stack" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential debugging vocabulary."
+    },
+    {
+      "type": "context-selection",
+      "question": "What was the bug?",
+      "options": [
+        "Опечатка в условии (typo in condition)",
+        "Нет breakpoint (no breakpoint)",
+        "Переменная пустая (variable is empty)",
+        "Функция не существует (function doesn't exist)"
+      ],
+      "correctAnswer": "Опечатка в условии (typo in condition)",
+      "explanation": "There's a typo in the condition: if (user.id == null) instead of !== null."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс ставит _______ на строке 45. Он смотрит _______.",
+      "wordBank": ["breakpoint", "переменные", "код", "тест"],
+      "correctAnswer": "breakpoint, переменные",
+      "explanation": "Alex sets a breakpoint on line 45. He looks at the variables."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words:",
+      "scrambledWords": ["Приложение", "падает", "Алекс", "открывает", "дебаггер"],
+      "correctAnswer": ["Приложение", "падает", "Алекс", "открывает", "дебаггер"],
+      "explanation": "'Приложение падает. Алекс открывает дебаггер' (The application crashes. Alex opens the debugger). Two sentences."
+    }
+  ],
+  "pronunciation": [
+    {
+      "word": "переменные",
+      "ipa": "pʲɪrʲɪˈmʲenːɨjɪ",
+      "phonetic": "peh-reh-MYEN-ny-ye",
+      "pitfalls": "Stress on second 'е'. The double 'нн' is pronounced as a long 'n' sound."
+    }
+  ],
+  "characters": ["Алекс (Alex)"],
+  "storyArc": "Alex uses the debugger to find and fix a subtle bug in the code.",
+  "wordCount": 98,
+  "estimatedMinutes": 18,
+  "previousDayReferences": [3, 6]
+}

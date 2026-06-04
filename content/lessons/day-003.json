@@ -1,0 +1,100 @@
+{
+  "day": 3,
+  "phase": 1,
+  "title": "First Bug Fix",
+  "difficultyLevel": "A2-",
+  "textRussian": "Алекс находит <strong>баг</strong> в коде. Он видит <strong>ошибку</strong> в консоли. «Это null pointer exception», — думает он. <strong>Проблема</strong> в функции getData(). Дмитрий помогает. Они смотрят <strong>логи</strong>. «Смотри здесь», — говорит Дмитрий. Алекс понимает проблему. Переменная равна null. Он добавляет <strong>проверку</strong>. Он пишет <strong>тест</strong>. Тест проходит! «Отлично!» — говорит Дмитрий. Алекс делает коммит. Его первый баг исправлен. Он чувствует себя <strong>уверенно</strong>.",
+  "textEnglish": "Alex finds a bug in the code. He sees an error in the console. 'This is a null pointer exception,' he thinks. The problem is in the getData() function. Dmitry helps. They look at the logs. 'Look here,' says Dmitry. Alex understands the problem. The variable equals null. He adds a check. He writes a test. The test passes! 'Excellent!' says Dmitry. Alex makes a commit. His first bug is fixed. He feels confident.",
+  "vocabulary": [
+    {
+      "russian": "баг",
+      "english": "bug (software bug)",
+      "context": "Direct borrowing from English. Essential dev vocabulary. 'Найти баг' = to find a bug."
+    },
+    {
+      "russian": "оши́бка",
+      "english": "error / mistake",
+      "context": "General term for error. 'Ошибка в коде' = error in code. More formal than 'баг'."
+    },
+    {
+      "russian": "пробле́ма",
+      "english": "problem / issue",
+      "context": "Used for both technical and non-technical problems. 'Решить проблему' = to solve a problem."
+    },
+    {
+      "russian": "ло́ги",
+      "english": "logs (system/application logs)",
+      "context": "Plural of 'лог'. 'Смотреть логи' = to check/look at logs.",
+      "reactivatedFrom": 2
+    },
+    {
+      "russian": "прове́рка",
+      "english": "check / validation",
+      "context": "From verb 'проверять' (to check). 'Добавить проверку' = to add a check/validation."
+    },
+    {
+      "russian": "тест",
+      "english": "test (unit test, integration test)",
+      "context": "Same as English. 'Писать тест' = to write a test. 'Тест проходит' = test passes.",
+      "reactivatedFrom": 1
+    },
+    {
+      "russian": "уве́ренно",
+      "english": "confident / confidently",
+      "context": "Adverb from 'уверенный' (confident). Describes how someone feels or acts."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill-in-blanks",
+      "question": "Алекс находит _______ в коде. Он видит _______ в консоли.",
+      "wordBank": ["баг", "ошибку", "тест", "проверку"],
+      "correctAnswer": "баг, ошибку",
+      "explanation": "Alex finds a bug in the code. He sees an error in the console. Note 'ошибку' is accusative case (direct object)."
+    },
+    {
+      "type": "matching",
+      "question": "Match the Russian words with their English meanings:",
+      "pairs": [
+        { "russian": "баг", "english": "bug" },
+        { "russian": "проблема", "english": "problem" },
+        { "russian": "проверка", "english": "check" },
+        { "russian": "логи", "english": "logs" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "These are essential debugging vocabulary words used daily by developers."
+    },
+    {
+      "type": "context-selection",
+      "question": "What does Alex add to fix the bug?",
+      "options": [
+        "Проверку (a check/validation)",
+        "Комментарий (a comment)",
+        "Функцию (a function)",
+        "Класс (a class)"
+      ],
+      "correctAnswer": "Проверку (a check/validation)",
+      "explanation": "Alex adds a check because the variable was null: 'Он добавляет проверку'."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words to form a correct sentence:",
+      "scrambledWords": ["Тест", "проходит", "отлично"],
+      "correctAnswer": ["Тест", "проходит", "отлично"],
+      "explanation": "The correct sentence is: 'Тест проходит отлично' (The test passes excellently). Subject-Verb-Adverb order."
+    }
+  ],
+  "pronunciation": [
+    {
+      "word": "проверка",
+      "ipa": "prɐˈvʲɛrkə",
+      "phonetic": "pruh-VYER-kuh",
+      "pitfalls": "Stress on second syllable '-вер-'. Don't stress the first 'про-' as English speakers often do."
+    }
+  ],
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)"],
+  "storyArc": "Alex successfully fixes his first bug with Dmitry's guidance, building confidence.",
+  "wordCount": 78,
+  "estimatedMinutes": 16,
+  "previousDayReferences": [1, 2]
+}

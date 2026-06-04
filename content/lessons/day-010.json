@@ -1,0 +1,91 @@
+{
+  "day": 10,
+  "phase": 1,
+  "title": "Friday Deploy",
+  "difficultyLevel": "A2",
+  "textRussian": "Сегодня <strong>пятница</strong>. День <strong>деплоя</strong>! Команда нервничает. «Никогда не деплой в пятницу!» — шутит Дмитрий. Но <strong>релиз</strong> важный. Максим готовит <strong>сервер</strong>. Алекс проверяет код последний раз. Аня проверяет новые <strong>фичи</strong>. Всё готово. «Начинаем!» — говорит Максим. Он запускает <strong>скрипт</strong> деплоя. Команда смотрит на <strong>мониторинг</strong>. Приложение перезапускается. Десять секунд тишины. Потом... зелёный свет! Всё работает! «Ура!» — кричит команда. <strong>Деплой</strong> успешен. Теперь можно отдыхать. Пятница спасена!",
+  "textEnglish": "Today is Friday. Deploy day! The team is nervous. 'Never deploy on Friday!' jokes Dmitry. But the release is important. Maxim prepares the server. Alex checks the code one last time. Anya checks the new features. Everything is ready. 'Let's begin!' says Maxim. He runs the deploy script. The team watches the monitoring. The application restarts. Ten seconds of silence. Then... green light! Everything works! 'Hooray!' the team shouts. The deploy is successful. Now they can relax. Friday is saved!",
+  "vocabulary": [
+    {
+      "russian": "пя́тница",
+      "english": "Friday",
+      "context": "Day of the week. Famous developer superstition: never deploy on Friday!"
+    },
+    {
+      "russian": "де́плой",
+      "english": "deploy / deployment",
+      "context": "From English. Verb: 'деплоить'. 'Делать деплой' = to do a deployment.",
+      "reactivatedFrom": 7
+    },
+    {
+      "russian": "рели́з",
+      "english": "release",
+      "context": "Software release. 'Новый релиз' = new release. 'Релизить' = to release."
+    },
+    {
+      "russian": "фи́ча / фи́чи",
+      "english": "feature / features",
+      "context": "From English 'feature'. Colloquial. Formal: 'функциональность'."
+    },
+    {
+      "russian": "скрипт",
+      "english": "script",
+      "context": "Shell script or any automation script. 'Запустить скрипт' = to run a script."
+    },
+    {
+      "russian": "мо́ниторинг",
+      "english": "monitoring",
+      "context": "System monitoring dashboard.",
+      "reactivatedFrom": 7
+    }
+  ],
+  "exercises": [
+    {
+      "type": "context-selection",
+      "question": "Why is the team nervous?",
+      "options": [
+        "Сегодня пятница и день деплоя (Today is Friday and deploy day)",
+        "Сервер сломан (Server is broken)",
+        "Код не работает (Code doesn't work)",
+        "Тесты не проходят (Tests don't pass)"
+      ],
+      "correctAnswer": "Сегодня пятница и день деплоя (Today is Friday and deploy day)",
+      "explanation": "Dmitry jokes: 'Никогда не деплой в пятницу!' - the famous developer superstition."
+    },
+    {
+      "type": "matching",
+      "question": "Match the deployment terms:",
+      "pairs": [
+        { "russian": "деплой", "english": "deployment" },
+        { "russian": "релиз", "english": "release" },
+        { "russian": "скрипт", "english": "script" },
+        { "russian": "фичи", "english": "features" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential vocabulary for software releases and deployments."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Максим запускает _______ деплоя. Команда смотрит на _______.",
+      "wordBank": ["скрипт", "мониторинг", "код", "тест"],
+      "correctAnswer": "скрипт, мониторинг",
+      "explanation": "Maxim runs the deploy script. The team watches the monitoring."
+    },
+    {
+      "type": "sentence-reordering",
+      "question": "Arrange these words:",
+      "scrambledWords": ["Деплой", "успешен", "пятница", "спасена"],
+      "correctAnswer": ["Деплой", "успешен", "пятница", "спасена"],
+      "explanation": "'Деплой успешен. Пятница спасена!' (Deploy is successful. Friday is saved!). Two short sentences."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Friday Deploys",
+    "content": "Russian developers share the global superstition: 'Never deploy on Friday!' If something breaks, you'll work on the weekend. But sometimes Friday deploys are unavoidable!"
+  },
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Максим (Maxim)", "Аня (Anya)"],
+  "storyArc": "The team successfully completes a Friday deployment despite the superstition.",
+  "wordCount": 102,
+  "estimatedMinutes": 19,
+  "previousDayReferences": [4, 7, 8]
+}
