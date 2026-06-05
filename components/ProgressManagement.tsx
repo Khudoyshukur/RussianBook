@@ -47,34 +47,34 @@ export default function ProgressManagement() {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Progress Management</h2>
+    <div>
+      <h3 className="text-lg font-bold text-gray-900 mb-4">Progress Management</h3>
 
-      <div className="space-y-4">
+      <div className="space-y-3">
         {/* Export Progress */}
-        <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
-          <div>
-            <h3 className="font-semibold text-gray-800">Export Progress</h3>
-            <p className="text-sm text-gray-600">Download your progress as a JSON file</p>
+        <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div className="flex-1">
+            <h4 className="font-semibold text-sm text-gray-800">Export Progress</h4>
+            <p className="text-xs text-gray-600">Download as JSON</p>
           </div>
           <button
             onClick={handleExport}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            className="px-3 py-1.5 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors"
           >
             Export
           </button>
         </div>
 
         {/* Import Progress */}
-        <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
-          <div>
-            <h3 className="font-semibold text-gray-800">Import Progress</h3>
-            <p className="text-sm text-gray-600">Upload a previously exported progress file</p>
+        <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+          <div className="flex-1">
+            <h4 className="font-semibold text-sm text-gray-800">Import Progress</h4>
+            <p className="text-xs text-gray-600">Upload JSON file</p>
             {importSuccess && (
-              <p className="text-sm text-green-600 mt-1">✓ Progress imported successfully! Reloading...</p>
+              <p className="text-xs text-green-600 mt-1">✓ Imported! Reloading...</p>
             )}
             {importError && (
-              <p className="text-sm text-red-600 mt-1">✗ {importError}</p>
+              <p className="text-xs text-red-600 mt-1">✗ {importError}</p>
             )}
           </div>
           <div>
@@ -87,7 +87,7 @@ export default function ProgressManagement() {
             />
             <button
               onClick={handleImportClick}
-              className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+              className="px-3 py-1.5 bg-green-600 text-white text-sm rounded-lg hover:bg-green-700 transition-colors"
             >
               Import
             </button>
@@ -95,14 +95,14 @@ export default function ProgressManagement() {
         </div>
 
         {/* Reset Progress */}
-        <div className="flex items-center justify-between p-4 bg-red-50 rounded-lg border border-red-200">
-          <div>
-            <h3 className="font-semibold text-red-800">Reset Progress</h3>
-            <p className="text-sm text-red-600">Clear all progress and start over</p>
+        <div className="flex items-center justify-between p-3 bg-red-50 rounded-lg border border-red-200">
+          <div className="flex-1">
+            <h4 className="font-semibold text-sm text-red-800">Reset Progress</h4>
+            <p className="text-xs text-red-600">Clear all data</p>
           </div>
           <button
             onClick={() => setShowConfirmReset(true)}
-            className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+            className="px-3 py-1.5 bg-red-600 text-white text-sm rounded-lg hover:bg-red-700 transition-colors"
           >
             Reset
           </button>

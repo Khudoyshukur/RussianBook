@@ -6,6 +6,7 @@ import { getAllLessons } from '@/lib/lessons';
 import { getProgress, isDayCompleted } from '@/lib/progress';
 import { getPhaseByDay } from '@/lib/phases';
 import { Lesson } from '@/types/lesson';
+import { TEST_MODE } from '@/lib/config';
 
 export default function AllLessonsPage() {
   const [mounted, setMounted] = useState(false);
@@ -87,7 +88,7 @@ export default function AllLessonsPage() {
                   {phaseLessons.map((lesson) => {
                     const completed = isDayCompleted(lesson.day);
                     const isCurrent = lesson.day === currentDay;
-                    const isLocked = lesson.day > currentDay;
+                    const isLocked = TEST_MODE ? false : lesson.day > currentDay;
 
                     return (
                       <Link

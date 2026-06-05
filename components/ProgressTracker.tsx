@@ -1,101 +1,62 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getProgress, getCompletionPercentage } from '@/lib/progress';
-import { phases, getPhaseProgress } from '@/lib/phases';
+import { getProgress } from '@/lib/progress';
+import Link from 'next/link';
 
 export default function ProgressTracker() {
   const [mounted, setMounted] = useState(false);
-  const [progress, setProgress] = useState(getProgress());
-  const [overallProgress, setOverallProgress] = useState(0);
+  const [currentDay, setCurrentDay] = useState(1);
 
   useEffect(() => {
     setMounted(true);
-    const prog = getProgress();
-    setProgress(prog);
-    setOverallProgress(getCompletionPercentage());
+    const progress = getProgress();
+    setCurrentDay(progress.currentDay);
   }, []);
 
   if (!mounted) {
-    return (
-      <div className="bg-white rounded-lg shadow-md p-6 animate-pulse">
-        <div className="h-4 bg-gray-200 rounded w-1/4 mb-4"></div>
-        <div className="h-8 bg-gray-200 rounded w-full"></div>
-      </div>
-    );
+    return null;
   }
 
+  const nextDay = currentDay + 1;
+
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold text-gray-800">Your Progress</h2>
-        <span className="text-2xl font-bold text-blue-600">{overallProgress}%</span>
-      </div>
+    <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg shadow-lg p-8 text-white">
+      <h2 className="text-2xl font-bold mb-6">Continue Your Journey</h2>
 
-      <div className="mb-6">
-        <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
-          <div
-            className="bg-gradient-to-r from-blue-500 to-blue-600 h-4 rounded-full transition-all duration-500"
-            style={{ width: `${overallProgress}%` }}
-          />
-        </div>
-        <p className="text-sm text-gray-600 mt-2">
-          {progress.completedDays.length} of 90 days completed
-        </p>
-      </div>
-
-      <div className="space-y-3">
-        {phases.map((phase) => {
-          const phaseProgress = getPhaseProgress(progress.completedDays, phase);
-          const isCurrentPhase =
-            progress.currentDay >= phase.dayRange[0] &&
-            progress.currentDay <= phase.dayRange[1];
-
-          return (
-            <div
-              key={phase.phase}
-              className={`border rounded-lg p-3 transition-all ${
-                isCurrentPhase
-                  ? 'border-blue-500 bg-blue-50'
-                  : 'border-gray-200'
-              }`}
-            >
-              <div className="flex justify-between items-center mb-2">
-                <h3 className="font-semibold text-sm text-gray-800">
-                  Phase {phase.phase}: {phase.title}
-                </h3>
-                <span className="text-xs font-medium text-gray-600">
-                  {phaseProgress}%
-                </span>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2">
-                <div
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    isCurrentPhase
-                      ? 'bg-blue-500'
-                      : 'bg-gray-400'
-                  }`}
-                  style={{ width: `${phaseProgress}%` }}
-                />
-              </div>
-              <p className="text-xs text-gray-500 mt-1">
-                Days {phase.dayRange[0]}–{phase.dayRange[1]}
-              </p>
+      <div className="grid md:grid-cols-2 gap-4">
+        {/* Current Day Card */}
+        <Link
+          href={`/lesson/${currentDay}`}
+          className="bg-white rounded-lg p-6 hover:shadow-xl transition-all transform hover:scale-105"
+        >
+          <div className="flex items-center justify-between mb-3">
+            <span className="text-sm font-semibold text-blue-600">CURRENT</span>
+            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+              {currentDay}
             </div>
-          );
-        })}
-      </div>
+          </div>
+          <h3 className="text-xl font-bold mb-2 text-gray-900">Day {currentDay}</h3>
+          <p className="text-blue-600 text-sm font-medium">Continue learning →</p>
+        </Link>
 
-      {progress.completedDays.length > 0 && (
-        <div className="mt-6 pt-4 border-t border-gray-200">
-          <p className="text-sm text-gray-600">
-            Last access:{' '}
-            <span className="font-medium">
-              {new Date(progress.lastAccessDate).toLocaleDateString()}
-            </span>
-          </p>
-        </div>
-      )}
+        {/* Next Day Card */}
+        {nextDay <= 90 && (
+          <Link
+            href={`/lesson/${nextDay}`}
+            className="bg-white bg-opacity-90 rounded-lg p-6 hover:bg-opacity-100 hover:shadow-lg transition-all"
+          >
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-sm font-semibold text-purple-600">UP NEXT</span>
+              <div className="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold">
+                {nextDay}
+              </div>
+            </div>
+            <h3 className="text-xl font-bold mb-2 text-gray-900">Day {nextDay}</h3>
+            <p className="text-purple-600 text-sm font-medium">Preview next lesson →</p>
+          </Link>
+        )}
+      </div>
     </div>
   );
 }
