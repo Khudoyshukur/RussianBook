@@ -1,0 +1,69 @@
+{
+  "day": 76,
+  "phase": 4,
+  "title": "Mentoring Junior Developer",
+  "difficultyLevel": "B2",
+  "textRussian": "К нашей команде присоединился Алексей, junior-разработчик только что закончивший университет. Я был назначен его ментором на период испытательного срока. Важно было не только помочь ему освоить технический стек, но и привить правильную культуру разработки.\n\nПервую неделю мы провели вместе, изучая архитектуру приложения. Я объяснял, почему были приняты те или иные проектные решения, какие компромиссы мы делали и какие уроки извлекли из прошлых ошибок. Алексей задавал много вопросов, что было хорошим знаком — любопытство важно для роста разработчика.\n\nЕго первая задача была относительно простой: добавить новое поле в API и обновить форму на frontend. Однако даже эта задача требовала понимания нескольких частей системы. Я попросил его сначала изучить существующий код, а затем предложить дизайн решения до начала программирования. Это помогает развивать навыки проектирования.\n\nКогда Алексей создал pull request, я провёл детальный code review. Вместо того чтобы просто указывать на проблемы, я объяснял причины каждого комментария. Почему важно валидировать входные данные? Как null values могут привести к неожиданным багам? Зачем писать тесты до того, как код попадёт в production?\n\nЧерез три месяца Алексей значительно вырос как разработчик. Он начал самостоятельно принимать правильные технические решения и даже помогать другим junior-разработчикам. Менторство — это инвестиция времени, которая окупается сильной командой.",
+  "textEnglish": "Alexey, a junior developer who had just graduated from university, joined our team. I was assigned as his mentor for the probation period. It was important not only to help him master the technical stack but also to instill the right development culture.\n\nWe spent the first week together studying the application architecture. I explained why certain design decisions were made, what compromises we made, and what lessons we learned from past mistakes. Alexey asked many questions, which was a good sign — curiosity is important for a developer's growth.\n\nHis first task was relatively simple: add a new field to the API and update the frontend form. However, even this task required understanding several parts of the system. I asked him to first study the existing code and then propose a solution design before starting programming. This helps develop design skills.\n\nWhen Alexey created a pull request, I conducted a detailed code review. Instead of just pointing out problems, I explained the reasons for each comment. Why is it important to validate input data? How can null values lead to unexpected bugs? Why write tests before code goes to production?\n\nAfter three months, Alexey had grown significantly as a developer. He began making correct technical decisions independently and even helping other junior developers. Mentorship is a time investment that pays off with a strong team.",
+  "vocabulary": [
+    { "russian": "испытáтельный срок", "english": "probation period" },
+    { "russian": "освóить", "english": "to master" },
+    { "russian": "привúть культýру", "english": "to instill culture" },
+    { "russian": "проéктные решéния", "english": "design decisions" },
+    { "russian": "компромúссы", "english": "compromises" },
+    { "russian": "извлéчь урóки", "english": "to learn lessons" },
+    { "russian": "любопытство", "english": "curiosity" },
+    { "russian": "валидúровать", "english": "to validate" },
+    { "russian": "входны́е дáнные", "english": "input data" },
+    { "russian": "неожúданные бáги", "english": "unexpected bugs" },
+    { "russian": "менторство", "english": "mentorship" },
+    { "russian": "окýпаться", "english": "to pay off" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Я был назначен его ментором на период ___.",
+      "wordBank": ["испытательного срока", "работы", "обучения", "стажировки"],
+      "correctAnswer": "испытательного срока",
+      "explanation": "Genitive case 'испытательного срока' (probation period) after 'на период'."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "освоить", "english": "to master" },
+        { "russian": "привить культуру", "english": "to instill culture" },
+        { "russian": "валидировать", "english": "to validate" },
+        { "russian": "менторство", "english": "mentorship" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct form: Я объяснял причины каждого ___.",
+      "options": [
+        "комментарий",
+        "комментария",
+        "комментарию",
+        "комментарием"
+      ],
+      "correctAnswer": "комментария",
+      "explanation": "Genitive case 'комментария' after 'каждого' (of each)."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Менторство — это инвестиция времени, которая ___.",
+      "wordBank": ["окупается", "теряется", "забывается", "исчезает"],
+      "correctAnswer": "окупается",
+      "explanation": "'Окупается' (pays off) is the correct reflexive verb for return on investment."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Mentorship Culture in Russian Tech",
+    "content": "Russian tech companies often have formal mentorship programs, especially for junior developers. The term 'испытательный срок' (probation period, typically 3 months) is a standard part of employment contracts. Mentors are expected to provide both technical guidance and cultural integration."
+  },
+  "grammarNote": {
+    "topic": "Purpose Clauses with Infinitives",
+    "content": "Russian often uses infinitives to express purpose: 'помочь ему освоить' (to help him master), 'попросил его изучить' (asked him to study). This construction is simpler than English 'in order to' and commonly used in technical discussions."
+  },
+  "wordCount": 277,
+  "estimatedMinutes": 28
+}

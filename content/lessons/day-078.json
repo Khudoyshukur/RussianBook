@@ -1,0 +1,69 @@
+{
+  "day": 78,
+  "phase": 4,
+  "title": "CI/CD Pipeline Optimization",
+  "difficultyLevel": "B2",
+  "textRussian": "Наш CI/CD пайплайн начал занимать слишком много времени. Сборка и тестирование pull request-а теперь занимали около сорока минут, что серьёзно замедляло разработку. Разработчики жаловались, что ждут результатов тестов больше, чем пишут код. Нужно было оптимизировать процесс непрерывной интеграции.\n\nЯ начал с анализа того, где именно тратится время. Оказалось, что тридцать минут уходило на запуск end-to-end тестов, которые мы выполняли для каждого коммита. Большинство этих тестов проверяли функциональность, которая редко изменялась. Мы решили разделить тесты на критичные и некритичные. Критичные запускались для каждого pull request-а, а полный набор — только перед деплоем в production.\n\nСледующим шагом стала параллелизация тестов. Вместо последовательного выполнения мы разбили тесты на группы и запускали их одновременно на разных агентах. Это сократило время выполнения с тридцати до десяти минут. Также мы настроили кэширование зависимостей, чтобы не скачивать библиотеки при каждой сборке.\n\nДля ускорения сборки Docker образов мы начали использовать многоэтапные сборки и layer caching. Это особенно помогло для больших приложений с многочисленными зависимостями. Кроме того, мы перешли на более мощные CI-агенты с SSD дисками и большим объёмом RAM.\n\nВ результате оптимизации время выполнения пайплайна сократилось с сорока до пятнадцати минут. Разработчики получали feedback значительно быстрее, что увеличило скорость итерации. Инвестиция времени в оптимизацию CI/CD окупилась повышенной продуктивностью команды.",
+  "textEnglish": "Our CI/CD pipeline started taking too much time. Building and testing a pull request now took about forty minutes, which seriously slowed down development. Developers complained that they waited for test results longer than they wrote code. We needed to optimize the continuous integration process.\n\nI started by analyzing where exactly time was being spent. It turned out that thirty minutes went to running end-to-end tests that we executed for every commit. Most of these tests checked functionality that rarely changed. We decided to split tests into critical and non-critical. Critical ones ran for every pull request, while the full suite ran only before production deployment.\n\nThe next step was test parallelization. Instead of sequential execution, we divided tests into groups and ran them simultaneously on different agents. This reduced execution time from thirty to ten minutes. We also set up dependency caching to avoid downloading libraries with every build.\n\nTo speed up Docker image builds, we started using multi-stage builds and layer caching. This especially helped for large applications with numerous dependencies. Additionally, we switched to more powerful CI agents with SSD disks and more RAM.\n\nAs a result of optimization, pipeline execution time decreased from forty to fifteen minutes. Developers received feedback much faster, which increased iteration speed. The time investment in CI/CD optimization paid off with increased team productivity.",
+  "vocabulary": [
+    { "russian": "CI/CD пáйплайн", "english": "CI/CD pipeline" },
+    { "russian": "сбóрка и тестúрование", "english": "build and testing" },
+    { "russian": "замедлять разрабóтку", "english": "to slow down development" },
+    { "russian": "непрерывная интегрáция", "english": "continuous integration" },
+    { "russian": "end-to-end тéсты", "english": "end-to-end tests" },
+    { "russian": "параллелизáция", "english": "parallelization" },
+    { "russian": "кэшúрование зависúмостей", "english": "dependency caching" },
+    { "russian": "многоэтáпные сбóрки", "english": "multi-stage builds" },
+    { "russian": "layer caching", "english": "layer caching" },
+    { "russian": "CI-агéнты", "english": "CI agents" },
+    { "russian": "скóрость итерáции", "english": "iteration speed" },
+    { "russian": "продуктúвность комáнды", "english": "team productivity" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Сборка pull request-а теперь ___ около сорока минут.",
+      "wordBank": ["занимали", "занимала", "занимало", "занимаем"],
+      "correctAnswer": "занимала",
+      "explanation": "Feminine singular past tense 'занимала' agrees with 'сборка' (build)."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "непрерывная интеграция", "english": "continuous integration" },
+        { "russian": "параллелизация", "english": "parallelization" },
+        { "russian": "кэширование зависимостей", "english": "dependency caching" },
+        { "russian": "скорость итерации", "english": "iteration speed" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Мы разбили тесты на группы и запускали их на разных ___.",
+      "options": [
+        "агенты",
+        "агентов",
+        "агентам",
+        "агентах"
+      ],
+      "correctAnswer": "агентах",
+      "explanation": "Prepositional case 'агентах' after 'на' indicating location."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Инвестиция времени ___ повышенной продуктивностью команды.",
+      "wordBank": ["окупилась", "потерялась", "закончилась", "началась"],
+      "correctAnswer": "окупилась",
+      "explanation": "'Окупилась' (paid off) is the correct reflexive verb for return on investment."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "DevOps Practices in Russian Tech",
+    "content": "Russian development teams widely adopt CI/CD practices, using tools like Jenkins, GitLab CI, GitHub Actions. The term 'пайплайн' (pipeline) is commonly used alongside English 'CI/CD'. Optimization of build times is a universal priority across global tech companies."
+  },
+  "grammarNote": {
+    "topic": "Time Expressions with Genitive",
+    "content": "Time durations use genitive case: 'сорока минут' (forty minutes), 'тридцати минут' (thirty minutes), 'десяти минут' (ten minutes). The verb 'занимать' (to take time) requires the accusative for the subject and genitive for duration."
+  },
+  "wordCount": 276,
+  "estimatedMinutes": 28
+}

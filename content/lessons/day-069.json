@@ -1,0 +1,67 @@
+{
+  "day": 69,
+  "phase": 4,
+  "title": "Microservices Architecture Debate",
+  "difficultyLevel": "B1+",
+  "textRussian": "Сегодня на встрече архитектурного комитета мы обсуждали переход от монолитной архитектуры к микросервисам. Антон, наш старший инженер, представил детальное предложение о разделении нашего приложения на независимые сервисы. Он аргументировал, что микросервисная архитектура позволит нам масштабировать отдельные компоненты независимо друг от друга. Команда платёжной системы могла бы развёртывать свой сервис без влияния на модуль пользователей.\n\nОднако Мария, наш DevOps-инженер, выразила озабоченность относительно сложности инфраструктуры. Она объяснила, что нам понадобится настроить service mesh, систему мониторинга распределённых транзакций и оркестрацию контейнеров. Это потребует значительных инвестиций в инструменты и обучение команды.\n\nЯ предложил компромиссное решение: начать с модульного монолита. Мы могли бы структурировать код так, чтобы в будущем легко выделить модули в отдельные сервисы. Такой подход позволил бы нам сохранить простоту развёртывания, но подготовиться к возможному переходу на микросервисы, когда наша команда вырастет и накопит опыт работы с распределёнными системами. Команда согласилась попробовать этот эволюционный подход.",
+  "textEnglish": "Today at the architecture committee meeting, we discussed the transition from monolithic architecture to microservices. Anton, our senior engineer, presented a detailed proposal about splitting our application into independent services. He argued that microservices architecture would allow us to scale individual components independently of each other. The payment system team could deploy their service without affecting the user module.\n\nHowever, Maria, our DevOps engineer, expressed concerns regarding infrastructure complexity. She explained that we would need to set up a service mesh, a distributed transaction monitoring system, and container orchestration. This would require significant investments in tools and team training.\n\nI proposed a compromise solution: start with a modular monolith. We could structure the code so that in the future we could easily extract modules into separate services. This approach would allow us to maintain deployment simplicity while preparing for a possible transition to microservices when our team grows and accumulates experience working with distributed systems. The team agreed to try this evolutionary approach.",
+  "vocabulary": [
+    { "russian": "архитектýрный комитéт", "english": "architecture committee" },
+    { "russian": "монолúтная архитектýра", "english": "monolithic architecture" },
+    { "russian": "микросéрвисы", "english": "microservices" },
+    { "russian": "масштабúровать", "english": "to scale" },
+    { "russian": "развёртывать", "english": "to deploy" },
+    { "russian": "озабóченность", "english": "concern" },
+    { "russian": "service mesh", "english": "service mesh" },
+    { "russian": "оркестрáция контéйнеров", "english": "container orchestration" },
+    { "russian": "компромúссное решéние", "english": "compromise solution" },
+    { "russian": "модýльный монолúт", "english": "modular monolith" },
+    { "russian": "эволюциóнный пóдход", "english": "evolutionary approach" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Микросервисная архитектура позволит нам ___ отдельные компоненты независимо.",
+      "correctAnswer": "масштабировать",
+      "explanation": "The verb 'масштабировать' (to scale) is used when discussing the ability to scale components."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "монолитная архитектура", "english": "monolithic architecture" },
+        { "russian": "развёртывать", "english": "to deploy" },
+        { "russian": "озабоченность", "english": "concern" },
+        { "russian": "оркестрация контейнеров", "english": "container orchestration" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Мария выразила озабоченность относительно ___ инфраструктуры.",
+      "options": [
+        "сложность",
+        "сложности",
+        "сложностью",
+        "сложностей"
+      ],
+      "correctAnswer": "сложности",
+      "explanation": "Genitive case 'сложности' is used after 'относительно' (regarding)."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Команда согласилась попробовать этот ___ подход.",
+      "wordBank": ["эволюционный", "монолитный", "сложный", "простой"],
+      "correctAnswer": "эволюционный",
+      "explanation": "The text describes an 'evolutionary approach' to architecture."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Russian Tech Architecture Terminology",
+    "content": "Russian tech discussions often mix English technical terms with Russian equivalents. Words like 'microservices' (микросервисы), 'service mesh', and 'DevOps' are commonly used in their English form or russified. Understanding both English loanwords and Russian technical terminology is essential for participating in architectural discussions."
+  },
+  "grammarNote": {
+    "topic": "Conditional Structures: Expressing Hypotheticals",
+    "content": "Russian uses several structures for conditionals: 'если бы' + past tense for unreal conditions, 'мог бы' (could) for hypothetical actions, and future tense for real conditions. Notice: 'Мы могли бы структурировать' (We could structure) expresses a real possibility."
+  },
+  "wordCount": 243,
+  "estimatedMinutes": 25
+}

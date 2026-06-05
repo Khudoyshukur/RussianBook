@@ -1,0 +1,69 @@
+{
+  "day": 85,
+  "phase": 4,
+  "title": "Cross-Team Technical Alignment",
+  "difficultyLevel": "B2",
+  "textRussian": "В нашей компании работало пять инженерных команд, каждая из которых отвечала за свою часть продукта. Со временем выяснилось, что команды начали использовать разные технологии и подходы для решения похожих проблем. Это создавало сложности при переходе инженеров между командами и усложняло поддержку общей инфраструктуры.\n\nЯ предложил создать технический комитет для координации архитектурных решений между командами. В комитет вошли по одному senior инженеру из каждой команды. Наша цель была не в том, чтобы навязывать единообразие везде, а в том, чтобы выработать общие принципы и стандарты там, где это действительно важно.\n\nПервым делом мы провели аудит технологического ландшафта компании. Оказалось, что для логирования использовалось четыре разных решения, для кэширования — три, а для межсервисной коммуникации команды выбрали разные протоколы. Такое разнообразие было неоправданным и увеличивало когнитивную нагрузку на инженеров.\n\nМы начали с самого критичного: стандартизации observability stack. Все команды перешли на единый набор инструментов для логирования (ELK), метрик (Prometheus/Grafana) и трейсинга (Jaeger). Это позволило создать централизованные дашборды, где можно было видеть состояние всей системы целиком.\n\nВажно было найти баланс между автономией команд и необходимой стандартизацией. Мы ввели понятие \"paved road\" — рекомендуемые, хорошо поддерживаемые решения, которые команды могли использовать \"из коробки\". Но если у команды были веские причины выбрать другое решение, она могла это сделать, предварительно обосновав выбор на техническом комитете. Через полгода уровень межкомандного сотрудничества значительно вырос, а time-to-market для новых фичей сократилось.",
+  "textEnglish": "Our company had five engineering teams, each responsible for their part of the product. Over time, it became clear that teams started using different technologies and approaches to solve similar problems. This created difficulties when engineers transferred between teams and complicated support of common infrastructure.\n\nI proposed creating a technical committee to coordinate architectural decisions between teams. The committee included one senior engineer from each team. Our goal was not to impose uniformity everywhere, but to develop common principles and standards where it really matters.\n\nFirst, we conducted an audit of the company's technology landscape. It turned out that four different solutions were used for logging, three for caching, and teams chose different protocols for inter-service communication. Such diversity was unjustified and increased cognitive load on engineers.\n\nWe started with the most critical: standardizing the observability stack. All teams switched to a unified set of tools for logging (ELK), metrics (Prometheus/Grafana), and tracing (Jaeger). This allowed creating centralized dashboards where you could see the state of the entire system.\n\nIt was important to find a balance between team autonomy and necessary standardization. We introduced the concept of \"paved road\" — recommended, well-supported solutions that teams could use \"out of the box.\" But if a team had good reasons to choose a different solution, they could do so after justifying the choice to the technical committee. After six months, the level of cross-team collaboration increased significantly, and time-to-market for new features decreased.",
+  "vocabulary": [
+    { "russian": "межкомáндная координáция", "english": "cross-team coordination" },
+    { "russian": "архитектýрные решéния", "english": "architectural decisions" },
+    { "russian": "навязывать единообрáзие", "english": "to impose uniformity" },
+    { "russian": "техно логúческий ландшáфт", "english": "technology landscape" },
+    { "russian": "межсервúсная коммуникáция", "english": "inter-service communication" },
+    { "russian": "когнитúвная нагрýзка", "english": "cognitive load" },
+    { "russian": "стандартизáция", "english": "standardization" },
+    { "russian": "observability stack", "english": "observability stack" },
+    { "russian": "централизóванные дашбóрды", "english": "centralized dashboards" },
+    { "russian": "автонóмия комáнд", "english": "team autonomy" },
+    { "russian": "paved road", "english": "paved road" },
+    { "russian": "time-to-market", "english": "time-to-market" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Это создавало сложности при переходе инженеров между ___.",
+      "wordBank": ["командами", "проектами", "компаниями", "должностями"],
+      "correctAnswer": "командами",
+      "explanation": "Instrumental plural 'командами' (teams) after 'между' (between)."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "межкомандная координация", "english": "cross-team coordination" },
+        { "russian": "технологический ландшафт", "english": "technology landscape" },
+        { "russian": "когнитивная нагрузка", "english": "cognitive load" },
+        { "russian": "автономия команд", "english": "team autonomy" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Наша цель была не в том, чтобы навязывать ___.",
+      "options": [
+        "единообразие",
+        "единообразия",
+        "единообразию",
+        "единообразием"
+      ],
+      "correctAnswer": "единообразие",
+      "explanation": "Accusative 'единообразие' (uniformity) as direct object after 'навязывать'."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Time-to-market для новых фичей ___.",
+      "wordBank": ["сократилось", "увеличилось", "осталось", "появилось"],
+      "correctAnswer": "сократилось",
+      "explanation": "'Сократилось' (decreased) indicates positive outcome for time-to-market."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Engineering Organization in Russian Tech",
+    "content": "Large Russian tech companies often face similar challenges with tech fragmentation across teams. The concept of \"paved road\" (sometimes called \"golden path\") is gaining adoption. Terms like 'observability', 'time-to-market', and 'paved road' are commonly used in English form."
+  },
+  "grammarNote": {
+    "topic": "Purpose Clauses with 'в том, чтобы'",
+    "content": "'Цель была не в том, чтобы навязывать' (the goal was not to impose) uses the construction 'в том, чтобы' + infinitive for expressing purpose. This is a formal way to state objectives in technical discussions."
+  },
+  "wordCount": 294,
+  "estimatedMinutes": 30
+}

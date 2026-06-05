@@ -1,0 +1,68 @@
+{
+  "day": 79,
+  "phase": 4,
+  "title": "Database Scaling Strategy",
+  "difficultyLevel": "B2",
+  "textRussian": "С ростом числа пользователей наша база данных PostgreSQL начала испытывать проблемы с производительностью. Запросы выполнялись всё медленнее, особенно в часы пик, когда одновременно работали тысячи пользователей. Нужно было принять решение о стратегии масштабирования базы данных.\n\nМы рассмотрели несколько вариантов. Первый — вертикальное масштабирование, то есть upgrade сервера на более мощное железо с большим количеством CPU и памяти. Это простое решение, но оно имеет физические ограничения и не решает проблему в долгосрочной перспективе.\n\nВторой вариант — горизонтальное масштабирование через read replicas. Мы могли бы направлять все запросы на чтение к репликам, а запросы на запись — к основной базе. Это помогло бы, так как большинство наших запросов были операциями чтения. Однако появляется сложность с репликационной задержкой — данные на репликах могут отставать от основной базы.\n\nТретий вариант — шардирование данных, то есть разделение таблиц на несколько баз данных по определённому критерию, например, по географическому региону пользователя. Это наиболее сложное решение, требующее значительных изменений в коде приложения, но оно позволяет масштабироваться практически бесконечно.\n\nМы выбрали комбинированный подход: сначала внедрили read replicas для быстрого улучшения ситуации, затем оптимизировали медленные запросы и добавили кэширование на уровне приложения. Это дало нам время подготовиться к будущему шардированию, если оно потребуется. Производительность улучшилась в три раза, и система стала справляться с нагрузкой.",
+  "textEnglish": "With the growth in the number of users, our PostgreSQL database began experiencing performance problems. Queries executed increasingly slowly, especially during peak hours when thousands of users were working simultaneously. We needed to make a decision about database scaling strategy.\n\nWe considered several options. The first was vertical scaling, that is, upgrading the server to more powerful hardware with more CPUs and memory. This is a simple solution, but it has physical limitations and doesn't solve the problem long-term.\n\nThe second option was horizontal scaling through read replicas. We could direct all read queries to replicas and write queries to the primary database. This would help since most of our queries were read operations. However, the complexity of replication lag appears — data on replicas can lag behind the primary database.\n\nThe third option was data sharding, that is, dividing tables across multiple databases by a certain criterion, for example, by user's geographical region. This is the most complex solution requiring significant changes to application code, but it allows practically unlimited scaling.\n\nWe chose a combined approach: first implemented read replicas for quick improvement, then optimized slow queries and added caching at the application level. This gave us time to prepare for future sharding if needed. Performance improved threefold, and the system began handling the load.",
+  "vocabulary": [
+    { "russian": "масштабúрование бáзы дáнных", "english": "database scaling" },
+    { "russian": "часы пик", "english": "peak hours" },
+    { "russian": "вертикáльное масштабúрование", "english": "vertical scaling" },
+    { "russian": "upgrade сéрвера", "english": "server upgrade" },
+    { "russian": "горизонтáльное масштабúрование", "english": "horizontal scaling" },
+    { "russian": "read replicas", "english": "read replicas" },
+    { "russian": "запрóсы на чтéние", "english": "read queries" },
+    { "russian": "запрóсы на зáпись", "english": "write queries" },
+    { "russian": "репликациóнная задéржка", "english": "replication lag" },
+    { "russian": "шардúрование дáнных", "english": "data sharding" },
+    { "russian": "геогрáфический региóн", "english": "geographical region" },
+    { "russian": "комбинúрованный пóдход", "english": "combined approach" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Запросы выполнялись всё ___, особенно в часы пик.",
+      "wordBank": ["медленнее", "быстрее", "проще", "сложнее"],
+      "correctAnswer": "медленнее",
+      "explanation": "Comparative form 'медленнее' (slower) with 'всё' indicates progressive deterioration."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "вертикальное масштабирование", "english": "vertical scaling" },
+        { "russian": "горизонтальное масштабирование", "english": "horizontal scaling" },
+        { "russian": "репликационная задержка", "english": "replication lag" },
+        { "russian": "шардирование данных", "english": "data sharding" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Мы могли бы направлять запросы на чтение к ___.",
+      "options": [
+        "реплики",
+        "реплик",
+        "репликам",
+        "репликами"
+      ],
+      "correctAnswer": "репликам",
+      "explanation": "Dative case 'репликам' after 'к' (to) indicating direction."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Производительность улучшилась в ___ раза.",
+      "correctAnswer": "три",
+      "explanation": "The number 'три' (three) with 'раза' (times) indicates multiplication factor."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Database Technology in Russia",
+    "content": "PostgreSQL is extremely popular in Russian tech companies, often preferred over MySQL. Terms like 'шардирование' (sharding), 'реплики' (replicas), and 'масштабирование' (scaling) are standard Russian technical vocabulary, while 'read/write queries' mix English and Russian."
+  },
+  "grammarNote": {
+    "topic": "Comparative Structures: 'всё + comparative'",
+    "content": "'Всё медленнее' (increasingly slowly), 'всё быстрее' (faster and faster) uses 'всё' with comparative adjectives/adverbs to show progressive change. This is equivalent to English '-er and -er' constructions."
+  },
+  "wordCount": 281,
+  "estimatedMinutes": 29
+}

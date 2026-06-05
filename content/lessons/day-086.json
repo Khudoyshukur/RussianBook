@@ -1,0 +1,70 @@
+{
+  "day": 86,
+  "phase": 4,
+  "title": "Scaling Team: Hiring and Onboarding",
+  "difficultyLevel": "B2",
+  "textRussian": "С ростом бизнеса наша команда столкнулась с необходимостью масштабирования. Нужно было нанять десять новых инженеров за три месяца, что было амбициозной целью для нашей компании. Я был назначен ответственным за процессы найма и адаптации новых сотрудников.\n\nПервым вызовом стала разработка эффективного процесса интервью. Мы хотели оценивать не только технические навыки кандидатов, но и их способность работать в команде, коммуникативные навыки и соответствие культуре компании. Процесс включал техническое задание, которое кандидаты выполняли дома, затем два технических интервью и одно культурное.\n\nТехническое задание было спроектировано так, чтобы занимать не более четырёх часов, но при этом демонстрировать реальные навыки программирования, архитектурное мышление и способность писать чистый, поддерживаемый код. Мы не искали идеального решения, а смотрели на процесс мышления кандидата, его подход к решению проблем.\n\nОсобое внимание мы уделили процессу онбординга новых сотрудников. Первая неделя была полностью посвящена изучению кодовой базы, архитектуры системы и знакомству с командой. Каждому новичку назначался buddy — опытный инженер, который помогал ориентироваться в компании и отвечал на вопросы.\n\nМы создали подробную документацию для онбординга, включающую описание архитектуры, соглашения по коду, процессы разработки и развёртывания. Также разработали серию небольших \"starter tasks\" — задач средней сложности, которые позволяли новым инженерам начать контрибутить в кодовую базу с первых дней, получая при этом понимание разных частей системы. Через три месяца мы не только достигли цели по найму, но и обеспечили, что новые члены команды стали продуктивными в среднем за три недели.",
+  "textEnglish": "With business growth, our team faced the need to scale. We needed to hire ten new engineers in three months, which was an ambitious goal for our company. I was appointed responsible for hiring and onboarding processes.\n\nThe first challenge was developing an effective interview process. We wanted to evaluate not only candidates' technical skills but also their ability to work in a team, communication skills, and cultural fit. The process included a take-home technical assignment, then two technical interviews and one cultural interview.\n\nThe technical assignment was designed to take no more than four hours but demonstrate real programming skills, architectural thinking, and the ability to write clean, maintainable code. We weren't looking for a perfect solution but rather observing the candidate's thinking process, their approach to problem-solving.\n\nWe paid special attention to the onboarding process for new employees. The first week was completely dedicated to studying the codebase, system architecture, and getting to know the team. Each new hire was assigned a buddy — an experienced engineer who helped navigate the company and answered questions.\n\nWe created detailed onboarding documentation including architecture description, code conventions, development and deployment processes. We also developed a series of small \"starter tasks\" — medium-complexity tasks that allowed new engineers to start contributing to the codebase from the first days while gaining understanding of different parts of the system. After three months, we not only achieved the hiring goal but also ensured that new team members became productive in an average of three weeks.",
+  "vocabulary": [
+    { "russian": "масштабúрование комáнды", "english": "team scaling" },
+    { "russian": "процéссы нáйма", "english": "hiring processes" },
+    { "russian": "адаптáция сотрýдников", "english": "employee onboarding" },
+    { "russian": "оцéнивать навыки", "english": "to evaluate skills" },
+    { "russian": "соотвéтствие культýре", "english": "cultural fit" },
+    { "russian": "техническое задáние", "english": "technical assignment" },
+    { "russian": "архитектýрное мышлéние", "english": "architectural thinking" },
+    { "russian": "поддéрживаемый код", "english": "maintainable code" },
+    { "russian": "онбóрдинг", "english": "onboarding" },
+    { "russian": "buddy", "english": "buddy" },
+    { "russian": "кóдовая бáза", "english": "codebase" },
+    { "russian": "starter tasks", "english": "starter tasks" },
+    { "russian": "контрибýтить", "english": "to contribute" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Нужно было нанять десять новых инженеров ___ три месяца.",
+      "wordBank": ["за", "в", "на", "через"],
+      "correctAnswer": "за",
+      "explanation": "Preposition 'за' with accusative indicates timeframe for completion."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "процессы найма", "english": "hiring processes" },
+        { "russian": "соответствие культуре", "english": "cultural fit" },
+        { "russian": "архитектурное мышление", "english": "architectural thinking" },
+        { "russian": "поддерживаемый код", "english": "maintainable code" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Мы уделили внимание процессу онбординга новых ___.",
+      "options": [
+        "сотрудники",
+        "сотрудника",
+        "сотрудников",
+        "сотрудникам"
+      ],
+      "correctAnswer": "сотрудников",
+      "explanation": "Genitive plural 'сотрудников' (employees) after 'онбординга'."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Новые члены команды стали продуктивными в среднем за три ___.",
+      "wordBank": ["недели", "месяца", "года", "дня"],
+      "correctAnswer": "недели",
+      "explanation": "Genitive singular 'недели' (weeks) after 'три' (three)."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Hiring Practices in Russian Tech",
+    "content": "Russian tech companies increasingly adopt Western hiring practices like take-home assignments and buddy systems. The term 'онбординг' (onboarding) is commonly used alongside 'адаптация'. Cultural fit interviews are becoming more common, though technical skills remain the primary focus."
+  },
+  "grammarNote": {
+    "topic": "Gerund Constructions: включая, позволяя",
+    "content": "'Включая описание' (including description), 'позволяя инженерам' (allowing engineers) use present active participles (gerunds) in Russian. These '-я/-а' forms are equivalent to English '-ing' constructions and are common in formal/technical writing."
+  },
+  "wordCount": 298,
+  "estimatedMinutes": 30
+}

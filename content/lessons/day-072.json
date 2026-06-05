@@ -1,0 +1,68 @@
+{
+  "day": 72,
+  "phase": 4,
+  "title": "Cloud Infrastructure Migration",
+  "difficultyLevel": "B1+",
+  "textRussian": "Наша компания приняла стратегическое решение мигрировать всю инфраструктуру из собственного датацентра в облако AWS. Это был амбициозный проект, который потребует координации между несколькими командами. Я был назначен техническим лидером этой миграции.\n\nПервым этапом стал детальный анализ существующей инфраструктуры. Мы документировали все сервисы, их зависимости, требования к производительности и объёмы данных. Оказалось, что у нас более ста виртуальных машин, несколько баз данных и сложная сетевая топология. Миграция такой системы требовала тщательного планирования.\n\nМы выбрали стратегию поэтапной миграции: сначала некритичные сервисы, потом вспомогательные системы, и только в конце — критически важные компоненты платформы. Это позволило бы нам набраться опыта работы с AWS и минимизировать риски для бизнеса.\n\nОсобое внимание мы уделили вопросам безопасности и соответствия требованиям. Нужно было настроить VPC, группы безопасности, IAM роли и шифрование данных. Также важно было обеспечить соответствие нормам защиты персональных данных. Мы наняли консультанта по облачной безопасности, который помог нам спроектировать надёжную архитектуру. Миграция заняла шесть месяцев, но результат превзошёл ожидания: мы снизили операционные расходы на тридцать процентов.",
+  "textEnglish": "Our company made a strategic decision to migrate all infrastructure from our own data center to AWS cloud. This was an ambitious project that would require coordination between several teams. I was appointed technical leader of this migration.\n\nThe first stage was a detailed analysis of existing infrastructure. We documented all services, their dependencies, performance requirements, and data volumes. It turned out we had more than a hundred virtual machines, several databases, and complex network topology. Migrating such a system required careful planning.\n\nWe chose a phased migration strategy: first non-critical services, then auxiliary systems, and only at the end — critically important platform components. This would allow us to gain experience working with AWS and minimize business risks.\n\nWe paid special attention to security and compliance issues. We needed to configure VPC, security groups, IAM roles, and data encryption. It was also important to ensure compliance with personal data protection regulations. We hired a cloud security consultant who helped us design a reliable architecture. The migration took six months, but the result exceeded expectations: we reduced operational costs by thirty percent.",
+  "vocabulary": [
+    { "russian": "мигрúровать", "english": "to migrate" },
+    { "russian": "датацéнтр", "english": "data center" },
+    { "russian": "óблако", "english": "cloud" },
+    { "russian": "амбициóзный проéкт", "english": "ambitious project" },
+    { "russian": "зависúмости", "english": "dependencies" },
+    { "russian": "производúтельность", "english": "performance" },
+    { "russian": "сетевáя тополóгия", "english": "network topology" },
+    { "russian": "поэтáпная мигрáция", "english": "phased migration" },
+    { "russian": "вспомогáтельные систéмы", "english": "auxiliary systems" },
+    { "russian": "соотвéтствие требовáниям", "english": "compliance" },
+    { "russian": "шифровáние дáнных", "english": "data encryption" },
+    { "russian": "операциóнные расхóды", "english": "operational costs" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Миграция такой системы требовала тщательного ___.",
+      "wordBank": ["планирования", "развёртывания", "удаления", "копирования"],
+      "correctAnswer": "планирования",
+      "explanation": "Genitive case 'планирования' (planning) after 'требовала' (required)."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "датацентр", "english": "data center" },
+        { "russian": "зависимости", "english": "dependencies" },
+        { "russian": "сетевая топология", "english": "network topology" },
+        { "russian": "шифрование данных", "english": "data encryption" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct form: Мы уделили внимание вопросам ___.",
+      "options": [
+        "безопасность",
+        "безопасности",
+        "безопасностью",
+        "безопасностей"
+      ],
+      "correctAnswer": "безопасности",
+      "explanation": "Genitive case 'безопасности' after 'вопросам' (questions of)."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Мы снизили операционные расходы на ___ процентов.",
+      "correctAnswer": "тридцать",
+      "explanation": "The number 'тридцать' (thirty) is used with accusative case after 'на' (by)."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Cloud Computing in Russia",
+    "content": "While AWS, Azure, and Google Cloud are popular globally, Russia also has domestic cloud providers like Yandex Cloud and VK Cloud. Due to data localization laws, Russian companies often must store personal data on servers located in Russia, which influences cloud infrastructure decisions."
+  },
+  "grammarNote": {
+    "topic": "Future-in-Past: 'потребует' and 'позволило бы'",
+    "content": "Notice 'потребует' (will require) from past perspective and 'позволило бы' (would allow). Russian maintains future tense when describing future actions from a past viewpoint: 'проект, который потребует' (a project that will require)."
+  },
+  "wordCount": 266,
+  "estimatedMinutes": 27
+}

@@ -1,0 +1,69 @@
+{
+  "day": 89,
+  "phase": 4,
+  "title": "Engineering Culture and Values",
+  "difficultyLevel": "B2",
+  "textRussian": "Когда наша компания выросла с пятнадцати до ста инженеров, мы поняли, что необходимо более явно определить и культивировать инженерную культуру. В небольшой команде культура формируется органически через ежедневные взаимодействия, но в растущей организации требуется осознанный подход к её поддержанию.\n\nМы начали с серии воркшопов, где инженеры всех уровней обсуждали, какие ценности для них важны в работе. Из этих обсуждений выкристаллизовались несколько ключевых принципов, которые стали фундаментом нашей инженерной культуры.\n\nПервый принцип — \"ownership\" или чувство личной ответственности. Мы хотели, чтобы инженеры не просто выполняли задачи, а чувствовали себя владельцами продукта, принимали решения и брали на себя ответственность за результаты. Это означало давать командам автономию в технических решениях и поддерживать инициативу.\n\nВторой принцип — \"bias for action\" или предпочтение действию. Лучше сделать что-то и получить обратную связь, чем бесконечно планировать идеальное решение. Конечно, это не означало бездумную спешку, но поощряло быстрые итерации и эксперименты.\n\nТретий принцип — psychological safety или психологическая безопасность. Инженеры должны чувствовать себя комфортно, задавая вопросы, признавая ошибки и предлагая новые идеи, даже если они могут оказаться неудачными. Культура без обвинений при разборе инцидентов была важной частью этого.\n\nЧетвёртый принцип — continuous learning или непрерывное обучение. Технологии меняются быстро, и мы инвестировали в развитие инженеров: выделяли бюджет на конференции и курсы, проводили внутренние tech talks, поощряли эксперименты с новыми технологиями.\n\nМы не просто написали эти принципы на стене. Они были интегрированы в процессы: в критерии оценки performance, в процесс найма, в то, как мы проводим code reviews и принимаем архитектурные решения. Через год культурный опрос показал, что девяносто процентов инженеров чувствуют сильную связь с этими ценностями и видят их в ежедневной работе.",
+  "textEnglish": "When our company grew from fifteen to one hundred engineers, we realized it was necessary to more explicitly define and cultivate engineering culture. In a small team, culture forms organically through daily interactions, but in a growing organization, a conscious approach to maintaining it is required.\n\nWe started with a series of workshops where engineers of all levels discussed which values were important to them in their work. From these discussions, several key principles crystallized that became the foundation of our engineering culture.\n\nThe first principle was \"ownership\" or a sense of personal responsibility. We wanted engineers not just to complete tasks but to feel like product owners, make decisions, and take responsibility for results. This meant giving teams autonomy in technical decisions and supporting initiative.\n\nThe second principle was \"bias for action\" or preference for action. Better to do something and get feedback than to endlessly plan the perfect solution. Of course, this didn't mean thoughtless rush, but it encouraged fast iterations and experiments.\n\nThe third principle was psychological safety. Engineers should feel comfortable asking questions, admitting mistakes, and proposing new ideas, even if they might turn out unsuccessful. A blameless culture in incident reviews was an important part of this.\n\nThe fourth principle was continuous learning. Technologies change quickly, and we invested in engineer development: allocated budget for conferences and courses, conducted internal tech talks, encouraged experiments with new technologies.\n\nWe didn't just write these principles on the wall. They were integrated into processes: into performance evaluation criteria, into the hiring process, into how we conduct code reviews and make architectural decisions. A year later, a culture survey showed that ninety percent of engineers feel a strong connection to these values and see them in daily work.",
+  "vocabulary": [
+    { "russian": "инженéрная культýра", "english": "engineering culture" },
+    { "russian": "культивúровать", "english": "to cultivate" },
+    { "russian": "осознанный пóдход", "english": "conscious approach" },
+    { "russian": "ownership", "english": "ownership" },
+    { "russian": "чýвство отвéтственности", "english": "sense of responsibility" },
+    { "russian": "автонóмия", "english": "autonomy" },
+    { "russian": "bias for action", "english": "bias for action" },
+    { "russian": "психологúческая безопáсность", "english": "psychological safety" },
+    { "russian": "культýра без обвинéний", "english": "blameless culture" },
+    { "russian": "continuous learning", "english": "continuous learning" },
+    { "russian": "внýтренние tech talks", "english": "internal tech talks" },
+    { "russian": "культýрный опрóс", "english": "culture survey" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "В небольшой команде культура формируется ___.",
+      "wordBank": ["органически", "искусственно", "медленно", "случайно"],
+      "correctAnswer": "органически",
+      "explanation": "Adverb 'органически' (organically) describes natural formation."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "чувство ответственности", "english": "sense of responsibility" },
+        { "russian": "психологическая безопасность", "english": "psychological safety" },
+        { "russian": "культура без обвинений", "english": "blameless culture" },
+        { "russian": "культурный опрос", "english": "culture survey" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Мы инвестировали в развитие ___.",
+      "options": [
+        "инженеры",
+        "инженера",
+        "инженеров",
+        "инженерам"
+      ],
+      "correctAnswer": "инженеров",
+      "explanation": "Genitive plural 'инженеров' (engineers) after 'развитие'."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Лучше сделать что-то и получить обратную ___, чем бесконечно планировать.",
+      "wordBank": ["связь", "помощь", "информацию", "поддержку"],
+      "correctAnswer": "связь",
+      "explanation": "'Обратную связь' (feedback) is the standard expression."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Engineering Culture in Russian Tech Companies",
+    "content": "Leading Russian tech companies like Yandex, JetBrains, and VK have strong engineering cultures influenced by both global best practices and local context. English terms like 'ownership', 'bias for action', and 'psychological safety' are commonly used. The concept of 'культура без обвинений' (blameless culture) is increasingly adopted."
+  },
+  "grammarNote": {
+    "topic": "Comparative Constructions: 'Лучше... чем...'",
+    "content": "'Лучше сделать... чем планировать' (Better to do... than to plan) uses comparative 'лучше' (better) with infinitives and 'чем' (than) for comparison. This structure is common for expressing preferences in professional contexts."
+  },
+  "wordCount": 292,
+  "estimatedMinutes": 30
+}

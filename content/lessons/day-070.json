@@ -1,0 +1,67 @@
+{
+  "day": 70,
+  "phase": 4,
+  "title": "Production Incident: Database Outage",
+  "difficultyLevel": "B1+",
+  "textRussian": "В три часа ночи меня разбудил звонок дежурного инженера. Наша основная база данных перестала отвечать на запросы, и все критические сервисы оказались недоступны. Я немедленно подключился к серверу мониторинга и увидел, что использование дискового пространства достигло ста процентов. Журналы транзакций заполнили всё доступное место.\n\nЯ созвал экстренную конференцию с командой. Первым делом нужно было восстановить работу сервиса, а потом уже разбираться в причинах. Сергей предложил временно переключиться на реплику базы данных в режиме чтения, пока мы освобождаем место на основном сервере. Это позволило бы пользователям хотя бы просматривать данные.\n\nОднако у этого решения был существенный недостаток: пользователи не смогли бы совершать транзакции. Поэтому мы решили действовать быстро: удалили старые логи, настроили автоматическую ротацию журналов и увеличили размер диска. Через двадцать минут система заработала нормально. На следующий день мы провели подробный разбор инцидента и добавили алерты на мониторинг дискового пространства. Урок усвоен: превентивный мониторинг критичнее реактивного устранения проблем.",
+  "textEnglish": "At three in the morning, I was woken up by a call from the on-call engineer. Our primary database stopped responding to queries, and all critical services became unavailable. I immediately connected to the monitoring server and saw that disk space usage had reached one hundred percent. Transaction logs had filled all available space.\n\nI called an emergency conference with the team. First, we needed to restore service operation, and only then investigate the causes. Sergey suggested temporarily switching to the database replica in read mode while we free up space on the primary server. This would allow users to at least view data.\n\nHowever, this solution had a significant drawback: users wouldn't be able to perform transactions. Therefore, we decided to act quickly: we deleted old logs, set up automatic log rotation, and increased disk size. Twenty minutes later, the system was working normally. The next day, we conducted a detailed incident review and added alerts for disk space monitoring. Lesson learned: preventive monitoring is more critical than reactive problem-solving.",
+  "vocabulary": [
+    { "russian": "дежýрный инженéр", "english": "on-call engineer" },
+    { "russian": "основнáя бáза дáнных", "english": "primary database" },
+    { "russian": "недостýпны", "english": "unavailable" },
+    { "russian": "дискóвое прострáнство", "english": "disk space" },
+    { "russian": "журнáлы транзáкций", "english": "transaction logs" },
+    { "russian": "экстрéнная конферéнция", "english": "emergency conference" },
+    { "russian": "рéплика бáзы дáнных", "english": "database replica" },
+    { "russian": "ротáция журнáлов", "english": "log rotation" },
+    { "russian": "разбóр инцидéнта", "english": "incident review" },
+    { "russian": "превентúвный монитóринг", "english": "preventive monitoring" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "База данных ___ отвечать на запросы.",
+      "wordBank": ["перестала", "начала", "продолжала", "будет"],
+      "correctAnswer": "перестала",
+      "explanation": "'Перестала' (stopped) is the correct perfective past tense verb."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "дежурный инженер", "english": "on-call engineer" },
+        { "russian": "недоступны", "english": "unavailable" },
+        { "russian": "реплика базы данных", "english": "database replica" },
+        { "russian": "ротация журналов", "english": "log rotation" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct form: Я созвал экстренную конференцию с ___.",
+      "options": [
+        "команда",
+        "команды",
+        "команде",
+        "командой"
+      ],
+      "correctAnswer": "командой",
+      "explanation": "Instrumental case 'командой' is used after 'с' (with)."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Превентивный мониторинг ___ реактивного устранения проблем.",
+      "wordBank": ["критичнее", "важный", "хороший", "плохой"],
+      "correctAnswer": "критичнее",
+      "explanation": "Comparative form 'критичнее' (more critical) is used for comparison."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "On-Call Culture in Russian Tech",
+    "content": "Russian tech companies typically use the term 'дежурный инженер' (on-call engineer) or 'инженер на смене' for engineers responsible for incident response. The culture emphasizes quick response and detailed postmortems (разбор инцидента), similar to Western practices but often with more formal documentation requirements."
+  },
+  "grammarNote": {
+    "topic": "Perfective vs Imperfective: Crisis Actions",
+    "content": "Notice the use of perfective verbs for completed actions during the incident: 'перестала отвечать' (stopped responding), 'созвал' (called together), 'удалили' (deleted). Imperfective would be used for ongoing processes: 'освобождаем' (we are freeing)."
+  },
+  "wordCount": 251,
+  "estimatedMinutes": 25
+}

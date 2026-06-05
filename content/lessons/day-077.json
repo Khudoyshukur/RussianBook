@@ -1,0 +1,70 @@
+{
+  "day": 77,
+  "phase": 4,
+  "title": "Container Orchestration with Kubernetes",
+  "difficultyLevel": "B2",
+  "textRussian": "Наша компания решила перейти на Kubernetes для оркестрации контейнеров. До этого мы использовали Docker Compose для развёртывания приложений, но эт решение не масштабировалось на несколько серверов. Kubernetes предоставлял автоматическое масштабирование, self-healing и управление конфигурацией.\n\nПервым шагом было создание кластера Kubernetes. Мы выбрали managed-решение от облачного провайдера, чтобы не управлять control plane самостоятельно. Это освободило команду от операционных задач и позволило сосредоточиться на развёртывании приложений.\n\nСамой сложной частью оказалась конвертация наших Docker Compose файлов в Kubernetes манифесты. Нужно было создать Deployment для каждого сервиса, определить Service для network communication, и настроить Ingress для входящего трафика. Также требовалось продумать стратегию управления секретами и конфигурационными файлами.\n\nМы использовали Helm charts для упаковки наших приложений. Это позволило параметризовать конфигурацию для разных окружений — development, staging и production. Одна и та же Helm chart могла развёртываться в любое окружение с соответствующими параметрами.\n\nОсобое внимание мы уделили мониторингу и логированию. Установили Prometheus для сбора метрик и Grafana для визуализации. Для логов настроили централизованную систему на основе ELK stack. Теперь мы могли видеть состояние всех сервисов в реальном времени и быстро выявлять проблемы. Переход на Kubernetes занял два месяца, но значительно улучшил надёжность нашей инфраструктуры.",
+  "textEnglish": "Our company decided to switch to Kubernetes for container orchestration. Previously, we used Docker Compose for application deployment, but this solution didn't scale across multiple servers. Kubernetes provided automatic scaling, self-healing, and configuration management.\n\nThe first step was creating a Kubernetes cluster. We chose a managed solution from a cloud provider to avoid managing the control plane ourselves. This freed the team from operational tasks and allowed us to focus on application deployment.\n\nThe most difficult part turned out to be converting our Docker Compose files into Kubernetes manifests. We needed to create a Deployment for each service, define Services for network communication, and configure Ingress for incoming traffic. We also needed to think through a strategy for managing secrets and configuration files.\n\nWe used Helm charts to package our applications. This allowed us to parameterize configuration for different environments — development, staging, and production. The same Helm chart could be deployed to any environment with appropriate parameters.\n\nWe paid special attention to monitoring and logging. We installed Prometheus for metrics collection and Grafana for visualization. For logs, we set up a centralized system based on ELK stack. Now we could see the state of all services in real time and quickly identify problems. The transition to Kubernetes took two months but significantly improved our infrastructure reliability.",
+  "vocabulary": [
+    { "russian": "оркестрáция контéйнеров", "english": "container orchestration" },
+    { "russian": "развёртывание приложéний", "english": "application deployment" },
+    { "russian": "масштабúроваться", "english": "to scale" },
+    { "russian": "автоматúческое масштабúрование", "english": "automatic scaling" },
+    { "russian": "self-healing", "english": "self-healing" },
+    { "russian": "кластер", "english": "cluster" },
+    { "russian": "managed-решéние", "english": "managed solution" },
+    { "russian": "манифéсты", "english": "manifests" },
+    { "russian": "входящий трáфик", "english": "incoming traffic" },
+    { "russian": "сéкреты", "english": "secrets" },
+    { "russian": "Helm charts", "english": "Helm charts" },
+    { "russian": "параметризовать", "english": "to parameterize" },
+    { "russian": "надёжность инфраструктуры", "english": "infrastructure reliability" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Это решение не ___ на несколько серверов.",
+      "wordBank": ["масштабировалось", "устанавливалось", "копировалось", "удалялось"],
+      "correctAnswer": "масштабировалось",
+      "explanation": "'Масштабировалось' (scaled) is the imperfective past tense of the verb."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "развёртывание приложений", "english": "application deployment" },
+        { "russian": "манифесты", "english": "manifests" },
+        { "russian": "входящий трафик", "english": "incoming traffic" },
+        { "russian": "надёжность инфраструктуры", "english": "infrastructure reliability" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Мы уделили внимание мониторингу и ___.",
+      "options": [
+        "логирование",
+        "логирования",
+        "логированию",
+        "логированием"
+      ],
+      "correctAnswer": "логированию",
+      "explanation": "Dative case 'логированию' paired with dative 'мониторингу' after 'уделили внимание'."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Helm chart могла развёртываться в любое окружение с соответствующими ___.",
+      "wordBank": ["параметрами", "файлами", "ошибками", "логами"],
+      "correctAnswer": "параметрами",
+      "explanation": "Instrumental case 'параметрами' (parameters) after 'с' (with)."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "DevOps Tools in Russian Tech",
+    "content": "Russian DevOps engineers commonly use English technical terms like 'Kubernetes', 'Helm', 'Prometheus', and keep them untranslated. However, core concepts are russified: 'оркестрация' (orchestration), 'развёртывание' (deployment), 'масштабирование' (scaling). The ELK stack (Elasticsearch, Logstash, Kibana) is also widely adopted."
+  },
+  "grammarNote": {
+    "topic": "Reflexive Verbs: '-ся' Constructions",
+    "content": "'Масштабировалось' (scaled), 'сосредоточиться' (to focus), 'развёртываться' (to be deployed) use the reflexive '-ся/-сь' suffix. In technical contexts, this often indicates passive or middle voice: the action happens to the subject or by itself."
+  },
+  "wordCount": 285,
+  "estimatedMinutes": 29
+}

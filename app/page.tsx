@@ -215,18 +215,6 @@ export default function Home() {
             })}
           </div>
         </div>
-
-        {/* Footer CTA */}
-        <div className="text-center">
-          {mounted && (
-            <Link
-              href={`/lesson/${currentDay}`}
-              className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg transform hover:scale-105"
-            >
-              Start Learning Today →
-            </Link>
-          )}
-        </div>
       </div>
     </div>
   );

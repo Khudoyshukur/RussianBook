@@ -1,0 +1,69 @@
+{
+  "day": 73,
+  "phase": 4,
+  "title": "Performance Optimization Strategy",
+  "difficultyLevel": "B2",
+  "textRussian": "Пользователи начали жаловаться на медленную загрузку главной страницы нашего приложения. Метрики показывали, что среднее время отклика увеличилось с двух до восьми секунд за последний месяц. Это неприемлемо для современного веб-приложения. Нужно было срочно найти и устранить узкие места в производительности.\n\nЯ начал с профилирования backend-кода. Application Performance Monitoring показал, что самые медленные запросы связаны с загрузкой пользовательского профиля. Оказалось, что мы выполняли более двадцати отдельных SQL-запросов для сбора всей необходимой информации. Это классический пример проблемы N+1.\n\nПервым решением стала оптимизация запросов к базе данных. Мы переписали код, используя JOIN вместо множественных запросов, и добавили индексы на часто используемые поля. Это сократило время загрузки профиля до одной секунды. Затем мы внедрили кэширование с использованием Redis. Часто запрашиваемые данные теперь хранились в памяти, что практически исключило обращения к базе данных для повторных запросов.\n\nНа frontend мы применили lazy loading для изображений и code splitting для JavaScript бандлов. Также оптимизировали размеры изображений и настроили CDN для статических ресурсов. В результате время загрузки страницы сократилось до полутора секунд, что соответствует лучшим практикам индустрии.",
+  "textEnglish": "Users began complaining about slow loading of our application's main page. Metrics showed that average response time increased from two to eight seconds over the past month. This is unacceptable for a modern web application. We urgently needed to find and eliminate performance bottlenecks.\n\nI started with backend code profiling. Application Performance Monitoring showed that the slowest queries were related to loading user profiles. It turned out we were executing more than twenty separate SQL queries to collect all necessary information. This is a classic example of the N+1 problem.\n\nThe first solution was optimizing database queries. We rewrote the code using JOINs instead of multiple queries and added indexes on frequently used fields. This reduced profile loading time to one second. Then we implemented caching using Redis. Frequently requested data was now stored in memory, which practically eliminated database calls for repeated requests.\n\nOn the frontend, we applied lazy loading for images and code splitting for JavaScript bundles. We also optimized image sizes and configured CDN for static resources. As a result, page load time was reduced to one and a half seconds, which meets industry best practices.",
+  "vocabulary": [
+    { "russian": "мéтрики", "english": "metrics" },
+    { "russian": "врéмя отклúка", "english": "response time" },
+    { "russian": "ýзкие местá", "english": "bottlenecks" },
+    { "russian": "профилúрование", "english": "profiling" },
+    { "russian": "проблéма N+1", "english": "N+1 problem" },
+    { "russian": "оптимизáция запрóсов", "english": "query optimization" },
+    { "russian": "индéксы", "english": "indexes" },
+    { "russian": "кэширóвание", "english": "caching" },
+    { "russian": "lazy loading", "english": "lazy loading" },
+    { "russian": "code splitting", "english": "code splitting" },
+    { "russian": "бáндлы", "english": "bundles" },
+    { "russian": "статúческие ресýрсы", "english": "static resources" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Нужно было срочно найти и ___ узкие места в производительности.",
+      "wordBank": ["устранить", "создать", "игнорировать", "скрыть"],
+      "correctAnswer": "устранить",
+      "explanation": "'Устранить' (eliminate) is the correct verb for removing bottlenecks."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "метрики", "english": "metrics" },
+        { "russian": "узкие места", "english": "bottlenecks" },
+        { "russian": "профилирование", "english": "profiling" },
+        { "russian": "кэширование", "english": "caching" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Мы добавили индексы на часто используемые ___.",
+      "options": [
+        "поля",
+        "полей",
+        "полям",
+        "полями"
+      ],
+      "correctAnswer": "поля",
+      "explanation": "Accusative case 'поля' (fields) after preposition 'на' indicating placement."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Время загрузки страницы ___ до полутора секунд.",
+      "wordBank": ["сократилось", "увеличилось", "осталось", "изменилось"],
+      "correctAnswer": "сократилось",
+      "explanation": "'Сократилось' (was reduced) indicates the decrease in loading time."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Performance Culture in Russian Tech",
+    "content": "Russian tech companies place high emphasis on application performance, especially for consumer-facing products. The term 'узкие места' (literally 'narrow places') for bottlenecks is a vivid native Russian expression, while technical terms like 'профилирование', 'кэширование', and 'lazy loading' blend Russian and English."
+  },
+  "grammarNote": {
+    "topic": "Comparative Constructions: 'от... до...'",
+    "content": "The construction 'от X до Y' (from X to Y) uses genitive case: 'от двух до восьми секунд' (from two to eight seconds). This pattern is essential for describing ranges and changes in measurements."
+  },
+  "wordCount": 262,
+  "estimatedMinutes": 27
+}

@@ -1,0 +1,69 @@
+{
+  "day": 74,
+  "phase": 4,
+  "title": "API Design Review",
+  "difficultyLevel": "B2",
+  "textRussian": "Наша команда разрабатывала новое RESTful API для мобильного приложения. Перед началом имплементации я организовал архитектурный ревью дизайна API с старшими инженерами. Важно было получить обратную связь на ранней стадии, чтобы избежать дорогостоящих изменений в будущем.\n\nАнна, наш архитектор, сразу обратила внимание на несогласованность в именовании эндпоинтов. Некоторые использовали множественное число (например, `/users`), а другие — единственное (`/profile`). Она рекомендовала придерживаться единого стиля: всегда использовать множественное число для коллекций. Также она предложила версионировать API с самого начала, добавив `/v1/` в путь.\n\nДмитрий поднял вопрос о пагинации больших списков. Наш первоначальный дизайн возвращал все записи сразу, что могло привести к проблемам производительности при большом количестве данных. Мы решили внедрить cursor-based пагинацию вместо offset-based, так как она более эффективна для больших датасетов.\n\nОсобенно интересной оказалась дискуссия об обработке ошибок. Я предлагал возвращать детальные сообщения об ошибках, но команда безопасности возразила, что это может раскрыть внутреннюю структуру системы потенциальным атакующим. Мы пришли к компромиссу: возвращать общее сообщение пользователю, но логировать детали ошибки на сервере для целей отладки. После нескольких итераций мы создали API дизайн, который удовлетворял всем требованиям.",
+  "textEnglish": "Our team was developing a new RESTful API for a mobile application. Before starting implementation, I organized an architectural review of the API design with senior engineers. It was important to get feedback at an early stage to avoid costly changes in the future.\n\nAnna, our architect, immediately noticed inconsistency in endpoint naming. Some used plural forms (for example, `/users`), while others used singular (`/profile`). She recommended adhering to a unified style: always use plural for collections. She also suggested versioning the API from the start by adding `/v1/` to the path.\n\nDmitry raised the question of paginating large lists. Our initial design returned all records at once, which could lead to performance problems with large amounts of data. We decided to implement cursor-based pagination instead of offset-based, as it's more efficient for large datasets.\n\nThe discussion about error handling turned out to be especially interesting. I proposed returning detailed error messages, but the security team objected that this could reveal the system's internal structure to potential attackers. We reached a compromise: return a general message to the user but log error details on the server for debugging purposes. After several iterations, we created an API design that satisfied all requirements.",
+  "vocabulary": [
+    { "russian": "RESTful API", "english": "RESTful API" },
+    { "russian": "имплементáция", "english": "implementation" },
+    { "russian": "обрáтная связь", "english": "feedback" },
+    { "russian": "несогласóванность", "english": "inconsistency" },
+    { "russian": "именовáние эндпóинтов", "english": "endpoint naming" },
+    { "russian": "множéственное числó", "english": "plural form" },
+    { "russian": "версионúровать", "english": "to version" },
+    { "russian": "пагинáция", "english": "pagination" },
+    { "russian": "cursor-based", "english": "cursor-based" },
+    { "russian": "обрабóтка ошúбок", "english": "error handling" },
+    { "russian": "логúровать", "english": "to log" },
+    { "russian": "отлáдка", "english": "debugging" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Важно было получить обратную связь на ___ стадии.",
+      "wordBank": ["ранней", "поздней", "средней", "финальной"],
+      "correctAnswer": "ранней",
+      "explanation": "Prepositional case 'ранней' (early) after 'на' describing stage."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "обратная связь", "english": "feedback" },
+        { "russian": "несогласованность", "english": "inconsistency" },
+        { "russian": "пагинация", "english": "pagination" },
+        { "russian": "обработка ошибок", "english": "error handling" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct form: Она рекомендовала придерживаться ___ стиля.",
+      "options": [
+        "единый",
+        "единого",
+        "единому",
+        "единым"
+      ],
+      "correctAnswer": "единого",
+      "explanation": "Genitive case 'единого' after 'придерживаться' (to adhere to)."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Мы ___ к компромиссу: возвращать общее сообщение пользователю.",
+      "wordBank": ["пришли", "ушли", "зашли", "вышли"],
+      "correctAnswer": "пришли",
+      "explanation": "'Пришли к компромиссу' (reached a compromise) is the standard expression."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "API Design Practices in Russia",
+    "content": "Russian development teams generally follow international REST API conventions, using English for endpoint names even in Russian companies. Terms like 'пагинация' (pagination) and 'версионирование' (versioning) are russified versions of English technical terms, while 'RESTful API' remains in English."
+  },
+  "grammarNote": {
+    "topic": "Verbs of Motion with Prefixes: 'при-'",
+    "content": "The prefix 'при-' with verbs of motion indicates arrival or achievement: 'пришли к компромиссу' (arrived at/reached a compromise), 'привести к проблемам' (lead to problems). This is different from unprefixed motion verbs."
+  },
+  "wordCount": 281,
+  "estimatedMinutes": 28
+}

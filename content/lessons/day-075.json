@@ -1,0 +1,69 @@
+{
+  "day": 75,
+  "phase": 4,
+  "title": "Tech Debt Prioritization Meeting",
+  "difficultyLevel": "B2",
+  "textRussian": "На еженедельной встрече по планированию мы обсуждали накопившийся технический долг. За последние шесть месяцев команда сосредоточилась на доставке новых фичей, и теперь пришло время разобраться с отложенными техническими задачами. У нас в backlog было более тридцати пунктов технического долга, от устаревших зависимостей до архитектурных проблем.\n\nЯ предложил использовать матрицу приоритизации на основе двух критериев: влияние на бизнес и сложность реализации. Задачи с высоким влиянием и низкой сложностью должны быть выполнены в первую очередь — это так называемые \"quick wins\". Напротив, задачи с низким влиянием и высокой сложностью можно отложить или вообще удалить из списка.\n\nСамой критичной проблемой оказалась устаревшая версия PostgreSQL. Мы использовали версию 10, в то время как текущая LTS версия была 15. Это создавало риски безопасности и лишало нас новых возможностей по оптимизации. Однако миграция базы данных — сложная задача, требующая тщательной подготовки.\n\nМы также выявили проблемы с тестовым покрытием. Многие критические модули имели менее пятидесяти процентов покрытия unit-тестами. Елена предложила установить правило: каждый новый pull request должен увеличивать или поддерживать текущий уровень покрытия. Это позволит постепенно улучшить качество кода без специально выделенного времени. В итоге мы выбрали пять приоритетных задач на следующий квартал.",
+  "textEnglish": "At the weekly planning meeting, we discussed accumulated technical debt. Over the past six months, the team focused on delivering new features, and now the time had come to deal with postponed technical tasks. We had more than thirty technical debt items in our backlog, from outdated dependencies to architectural problems.\n\nI proposed using a prioritization matrix based on two criteria: business impact and implementation complexity. Tasks with high impact and low complexity should be completed first — these are so-called \"quick wins.\" Conversely, tasks with low impact and high complexity can be postponed or even removed from the list.\n\nThe most critical problem turned out to be an outdated PostgreSQL version. We were using version 10, while the current LTS version was 15. This created security risks and deprived us of new optimization capabilities. However, database migration is a complex task requiring careful preparation.\n\nWe also identified problems with test coverage. Many critical modules had less than fifty percent unit test coverage. Elena proposed establishing a rule: each new pull request must increase or maintain the current coverage level. This would allow us to gradually improve code quality without specially allocated time. In the end, we selected five priority tasks for the next quarter.",
+  "vocabulary": [
+    { "russian": "технúческий долг", "english": "technical debt" },
+    { "russian": "накопúвшийся", "english": "accumulated" },
+    { "russian": "доствка фúчей", "english": "feature delivery" },
+    { "russian": "отлóженные задáчи", "english": "postponed tasks" },
+    { "russian": "мáтрица приоритизáции", "english": "prioritization matrix" },
+    { "russian": "влияние на бúзнес", "english": "business impact" },
+    { "russian": "слóжность реализáции", "english": "implementation complexity" },
+    { "russian": "устарéвшая вéрсия", "english": "outdated version" },
+    { "russian": "рúски безопáсности", "english": "security risks" },
+    { "russian": "тéстовое покрытие", "english": "test coverage" },
+    { "russian": "unit-тéсты", "english": "unit tests" },
+    { "russian": "постепéнно улучшить", "english": "to gradually improve" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Команда сосредоточилась на ___ новых фичей.",
+      "wordBank": ["доставке", "удалении", "изучении", "копировании"],
+      "correctAnswer": "доставке",
+      "explanation": "Prepositional case 'доставке' (delivery) after 'на' with 'сосредоточилась' (focused on)."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "технический долг", "english": "technical debt" },
+        { "russian": "матрица приоритизации", "english": "prioritization matrix" },
+        { "russian": "тестовое покрытие", "english": "test coverage" },
+        { "russian": "риски безопасности", "english": "security risks" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Задачи с высоким влиянием и низкой ___.",
+      "options": [
+        "сложность",
+        "сложности",
+        "сложностью",
+        "сложностей"
+      ],
+      "correctAnswer": "сложностью",
+      "explanation": "Instrumental case 'сложностью' (complexity) paired with instrumental 'влиянием'."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Это позволит постепенно ___ качество кода.",
+      "wordBank": ["улучшить", "ухудшить", "проверить", "удалить"],
+      "correctAnswer": "улучшить",
+      "explanation": "'Улучшить' (improve) is the correct perfective verb for enhancing quality."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Tech Debt Management in Russian Companies",
+    "content": "The concept of 'технический долг' (technical debt) is well understood in Russian tech culture. Russian teams often use the English term 'quick wins' alongside its Russian equivalent 'быстрые победы'. Balancing feature delivery with tech debt is a universal challenge discussed in similar terms globally."
+  },
+  "grammarNote": {
+    "topic": "Participles: Active and Passive",
+    "content": "'Накопившийся' (accumulated) is an active past participle meaning 'that has accumulated'. 'Отложенные' (postponed) is a passive past participle meaning 'that were postponed'. Understanding participles is essential for advanced technical Russian."
+  },
+  "wordCount": 282,
+  "estimatedMinutes": 28
+}

@@ -1,0 +1,69 @@
+{
+  "day": 90,
+  "phase": 4,
+  "title": "Reflection: Journey as a Software Engineer",
+  "difficultyLevel": "B2",
+  "textRussian": "Сегодня исполняется пять лет, как я работаю software engineer. Оглядываясь назад, я вижу невероятное путешествие профессионального и личного роста. От junior разработчика, который боялся задавать вопросы на code reviews, до tech lead, отвечающего за архитектуру критических систем и менторство команды.\n\nВ начале карьеры я думал, что быть хорошим инженером — это значит знать все технологии и писать идеальный код. С опытом пришло понимание, что технические навыки — это только фундамент. Не менее важны soft skills: коммуникация, умение объяснять сложные концепции простым языком, способность слушать и учитывать различные точки зрения при принятии решений.\n\nОдним из самых ценных уроков было осознание важности системного мышления. Недостаточно решить изолированную техническую задачу — нужно понимать, как ваше решение влияет на всю систему, на других разработчиков, на пользовательский опыт и на бизнес в целом. Лучшие инженеры, которых я встречал, всегда думали на несколько шагов вперёд и учитывали долгосрочные последствия своих решений.\n\nЯ также понял ценность документирования знаний и проактивного обмена опытом. Написание tech design документов, проведение презентаций, менторство junior разработчиков — всё это не только помогает команде, но и углубляет собственное понимание. Как говорится, лучший способ понять что-то — попытаться объяснить это кому-то другому.\n\nТехнологический ландшафт невероятно быстро меняется. Языки, фреймворки и инструменты, которые были популярны пять лет назад, сегодня могут быть устаревшими. Но фундаментальные концепции — алгоритмы, структуры данных, паттерны проектирования, принципы хорошей архитектуры — остаются актуальными. Инвестиция времени в изучение основ всегда окупается.\n\nГлавное, что я понял за эти годы: software engineering — это командный спорт. Даже самый талантливый инженер не сможет построить сложную систему в одиночку. Успех приходит через коллаборацию, взаимное обучение и создание культуры, где люди поддерживают друг друга. Я благодарен всем менторам, коллегам и членам команды, которые были частью этого путешествия. Впереди ещё много интересных вызовов и возможностей для роста.",
+  "textEnglish": "Today marks five years since I've been working as a software engineer. Looking back, I see an incredible journey of professional and personal growth. From a junior developer who was afraid to ask questions in code reviews to a tech lead responsible for critical system architecture and team mentorship.\n\nAt the beginning of my career, I thought being a good engineer meant knowing all technologies and writing perfect code. With experience came the understanding that technical skills are only the foundation. Soft skills are no less important: communication, the ability to explain complex concepts in simple language, the capacity to listen and consider different viewpoints when making decisions.\n\nOne of the most valuable lessons was realizing the importance of systems thinking. It's not enough to solve an isolated technical task — you need to understand how your solution affects the entire system, other developers, user experience, and the business as a whole. The best engineers I've met always thought several steps ahead and considered the long-term consequences of their decisions.\n\nI also understood the value of documenting knowledge and proactively sharing experience. Writing tech design documents, giving presentations, mentoring junior developers — all this not only helps the team but also deepens one's own understanding. As they say, the best way to understand something is to try to explain it to someone else.\n\nThe technology landscape changes incredibly fast. Languages, frameworks, and tools that were popular five years ago may be obsolete today. But fundamental concepts — algorithms, data structures, design patterns, principles of good architecture — remain relevant. Investing time in studying fundamentals always pays off.\n\nThe main thing I've understood over these years: software engineering is a team sport. Even the most talented engineer cannot build a complex system alone. Success comes through collaboration, mutual learning, and creating a culture where people support each other. I'm grateful to all mentors, colleagues, and team members who have been part of this journey. There are still many interesting challenges and opportunities for growth ahead.",
+  "vocabulary": [
+    { "russian": "профессионáльный рост", "english": "professional growth" },
+    { "russian": "code reviews", "english": "code reviews" },
+    { "russian": "tech lead", "english": "tech lead" },
+    { "russian": "soft skills", "english": "soft skills" },
+    { "russian": "системное мышлéние", "english": "systems thinking" },
+    { "russian": "пользовáтельский óпыт", "english": "user experience" },
+    { "russian": "долгосрóчные послéдствия", "english": "long-term consequences" },
+    { "russian": "документúрование знáний", "english": "knowledge documentation" },
+    { "russian": "проактúвный обмéн óпытом", "english": "proactive experience sharing" },
+    { "russian": "фундаментáльные концéпции", "english": "fundamental concepts" },
+    { "russian": "коллаборáция", "english": "collaboration" },
+    { "russian": "взаúмное обучéние", "english": "mutual learning" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "От junior разработчика до tech lead — это невероятное путешествие ___.",
+      "wordBank": ["роста", "упадка", "изменения", "движения"],
+      "correctAnswer": "роста",
+      "explanation": "Genitive 'роста' (growth) completes the phrase."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "системное мышление", "english": "systems thinking" },
+        { "russian": "документирование знаний", "english": "knowledge documentation" },
+        { "russian": "фундаментальные концепции", "english": "fundamental concepts" },
+        { "russian": "взаимное обучение", "english": "mutual learning" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Недостаточно решить изолированную ___ задачу.",
+      "options": [
+        "техническая",
+        "технической",
+        "техническую",
+        "технической"
+      ],
+      "correctAnswer": "техническую",
+      "explanation": "Accusative feminine 'техническую' (technical) as direct object after 'решить'."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Инвестиция времени в изучение основ всегда ___.",
+      "wordBank": ["окупается", "теряется", "забывается", "пропадает"],
+      "correctAnswer": "окупается",
+      "explanation": "'Окупается' (pays off) indicates positive return on investment."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Career Development in Russian Tech",
+    "content": "Russian software engineers typically progress from junior to middle to senior to tech lead/architect positions. The path emphasizes both technical depth and leadership skills. Mentorship ('менторство') is valued, and many senior engineers take pride in developing junior team members. The tech community shares knowledge through conferences, blogs, and meetups."
+  },
+  "grammarNote": {
+    "topic": "Reflective and Summary Language",
+    "content": "Notice phrases used for reflection: 'оглядываясь назад' (looking back), 'с опытом пришло понимание' (with experience came understanding), 'главное, что я понял' (the main thing I understood). These constructions are essential for professional retrospectives and reviews."
+  },
+  "wordCount": 295,
+  "estimatedMinutes": 30
+}

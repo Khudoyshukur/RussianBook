@@ -1,0 +1,69 @@
+{
+  "day": 88,
+  "phase": 4,
+  "title": "Compliance and Data Privacy Implementation",
+  "difficultyLevel": "B2",
+  "textRussian": "С принятием новых законов о защите персональных данных наша компания столкнулась с необходимостью обеспечить полное соответствие требованиям регулятора. Это была не просто юридическая формальность, а серьёзная техническая задача, требующая изменений в архитектуре системы и процессах обработки данных.\n\nПервым этапом стал data mapping — полный аудит того, какие персональные данные мы собираем, где храним, как обрабатываем и с кем делимся. Оказалось, что персональные данные пользователей хранились в шести разных базах данных, логи содержали email адреса и IP адреса, а некоторые сторонние сервисы получали больше информации, чем было необходимо.\n\nМы должны были реализовать несколько ключевых требований. Во-первых, право на удаление данных: пользователи могли запросить полное удаление своих персональных данных из всех наших систем. Это требовало создания механизма, который находил и удалял данные пользователя из всех баз данных, кэшей и backup архивов.\n\nВо-вторых, шифрование данных в покое и при передаче. Мы внедрили encryption at rest для всех баз данных, содержащих персональные данные, и обеспечили, что все соединения используют TLS. Особенно чувствительные данные, такие как номера платёжных карт, мы начали токенизировать, храня только зашифрованные токены вместо реальных значений.\n\nВ-третьих, минимизация данных и retention policies. Мы определили, какие данные действительно необходимы для функционирования сервиса, а какие собирались \"на всякий случай\" и могли быть удалены. Настроили автоматическое удаление данных после определённого периода хранения.\n\nТакже внедрили систему audit logging, которая записывала каждое обращение к персональным данным: кто, когда и зачем получал доступ. Это позволило не только соответствовать требованиям регулятора, но и повысило общую безопасность системы. Процесс занял четыре месяца напряжённой работы, но в результате мы получили сертификат соответствия и значительно улучшили культуру обработки данных в компании.",
+  "textEnglish": "With the adoption of new personal data protection laws, our company faced the need to ensure full compliance with regulatory requirements. This wasn't just a legal formality but a serious technical task requiring changes to system architecture and data processing procedures.\n\nThe first stage was data mapping — a complete audit of what personal data we collect, where we store it, how we process it, and with whom we share it. It turned out that user personal data was stored in six different databases, logs contained email addresses and IP addresses, and some third-party services received more information than necessary.\n\nWe had to implement several key requirements. First, the right to deletion: users could request complete deletion of their personal data from all our systems. This required creating a mechanism that found and deleted user data from all databases, caches, and backup archives.\n\nSecond, data encryption at rest and in transit. We implemented encryption at rest for all databases containing personal data and ensured all connections use TLS. Especially sensitive data, such as payment card numbers, we started tokenizing, storing only encrypted tokens instead of real values.\n\nThird, data minimization and retention policies. We determined which data was actually necessary for service operation and which was collected \"just in case\" and could be deleted. We set up automatic data deletion after a certain retention period.\n\nWe also implemented an audit logging system that recorded every access to personal data: who, when, and why accessed it. This allowed us not only to comply with regulatory requirements but also improved overall system security. The process took four months of intense work, but as a result we received a compliance certificate and significantly improved the company's data handling culture.",
+  "vocabulary": [
+    { "russian": "защúта персонáльных дáнных", "english": "personal data protection" },
+    { "russian": "соотвéтствие требовáниям", "english": "compliance with requirements" },
+    { "russian": "data mapping", "english": "data mapping" },
+    { "russian": "прáво на удалéние", "english": "right to deletion" },
+    { "russian": "шифровáние дáнных", "english": "data encryption" },
+    { "russian": "encryption at rest", "english": "encryption at rest" },
+    { "russian": "токенизáция", "english": "tokenization" },
+    { "russian": "минимизáция дáнных", "english": "data minimization" },
+    { "russian": "retention policies", "english": "retention policies" },
+    { "russian": "audit logging", "english": "audit logging" },
+    { "russian": "регулятор", "english": "regulator" },
+    { "russian": "сертификáт соотвéтствия", "english": "compliance certificate" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Это была не просто юридическая формальность, а серьёзная ___ задача.",
+      "wordBank": ["техническая", "простая", "лёгкая", "маленькая"],
+      "correctAnswer": "техническая",
+      "explanation": "Nominative feminine 'техническая' (technical) agrees with 'задача'."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "защита персональных данных", "english": "personal data protection" },
+        { "russian": "право на удаление", "english": "right to deletion" },
+        { "russian": "шифрование данных", "english": "data encryption" },
+        { "russian": "минимизация данных", "english": "data minimization" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Мы обеспечили, что все соединения используют ___.",
+      "options": [
+        "TLS",
+        "TLS-а",
+        "TLS-у",
+        "TLS-ом"
+      ],
+      "correctAnswer": "TLS",
+      "explanation": "Accusative (same as nominative for abbreviations) after 'используют'."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Процесс занял четыре месяца ___ работы.",
+      "wordBank": ["напряжённой", "лёгкой", "простой", "быстрой"],
+      "correctAnswer": "напряжённой",
+      "explanation": "Genitive feminine 'напряжённой' (intense) after 'месяца работы'."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Data Protection Laws in Russia",
+    "content": "Russia has strict data localization laws requiring that personal data of Russian citizens be stored on servers located in Russia. The term 'персональные данные' (personal data) and concepts like GDPR-style 'право на удаление' (right to deletion) are well understood. Compliance ('комплаенс' or 'соответствие требованиям') is a major concern for Russian tech companies."
+  },
+  "grammarNote": {
+    "topic": "Passive Constructions with Reflexive Verbs",
+    "content": "'Собирались' (were collected), 'хранились' (were stored) use reflexive '-ся' forms to create passive voice. This is more common in Russian than true passive constructions with 'быть' (to be)."
+  },
+  "wordCount": 295,
+  "estimatedMinutes": 30
+}

@@ -1,0 +1,67 @@
+{
+  "day": 71,
+  "phase": 4,
+  "title": "Security Vulnerability Assessment",
+  "difficultyLevel": "B1+",
+  "textRussian": "Наша команда безопасности провела комплексный анализ уязвимостей в нашем приложении. Отчёт содержал несколько критических находок, требующих немедленного внимания. Самой серьёзной проблемой оказалась SQL-инъекция в модуле поиска, которая могла бы позволить злоумышленнику получить доступ к конфиденциальным данным пользователей.\n\nЯ организовал срочную встречу с разработчиками для обсуждения плана исправления. Дмитрий, наш специалист по безопасности, рекомендовал использовать параметризованные запросы вместо конкатенации строк. Это стандартная практика, которую мы почему-то упустили при написании этого модуля. Кроме того, он предложил внедрить автоматическое сканирование кода на уязвимости в наш CI/CD пайплайн.\n\nМы также обнаружили проблемы с аутентификацией: некоторые API эндпоинты не требовали токена авторизации. Это означало, что любой пользователь мог получить доступ к приватным данным. Мы немедленно закрыли эти эндпоинты и добавили middleware для проверки токенов.\n\nЧерез неделю мы исправили все критические уязвимости и начали регулярные аудиты безопасности. Теперь каждый pull request проходит автоматическую проверку на потенциальные угрозы безопасности.",
+  "textEnglish": "Our security team conducted a comprehensive vulnerability analysis of our application. The report contained several critical findings requiring immediate attention. The most serious problem turned out to be SQL injection in the search module, which could allow an attacker to gain access to users' confidential data.\n\nI organized an urgent meeting with developers to discuss the remediation plan. Dmitry, our security specialist, recommended using parameterized queries instead of string concatenation. This is a standard practice that we somehow missed when writing this module. Additionally, he proposed implementing automatic code scanning for vulnerabilities in our CI/CD pipeline.\n\nWe also discovered authentication issues: some API endpoints didn't require an authorization token. This meant that any user could access private data. We immediately closed these endpoints and added middleware for token verification.\n\nA week later, we fixed all critical vulnerabilities and started regular security audits. Now every pull request undergoes automatic checking for potential security threats.",
+  "vocabulary": [
+    { "russian": "комплéксный анáлиз", "english": "comprehensive analysis" },
+    { "russian": "уязвúмости", "english": "vulnerabilities" },
+    { "russian": "SQL-инъéкция", "english": "SQL injection" },
+    { "russian": "злоумышленник", "english": "attacker, malicious actor" },
+    { "russian": "конфиденциáльные дáнные", "english": "confidential data" },
+    { "russian": "параметризóванные запрóсы", "english": "parameterized queries" },
+    { "russian": "конкатенáция стрóк", "english": "string concatenation" },
+    { "russian": "аутентификáция", "english": "authentication" },
+    { "russian": "тóкен авторизáции", "english": "authorization token" },
+    { "russian": "middleware", "english": "middleware" },
+    { "russian": "аудúты безопáсности", "english": "security audits" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "SQL-инъекция могла бы ___ злоумышленнику получить доступ к данным.",
+      "wordBank": ["позволить", "запретить", "предотвратить", "ограничить"],
+      "correctAnswer": "позволить",
+      "explanation": "'Позволить' (allow) with dative case is used for granting permission or ability."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "уязвимости", "english": "vulnerabilities" },
+        { "russian": "злоумышленник", "english": "attacker" },
+        { "russian": "конфиденциальные данные", "english": "confidential data" },
+        { "russian": "параметризованные запросы", "english": "parameterized queries" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Дмитрий рекомендовал использовать ___ вместо конкатенации.",
+      "options": [
+        "параметризованные запросы",
+        "параметризованных запросов",
+        "параметризованными запросами",
+        "параметризованным запросам"
+      ],
+      "correctAnswer": "параметризованные запросы",
+      "explanation": "Accusative case (same as nominative for inanimate objects) after 'использовать' (to use)."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Теперь каждый pull request проходит автоматическую ___ на потенциальные угрозы.",
+      "correctAnswer": "проверку",
+      "explanation": "Accusative case 'проверку' (check/verification) is used after 'проходит' (undergoes)."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Russian Cybersecurity Terminology",
+    "content": "Russian has both native and borrowed security terms. 'Уязвимость' (vulnerability) is native Russian, while terms like 'SQL-инъекция', 'middleware', and 'токен' are English loanwords commonly used in Russian tech discourse. Understanding both is essential for security discussions."
+  },
+  "grammarNote": {
+    "topic": "Conditional Mood with 'могла бы'",
+    "content": "'Могла бы позволить' (could allow) expresses a hypothetical possibility that was prevented. The conditional particle 'бы' with past tense indicates an unreal or prevented action. Without 'бы', 'могла позволить' would indicate a real past possibility."
+  },
+  "wordCount": 253,
+  "estimatedMinutes": 26
+}

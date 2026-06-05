@@ -1,0 +1,69 @@
+{
+  "day": 80,
+  "phase": 4,
+  "title": "Open Source Contribution Discussion",
+  "difficultyLevel": "B2",
+  "textRussian": "На team meeting мы обсуждали возможность внести вклад в open source проекты, которые мы используем в нашей компании. Это была инициатива технического директора, который считал, что участие в open source не только полезно для сообщества, но и развивает навыки разработчиков.\n\nОлег, senior engineer, поделился своим опытом контрибуции в популярную JavaScript библиотеку. Он нашёл баг, который влиял на нашу production систему, и вместо workaround в нашем коде решил исправить проблему в самой библиотеке. Процесс оказался сложнее, чем он ожидал: нужно было следовать строгим стандартам кодирования проекта, написать тесты и подробно описать изменения.\n\nОднако результат был положительным. Его pull request приняли, баг исправили, и теперь тысячи других разработчиков получили пользу от его работы. Кроме того, Олег значительно углубил своё понимание внутренней архитектуры библиотеки, что помогло ему эффективнее использовать её в наших проектах.\n\nМы решили ввести политику: каждый разработчик может тратить до десяти процентов рабочего времени на open source контрибуции. Это должны быть проекты, которые мы реально используем, чтобы вклад был полезен и компании, и сообществу. Также мы начали публиковать некоторые наши внутренние инструменты как open source, что помогает привлекать талантливых разработчиков и улучшать репутацию компании в техническом сообществе.",
+  "textEnglish": "At the team meeting, we discussed the possibility of contributing to open source projects that we use in our company. This was an initiative from the CTO, who believed that open source participation is not only useful for the community but also develops developers' skills.\n\nOleg, a senior engineer, shared his experience contributing to a popular JavaScript library. He found a bug that affected our production system and instead of a workaround in our code, decided to fix the problem in the library itself. The process turned out to be more difficult than he expected: he needed to follow strict project coding standards, write tests, and describe changes in detail.\n\nHowever, the result was positive. His pull request was accepted, the bug was fixed, and now thousands of other developers benefited from his work. Additionally, Oleg significantly deepened his understanding of the library's internal architecture, which helped him use it more effectively in our projects.\n\nWe decided to introduce a policy: each developer can spend up to ten percent of working time on open source contributions. These should be projects we actually use, so the contribution is useful to both the company and the community. We also started publishing some of our internal tools as open source, which helps attract talented developers and improves the company's reputation in the technical community.",
+  "vocabulary": [
+    { "russian": "внестú вклад", "english": "to contribute" },
+    { "russian": "open source проéкты", "english": "open source projects" },
+    { "russian": "контрибýция", "english": "contribution" },
+    { "russian": "workaround", "english": "workaround" },
+    { "russian": "стáндарты кодúрования", "english": "coding standards" },
+    { "russian": "положúтельный результáт", "english": "positive result" },
+    { "russian": "углубúть понимáние", "english": "to deepen understanding" },
+    { "russian": "внýтренняя архитектýра", "english": "internal architecture" },
+    { "russian": "рабóчее врéмя", "english": "working time" },
+    { "russian": "внýтренние инструмéнты", "english": "internal tools" },
+    { "russian": "привлекáть талáнты", "english": "to attract talent" },
+    { "russian": "репутáция компáнии", "english": "company reputation" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Участие в open source не только полезно для сообщества, но и ___ навыки разработчиков.",
+      "wordBank": ["развивает", "ухудшает", "скрывает", "теряет"],
+      "correctAnswer": "развивает",
+      "explanation": "'Развивает' (develops) is the correct verb for skill development."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "внести вклад", "english": "to contribute" },
+        { "russian": "стандарты кодирования", "english": "coding standards" },
+        { "russian": "углубить понимание", "english": "to deepen understanding" },
+        { "russian": "привлекать таланты", "english": "to attract talent" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Олег углубил своё понимание внутренней ___.",
+      "options": [
+        "архитектура",
+        "архитектуры",
+        "архитектуре",
+        "архитектурой"
+      ],
+      "correctAnswer": "архитектуры",
+      "explanation": "Genitive case 'архитектуры' after 'понимание' (understanding of)."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Каждый разработчик может тратить до десяти процентов ___ времени.",
+      "wordBank": ["рабочего", "свободного", "личного", "отпускного"],
+      "correctAnswer": "рабочего",
+      "explanation": "Genitive case 'рабочего времени' (working time) after 'процентов'."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Open Source Culture in Russia",
+    "content": "Russian developers actively participate in global open source projects. Many Russian tech companies, especially Yandex, JetBrains, and VK, maintain significant open source projects. The terms 'контрибуция' and 'контрибутор' are russified versions of 'contribution' and 'contributor'."
+  },
+  "grammarNote": {
+    "topic": "Perfective Infinitives: внести, углубить, привлечь",
+    "content": "Notice perfective infinitives expressing completed actions: 'внести вклад' (to make a contribution), 'углубить понимание' (to deepen understanding), 'привлечь таланты' (to attract talent). These indicate single, completed actions rather than ongoing processes."
+  },
+  "wordCount": 263,
+  "estimatedMinutes": 27
+}

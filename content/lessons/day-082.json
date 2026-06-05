@@ -1,0 +1,69 @@
+{
+  "day": 82,
+  "phase": 4,
+  "title": "Incident Postmortem Analysis",
+  "difficultyLevel": "B2",
+  "textRussian": "После крупного production инцидента мы провели детальный postmortem — анализ причин сбоя и разработку мер по предотвращению подобных ситуаций в будущем. Инцидент длился четыре часа, в течение которых пользователи не могли получить доступ к критической функциональности платформы.\n\nМы начали с составления подробной временной шкалы событий. В 14:35 команда мониторинга заметила увеличение числа ошибок 500. К 14:40 пользовательский трафик упал на восемьдесят процентов, что указывало на серьёзную проблему. Дежурный инженер немедленно созвал экстренную конференцию и начал расследование.\n\nОсновная причина оказалась неожиданной: мы развернули новую версию приложения, которая содержала изменение в конфигурации connection pool к базе данных. Вместо максимальных ста соединений новая конфигурация устанавливала всего десять. При возросшей нагрузке это быстро привело к исчерпанию доступных соединений и отказу сервиса.\n\nПочему это не было обнаружено на staging окружении? Оказалось, что staging использовал другую конфигурацию и не подвергался нагрузочному тестированию с реальными объёмами трафика. Это выявило серьёзный пробел в нашем процессе тестирования.\n\nМы определили несколько action items: внедрить обязательное нагрузочное тестирование перед каждым production release, синхронизировать конфигурации между окружениями, добавить алерты на метрики connection pool, и улучшить процесс code review для критичных изменений конфигурации. Культура постмортема без обвинений помогла команде честно обсудить проблемы и извлечь ценные уроки.",
+  "textEnglish": "After a major production incident, we conducted a detailed postmortem — an analysis of failure causes and development of measures to prevent similar situations in the future. The incident lasted four hours, during which users couldn't access critical platform functionality.\n\nWe started by creating a detailed timeline of events. At 14:35, the monitoring team noticed an increase in 500 errors. By 14:40, user traffic dropped by eighty percent, indicating a serious problem. The on-call engineer immediately convened an emergency conference and began investigation.\n\nThe root cause turned out to be unexpected: we deployed a new application version that contained a change in database connection pool configuration. Instead of a maximum of one hundred connections, the new configuration set only ten. Under increased load, this quickly led to exhaustion of available connections and service failure.\n\nWhy wasn't this detected in the staging environment? It turned out that staging used a different configuration and wasn't subjected to load testing with real traffic volumes. This revealed a serious gap in our testing process.\n\nWe identified several action items: implement mandatory load testing before each production release, synchronize configurations between environments, add alerts for connection pool metrics, and improve the code review process for critical configuration changes. A blameless postmortem culture helped the team honestly discuss problems and extract valuable lessons.",
+  "vocabulary": [
+    { "russian": "postmortem анáлиз", "english": "postmortem analysis" },
+    { "russian": "мéры по предотвращéнию", "english": "preventive measures" },
+    { "russian": "временнáя шкалá", "english": "timeline" },
+    { "russian": "расслéдование", "english": "investigation" },
+    { "russian": "connection pool", "english": "connection pool" },
+    { "russian": "исчерпáние соединéний", "english": "connection exhaustion" },
+    { "russian": "откáз сéрвиса", "english": "service failure" },
+    { "russian": "staging окружéние", "english": "staging environment" },
+    { "russian": "нагрýзочное тестúрование", "english": "load testing" },
+    { "russian": "пробéл в процéссе", "english": "process gap" },
+    { "russian": "action items", "english": "action items" },
+    { "russian": "культýра без обвинéний", "english": "blameless culture" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Инцидент ___ четыре часа.",
+      "wordBank": ["длился", "начался", "закончился", "продолжил"],
+      "correctAnswer": "длился",
+      "explanation": "'Длился' (lasted) is the correct imperfective past tense verb for duration."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "временная шкала", "english": "timeline" },
+        { "russian": "расследование", "english": "investigation" },
+        { "russian": "исчерпание соединений", "english": "connection exhaustion" },
+        { "russian": "нагрузочное тестирование", "english": "load testing" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Это выявило серьёзный пробел в нашем ___.",
+      "options": [
+        "процесс",
+        "процесса",
+        "процессе",
+        "процессом"
+      ],
+      "correctAnswer": "процессе",
+      "explanation": "Prepositional case 'процессе' after 'в' (in)."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Культура постмортема помогла команде извлечь ценные ___.",
+      "wordBank": ["уроки", "ошибки", "проблемы", "баги"],
+      "correctAnswer": "уроки",
+      "explanation": "Accusative plural 'уроки' (lessons) as direct object of 'извлечь'."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Incident Management in Russian Tech",
+    "content": "Russian tech companies increasingly adopt blameless postmortem culture ('культура без обвинений'), focusing on system improvements rather than individual blame. The term 'постмортем' is commonly used alongside English 'postmortem'. Detailed incident analysis is standard practice in mature engineering organizations."
+  },
+  "grammarNote": {
+    "topic": "Verbal Aspect in Past Tense Narratives",
+    "content": "Notice the mix of perfective and imperfective: 'длился' (was lasting - imperfective duration), 'заметила' (noticed - perfective), 'созвал' (convened - perfective). Perfective indicates completed actions, while imperfective shows ongoing states or processes."
+  },
+  "wordCount": 298,
+  "estimatedMinutes": 30
+}

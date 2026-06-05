@@ -1,0 +1,70 @@
+{
+  "day": 81,
+  "phase": 4,
+  "title": "Technology Stack Evaluation",
+  "difficultyLevel": "B2",
+  "textRussian": "Наша компания планировала начать разработку нового продукта, и перед нами стояла задача выбрать технологический стек. Это критически важное решение, которое будет влиять на разработку в течение нескольких лет. Неправильный выбор может привести к техническим ограничениям и сложностям с наймом разработчиков.\n\nМы организовали серию технических сессий для оценки различных вариантов. Для backend рассматривали Node.js, Python (Django/FastAPI), Go и Java (Spring Boot). Каждая технология имела свои преимущества и недостатки. Node.js предлагал быстрое прототипирование и единый язык с frontend, Python — богатую экосистему для data science, Go — отличную производительность, а Java — зрелость и enterprise поддержку.\n\nОсобенно жаркие дебаты развернулись вокруг выбора frontend фреймворка. Одни разработчики предпочитали React за его популярность и огромное сообщество, другие выступали за Vue.js из-за более простой кривой обучения, а третьи настаивали на Angular за его enterprise-готовность и TypeScript integration \"из коробки\".\n\nМы использовали следующие критерии для оценки: производительность, developer experience, доступность разработчиков на рынке труда, качество документации, активность сообщества, долгосрочная поддержка и соответствие нашим бизнес-требованиям. После трёх недель анализа и proof-of-concept проектов мы выбрали TypeScript + React для frontend и Go для backend microservices. Это решение обеспечило баланс между производительностью, developer productivity и доступностью талантов на рынке.",
+  "textEnglish": "Our company was planning to start developing a new product, and we faced the task of choosing a technology stack. This is a critically important decision that will affect development for several years. The wrong choice can lead to technical limitations and difficulties hiring developers.\n\nWe organized a series of technical sessions to evaluate different options. For backend, we considered Node.js, Python (Django/FastAPI), Go, and Java (Spring Boot). Each technology had its advantages and disadvantages. Node.js offered rapid prototyping and a unified language with frontend, Python — a rich ecosystem for data science, Go — excellent performance, and Java — maturity and enterprise support.\n\nEspecially heated debates unfolded around choosing a frontend framework. Some developers preferred React for its popularity and huge community, others advocated for Vue.js due to its gentler learning curve, and still others insisted on Angular for its enterprise-readiness and TypeScript integration \"out of the box.\"\n\nWe used the following criteria for evaluation: performance, developer experience, availability of developers in the job market, documentation quality, community activity, long-term support, and alignment with our business requirements. After three weeks of analysis and proof-of-concept projects, we chose TypeScript + React for frontend and Go for backend microservices. This decision provided a balance between performance, developer productivity, and talent availability in the market.",
+  "vocabulary": [
+    { "russian": "технологúческий стек", "english": "technology stack" },
+    { "russian": "критúчески вáжное решéние", "english": "critically important decision" },
+    { "russian": "техні́ческие огранич éния", "english": "technical limitations" },
+    { "russian": "найм разрабóтчиков", "english": "hiring developers" },
+    { "russian": "быстрое прототипúрование", "english": "rapid prototyping" },
+    { "russian": "богáтая экосистéма", "english": "rich ecosystem" },
+    { "russian": "зрéлость", "english": "maturity" },
+    { "russian": "жáркие дебáты", "english": "heated debates" },
+    { "russian": "кривáя обучéния", "english": "learning curve" },
+    { "russian": "enterprise-готóвность", "english": "enterprise readiness" },
+    { "russian": "рынок трудá", "english": "job market" },
+    { "russian": "proof-of-concept", "english": "proof-of-concept" },
+    { "russian": "developer productivity", "english": "developer productivity" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Неправильный выбор может привести к техническим ___ и сложностям с наймом.",
+      "wordBank": ["ограничениям", "преимуществам", "возможностям", "решениям"],
+      "correctAnswer": "ограничениям",
+      "explanation": "Dative plural 'ограничениям' (limitations) after 'привести к' (lead to)."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "технологический стек", "english": "technology stack" },
+        { "russian": "быстрое прототипирование", "english": "rapid prototyping" },
+        { "russian": "кривая обучения", "english": "learning curve" },
+        { "russian": "рынок труда", "english": "job market" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct form: Каждая технология имела свои преимущества и ___.",
+      "options": [
+        "недостаток",
+        "недостатка",
+        "недостатки",
+        "недостатков"
+      ],
+      "correctAnswer": "недостатки",
+      "explanation": "Accusative plural 'недостатки' (disadvantages) as direct object."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Это решение обеспечило баланс между производительностью и ___ разработчиков.",
+      "wordBank": ["доступностью", "сложностью", "невозможностью", "отсутствием"],
+      "correctAnswer": "доступностью",
+      "explanation": "Instrumental 'доступностью' (availability) in parallel with 'производительностью'."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Popular Tech Stacks in Russia",
+    "content": "Russian tech companies use similar stacks to global companies. Python is especially popular due to strong data science and ML communities. Go is gaining traction for high-performance services. React and Vue.js dominate frontend development. Terms like 'стек', 'фреймворк', and 'proof-of-concept' are standard technical vocabulary."
+  },
+  "grammarNote": {
+    "topic": "Instrumental Case for Means and Tools",
+    "content": "'Баланс между X и Y' (balance between X and Y) uses instrumental case for both items. This pattern is essential for expressing relationships and comparisons in technical discussions."
+  },
+  "wordCount": 289,
+  "estimatedMinutes": 29
+}

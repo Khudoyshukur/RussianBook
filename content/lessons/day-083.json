@@ -1,0 +1,69 @@
+{
+  "day": 83,
+  "phase": 4,
+  "title": "Technical Presentation at Conference",
+  "difficultyLevel": "B2",
+  "textRussian": "Меня пригласили выступить на региональной технической конференции с докладом о нашем опыте миграции на микросервисную архитектуру. Это был отличный шанс поделиться знаниями с сообществом и повысить видимость нашей компании среди разработчиков.\n\nПодготовка презентации заняла около двух недель. Я начал с определения целевой аудитории: в основном это были senior и middle разработчики, интересующиеся архитектурными решениями. Содержание должно было быть практическим, с конкретными примерами из реального опыта, а не абстрактными теоретическими рассуждениями.\n\nСтруктура доклада включала введение в нашу изначальную монолитную архитектуру, описание проблем, с которыми мы столкнулись при масштабировании, процесс принятия решения о переходе на микросервисы, детали имплементации, и честный разбор трудностей и ошибок, которые мы совершили на этом пути.\n\nЯ особенно подчеркнул то, что микросервисы — не серебряная пуля. Они решают определённые проблемы, но создают новые: усложняется debugging распределённых систем, появляется необходимость в service discovery и distributed tracing, возрастают требования к мониторингу и DevOps практикам. Важно было показать как преимущества, так и недостатки нашего подхода.\n\nВо время презентации я использовал много визуальных диаграмм, показывающих архитектуру до и после миграции, а также real-time демонстрацию нашего monitoring dashboard. После доклада было много вопросов о конкретных технических решениях, что показало, что тема действительно резонировала с аудиторией. Несколько участников позже связались со мной, чтобы обсудить применение похожего подхода в их компаниях.",
+  "textEnglish": "I was invited to speak at a regional technical conference with a presentation about our experience migrating to microservices architecture. This was an excellent chance to share knowledge with the community and increase our company's visibility among developers.\n\nPresentation preparation took about two weeks. I started by defining the target audience: mainly senior and middle developers interested in architectural solutions. The content should be practical, with concrete examples from real experience, not abstract theoretical reasoning.\n\nThe presentation structure included an introduction to our initial monolithic architecture, description of problems we encountered while scaling, the decision-making process for transitioning to microservices, implementation details, and an honest breakdown of difficulties and mistakes we made along the way.\n\nI especially emphasized that microservices are not a silver bullet. They solve certain problems but create new ones: debugging distributed systems becomes more complex, the need for service discovery and distributed tracing appears, monitoring and DevOps practice requirements increase. It was important to show both advantages and disadvantages of our approach.\n\nDuring the presentation, I used many visual diagrams showing architecture before and after migration, as well as a real-time demonstration of our monitoring dashboard. After the talk, there were many questions about specific technical decisions, which showed that the topic really resonated with the audience. Several participants later contacted me to discuss applying a similar approach in their companies.",
+  "vocabulary": [
+    { "russian": "выступúть с дóкладом", "english": "to give a presentation" },
+    { "russian": "поделúться знáниями", "english": "to share knowledge" },
+    { "russian": "целевáя аудитóрия", "english": "target audience" },
+    { "russian": "практúческое содержáние", "english": "practical content" },
+    { "russian": "абстрáктные рассуждéния", "english": "abstract reasoning" },
+    { "russian": "изначáльная архитектýра", "english": "initial architecture" },
+    { "russian": "процéсс принятия решéния", "english": "decision-making process" },
+    { "russian": "серебряная пýля", "english": "silver bullet" },
+    { "russian": "усложняться", "english": "to become more complex" },
+    { "russian": "service discovery", "english": "service discovery" },
+    { "russian": "distributed tracing", "english": "distributed tracing" },
+    { "russian": "резонúровать с аудитóрией", "english": "to resonate with audience" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Это был отличный шанс ___ знаниями с сообществом.",
+      "wordBank": ["поделиться", "скрыть", "потерять", "забыть"],
+      "correctAnswer": "поделиться",
+      "explanation": "Perfective infinitive 'поделиться' (to share) after 'шанс' (chance to)."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "целевая аудитория", "english": "target audience" },
+        { "russian": "процесс принятия решения", "english": "decision-making process" },
+        { "russian": "серебряная пуля", "english": "silver bullet" },
+        { "russian": "резонировать с аудиторией", "english": "to resonate with audience" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct form: Я особенно подчеркнул то, что микросервисы — не серебряная ___.",
+      "options": [
+        "пуля",
+        "пули",
+        "пуле",
+        "пулей"
+      ],
+      "correctAnswer": "пуля",
+      "explanation": "Nominative 'пуля' (bullet) after 'не' in predicate position."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Тема действительно ___ с аудиторией.",
+      "wordBank": ["резонировала", "конфликтовала", "спорила", "противоречила"],
+      "correctAnswer": "резонировала",
+      "explanation": "'Резонировала' (resonated) indicates positive audience engagement."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Tech Conferences in Russia",
+    "content": "Russia has a vibrant tech conference scene, including events like Highload++, DevOops, and regional meetups. Presentations typically mix Russian and English technical terms. The phrase 'серебряная пуля' (silver bullet) is commonly used to describe non-existent perfect solutions."
+  },
+  "grammarNote": {
+    "topic": "Reflexive Verbs for Intransitive Actions",
+    "content": "'Усложняется' (becomes complex), 'связались' (contacted), 'столкнулись' (encountered) use reflexive forms for intransitive actions. This is a common pattern where Russian uses '-ся' where English uses different verb forms."
+  },
+  "wordCount": 286,
+  "estimatedMinutes": 29
+}

@@ -1,0 +1,70 @@
+{
+  "day": 87,
+  "phase": 4,
+  "title": "Machine Learning Model Deployment",
+  "difficultyLevel": "B2",
+  "textRussian": "Наша data science команда разработала модель машинного обучения для рекомендательной системы. Модель показывала отличные результаты на тестовых данных, но теперь стояла задача интегрировать её в production систему так, чтобы она могла обслуживать миллионы запросов в день с минимальной латентностью.\n\nПервым решением было определить архитектуру развёртывания. Мы рассмотрели несколько вариантов: встроить модель непосредственно в backend приложение, создать отдельный ML-сервис, или использовать специализированную платформу вроде TensorFlow Serving. Каждый подход имел свои trade-offs в плане производительности, масштабируемости и сложности поддержки.\n\nМы выбрали вариант с отдельным микросервисом. Это позволяло data scientists независимо обновлять модель без перезапуска основного приложения. Сервис был написан на Python с использованием FastAPI framework для REST API и упакован в Docker контейнер. Для ускорения инференса модели мы использовали ONNX Runtime вместо стандартного TensorFlow inference.\n\nОсобое внимание уделили мониторингу модели в production. Мы отслеживали не только технические метрики (latency, throughput, error rate), но и бизнес-метрики качества предсказаний. Важно было обнаружить model drift — ситуацию, когда модель начинает хуже работать из-за изменения характера входных данных.\n\nМы внедрили систему A/B тестирования, которая позволяла сравнивать новые версии модели со старыми на реальном трафике перед полным rollout. Также настроили автоматический откат к предыдущей версии, если метрики качества падали ниже определённого порога. Результаты превзошли ожидания: новая рекомендательная система увеличила engagement пользователей на двадцать пять процентов при латентности ответа менее ста миллисекунд.",
+  "textEnglish": "Our data science team developed a machine learning model for a recommendation system. The model showed excellent results on test data, but now the task was to integrate it into the production system so it could serve millions of requests per day with minimal latency.\n\nThe first decision was to determine the deployment architecture. We considered several options: embed the model directly into the backend application, create a separate ML service, or use a specialized platform like TensorFlow Serving. Each approach had its trade-offs in terms of performance, scalability, and maintenance complexity.\n\nWe chose the option with a separate microservice. This allowed data scientists to update the model independently without restarting the main application. The service was written in Python using the FastAPI framework for REST API and packaged in a Docker container. To speed up model inference, we used ONNX Runtime instead of standard TensorFlow inference.\n\nWe paid special attention to model monitoring in production. We tracked not only technical metrics (latency, throughput, error rate) but also business metrics of prediction quality. It was important to detect model drift — a situation when the model starts performing worse due to changes in the nature of input data.\n\nWe implemented an A/B testing system that allowed comparing new model versions with old ones on real traffic before full rollout. We also set up automatic rollback to the previous version if quality metrics dropped below a certain threshold. The results exceeded expectations: the new recommendation system increased user engagement by twenty-five percent with response latency under one hundred milliseconds.",
+  "vocabulary": [
+    { "russian": "машúнное обучéние", "english": "machine learning" },
+    { "russian": "рекомендáтельная систéма", "english": "recommendation system" },
+    { "russian": "латéнтность", "english": "latency" },
+    { "russian": "развёртывание мóдели", "english": "model deployment" },
+    { "russian": "trade-offs", "english": "trade-offs" },
+    { "russian": "масштабúруемость", "english": "scalability" },
+    { "russian": "инферéнс мóдели", "english": "model inference" },
+    { "russian": "технúческие мéтрики", "english": "technical metrics" },
+    { "russian": "бúзнес-мéтрики", "english": "business metrics" },
+    { "russian": "model drift", "english": "model drift" },
+    { "russian": "A/B тестúрование", "english": "A/B testing" },
+    { "russian": "автоматúческий откáт", "english": "automatic rollback" },
+    { "russian": "engagement пóльзователей", "english": "user engagement" }
+  ],
+  "exercises": [
+    {
+      "type": "fillInBlank",
+      "question": "Модель показывала отличные результаты на ___ данных.",
+      "wordBank": ["тестовых", "рабочих", "старых", "новых"],
+      "correctAnswer": "тестовых",
+      "explanation": "Prepositional plural 'тестовых' (test) after 'на' (on)."
+    },
+    {
+      "type": "matching",
+      "pairs": [
+        { "russian": "рекомендательная система", "english": "recommendation system" },
+        { "russian": "масштабируемость", "english": "scalability" },
+        { "russian": "инференс модели", "english": "model inference" },
+        { "russian": "автоматический откат", "english": "automatic rollback" }
+      ]
+    },
+    {
+      "type": "contextSelection",
+      "question": "Choose the correct case: Это позволяло data scientists обновлять модель без перезапуска основного ___.",
+      "options": [
+        "приложение",
+        "приложения",
+        "приложению",
+        "приложением"
+      ],
+      "correctAnswer": "приложения",
+      "explanation": "Genitive 'приложения' (application) after 'перезапуска'."
+    },
+    {
+      "type": "fillInBlank",
+      "question": "Система увеличила engagement пользователей на двадцать пять ___.",
+      "wordBank": ["процентов", "раз", "человек", "минут"],
+      "correctAnswer": "процентов",
+      "explanation": "Genitive plural 'процентов' after numbers indicating percentage."
+    }
+  ],
+  "culturalInsight": {
+    "topic": "ML/AI Development in Russia",
+    "content": "Russia has a strong ML/AI community, with companies like Yandex being leaders in recommendation systems and computer vision. Terms like 'инференс' (inference), 'model drift', and 'A/B тестирование' are standard vocabulary. Russian data scientists often publish research and contribute to global ML frameworks."
+  },
+  "grammarNote": {
+    "topic": "Comparative Constructions: 'менее/более'",
+    "content": "'Менее ста миллисекунд' (less than one hundred milliseconds) uses 'менее' (less) + genitive for numeric comparisons. 'Более' (more) follows the same pattern. This is common in technical specifications."
+  },
+  "wordCount": 290,
+  "estimatedMinutes": 29
+}
