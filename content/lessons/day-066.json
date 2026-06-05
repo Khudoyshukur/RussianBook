@@ -1,0 +1,140 @@
+{
+  "day": 66,
+  "phase": 3,
+  "title": "Talking About Architecture",
+  "difficultyLevel": "B1",
+  "grammarNote": "This lesson focuses on using the Prepositional case with the prepositions о/об (about) to discuss topics. When talking about something, Russian uses 'говорить/рассказать О + prepositional case'. Use 'об' before vowels (об архитектуре, об API) and 'о' before consonants (о микросервисах, о решении). This construction is essential for professional discussions and presentations.",
+
+  "textRussian": "Команда собралась на <strong>архитектурную</strong> встречу. Дмитрий начинает презентацию: «Сегодня мы поговорим <strong>о микросервисах</strong>. Давайте обсудим, почему нам нужна новая <strong>архитектура</strong>». Алекс спрашивает <strong>о решении</strong>: «Расскажи подробнее <strong>об архитектуре</strong>. Как будет работать коммуникация между сервисами?» Дмитрий объясняет: «Я думал <strong>о нескольких вариантах</strong>. Можем использовать REST или gRPC. В <strong>документации</strong> я описал оба подхода». Максим интересуется: «А что <strong>о базе данных</strong>? Каждый сервис будет иметь свою БД?» «Да, именно так», — подтверждает Дмитрий. «Мы говорили <strong>об этом принципе</strong> на прошлой встрече. Каждый микросервис владеет своими данными». Аня размышляет <strong>о сложности</strong>: «Я беспокоюсь <strong>о миграции</strong>. Как мы перейдём от <strong>монолита</strong>?» «Хороший вопрос», — говорит Дмитрий. «<strong>В документации</strong> есть план миграции. Мы будем делать это постепенно». Елена спрашивает <strong>о тестировании</strong>: «Расскажи <strong>о стратегии</strong> тестирования. Как тестировать распределённую систему?» Дмитрий показывает слайд: «<strong>На презентации</strong> я подготовил раздел <strong>об интеграционных тестах</strong>. Будем использовать Docker Compose для локального тестирования». Алекс делится мыслями <strong>о deployment</strong>: «Я думаю <strong>о Kubernetes</strong>. Это стандарт для микросервисов». «Согласен», — кивает Дмитрий. «<strong>В следующем разделе</strong> презентации я расскажу <strong>о CI/CD pipeline</strong> для деплоя <strong>в Kubernetes</strong>». Максим спрашивает <strong>о мониторинге</strong>: «А что <strong>об observability</strong>? Нам нужен <strong>трейсинг</strong> между сервисами». «Правильно», — соглашается Дмитрий. «Мы поговорим <strong>о distributed tracing</strong> <strong>на следующей встрече</strong>. Использовать будем Jaeger или Zipkin». Команда активно обсуждает детали.",
+
+  "textEnglish": "The team gathered for an architecture meeting. Dmitry starts the presentation: 'Today we'll talk about microservices. Let's discuss why we need a new architecture.' Alex asks about the solution: 'Tell us more about the architecture. How will communication between services work?' Dmitry explains: 'I thought about several options. We can use REST or gRPC. In the documentation I described both approaches.' Maxim is interested: 'What about the database? Will each service have its own DB?' 'Yes, exactly,' Dmitry confirms. 'We talked about this principle at the last meeting. Each microservice owns its data.' Anya reflects on the complexity: 'I'm worried about the migration. How will we transition from the monolith?' 'Good question,' says Dmitry. 'In the documentation there's a migration plan. We'll do it gradually.' Elena asks about testing: 'Tell us about the testing strategy. How to test a distributed system?' Dmitry shows a slide: 'In the presentation I prepared a section about integration tests. We'll use Docker Compose for local testing.' Alex shares thoughts about deployment: 'I'm thinking about Kubernetes. It's the standard for microservices.' 'I agree,' Dmitry nods. 'In the next section of the presentation I'll talk about the CI/CD pipeline for deployment to Kubernetes.' Maxim asks about monitoring: 'What about observability? We need tracing between services.' 'Correct,' Dmitry agrees. 'We'll talk about distributed tracing at the next meeting. We'll use Jaeger or Zipkin.' The team actively discusses details.",
+
+  "vocabulary": [
+    {
+      "russian": "о микросе́рвисах",
+      "english": "about microservices",
+      "context": "Prepositional case with 'о'. 'Говорить о микросервисах' = to talk about microservices."
+    },
+    {
+      "russian": "об архитекту́ре",
+      "english": "about architecture",
+      "context": "Prepositional case with 'об' (used before vowels). 'Рассказать об архитектуре' = to tell about architecture."
+    },
+    {
+      "russian": "о реше́нии",
+      "english": "about the solution/decision",
+      "context": "Prepositional case of 'решение'. 'Спросить о решении' = to ask about the solution."
+    },
+    {
+      "russian": "в документа́ции",
+      "english": "in the documentation",
+      "context": "Prepositional case with 'в'. 'В документации описано' = described in the documentation."
+    },
+    {
+      "russian": "на презента́ции",
+      "english": "at/in the presentation",
+      "context": "Prepositional case with 'на'. Use 'на' for events and presentations."
+    },
+    {
+      "russian": "архитекту́рный",
+      "english": "architectural",
+      "context": "Adjective. 'Архитектурная встреча' = architecture meeting, 'архитектурное решение' = architectural solution."
+    },
+    {
+      "russian": "о сло́жности",
+      "english": "about complexity",
+      "context": "Prepositional case of 'сложность'. 'Беспокоиться о сложности' = to worry about complexity."
+    },
+    {
+      "russian": "о мигра́ции",
+      "english": "about migration",
+      "context": "Prepositional case of 'миграция'. 'План миграции' = migration plan."
+    },
+    {
+      "russian": "моноли́т",
+      "english": "monolith",
+      "context": "Monolithic application. 'Перейти от монолита к микросервисам' = transition from monolith to microservices."
+    },
+    {
+      "russian": "о стратегии",
+      "english": "about strategy",
+      "context": "Prepositional case of 'стратегия'. 'Рассказать о стратегии' = to tell about strategy."
+    },
+    {
+      "russian": "о мониторинге",
+      "english": "about monitoring",
+      "context": "Prepositional case of 'мониторинг'. 'Что о мониторинге?' = what about monitoring?"
+    },
+    {
+      "russian": "трейсинг",
+      "english": "tracing",
+      "context": "Direct borrowing from English. 'Distributed tracing' for monitoring service calls."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the prepositional phrases with 'о/об':",
+      "pairs": [
+        { "russian": "о микросервисах", "english": "about microservices" },
+        { "russian": "об архитектуре", "english": "about architecture" },
+        { "russian": "о решении", "english": "about solution" },
+        { "russian": "о миграции", "english": "about migration" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "These phrases use prepositional case with о/об to discuss topics. Use 'об' before vowels."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form: 'Мы говорили о _____.'",
+      "options": [
+        "микросервисы (nominative plural)",
+        "микросервисов (genitive plural)",
+        "микросервисам (dative plural)",
+        "микросервисах (prepositional plural)"
+      ],
+      "correctAnswer": "микросервисах (prepositional plural)",
+      "explanation": "After preposition 'о' (about), we use prepositional case: 'о микросервисах' (about microservices)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: В _______ я описал план. На _______ я расскажу об этом.",
+      "wordBank": ["документации", "презентации", "офисе", "встрече"],
+      "correctAnswer": "документации, презентации",
+      "explanation": "'В документации' (in documentation) and 'на презентации' (at presentation) both use prepositional case."
+    },
+    {
+      "type": "context-selection",
+      "question": "What is Anya worried about?",
+      "options": [
+        "О миграции от монолита",
+        "О базе данных",
+        "О тестировании",
+        "О мониторинге"
+      ],
+      "correctAnswer": "О миграции от монолита",
+      "explanation": "Anya is worried about migration: 'Я беспокоюсь о миграции. Как мы перейдём от монолита?'"
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "об архитектуре",
+      "ipa": "ɐb ərxʲɪtʲɪkˈturʲɪ",
+      "phonetic": "ahb ahr-khee-tek-TOO-ryeh",
+      "pitfalls": "Use 'об' (not 'о') before vowels. Stress on 'ту' in 'архитектуре'."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Tech Architecture Discussions in Russia",
+    "content": "Russian tech teams often mix English and Russian terms in architecture discussions. While 'микросервисы' exists in Russian, many teams say 'microservices'. Common hybrid phrases include 'о distributed tracing', 'об observability'. Architecture Decision Records (ADR) are becoming popular in Russian startups, though often written in English to align with global practices."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team participates in a detailed architecture discussion about migrating from monolith to microservices, covering databases, testing, and deployment strategies.",
+  "wordCount": 213,
+  "estimatedMinutes": 25,
+  "previousDayReferences": [65, 45]
+}

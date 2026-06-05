@@ -1,0 +1,182 @@
+{
+  "day": 46,
+  "phase": 3,
+  "title": "Analyzing User Requirements",
+  "difficultyLevel": "B1",
+  "textRussian": "Алекс получи́л но́вую <strong>зада́чу</strong>. Кли́ент хо́чет доба́вить <strong>но́вую фу́нкцию</strong> в прило́жение. Ему́ ну́жно внима́тельно <strong>проанализи́ровать требова́ния</strong>.\n\n«Снача́ла я до́лжен <strong>прочита́ть специфика́цию</strong>,» — ду́мает Алекс. Он открыва́ет <strong>докуме́нт</strong> и начина́ет <strong>изуча́ть де́тали</strong>. Кли́ент хо́чет созда́ть <strong>систе́му уведомле́ний</strong> для по́льзователей.\n\nАлекс внима́тельно чита́ет <strong>ка́ждое тре́бование</strong>. «Мне ну́жно <strong>понима́ть зада́чу</strong> полносью́,» — говори́т он себе́. Он запи́сывает <strong>ва́жные моме́нты</strong> в свой <strong>блокно́т</strong>.\n\n«Они́ хотя́т отправля́ть <strong>уведомле́ния</strong> по э́лектронной по́чте и чéрез <strong>мобильное прило́жение</strong>,» — анализи́рует Алекс. Он ви́дит <strong>сло́жность</strong> — ну́жно интегри́ровать <strong>два́ ра́зных ка́нала</strong>.\n\nПо́сле обе́да Алекс созыва́ет <strong>вирту́альную встре́чу</strong> с клие́нтом. Он зада́ет <strong>уточня́ющие вопро́сы</strong>: «Когда́ систе́ма до́лжна отправля́ть <strong>уведомле́ния</strong>? Како́й прио́ритет име́ет <strong>э́тот прое́кт</strong>?»\n\nКли́ент объясня́ет <strong>все де́тали</strong>. Алекс пи́шет <strong>техни́ческий план</strong> и отправля́ет <strong>предложе́ние</strong> кома́нде. «Тепе́рь мы понима́ем <strong>весь объём рабо́ты</strong>,» — говори́т он колле́гам. Пе́рвый этап — <strong>анали́з требова́ний</strong> — заве́ршён успе́шно.",
+  "textEnglish": "Alex received a new task. The client wants to add a new function to the application. He needs to carefully analyze the requirements.\n\n\"First, I must read the specification,\" Alex thinks. He opens the document and begins to study the details. The client wants to create a notification system for users.\n\nAlex carefully reads each requirement. \"I need to understand the task completely,\" he tells himself. He writes down important points in his notebook.\n\n\"They want to send notifications via email and through a mobile application,\" Alex analyzes. He sees the complexity — he needs to integrate two different channels.\n\nAfter lunch, Alex calls a virtual meeting with the client. He asks clarifying questions: \"When should the system send notifications? What priority does this project have?\"\n\nThe client explains all the details. Alex writes a technical plan and sends the proposal to the team. \"Now we understand the entire scope of work,\" he tells his colleagues. The first stage — requirements analysis — is completed successfully.",
+  "vocabulary": [
+    {
+      "russian": "зада́ча",
+      "english": "task",
+      "context": "получить задачу (accusative) — to receive a task"
+    },
+    {
+      "russian": "требова́ние",
+      "english": "requirement",
+      "context": "анализировать требования (accusative plural) — to analyze requirements"
+    },
+    {
+      "russian": "специфика́ция",
+      "english": "specification",
+      "context": "читать спецификацию (accusative) — to read the specification"
+    },
+    {
+      "russian": "уведомле́ние",
+      "english": "notification",
+      "context": "отправлять уведомления (accusative plural) — to send notifications"
+    },
+    {
+      "russian": "встре́ча",
+      "english": "meeting",
+      "context": "созывать встречу (accusative) — to call a meeting"
+    },
+    {
+      "russian": "вопро́с",
+      "english": "question",
+      "context": "задавать вопросы (accusative plural) — to ask questions"
+    },
+    {
+      "russian": "объём рабо́ты",
+      "english": "scope of work",
+      "context": "понимать объём работы (accusative) — to understand the scope"
+    },
+    {
+      "russian": "де́таль",
+      "english": "detail",
+      "context": "изучать детали (accusative plural) — to study the details"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "case-selection",
+      "instruction": "Select the correct form (nominative or accusative) for each sentence.",
+      "items": [
+        {
+          "question": "Алекс читает ___.",
+          "options": [
+            "документ",
+            "документа"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Accusative case is needed after the verb 'читает' (reads) — direct object."
+        },
+        {
+          "question": "Он анализирует ___.",
+          "options": [
+            "требования",
+            "требование"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Accusative plural 'требования' after the verb 'анализирует'."
+        },
+        {
+          "question": "Клиент объясняет ___.",
+          "options": [
+            "детали",
+            "деталей"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Accusative plural 'детали' is used as direct object."
+        },
+        {
+          "question": "Алекс получил ___.",
+          "options": [
+            "задачу",
+            "задача"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine noun in accusative 'задачу' (ending changes -а to -у)."
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "instruction": "Match the verbs with their accusative objects.",
+      "pairs": [
+        {
+          "left": "читать",
+          "right": "specification"
+        },
+        {
+          "left": "анализировать",
+          "right": "requirements"
+        },
+        {
+          "left": "понимать",
+          "right": "task"
+        },
+        {
+          "left": "отправлять",
+          "right": "notifications"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blanks",
+      "instruction": "Fill in the blanks with the correct accusative forms.",
+      "sentences": [
+        {
+          "russian": "Алекс изучает ___ (документ).",
+          "answer": "документ",
+          "explanation": "Masculine inanimate nouns don't change in accusative."
+        },
+        {
+          "russian": "Он пишет ___ (план).",
+          "answer": "план",
+          "explanation": "Masculine inanimate noun remains the same in accusative."
+        },
+        {
+          "russian": "Клиент хочет создать ___ (система).",
+          "answer": "систему",
+          "explanation": "Feminine noun -а changes to -у in accusative."
+        },
+        {
+          "russian": "Алекс задаёт ___ (вопросы).",
+          "answer": "вопросы",
+          "explanation": "Plural inanimate accusative equals nominative."
+        }
+      ]
+    },
+    {
+      "type": "context-selection",
+      "instruction": "Choose the best continuation for each scenario.",
+      "items": [
+        {
+          "context": "Алекс получил новую задачу от клиента.",
+          "question": "Что он должен сделать первым делом?",
+          "options": [
+            "Прочитать спецификацию",
+            "Написать код",
+            "Отправить релиз"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Before coding, a developer must read the specification."
+        },
+        {
+          "context": "Клиент хочет систему уведомлений.",
+          "question": "Что нужно анализировать?",
+          "options": [
+            "Требования и детали",
+            "Старый код",
+            "Тесты"
+          ],
+          "correctAnswer": 0,
+          "explanation": "First step is analyzing requirements and details."
+        }
+      ]
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Business Communication in Russian IT",
+    "content": "In Russian IT companies, thorough requirements analysis is highly valued. Developers are expected to ask detailed questions (задавать детальные вопросы) and document everything carefully. The phrase 'понимать задачу полностью' (understand the task completely) is commonly used to emphasize thoroughness."
+  },
+  "grammarNote": {
+    "topic": "Accusative Case with Verbs",
+    "content": "The accusative case is used for direct objects after transitive verbs. For example: читать (to read) + что? (what?) → читать документ. Feminine nouns ending in -а/-я change to -у/-ю: задача → задачу. Masculine and neuter inanimate nouns don't change: документ → документ."
+  },
+  "characters": ["Alex", "Client"],
+  "storyArc": "Alex begins a new project by carefully analyzing user requirements, demonstrating professional approach to software development.",
+  "wordCount": 213,
+  "estimatedMinutes": 25
+}

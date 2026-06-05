@@ -1,0 +1,193 @@
+{
+  "day": 49,
+  "phase": 3,
+  "title": "Refactoring Legacy Code",
+  "difficultyLevel": "B1",
+  "textRussian": "Алекс получи́л но́вую <strong>зада́чу</strong> — <strong>улучши́ть ста́рый код</strong>. Кома́нда хо́чет <strong>модернизи́ровать мо́дуль</strong> аутентифика́ции, кото́рому уже́ пять лет.\n\n«Э́тот код о́чень уста́ревший,» — ду́мает Алекс, откры́вая <strong>файл</strong>. Он ви́дит <strong>пло́хую структу́ру</strong> и <strong>запу́танную ло́гику</strong>. «Мне ну́жно <strong>переписа́ть весь мо́дуль</strong>.»\n\nАлекс начина́ет <strong>анализи́ровать тре́бования</strong>. «Снача́ла я сохраню́ <strong>всю функциона́льность</strong>,» — ре́шает он. Он изуча́ет, как <strong>стара́я систе́ма</strong> обраба́тывает <strong>по́льзовательские да́нные</strong>.\n\n«Здесь мо́жно <strong>оптимизи́ровать алгори́тм</strong>,» — замеча́ет Алекс. Он созда́ет <strong>но́вую а́рхитекту́ру</strong> с <strong>совреме́нными паттéрнами</strong>. Вме́сто одного́ большо́го <strong>класса</strong>, он разделя́ет <strong>отве́тственность</strong> на не́сколько <strong>ма́леньких мо́дулей</strong>.\n\nАлекс перепи́сывает <strong>ка́ждую фу́нкцию</strong> по́сле обе́да. Он заменя́ет <strong>уста́ревшие ме́тоды</strong> на <strong>совреме́нные</strong>. «Тепе́рь код бо́лее чита́емый,» — дово́лен Алекс.\n\nОн улучша́ет <strong>обрабо́тку оши́бок</strong> и добавля́ет <strong>по́дробное логи́рование</strong>. «Э́то помо́жет <strong>отла́живать пробле́мы</strong> в бу́дущем,» — объясня́ет он колле́гам.\n\nВе́чером Алекс запуска́ет <strong>все те́сты</strong>. Он тести́рует <strong>ка́ждый сцена́рий</strong> и прове́ряет <strong>производи́тельность</strong>. Но́вая ве́рсия рабо́тает на <strong>трид́цать проце́нтов</strong> бы́стрее!\n\n«Я успе́шно <strong>модернизи́ровал мо́дуль</strong>,» — пи́шет Алекс в <strong>pull request</strong>. Он добавля́ет <strong>по́дробное описа́ние</strong> всех измене́ний. Кома́нда одобря́ет <strong>рефакто́ринг</strong>.",
+  "textEnglish": "Alex received a new task — to improve old code. The team wants to modernize the authentication module, which is already five years old.\n\n\"This code is very outdated,\" Alex thinks, opening the file. He sees poor structure and confusing logic. \"I need to rewrite the entire module.\"\n\nAlex begins analyzing the requirements. \"First, I'll preserve all the functionality,\" he decides. He studies how the old system processes user data.\n\n\"Here we can optimize the algorithm,\" Alex notices. He creates a new architecture with modern patterns. Instead of one large class, he divides the responsibility into several small modules.\n\nAlex rewrites each function after lunch. He replaces outdated methods with modern ones. \"Now the code is more readable,\" Alex is pleased.\n\nHe improves error handling and adds detailed logging. \"This will help debug problems in the future,\" he explains to colleagues.\n\nIn the evening, Alex runs all the tests. He tests each scenario and checks performance. The new version works thirty percent faster!\n\n\"I successfully modernized the module,\" Alex writes in the pull request. He adds a detailed description of all the changes. The team approves the refactoring.",
+  "vocabulary": [
+    {
+      "russian": "мо́дуль",
+      "english": "module",
+      "context": "переписать модуль (accusative) — to rewrite a module"
+    },
+    {
+      "russian": "структу́ра",
+      "english": "structure",
+      "context": "улучшить структуру (accusative) — to improve structure"
+    },
+    {
+      "russian": "алгори́тм",
+      "english": "algorithm",
+      "context": "оптимизировать алгоритм (accusative) — to optimize an algorithm"
+    },
+    {
+      "russian": "а́рхитекту́ра",
+      "english": "architecture",
+      "context": "создать архитектуру (accusative) — to create architecture"
+    },
+    {
+      "russian": "отве́тственность",
+      "english": "responsibility",
+      "context": "разделять ответственность (accusative) — to divide responsibility"
+    },
+    {
+      "russian": "ме́тод",
+      "english": "method",
+      "context": "заменять методы (accusative plural) — to replace methods"
+    },
+    {
+      "russian": "производи́тельность",
+      "english": "performance",
+      "context": "проверять производительность (accusative) — to check performance"
+    },
+    {
+      "russian": "рефакто́ринг",
+      "english": "refactoring",
+      "context": "одобрять рефакторинг (accusative) — to approve refactoring"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "case-selection",
+      "instruction": "Select the correct accusative form for each refactoring action.",
+      "items": [
+        {
+          "question": "Алекс переписывает ___.",
+          "options": [
+            "модуль",
+            "модуля"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Masculine inanimate noun doesn't change: модуль (nom.) = модуль (acc.)"
+        },
+        {
+          "question": "Он улучшает ___.",
+          "options": [
+            "структуру",
+            "структура"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine -а changes to -у in accusative: структура → структуру."
+        },
+        {
+          "question": "Алекс создаёт ___.",
+          "options": [
+            "архитектуру",
+            "архитектура"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine accusative: архитектура → архитектуру."
+        },
+        {
+          "question": "Он проверяет ___.",
+          "options": [
+            "производительность",
+            "производительности"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine noun ending in -ь doesn't change in accusative."
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "instruction": "Match the refactoring verbs with what they modify (accusative objects).",
+      "pairs": [
+        {
+          "left": "переписывать",
+          "right": "module"
+        },
+        {
+          "left": "оптимизировать",
+          "right": "algorithm"
+        },
+        {
+          "left": "улучшать",
+          "right": "structure"
+        },
+        {
+          "left": "заменять",
+          "right": "methods"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blanks",
+      "instruction": "Fill in the blanks with the correct accusative forms.",
+      "sentences": [
+        {
+          "russian": "Алекс модернизирует ___ (система).",
+          "answer": "систему",
+          "explanation": "Feminine -а changes to -у: система → систему."
+        },
+        {
+          "russian": "Он разделяет ___ (ответственность).",
+          "answer": "ответственность",
+          "explanation": "Feminine -ь doesn't change in accusative."
+        },
+        {
+          "russian": "Алекс тестирует ___ (сценарии).",
+          "answer": "сценарии",
+          "explanation": "Plural inanimate accusative equals nominative."
+        },
+        {
+          "russian": "Он заменяет ___ (код).",
+          "answer": "код",
+          "explanation": "Masculine inanimate doesn't change."
+        }
+      ]
+    },
+    {
+      "type": "context-selection",
+      "instruction": "Choose the correct refactoring approach for each situation.",
+      "items": [
+        {
+          "context": "Алекс видит старый код с плохой структурой.",
+          "question": "Что нужно сделать?",
+          "options": [
+            "Переписать модуль с современной архитектурой",
+            "Удалить весь код",
+            "Ничего не менять"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Old code with poor structure should be rewritten with modern architecture."
+        },
+        {
+          "context": "В коде один большой класс делает всё.",
+          "question": "Как улучшить дизайн?",
+          "options": [
+            "Разделить ответственность на маленькие модули",
+            "Добавить больше кода в класс",
+            "Переименовать класс"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Large classes should be divided into smaller modules with separated responsibilities."
+        },
+        {
+          "context": "Алекс закончил рефакторинг.",
+          "question": "Что нужно проверить?",
+          "options": [
+            "Все тесты и производительность",
+            "Только интерфейс",
+            "Цвета в коде"
+          ],
+          "correctAnswer": 0,
+          "explanation": "After refactoring, you must check all tests and performance."
+        }
+      ]
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Refactoring Culture in Russian Development",
+    "content": "Russian developers take refactoring seriously, often using the term 'рефакторинг' borrowed from English. The phrase 'улучшить структуру кода' (improve code structure) is highly valued. Legacy code (старый код) modernization is seen as an important skill demonstrating professional maturity."
+  },
+  "grammarNote": {
+    "topic": "Accusative Case with Improvement Verbs",
+    "content": "Verbs of improvement and change take accusative case: улучшать что? (to improve what?), оптимизировать что? (to optimize what?), переписывать что? (to rewrite what?). Remember that feminine nouns ending in -ь don't change: производительность → производительность."
+  },
+  "characters": ["Alex"],
+  "storyArc": "Alex successfully refactors a legacy authentication module, improving its architecture, performance, and maintainability.",
+  "wordCount": 237,
+  "estimatedMinutes": 25
+}

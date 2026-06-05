@@ -1,0 +1,193 @@
+{
+  "day": 48,
+  "phase": 3,
+  "title": "Debugging Complex Issue",
+  "difficultyLevel": "B1",
+  "textRussian": "У́тром Алекс получа́ет <strong>сро́чное сообще́ние</strong>. На проду́кшене появи́лась <strong>стра́нная оши́бка</strong>. По́льзователи не мо́гут получа́ть <strong>уведомле́ния</strong>.\n\n«Мне ну́жно бы́стро <strong>найти́ пробле́му</strong>,» — ду́мает Алекс. Он открыва́ет <strong>мониторинговую систе́му</strong> и начина́ет <strong>изуча́ть ло́ги</strong>. Там он ви́дит <strong>мно́го оши́бок</strong>.\n\nАлекс ко́пирует <strong>stack trace</strong> и анализи́рует <strong>после́днюю за́пись</strong>. «Оши́бка свя́зана с <strong>ба́зой да́нных</strong>,» — замеча́ет он. Он откры́вает <strong>консо́ль</strong> и прове́ряет <strong>подключе́ние</strong> к ба́зе.\n\nВсё рабо́тает норма́льно. «Зна́чит, пробле́ма в <strong>ло́гике за́проса</strong>,» — рассу́ждает Алекс. Он ищет <strong>соотве́тствующий код</strong> и нахо́дит <strong>подозри́тельную фу́нкцию</strong>.\n\n«Во́т она́! Здесь непра́вильное <strong>усло́вие</strong>,» — восклица́ет Алекс. В ко́де исполь́зуется <strong>уста́ревший синта́ксис</strong>, кото́рый вызыва́ет <strong>SQL оши́бку</strong>.\n\nАлекс быстро <strong>исправля́ет код</strong> и запуска́ет <strong>локальные те́сты</strong>. Он тести́рует <strong>все сцена́рии</strong> и ви́дит, что всё рабо́тает пра́вильно.\n\n«Тепе́рь ну́жно <strong>провери́ть фикс</strong> на те́стовом се́рвере,» — ре́шает Алекс. Он де́плоит <strong>измене́ния</strong> и мониторит <strong>си́стему</strong>. Уведомле́ния снова рабо́тают!\n\nАлекс докумети́рует <strong>реше́ние пробле́мы</strong> и отправля́ет <strong>отчёт</strong> кома́нде. «Я испра́вил <strong>кри́тический баг</strong> в систе́ме уведомле́ний,» — пи́шет он. Коман́да благодари́т <strong>его́</strong> за бы́струю рабо́ту.",
+  "textEnglish": "In the morning, Alex receives an urgent message. A strange error has appeared in production. Users cannot receive notifications.\n\n\"I need to quickly find the problem,\" Alex thinks. He opens the monitoring system and begins studying the logs. There he sees many errors.\n\nAlex copies the stack trace and analyzes the last entry. \"The error is related to the database,\" he notices. He opens the console and checks the connection to the database.\n\nEverything works normally. \"So the problem is in the query logic,\" Alex reasons. He searches for the corresponding code and finds a suspicious function.\n\n\"Here it is! There's an incorrect condition here,\" Alex exclaims. The code uses outdated syntax that causes an SQL error.\n\nAlex quickly fixes the code and runs local tests. He tests all scenarios and sees that everything works correctly.\n\n\"Now I need to check the fix on the test server,\" Alex decides. He deploys the changes and monitors the system. Notifications work again!\n\nAlex documents the problem solution and sends a report to the team. \"I fixed a critical bug in the notification system,\" he writes. The team thanks him for his quick work.",
+  "vocabulary": [
+    {
+      "russian": "оши́бка",
+      "english": "error, bug",
+      "context": "найти ошибку (accusative) — to find an error"
+    },
+    {
+      "russian": "лог",
+      "english": "log",
+      "context": "изучать логи (accusative plural) — to study logs"
+    },
+    {
+      "russian": "за́пись",
+      "english": "entry, record",
+      "context": "анализировать запись (accusative) — to analyze an entry"
+    },
+    {
+      "russian": "за́прос",
+      "english": "query, request",
+      "context": "проверять запрос (accusative) — to check a query"
+    },
+    {
+      "russian": "усло́вие",
+      "english": "condition",
+      "context": "найти условие (accusative) — to find a condition"
+    },
+    {
+      "russian": "сцена́рий",
+      "english": "scenario",
+      "context": "тестировать сценарии (accusative plural) — to test scenarios"
+    },
+    {
+      "russian": "фикс",
+      "english": "fix",
+      "context": "проверить фикс (accusative) — to check a fix"
+    },
+    {
+      "russian": "баг",
+      "english": "bug",
+      "context": "исправить баг (accusative) — to fix a bug"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "case-selection",
+      "instruction": "Select the correct accusative form for each debugging action.",
+      "items": [
+        {
+          "question": "Алекс ищет ___.",
+          "options": [
+            "ошибку",
+            "ошибка"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine accusative: ошибка → ошибку after the verb 'ищет'."
+        },
+        {
+          "question": "Он проверяет ___.",
+          "options": [
+            "подключение",
+            "подключения"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Neuter noun doesn't change: подключение (nom.) = подключение (acc.)"
+        },
+        {
+          "question": "Алекс изучает ___.",
+          "options": [
+            "логи",
+            "логов"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Plural inanimate accusative equals nominative: логи."
+        },
+        {
+          "question": "Он находит ___.",
+          "options": [
+            "функцию",
+            "функция"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine -ия changes to -ию in accusative: функция → функцию."
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "instruction": "Match the debugging verbs with what they act upon (accusative objects).",
+      "pairs": [
+        {
+          "left": "искать",
+          "right": "error"
+        },
+        {
+          "left": "изучать",
+          "right": "logs"
+        },
+        {
+          "left": "проверять",
+          "right": "connection"
+        },
+        {
+          "left": "исправлять",
+          "right": "code"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blanks",
+      "instruction": "Fill in the blanks with the correct accusative forms.",
+      "sentences": [
+        {
+          "russian": "Алекс копирует ___ (stack trace).",
+          "answer": "stack trace",
+          "explanation": "Masculine borrowed term doesn't change in accusative."
+        },
+        {
+          "russian": "Он анализирует ___ (запись).",
+          "answer": "запись",
+          "explanation": "Feminine noun ending in -ь doesn't change: запись."
+        },
+        {
+          "russian": "Алекс тестирует ___ (сценарии).",
+          "answer": "сценарии",
+          "explanation": "Plural inanimate accusative equals nominative."
+        },
+        {
+          "russian": "Он исправляет ___ (проблема).",
+          "answer": "проблему",
+          "explanation": "Feminine -а changes to -у: проблема → проблему."
+        }
+      ]
+    },
+    {
+      "type": "context-selection",
+      "instruction": "Choose the correct debugging step for each situation.",
+      "items": [
+        {
+          "context": "Алекс видит ошибку на продукшене.",
+          "question": "Что он должен сделать первым делом?",
+          "options": [
+            "Изучить логи",
+            "Переписать весь код",
+            "Деплоить новую версию"
+          ],
+          "correctAnswer": 0,
+          "explanation": "First step in debugging is always to study the logs."
+        },
+        {
+          "context": "Алекс нашёл подозрительную функцию.",
+          "question": "Что нужно проверить?",
+          "options": [
+            "Логику и условия в коде",
+            "Цвет интерфейса",
+            "Документацию"
+          ],
+          "correctAnswer": 0,
+          "explanation": "When finding suspicious code, check the logic and conditions."
+        },
+        {
+          "context": "Алекс исправил код локально.",
+          "question": "Что делать дальше?",
+          "options": [
+            "Протестировать все сценарии",
+            "Сразу деплоить на продакшен",
+            "Удалить старый код"
+          ],
+          "correctAnswer": 0,
+          "explanation": "After fixing code, you must test all scenarios before deployment."
+        }
+      ]
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Debugging Culture in Russian IT",
+    "content": "Russian developers use many English terms for debugging: 'баг' (bug), 'фикс' (fix), 'логи' (logs), 'stack trace'. The expression 'найти и исправить баг' (find and fix a bug) is very common. Thorough documentation of bug fixes (документирование решения) is considered professional practice."
+  },
+  "grammarNote": {
+    "topic": "Accusative Case with Investigation Verbs",
+    "content": "Verbs of investigation and search take accusative case: искать что? (to search for what?), находить что? (to find what?), проверять что? (to check what?). Note special feminine endings: функция → функцию (-ия becomes -ию), запись → запись (-ь stays the same)."
+  },
+  "characters": ["Alex"],
+  "storyArc": "Alex successfully debugs a critical production issue by systematically investigating logs, finding the bug, and deploying a fix.",
+  "wordCount": 232,
+  "estimatedMinutes": 25
+}

@@ -1,0 +1,180 @@
+{
+  "day": 47,
+  "phase": 3,
+  "title": "Implementing New Feature",
+  "difficultyLevel": "B1",
+  "textRussian": "Сего́дня Алекс начина́ет <strong>разраба́тывать но́вую фи́чу</strong>. Ему́ ну́жно <strong>созда́ть компоне́нт</strong> для систе́мы уведомле́ний.\n\n«Снача́ла я напишу́ <strong>ба́зовую структу́ру</strong>,» — ре́шает Алекс. Он открыва́ет реда́ктор ко́да и создаёт <strong>но́вый файл</strong>. Пе́рвым де́лом он пи́шет <strong>интерфе́йс</strong> для уведомле́ний.\n\nАлекс внима́тельно проду́мывает <strong>а́рхитекту́ру</strong>. «Мне ну́жно добавля́ть <strong>гиб́кость</strong> в систе́му,» — размышля́ет он. Он создаёт <strong>а́бстрактный класс</strong>, кото́рый бу́дет испо́льзовать <strong>ра́зные ти́пы</strong> уведомле́ний.\n\nЧе́рез час Алекс пи́шет <strong>ло́гику обрабо́тки</strong>. Он реализу́ет <strong>ме́тод</strong>, кото́рый отправля́ет <strong>сообще́ния</strong> по э́лектронной по́чте. «Тепе́рь добавлю́ <strong>поддéржку</strong> для моби́льных уведомле́ний,» — говори́т он себе́.\n\nПо́сле обе́да Алекс тести́рует <strong>но́вый код</strong>. Он запуска́ет <strong>прило́жение</strong> и прове́ряет, рабо́тает ли <strong>фу́нкция</strong> пра́вильно. Систе́ма отправля́ет <strong>те́стовое уведомле́ние</strong> — всё рабо́тает!\n\n«Отли́чно! Тепе́рь ну́жно <strong>написа́ть докумета́цию</strong>,» — ду́мает Алекс. Он созда́ет <strong>README файл</strong> и описывает, как испо́льзовать <strong>но́вую фу́нкциона́льность</strong>.\n\nВе́чером Алекс де́лает <strong>коми́т</strong> и отправля́ет <strong>pull request</strong>. «Я добавля́ю <strong>по́лную реализа́цию</strong> систе́мы уведомле́ний,» — пи́шет он в описа́нии. Колле́ги начина́ют <strong>проверя́ть измене́ния</strong>. Пе́рвая ве́рсия но́вой фи́чи гото́ва!",
+  "textEnglish": "Today Alex begins developing a new feature. He needs to create a component for the notification system.\n\n\"First, I'll write the basic structure,\" Alex decides. He opens the code editor and creates a new file. First thing, he writes an interface for notifications.\n\nAlex carefully thinks through the architecture. \"I need to add flexibility to the system,\" he reflects. He creates an abstract class that will use different types of notifications.\n\nAfter an hour, Alex writes the processing logic. He implements a method that sends messages via email. \"Now I'll add support for mobile notifications,\" he tells himself.\n\nAfter lunch, Alex tests the new code. He runs the application and checks whether the function works correctly. The system sends a test notification — everything works!\n\n\"Excellent! Now I need to write documentation,\" Alex thinks. He creates a README file and describes how to use the new functionality.\n\nIn the evening, Alex makes a commit and sends a pull request. \"I'm adding a complete implementation of the notification system,\" he writes in the description. Colleagues begin checking the changes. The first version of the new feature is ready!",
+  "vocabulary": [
+    {
+      "russian": "фи́ча",
+      "english": "feature",
+      "context": "разрабатывать фичу (accusative) — to develop a feature"
+    },
+    {
+      "russian": "компоне́нт",
+      "english": "component",
+      "context": "создать компонент (accusative) — to create a component"
+    },
+    {
+      "russian": "структу́ра",
+      "english": "structure",
+      "context": "написать структуру (accusative) — to write a structure"
+    },
+    {
+      "russian": "а́рхитекту́ра",
+      "english": "architecture",
+      "context": "продумывать архитектуру (accusative) — to think through architecture"
+    },
+    {
+      "russian": "ло́гика",
+      "english": "logic",
+      "context": "писать логику (accusative) — to write logic"
+    },
+    {
+      "russian": "поддéржка",
+      "english": "support",
+      "context": "добавить поддержку (accusative) — to add support"
+    },
+    {
+      "russian": "реализа́ция",
+      "english": "implementation",
+      "context": "добавлять реализацию (accusative) — to add implementation"
+    },
+    {
+      "russian": "фу́нкциона́льность",
+      "english": "functionality",
+      "context": "добавлять функциональность (accusative) — to add functionality"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "case-selection",
+      "instruction": "Select the correct accusative form for each sentence.",
+      "items": [
+        {
+          "question": "Алекс создаёт ___.",
+          "options": [
+            "компонент",
+            "компонента"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Masculine inanimate nouns don't change: компонент (nom.) = компонент (acc.)"
+        },
+        {
+          "question": "Он пишет ___.",
+          "options": [
+            "логику",
+            "логика"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine noun -а changes to -у in accusative: логика → логику."
+        },
+        {
+          "question": "Алекс добавляет ___.",
+          "options": [
+            "поддержку",
+            "поддержка"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine accusative: поддержка → поддержку."
+        },
+        {
+          "question": "Он реализует ___.",
+          "options": [
+            "метод",
+            "метода"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Masculine inanimate noun stays the same in accusative."
+        }
+      ]
+    },
+    {
+      "type": "verb-conjugation",
+      "instruction": "Conjugate the verbs in present tense and add the correct accusative object.",
+      "items": [
+        {
+          "infinitive": "создавать (я) + файл",
+          "answer": "создаю файл",
+          "explanation": "Я создаю (present) + файл (accusative, no change for masculine inanimate)"
+        },
+        {
+          "infinitive": "писать (он) + код",
+          "answer": "пишет код",
+          "explanation": "Он пишет + код (accusative = nominative)"
+        },
+        {
+          "infinitive": "добавлять (я) + функциональность",
+          "answer": "добавляю функциональность",
+          "explanation": "Я добавляю + функциональность (feminine, ends in -ь, no change)"
+        },
+        {
+          "infinitive": "проверять (они) + изменения",
+          "answer": "проверяют изменения",
+          "explanation": "Они проверяют + изменения (plural accusative = nominative for inanimates)"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blanks",
+      "instruction": "Fill in the blanks with the correct accusative forms.",
+      "sentences": [
+        {
+          "russian": "Алекс разрабатывает ___ (фича).",
+          "answer": "фичу",
+          "explanation": "Feminine -а changes to -у: фича → фичу."
+        },
+        {
+          "russian": "Он продумывает ___ (архитектура).",
+          "answer": "архитектуру",
+          "explanation": "Feminine accusative: архитектура → архитектуру."
+        },
+        {
+          "russian": "Система отправляет ___ (сообщения).",
+          "answer": "сообщения",
+          "explanation": "Plural inanimate accusative equals nominative."
+        },
+        {
+          "russian": "Он создаёт ___ (класс).",
+          "answer": "класс",
+          "explanation": "Masculine inanimate noun doesn't change."
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "instruction": "Match the development verbs with what they create (accusative objects).",
+      "pairs": [
+        {
+          "left": "создавать",
+          "right": "component"
+        },
+        {
+          "left": "писать",
+          "right": "code"
+        },
+        {
+          "left": "добавлять",
+          "right": "functionality"
+        },
+        {
+          "left": "реализовать",
+          "right": "method"
+        }
+      ]
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Russian IT Development Culture",
+    "content": "Russian developers often use English tech terms adapted to Russian grammar: 'фича' (feature), 'коммит' (commit), 'pull request'. These words are declined like Russian nouns: фича → фичу (accusative). Documentation (документация) is highly valued in Russian development teams."
+  },
+  "grammarNote": {
+    "topic": "Accusative Case with Creation Verbs",
+    "content": "Verbs of creation and action always take accusative objects: создавать что? (to create what?), писать что? (to write what?), добавлять что? (to add what?). Remember: masculine inanimate nouns don't change (компонент → компонент), but feminine -а/-я nouns change to -у/-ю (структура → структуру)."
+  },
+  "characters": ["Alex"],
+  "storyArc": "Alex successfully implements a new notification system feature, from architecture design to pull request submission.",
+  "wordCount": 228,
+  "estimatedMinutes": 25
+}

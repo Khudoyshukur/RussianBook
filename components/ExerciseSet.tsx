@@ -77,12 +77,23 @@ export default function ExerciseSet({ exercises, onComplete }: ExerciseSetProps)
                   <p className="text-sm font-semibold text-gray-700 mb-1">
                     {checkAnswer(exercise, answers[index]) ? '✓ Correct!' : '✗ Incorrect'}
                   </p>
-                  <p className="text-sm text-gray-600">
-                    <span className="font-medium">Correct answer:</span>{' '}
-                    {Array.isArray(exercise.correctAnswer)
-                      ? exercise.correctAnswer.join(', ')
-                      : exercise.correctAnswer}
-                  </p>
+                  {exercise.type === 'matching' && exercise.pairs ? (
+                    <div className="text-sm text-gray-600">
+                      <span className="font-medium">Correct pairs:</span>
+                      <ul className="mt-1 space-y-1">
+                        {exercise.pairs.map((pair, i) => (
+                          <li key={i}>• {pair.russian} → {pair.english}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : (
+                    <p className="text-sm text-gray-600">
+                      <span className="font-medium">Correct answer:</span>{' '}
+                      {Array.isArray(exercise.correctAnswer)
+                        ? exercise.correctAnswer.join(', ')
+                        : exercise.correctAnswer}
+                    </p>
+                  )}
                   {exercise.explanation && (
                     <p className="text-sm text-gray-600 mt-2">
                       <span className="font-medium">Explanation:</span> {exercise.explanation}
@@ -232,6 +243,7 @@ function renderExerciseInput(
 
 function checkAnswer(exercise: Exercise, userAnswer: string | string[] | undefined): boolean {
   if (!userAnswer) return false;
+  if (!exercise.correctAnswer) return false;
 
   // For sentence reordering, check if words are in correct order
   if (exercise.type === 'sentence-reordering') {
@@ -387,18 +399,47 @@ function MatchingExercise({
 
   const handleRussianClick = (index: number) => {
     if (disabled) return;
+
+    // If clicking on an already matched Russian word, unmatch it
+    if (matches[index] !== undefined) {
+      const newMatches = { ...matches };
+      delete newMatches[index];
+      setMatches(newMatches);
+
+      // Update the answer array
+      const matchArray = Object.entries(newMatches).map(
+        ([russianIdx, englishShuffledIdx]) => {
+          const russianWord = russianItems[Number(russianIdx)];
+          const englishWord = englishItems[Number(englishShuffledIdx)];
+          const originalEnglishIdx = pairs.findIndex(p => p.english === englishWord);
+          return `${russianIdx}-${originalEnglishIdx}`;
+        }
+      );
+      onChange(matchArray);
+      return;
+    }
+
     setSelectedRussian(index);
   };
 
-  const handleEnglishClick = (index: number) => {
+  const handleEnglishClick = (shuffledIndex: number) => {
     if (disabled || selectedRussian === null) return;
 
-    const newMatches = { ...matches, [selectedRussian]: index };
+    const newMatches = { ...matches, [selectedRussian]: shuffledIndex };
     setMatches(newMatches);
 
-    // Convert to array format for validation
+    // Convert matches to word pairs for validation (not indices)
+    // We need to map shuffled indices back to actual words
     const matchArray = Object.entries(newMatches).map(
-      ([rIdx, eIdx]) => `${rIdx}-${eIdx}`
+      ([russianIdx, englishShuffledIdx]) => {
+        const russianWord = russianItems[Number(russianIdx)];
+        const englishWord = englishItems[Number(englishShuffledIdx)];
+
+        // Find the original index of this English word in the pairs array
+        const originalEnglishIdx = pairs.findIndex(p => p.english === englishWord);
+
+        return `${russianIdx}-${originalEnglishIdx}`;
+      }
     );
     onChange(matchArray);
     setSelectedRussian(null);
@@ -417,19 +458,22 @@ function MatchingExercise({
             <button
               key={idx}
               onClick={() => handleRussianClick(idx)}
-              disabled={disabled || isMatched}
+              disabled={disabled}
               className={`w-full text-left p-3 rounded-lg border-2 transition-colors ${
                 isSelected
                   ? 'border-blue-500 bg-blue-50'
                   : isMatched
-                  ? 'border-green-500 bg-green-50'
+                  ? 'border-green-500 bg-green-50 hover:bg-green-100'
                   : 'border-gray-300 hover:border-blue-400 bg-white'
-              } ${disabled || isMatched ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer'}`}
+              } ${disabled ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer'}`}
             >
               <div className="flex items-center justify-between">
                 <span className="font-medium">{russian}</span>
                 {isMatched && <span className="text-green-600">✓</span>}
               </div>
+              {isMatched && !disabled && (
+                <p className="text-xs text-gray-500 mt-1">Click to unmatch</p>
+              )}
             </button>
           );
         })}

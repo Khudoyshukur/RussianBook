@@ -1,0 +1,140 @@
+{
+  "day": 63,
+  "phase": 3,
+  "title": "Interested in New Technology",
+  "difficultyLevel": "B1",
+
+  "textRussian": "Алекс всегда <strong>интересовался</strong> новыми технологиями. Раньше он <strong>занимался</strong> только фронтенд-разработкой. Но теперь, как тимлид, он хочет расширить свои знания. «Я хочу <strong>заняться изучением</strong> микросервисной архитектуры», — говорит он Дмитрию уверенно. Дмитрий одобрительно кивает. «Это мудрое решение», — соглашается он искренне. «Я давно <strong>увлекаюсь</strong> распределёнными системами. Могу помочь». Они начинают с теории. Дмитрий рекомендует книги и курсы. «Сначала нужно <strong>ознакомиться</strong> с основными концепциями», — советует он терпеливо. Алекс читает статьи, смотрит доклады. Он особенно <strong>интересуется</strong> паттернами проектирования микросервисов. «Event-driven архитектура меня <strong>завораживает</strong>», — делится он с Аней восхищённо. Аня тоже <strong>увлекается</strong> этой темой. «Я <strong>занимаюсь</strong> реализацией message broker в нашем проекте», — рассказывает она оживлённо. «Мы используем RabbitMQ. Хочешь <strong>познакомиться</strong> с нашей архитектурой?» Алекс с радостью соглашается. Они проводят несколько встреч. Аня показывает код и объясняет решения. «Важно правильно <strong>управлять</strong> зависимостями между сервисами», — подчёркивает она серьёзно. Алекс активно <strong>интересуется</strong> деталями. Он задаёт много вопросов. «Как вы <strong>справляетесь</strong> с распределёнными транзакциями?» — спрашивает он любопытно. «Мы используем pattern Saga», — отвечает Аня уверенно. «Это помогает <strong>управлять</strong> консистентностью данных». Через месяц Алекс уже активно <strong>владеет</strong> основами микросервисов. Он начинает применять знания в работе. «<strong>Заниматься</strong> обучением — это инвестиция в будущее», — размышляет он довольно.",
+
+  "textEnglish": "Alex has always been interested in new technologies. Previously he only dealt with frontend development. But now, as a tech lead, he wants to expand his knowledge. 'I want to start studying microservices architecture,' he tells Dmitry confidently. Dmitry nods approvingly. 'That's a wise decision,' he agrees sincerely. 'I've long been passionate about distributed systems. I can help.' They start with theory. Dmitry recommends books and courses. 'First you need to familiarize yourself with basic concepts,' he advises patiently. Alex reads articles, watches talks. He's especially interested in microservices design patterns. 'Event-driven architecture fascinates me,' he shares with Anya admiringly. Anya is also passionate about this topic. 'I'm working on implementing a message broker in our project,' she says animatedly. 'We use RabbitMQ. Want to get acquainted with our architecture?' Alex gladly agrees. They hold several meetings. Anya shows code and explains solutions. 'It's important to properly manage dependencies between services,' she emphasizes seriously. Alex actively inquires about details. He asks many questions. 'How do you handle distributed transactions?' he asks curiously. 'We use the Saga pattern,' Anya answers confidently. 'This helps manage data consistency.' After a month Alex already actively masters the basics of microservices. He begins applying knowledge at work. 'Engaging in learning is an investment in the future,' he reflects contentedly.",
+
+  "vocabulary": [
+    {
+      "russian": "интересова́ться",
+      "english": "to be interested in",
+      "context": "Takes instrumental case. 'Интересоваться технологиями' = to be interested in technologies."
+    },
+    {
+      "russian": "занима́ться",
+      "english": "to be engaged in / to deal with",
+      "context": "Takes instrumental case. 'Заниматься разработкой' = to be engaged in development."
+    },
+    {
+      "russian": "увлека́ться",
+      "english": "to be passionate about / enthusiastic about",
+      "context": "Takes instrumental case. 'Увлекаться системами' = to be passionate about systems."
+    },
+    {
+      "russian": "ознако́миться",
+      "english": "to familiarize oneself / get acquainted",
+      "context": "Takes instrumental case. Perfective verb. 'Ознакомиться с концепциями' = to familiarize with concepts."
+    },
+    {
+      "russian": "завора́живает",
+      "english": "fascinates / captivates",
+      "context": "From 'завораживать'. Takes accusative (what fascinates whom)."
+    },
+    {
+      "russian": "познако́миться",
+      "english": "to get acquainted / meet",
+      "context": "Takes instrumental case. Perfective. 'Познакомиться с архитектурой' = to get acquainted with architecture."
+    },
+    {
+      "russian": "управля́ть",
+      "english": "to manage / control",
+      "context": "Takes instrumental case. 'Управлять зависимостями' = to manage dependencies."
+    },
+    {
+      "russian": "справля́ться",
+      "english": "to cope / handle / manage",
+      "context": "Takes instrumental case. 'Справляться с транзакциями' = to handle transactions."
+    },
+    {
+      "russian": "владе́ть",
+      "english": "to master / possess",
+      "context": "Takes instrumental case. 'Владеть основами' = to master the basics."
+    },
+    {
+      "russian": "консисте́нтность",
+      "english": "consistency",
+      "context": "From English 'consistency'. Used in distributed systems context."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the verbs taking instrumental case:",
+      "pairs": [
+        { "russian": "интересоваться", "english": "to be interested in" },
+        { "russian": "заниматься", "english": "to be engaged in" },
+        { "russian": "увлекаться", "english": "to be passionate about" },
+        { "russian": "управлять", "english": "to manage" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All these verbs require instrumental case for their objects."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form: 'Я интересуюсь _______.'",
+      "options": [
+        "микросервисы (nominative)",
+        "микросервисов (genitive)",
+        "микросервисами (instrumental)",
+        "микросервисах (prepositional)"
+      ],
+      "correctAnswer": "микросервисами (instrumental)",
+      "explanation": "'Интересоваться' takes instrumental case: 'интересуюсь микросервисами' (interested in microservices)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Раньше я _______ фронтендом, а теперь _______ микросервисами.",
+      "wordBank": ["занимался", "интересуюсь", "управлял", "владел"],
+      "correctAnswer": "занимался, интересуюсь",
+      "explanation": "Both verbs take instrumental: 'заниматься фронтендом' (deal with frontend), 'интересоваться микросервисами' (be interested in microservices)."
+    },
+    {
+      "type": "context-selection",
+      "question": "What pattern does Anya use for distributed transactions?",
+      "options": [
+        "Event Sourcing",
+        "Saga",
+        "CQRS",
+        "Circuit Breaker"
+      ],
+      "correctAnswer": "Saga",
+      "explanation": "Anya says: 'Мы используем pattern Saga' (We use the Saga pattern) for managing distributed transactions."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "интересоваться",
+      "ipa": "ɪntʲɪrʲɪsɐˈvatsə",
+      "phonetic": "in-tye-rye-sah-VAH-tsa",
+      "pitfalls": "Stress on 'ва'. Reflexive verb ending '-ся'. Don't confuse with 'интересно' (interesting)."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Continuous Learning Culture",
+    "content": "Russian tech professionals highly value continuous learning, with 'заниматься обучением' (engaging in learning) seen as essential for career growth. Tech communities organize many meetups and conferences where developers 'делятся опытом' (share experience). The verbs 'интересоваться', 'заниматься', and 'увлекаться' are commonly used when discussing professional development and passion for technology."
+  },
+
+  "grammarNote": {
+    "title": "Instrumental Case After Certain Verbs",
+    "summary": "Several important verbs require instrumental case for their objects. The most common are: интересоваться (to be interested in), заниматься (to be engaged in), увлекаться (to be passionate about), управлять (to manage), владеть (to master), справляться (to cope with).",
+    "examples": [
+      "интересоваться микросервисами (to be interested in microservices)",
+      "заниматься разработкой (to be engaged in development)",
+      "увлекаться программированием (to be passionate about programming)",
+      "управлять проектом (to manage a project)",
+      "владеть технологией (to master a technology)"
+    ]
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)"],
+  "storyArc": "Alex expands his technical knowledge by diving into microservices architecture, learning from Dmitry and Anya about distributed systems.",
+  "wordCount": 218,
+  "estimatedMinutes": 25
+}

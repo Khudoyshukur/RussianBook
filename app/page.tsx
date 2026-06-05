@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { phases } from '@/lib/phases';
 import { getProgress } from '@/lib/progress';
 import ProgressTracker from '@/components/ProgressTracker';
+import ProgressManagement from '@/components/ProgressManagement';
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -54,6 +55,11 @@ export default function Home() {
         {/* Progress Tracker */}
         <div className="mb-12">
           <ProgressTracker />
+        </div>
+
+        {/* Progress Management */}
+        <div className="mb-12">
+          <ProgressManagement />
         </div>
 
         {/* Course Overview */}

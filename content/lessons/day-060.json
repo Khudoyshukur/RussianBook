@@ -1,0 +1,140 @@
+{
+  "day": 60,
+  "phase": 3,
+  "title": "Working with Tools",
+  "difficultyLevel": "B1",
+
+  "textRussian": "Сегодня Алекс работает <strong>с новыми инструментами</strong>. Его команда переходит на <strong>микросервисную архитектуру</strong>. Дмитрий объясняет: «Мы будем работать <strong>Docker-контейнерами</strong>. Также нужно пользоваться <strong>Kubernetes</strong> для <strong>оркестрации</strong>». Алекс уже <strong>владеет</strong> основами Git, но теперь нужно управлять <strong>более сложными процессами</strong>. «Я работаю <strong>этим фреймворком</strong> первый раз», — признаётся Алекс. Елена помогает ему: «Не волнуйся. Я управляю <strong>инфраструктурой</strong> уже два года. Давай вместе разберёмся <strong>с конфигурацией</strong>». Они открывают терминал. Алекс печатает команды <strong>с осторожностью</strong>. «Сначала создаём образ <strong>Docker</strong>», — говорит Елена спокойно. Потом они работают <strong>с манифестами</strong> Kubernetes. «Здесь мы определяем ресурсы <strong>декларативным способом</strong>», — объясняет она терпеливо. Алекс внимательно следит <strong>за процессом</strong>. «Теперь деплоим <strong>с помощью kubectl</strong>», — продолжает Елена уверенно. Команда выполняется успешно. Сервис запускается <strong>автоматически</strong>. «Отлично! Ты быстро овладеваешь <strong>новыми технологиями</strong>», — хвалит Елена искренне. Алекс доволен результатом. Он понимает, что владение <strong>современными инструментами</strong> — ключевой навык разработчика. «Завтра продолжим работу <strong>с мониторингом</strong>», — планирует он с энтузиазмом.",
+
+  "textEnglish": "Today Alex is working with new tools. His team is transitioning to a microservices architecture. Dmitry explains: 'We'll be working with Docker containers. We also need to use Kubernetes for orchestration.' Alex already masters the basics of Git, but now he needs to manage more complex processes. 'I'm working with this framework for the first time,' Alex admits. Elena helps him: 'Don't worry. I've been managing infrastructure for two years. Let's figure out the configuration together.' They open the terminal. Alex types commands cautiously. 'First we create a Docker image,' says Elena calmly. Then they work with Kubernetes manifests. 'Here we define resources in a declarative way,' she explains patiently. Alex carefully follows the process. 'Now we deploy using kubectl,' Elena continues confidently. The command executes successfully. The service starts automatically. 'Excellent! You're quickly mastering new technologies,' Elena praises sincerely. Alex is satisfied with the result. He understands that mastery of modern tools is a key developer skill. 'Tomorrow we'll continue working with monitoring,' he plans enthusiastically.",
+
+  "vocabulary": [
+    {
+      "russian": "инструме́нтами",
+      "english": "with tools (instrumental)",
+      "context": "Instrumental plural of 'инструмент'. 'Работать инструментами' = to work with tools."
+    },
+    {
+      "russian": "по́льзоваться",
+      "english": "to use / to make use of",
+      "context": "Takes instrumental case. 'Пользоваться Kubernetes' = to use Kubernetes."
+    },
+    {
+      "russian": "владе́ть",
+      "english": "to master / to possess",
+      "context": "Takes instrumental case. 'Владеть технологией' = to master a technology."
+    },
+    {
+      "russian": "управля́ть",
+      "english": "to manage / to control",
+      "context": "Takes instrumental case. 'Управлять инфраструктурой' = to manage infrastructure."
+    },
+    {
+      "russian": "оркестра́ция",
+      "english": "orchestration",
+      "context": "Container orchestration. From 'оркестр' (orchestra)."
+    },
+    {
+      "russian": "ма́нифестами",
+      "english": "with manifests (instrumental)",
+      "context": "Instrumental plural of 'манифест'. Config files in Kubernetes."
+    },
+    {
+      "russian": "деклара́тивным спо́собом",
+      "english": "in a declarative way",
+      "context": "Instrumental for method/manner. 'Способ' = way, method."
+    },
+    {
+      "russian": "с по́мощью",
+      "english": "with the help of / using",
+      "context": "Prepositional phrase taking genitive. 'С помощью kubectl' = using kubectl."
+    },
+    {
+      "russian": "автомати́чески",
+      "english": "automatically",
+      "context": "Adverb. From 'автоматический' (automatic)."
+    },
+    {
+      "russian": "овладева́ть",
+      "english": "to master / to acquire mastery",
+      "context": "Imperfective, takes instrumental. 'Овладевать технологиями' = to master technologies."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the tool-related verbs:",
+      "pairs": [
+        { "russian": "пользоваться", "english": "to use" },
+        { "russian": "владеть", "english": "to master" },
+        { "russian": "управлять", "english": "to manage" },
+        { "russian": "овладевать", "english": "to acquire mastery" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All these verbs take instrumental case and relate to working with tools and technologies."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form: 'Мы работаем _______.'",
+      "options": [
+        "Docker (nominative)",
+        "Docker-а (genitive)",
+        "Docker-ом (instrumental)",
+        "Docker-е (prepositional)"
+      ],
+      "correctAnswer": "Docker-ом (instrumental)",
+      "explanation": "After 'работать с' we use instrumental case: 'работаем Docker-ом' or 'работаем с Docker'."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Я владею _______ Git, но теперь учусь работать _______ Kubernetes.",
+      "wordBank": ["основами", "с помощью", "инструментом", "способом"],
+      "correctAnswer": "основами, с помощью",
+      "explanation": "'Владеть основами' (to master the basics) uses instrumental; 'работать с помощью' = to work using."
+    },
+    {
+      "type": "context-selection",
+      "question": "What is Elena's role in this lesson?",
+      "options": [
+        "Она управляет инфраструктурой",
+        "Она изучает Docker",
+        "Она работает тестировщиком",
+        "Она владеет только Git"
+      ],
+      "correctAnswer": "Она управляет инфраструктурой",
+      "explanation": "Elena says 'Я управляю инфраструктурой уже два года' (I've been managing infrastructure for two years)."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "оркестрация",
+      "ipa": "ɐrkʲɪˈstratsɨjə",
+      "phonetic": "ar-kyes-TRAH-tsee-ya",
+      "pitfalls": "Stress on 'тра'. Similar to English 'orchestration' but with Russian pronunciation."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "DevOps Culture in Russia",
+    "content": "Russian tech companies have rapidly adopted modern DevOps tools like Docker and Kubernetes. Terms like 'контейнер', 'манифест', and 'оркестрация' are commonly used, often alongside English equivalents. The phrase 'владеть технологией' (to master a technology) is frequently used in job descriptions and performance reviews."
+  },
+
+  "grammarNote": {
+    "title": "Instrumental Case with Tools and Methods",
+    "summary": "The instrumental case is used to express the tool, instrument, or method by which something is done. Key verbs: пользоваться, владеть, управлять (all take instrumental). Also used with 'с' (with) and manner expressions.",
+    "examples": [
+      "работать инструментом (to work with a tool)",
+      "пользоваться библиотекой (to use a library)",
+      "владеть технологией (to master a technology)",
+      "управлять процессом (to manage a process)",
+      "автоматическим способом (in an automatic way)"
+    ]
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Елена (Elena)"],
+  "storyArc": "Alex learns to work with modern DevOps tools like Docker and Kubernetes, with Elena's guidance on infrastructure management.",
+  "wordCount": 189,
+  "estimatedMinutes": 24
+}

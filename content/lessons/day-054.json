@@ -1,0 +1,139 @@
+{
+  "day": 54,
+  "phase": 3,
+  "title": "Working Without Internet",
+  "difficultyLevel": "B1",
+  "grammarNote": "Genitive case: negation and 'without' (без интернета, нет доступа). The genitive case is used after the preposition 'без' (without) and in negative constructions with 'нет' (there is no). Examples: 'без интернета' = without internet, 'нет времени' = there is no time. This is one of the most common uses of genitive in Russian.",
+
+  "textRussian": "Утром в офисе <strong>произошёл</strong> технический сбой. «У нас нет <strong>интернета</strong>!» — <strong>кричит</strong> Максим. «Как мы будем работать без <strong>доступа к облаку</strong>?» Аня пытается открыть документацию: «Нет <strong>подключения</strong> к серверу документации. Это проблема». Алекс проверяет свою машину: «У меня тоже нет <strong>связи</strong>. И нет доступа к <strong>базе данных</strong>». Елена <strong>остаётся</strong> спокойной: «Не паникуйте. Можем работать локально. У нас есть <strong>локальные копии</strong> репозитория». Дмитрий <strong>соглашается</strong>: «Правильно. Без интернета мы не можем <strong>пушить</strong> код, но можем <strong>коммитить</strong> локально». Максим <strong>вздыхает</strong>: «Но без доступа к <strong>Slack</strong> мы не можем общаться с <strong>удалённой командой</strong>». «Используйте <strong>локальную сеть</strong>», — предлагает Елена. «У нас есть внутренний чат, который работает без <strong>внешнего интернета</strong>». Аня открывает свой редактор: «Хорошо, что я вчера <strong>скачала</strong> всю документацию. Работаю без <strong>проблем</strong>!» Алекс <strong>понимает</strong> важный урок: «Теперь ясно, почему нужно иметь локальные копии всех <strong>важных ресурсов</strong>». Через два часа системный администратор <strong>восстанавливает</strong> подключение. «Интернет снова работает!» — <strong>объявляет</strong> он. Но Максим уже успел сделать три <strong>локальных коммита</strong> без <strong>возможности синхронизации</strong>. «Без интернета я стал продуктивнее», — <strong>шутит</strong> он. «Никаких <strong>отвлечений</strong>, никаких <strong>уведомлений</strong>!» Команда смеётся, но все понимают: работа без доступа к внешним <strong>сервисам</strong> возможна, если правильно подготовиться. Дмитрий делает <strong>вывод</strong>: «Давайте всегда держать локальные копии критичных <strong>документов</strong> и <strong>зависимостей</strong>. Это часть хорошей практики <strong>разработки</strong>».",
+
+  "textEnglish": "In the morning, a technical failure occurred at the office. 'We have no internet!' Maxim shouts. 'How will we work without access to the cloud?' Anya tries to open the documentation: 'There's no connection to the documentation server. This is a problem.' Alex checks his machine: 'I also have no connection. And no access to the database.' Elena stays calm: 'Don't panic. We can work locally. We have local copies of the repository.' Dmitry agrees: 'Right. Without internet we can't push code, but we can commit locally.' Maxim sighs: 'But without access to Slack we can't communicate with the remote team.' 'Use the local network,' Elena suggests. 'We have an internal chat that works without external internet.' Anya opens her editor: 'Good thing I downloaded all the documentation yesterday. Working without problems!' Alex understands an important lesson: 'Now it's clear why we need to have local copies of all important resources.' Two hours later, the system administrator restores the connection. 'Internet is working again!' he announces. But Maxim has already made three local commits without the ability to sync. 'Without internet I became more productive,' he jokes. 'No distractions, no notifications!' The team laughs, but everyone understands: working without access to external services is possible if you prepare properly. Dmitry concludes: 'Let's always keep local copies of critical documents and dependencies. This is part of good development practice.'",
+
+  "vocabulary": [
+    {
+      "russian": "произошёл (произойти́)",
+      "english": "occurred / happened",
+      "context": "Past perfective masculine. 'Произошёл сбой' = a failure occurred."
+    },
+    {
+      "russian": "нет и́нтернета",
+      "english": "there is no internet",
+      "context": "Genitive construction: 'нет' + genitive case. 'Интернет' becomes 'интернета' in genitive."
+    },
+    {
+      "russian": "без до́ступа к о́блаку",
+      "english": "without access to the cloud",
+      "context": "'Без' (without) + genitive 'доступа'. 'К облаку' = to the cloud (dative after 'к')."
+    },
+    {
+      "russian": "нет подключе́ния",
+      "english": "there is no connection",
+      "context": "Genitive construction: 'нет подключения' = no connection exists."
+    },
+    {
+      "russian": "нет свя́зи",
+      "english": "there is no connection / communication",
+      "context": "'Связь' (feminine) becomes 'связи' in genitive. No connection or communication."
+    },
+    {
+      "russian": "лока́льные ко́пии",
+      "english": "local copies",
+      "context": "Plural. 'Локальная копия' = local copy. Important for offline work."
+    },
+    {
+      "russian": "удалённая кома́нда",
+      "english": "remote team",
+      "context": "'Удалённый' = remote, distant. Team working from different locations."
+    },
+    {
+      "russian": "без пробле́м",
+      "english": "without problems",
+      "context": "Genitive plural: 'без' + 'проблем'. Common expression meaning 'no problem' or 'smoothly'."
+    },
+    {
+      "russian": "ва́жные ресу́рсы",
+      "english": "important resources",
+      "context": "Plural. 'Важный ресурс' = important resource. Documentation, libraries, etc."
+    },
+    {
+      "russian": "без возмо́жности синхронизации",
+      "english": "without the ability to sync",
+      "context": "'Без' + genitive 'возможности'. 'Синхронизации' is also genitive (возможность чего? = possibility of what?)."
+    },
+    {
+      "russian": "отвлече́ния",
+      "english": "distractions",
+      "context": "Plural genitive. 'Отвлечение' = distraction. 'Никаких отвлечений' = no distractions."
+    },
+    {
+      "russian": "зави́симости",
+      "english": "dependencies",
+      "context": "Plural genitive. Software dependencies. 'Зависимость' = dependency."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form after 'без': без _______ (интернет)",
+      "options": [
+        "интернет (nominative)",
+        "интернета (genitive)",
+        "интернету (dative)",
+        "интернетом (instrumental)"
+      ],
+      "correctAnswer": "интернета (genitive)",
+      "explanation": "The preposition 'без' (without) always requires genitive case: 'без интернета' = without internet."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form after 'нет': нет _______ (доступ)",
+      "options": [
+        "доступ (nominative)",
+        "доступа (genitive)",
+        "доступу (dative)",
+        "доступом (instrumental)"
+      ],
+      "correctAnswer": "доступа (genitive)",
+      "explanation": "'Нет' (there is no) always takes genitive case: 'нет доступа' = there is no access."
+    },
+    {
+      "type": "matching",
+      "question": "Match the 'without' expressions:",
+      "pairs": [
+        { "russian": "без проблем", "english": "without problems" },
+        { "russian": "без интернета", "english": "without internet" },
+        { "russian": "без доступа", "english": "without access" },
+        { "russian": "без возможности", "english": "without ability" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All these expressions use 'без' + genitive case to express lack or absence."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: У меня нет _______ (подключение) к серверу.",
+      "wordBank": ["подключения", "подключение", "подключению", "подключением"],
+      "correctAnswer": "подключения",
+      "explanation": "After 'нет' we use genitive case: 'нет подключения' = there is no connection."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "подключение",
+      "ipa": "pədklʲuˈt͡ɕenʲɪjə",
+      "phonetic": "pahd-klyoo-CHEH-nee-yeh",
+      "pitfalls": "Stress on third syllable 'че'. 'Подключ-' has consonant cluster 'дкл'."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Internet Dependency in Russian Tech Companies",
+    "content": "Russian developers often work in environments with strict security policies, where internet access may be limited or monitored. The phrase 'работать без интернета' (working without internet) is common, especially in corporate or government settings. Many developers maintain extensive local documentation and offline tools."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "A network outage forces the team to work offline, teaching them the importance of having local copies of critical resources.",
+  "wordCount": 224,
+  "estimatedMinutes": 26
+}

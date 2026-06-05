@@ -1,0 +1,140 @@
+{
+  "day": 61,
+  "phase": 3,
+  "title": "Collaboration with Team",
+  "difficultyLevel": "B1",
+
+  "textRussian": "Алекс работает <strong>вместе с Дмитрием</strong> над важной фичей. Они обсуждают архитектуру <strong>между собой</strong>. «Давай сделаем это <strong>совместно</strong>», — предлагает Дмитрий дружелюбно. «Я хочу поделиться <strong>с тобой</strong> своим опытом». Алекс соглашается с энтузиазмом. Они садятся рядом <strong>с экраном</strong>. Дмитрий начинает объяснение <strong>с примеров</strong> из прошлых проектов. «Год назад я работал <strong>с командой</strong> из пяти разработчиков <strong>над похожей задачей</strong>», — вспоминает он задумчиво. «Тогда мы столкнулись <strong>с проблемой</strong> масштабирования». Алекс внимательно слушает. «Мы решили её <strong>с помощью кеширования</strong>», — продолжает Дмитрий уверенно. Потом к ним присоединяется Аня. Теперь они работают <strong>втроём</strong>. «Отлично, что вы занимаетесь <strong>этим вопросом</strong>», — говорит Аня одобрительно. Она делится <strong>со всеми</strong> своими идеями. «Я предлагаю координировать работу <strong>с бэкенд-командой</strong>», — советует она практично. Максим тоже присоединяется к дискуссии. Он работает <strong>с фронтенд-частью</strong>. «Мне нужно синхронизироваться <strong>с вами</strong>», — объясняет Максим серьёзно. Они обсуждают интеграцию <strong>с API</strong>. Вся команда работает <strong>слаженно</strong>. Алекс чувствует, как важна коллаборация. «Работа <strong>с опытными коллегами</strong> — лучшее обучение», — думает он благодарно. К концу дня они достигают прогресса. «Завтра продолжим <strong>вместе</strong>», — договариваются все.",
+
+  "textEnglish": "Alex is working together with Dmitry on an important feature. They discuss architecture among themselves. 'Let's do this jointly,' Dmitry suggests in a friendly manner. 'I want to share my experience with you.' Alex agrees enthusiastically. They sit down next to the screen. Dmitry begins the explanation with examples from past projects. 'A year ago I worked with a team of five developers on a similar task,' he recalls thoughtfully. 'Back then we encountered a scaling problem.' Alex listens attentively. 'We solved it using caching,' Dmitry continues confidently. Then Anya joins them. Now they're working as a trio. 'It's great that you're addressing this issue,' says Anya approvingly. She shares her ideas with everyone. 'I suggest coordinating work with the backend team,' she advises practically. Maxim also joins the discussion. He's working with the frontend part. 'I need to synchronize with you,' Maxim explains seriously. They discuss integration with the API. The whole team works cohesively. Alex feels how important collaboration is. 'Working with experienced colleagues is the best learning,' he thinks gratefully. By the end of the day they make progress. 'We'll continue together tomorrow,' everyone agrees.",
+
+  "vocabulary": [
+    {
+      "russian": "вме́сте с",
+      "english": "together with",
+      "context": "Preposition taking instrumental. 'Вместе с Дмитрием' = together with Dmitry."
+    },
+    {
+      "russian": "ме́жду собо́й",
+      "english": "among themselves / between each other",
+      "context": "Instrumental form. 'Обсуждать между собой' = to discuss among themselves."
+    },
+    {
+      "russian": "сове́стно",
+      "english": "jointly / together",
+      "context": "Adverb. From 'совместный' (joint, collaborative)."
+    },
+    {
+      "russian": "с тобо́й",
+      "english": "with you (informal)",
+      "context": "Instrumental of 'ты'. 'Поделиться с тобой' = to share with you."
+    },
+    {
+      "russian": "над зада́чей",
+      "english": "on/over a task",
+      "context": "Preposition 'над' takes instrumental. 'Работать над задачей' = to work on a task."
+    },
+    {
+      "russian": "с кома́ndой",
+      "english": "with a team",
+      "context": "Instrumental after 'с'. 'Работать с командой' = to work with a team."
+    },
+    {
+      "russian": "с пробле́мой",
+      "english": "with a problem",
+      "context": "Instrumental. 'Столкнуться с проблемой' = to encounter a problem."
+    },
+    {
+      "russian": "втроём",
+      "english": "as a trio / three of us",
+      "context": "Collective numeral in instrumental. 'Вдвоём' = two of us, 'вчетвером' = four of us."
+    },
+    {
+      "russian": "со все́ми",
+      "english": "with everyone",
+      "context": "Instrumental plural. 'Делиться со всеми' = to share with everyone."
+    },
+    {
+      "russian": "сла́женно",
+      "english": "cohesively / in a coordinated manner",
+      "context": "Adverb. From 'слаженный' (well-coordinated, harmonious)."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form: 'Я работаю вместе _______ Дмитрием.'",
+      "options": [
+        "с (with + instrumental)",
+        "у (at + genitive)",
+        "о (about + prepositional)",
+        "к (to + dative)"
+      ],
+      "correctAnswer": "с (with + instrumental)",
+      "explanation": "'Вместе с' (together with) takes instrumental case: 'вместе с Дмитрием'."
+    },
+    {
+      "type": "matching",
+      "question": "Match the collaboration phrases:",
+      "pairs": [
+        { "russian": "вместе с командой", "english": "together with the team" },
+        { "russian": "между собой", "english": "among themselves" },
+        { "russian": "со всеми", "english": "with everyone" },
+        { "russian": "втроём", "english": "as a trio" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All these phrases use instrumental case to express collaboration and togetherness."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Мы работаем _______ над задачей и обсуждаем всё _______ собой.",
+      "wordBank": ["совместно", "между", "вместе", "с"],
+      "correctAnswer": "совместно, между",
+      "explanation": "'Совместно' (jointly) and 'между собой' (among themselves) describe collaborative work."
+    },
+    {
+      "type": "context-selection",
+      "question": "How many people are working together by the end of the discussion?",
+      "options": [
+        "Двое (Алекс и Дмитрий)",
+        "Трое (Алекс, Дмитрий, Аня)",
+        "Четверо (Алекс, Дмитрий, Аня, Максим)",
+        "Пятеро"
+      ],
+      "correctAnswer": "Четверо (Алекс, Дмитрий, Аня, Максим)",
+      "explanation": "Four people collaborate: Alex, Dmitry, Anya, and Maxim all join the discussion."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "слаженно",
+      "ipa": "ˈsɫaʐɨnə",
+      "phonetic": "SLAH-zhen-noh",
+      "pitfalls": "Stress on first syllable. The 'жн' combination sounds like 'zhn'."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Collaborative Work Culture",
+    "content": "Russian tech companies increasingly emphasize collaborative work, especially pair programming and mob programming. Phrases like 'работать вместе' (work together) and 'совместная работа' (collaborative work) are common. The instrumental case naturally expresses these collaborative relationships, with 'с' (with) being one of the most frequently used prepositions in team settings."
+  },
+
+  "grammarNote": {
+    "title": "Instrumental Case with 'With' (People)",
+    "summary": "The preposition 'с' (with) always takes instrumental case when referring to people you're with. This is essential for expressing collaboration and companionship.",
+    "examples": [
+      "с Дмитрием (with Dmitry)",
+      "с командой (with the team)",
+      "с коллегой (with a colleague)",
+      "вместе с тобой (together with you)",
+      "работать над задачей (to work on a task - 'над' also takes instrumental)"
+    ]
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)"],
+  "storyArc": "Alex experiences the power of collaborative work as he teams up with Dmitry, Anya, and Maxim to tackle an important feature together.",
+  "wordCount": 207,
+  "estimatedMinutes": 25
+}

@@ -1,0 +1,129 @@
+{
+  "day": 53,
+  "phase": 3,
+  "title": "Code Ownership and Responsibility",
+  "difficultyLevel": "B1",
+  "grammarNote": "Genitive case: possession (код Алекса, проект команды). The genitive case is used to show ownership or belonging. In Russian, instead of using apostrophe-s ('Alex's code'), we use the genitive case: 'код Алекса' (literally 'code of Alex'). Common patterns: noun + genitive = 'X of Y' or 'Y's X'.",
+
+  "textRussian": "На утренней встрече команда обсуждает новую <strong>архитектуру</strong> проекта. «Давайте <strong>распределим</strong> ответственность за разные части системы», — <strong>предлагает</strong> Дмитрий. «Аня, ты будешь владельцем <strong>модуля аутентификации</strong>. Это твоя зона <strong>ответственности</strong>». Аня <strong>кивает</strong>: «Хорошо, я <strong>возьму</strong> на себя поддержку <strong>кода авторизации</strong>». Максим поднимает руку: «А кто отвечает за <strong>систему кеширования</strong>?» «Это часть <strong>моего модуля</strong>», — отвечает Елена. «Я уже написала большую часть <strong>логики кеша</strong>». Дмитрий смотрит на Алекса: «Алекс, ты станешь владельцем <strong>API-слоя</strong>. Все эндпоинты теперь под твоей <strong>ответственностью</strong>». Алекс немного волнуется, но <strong>соглашается</strong>: «Понял. Значит, весь код <strong>REST API</strong> теперь мой». «Правильно», — <strong>подтверждает</strong> Дмитрий. «Но помни: владелец <strong>компонента</strong> не работает один. Ты <strong>координируешь</strong> работу, но можешь просить помощи». Аня добавляет: «У каждого члена <strong>команды</strong> есть своя зона. Но мы все работаем над общим <strong>проектом компании</strong>». Максим соглашается: «Да, код одного разработчика влияет на код <strong>другого разработчика</strong>». Елена замечает: «Важно понимать границы <strong>ответственности каждого модуля</strong>. Это помогает избежать <strong>конфликтов слияния</strong>». «У вас есть вопросы о распределении <strong>зон ответственности</strong>?» — спрашивает Дмитрий. Алекс думает минуту: «А что насчёт <strong>документации API</strong>? Это тоже часть моей зоны?» «Абсолютно», — отвечает Дмитрий. «Документация — это часть <strong>владения компонентом</strong>». Команда <strong>завершает</strong> встречу с чётким пониманием <strong>структуры проекта</strong> и ответственности каждого.",
+
+  "textEnglish": "At the morning meeting, the team discusses the new project architecture. 'Let's distribute responsibility for different parts of the system,' Dmitry suggests. 'Anya, you'll be the owner of the authentication module. This is your area of responsibility.' Anya nods: 'Okay, I'll take ownership of the authorization code support.' Maxim raises his hand: 'And who's responsible for the caching system?' 'That's part of my module,' Elena replies. 'I've already written most of the cache logic.' Dmitry looks at Alex: 'Alex, you'll become the owner of the API layer. All endpoints are now under your responsibility.' Alex is a bit nervous but agrees: 'Got it. So all the REST API code is now mine.' 'Correct,' Dmitry confirms. 'But remember: the component owner doesn't work alone. You coordinate the work, but you can ask for help.' Anya adds: 'Each team member has their own area. But we're all working on the company's common project.' Maxim agrees: 'Yes, one developer's code affects another developer's code.' Elena notes: 'It's important to understand the boundaries of each module's responsibility. This helps avoid merge conflicts.' 'Do you have any questions about the distribution of responsibility areas?' Dmitry asks. Alex thinks for a minute: 'What about the API documentation? Is that also part of my area?' 'Absolutely,' Dmitry replies. 'Documentation is part of component ownership.' The team finishes the meeting with a clear understanding of the project structure and everyone's responsibilities.",
+
+  "vocabulary": [
+    {
+      "russian": "архитекту́ра",
+      "english": "architecture",
+      "context": "Software architecture. 'Архитектура проекта' = project architecture."
+    },
+    {
+      "russian": "распредели́м (распредели́ть)",
+      "english": "let's distribute / allocate",
+      "context": "Perfective future, 1st person plural. 'Распределить ответственность' = to distribute responsibility."
+    },
+    {
+      "russian": "мо́дуль аутентифика́ции",
+      "english": "authentication module",
+      "context": "Genitive construction: 'module of authentication'. 'Модуль' is owner in nominative, 'аутентификации' is genitive."
+    },
+    {
+      "russian": "о́тветственность",
+      "english": "responsibility",
+      "context": "Feminine noun. 'Зона ответственности' = area of responsibility. 'Под ответственностью' = under responsibility."
+    },
+    {
+      "russian": "ко́д авториза́ции",
+      "english": "authorization code",
+      "context": "Genitive construction. 'Код' (nominative) + 'авторизации' (genitive) = authorization code."
+    },
+    {
+      "russian": "владе́лец",
+      "english": "owner",
+      "context": "Masculine noun. 'Владелец модуля' = module owner. 'Владелец компонента' = component owner."
+    },
+    {
+      "russian": "коорди́нируешь (коорди́нировать)",
+      "english": "you coordinate",
+      "context": "Imperfective present, 2nd person singular. Managing and organizing work."
+    },
+    {
+      "russian": "гра́ницы",
+      "english": "boundaries / borders",
+      "context": "Plural of 'граница'. 'Границы ответственности' = responsibility boundaries."
+    },
+    {
+      "russian": "конфли́кты слия́ния",
+      "english": "merge conflicts",
+      "context": "Genitive construction: 'conflicts of merging'. Common Git problem."
+    },
+    {
+      "russian": "владе́ние компоне́нтом",
+      "english": "component ownership",
+      "context": "'Владение' (nominative) + 'компонентом' (instrumental). The act of owning/maintaining a component."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the ownership vocabulary:",
+      "pairs": [
+        { "russian": "владелец", "english": "owner" },
+        { "russian": "ответственность", "english": "responsibility" },
+        { "russian": "модуль", "english": "module" },
+        { "russian": "границы", "english": "boundaries" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "Essential vocabulary for discussing code ownership and responsibility areas."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct genitive form: 'владелец _______' (module owner)",
+      "options": [
+        "модуль (nominative)",
+        "модуля (genitive)",
+        "модулю (dative)",
+        "модулем (instrumental)"
+      ],
+      "correctAnswer": "модуля (genitive)",
+      "explanation": "After 'владелец' (owner) we use genitive case to show possession: 'владелец модуля' = owner of the module."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct genitive form: 'часть _______' (part of my module)",
+      "options": [
+        "мой модуль (nominative)",
+        "моего модуля (genitive)",
+        "моему модулю (dative)",
+        "моим модулем (instrumental)"
+      ],
+      "correctAnswer": "моего модуля (genitive)",
+      "explanation": "After 'часть' (part) we use genitive case: 'часть моего модуля' = part of my module. Note that 'мой' becomes 'моего' in genitive."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete using genitive: Это зона ответственности _______ (каждый член команды).",
+      "wordBank": ["каждого члена команды", "каждый член команды", "каждому члену команды", "каждым членом команды"],
+      "correctAnswer": "каждого члена команды",
+      "explanation": "After 'ответственности' we use genitive: 'зона ответственности каждого члена команды' = responsibility area of each team member."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "ответственность",
+      "ipa": "ɐˈtʲvʲetsʲtvʲɪnːəsʲtʲ",
+      "phonetic": "aht-VYET-stven-nost'",
+      "pitfalls": "Stress on second syllable 'вет'. Many consonant clusters. Soft 'н' at the end."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Code Ownership in Russian Tech Culture",
+    "content": "Russian tech companies increasingly adopt the 'code ownership' model, where specific developers are responsible for particular system components. This practice, borrowed from Western development cultures, is called 'владение компонентом' or simply using the English term 'ownership'. Clear boundaries help large teams coordinate efficiently."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team establishes clear code ownership areas, with Alex taking responsibility for the API layer.",
+  "wordCount": 205,
+  "estimatedMinutes": 25
+}

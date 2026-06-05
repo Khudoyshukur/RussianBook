@@ -1,0 +1,139 @@
+{
+  "day": 57,
+  "phase": 3,
+  "title": "Dependency Management",
+  "difficultyLevel": "B1",
+  "grammarNote": "Genitive case: 'of' and 'from' constructions (обновление библиотеки, зависимость проекта, от версии). Genitive is used to express relationships between nouns ('X of Y') and after the preposition 'от' (from). Examples: 'обновление библиотеки' = update of the library, 'зависимость проекта' = project dependency, 'от версии 2.0' = from version 2.0.",
+
+  "textRussian": "Алекс проверяет зависимости <strong>проекта</strong> и видит много устаревших <strong>библиотек</strong>. «У нас проблема», — говорит он на встрече. «Некоторые зависимости нашего <strong>проекта</strong> очень старые». Дмитрий <strong>хмурится</strong>: «Покажи список устаревших <strong>пакетов</strong>». Алекс выводит на экран: «Библиотека <strong>React</strong> версии шестнадцать. Текущая версия — восемнадцать». Аня <strong>удивляется</strong>: «Две версии отставания! Это риск для <strong>безопасности проекта</strong>». Максим добавляет: «И обновление <strong>библиотеки аутентификации</strong> от версии один до версии два содержит важные <strong>исправления безопасности</strong>». Елена проверяет другие зависимости: «Установка новой версии <strong>TypeScript</strong> может вызвать проблемы совместимости». Дмитрий соглашается: «Да, обновление <strong>больших библиотек</strong> — сложная задача. Нужен план». Алекс предлагает стратегию: «Начнём с обновления <strong>мелких пакетов</strong>. Потом перейдём к обновлению <strong>основных библиотек</strong>». Аня добавляет в план: «Сначала обновление зависимостей <strong>тестов</strong>. Они менее критичны для <strong>работы приложения</strong>». Максим думает о рисках: «А что, если обновление одной <strong>библиотеки</strong> сломает функционал другой <strong>библиотеки</strong>?» Елена успокаивает: «Для этого у нас автоматические тесты. Проверим работу <strong>всех компонентов</strong> после каждого обновления». Дмитрий устанавливает <strong>правило</strong>: «С сегодняшнего дня проверка зависимостей <strong>проекта</strong> каждую неделю. Обновление критических <strong>библиотек</strong> — в течение <strong>недели</strong> после релиза». Алекс создаёт задачи: «Обновление <strong>React</strong> от шестнадцатой версии до восемнадцатой. Миграция конфигурации <strong>webpack</strong>. Обновление типов <strong>TypeScript</strong>». Аня берётся за работу: «Я займусь обновлением библиотек <strong>тестирования</strong>. От <strong>Jest</strong> двадцать шесть до двадцать восемь». Максим выбирает задачу: «А я обновлю зависимости <strong>сборки проекта</strong>. Новая версия <strong>Babel</strong> улучшит производительность». Через неделю команда успешно завершает обновление большинства <strong>зависимостей</strong>. Проект работает стабильно с новыми версиями всех критических <strong>библиотек</strong>.",
+
+  "textEnglish": "Alex checks the project dependencies and sees many outdated libraries. 'We have a problem,' he says at the meeting. 'Some of our project's dependencies are very old.' Dmitry frowns: 'Show me the list of outdated packages.' Alex displays on screen: 'React library version sixteen. Current version is eighteen.' Anya is surprised: 'Two versions behind! This is a risk for project security.' Maxim adds: 'And updating the authentication library from version one to version two contains important security fixes.' Elena checks other dependencies: 'Installing the new TypeScript version might cause compatibility issues.' Dmitry agrees: 'Yes, updating large libraries is a complex task. We need a plan.' Alex proposes a strategy: 'Let's start with updating small packages. Then we'll move to updating major libraries.' Anya adds to the plan: 'First update test dependencies. They're less critical for application functionality.' Maxim thinks about risks: 'What if updating one library breaks another library's functionality?' Elena reassures: 'That's what we have automated tests for. We'll check all components' functionality after each update.' Dmitry establishes a rule: 'From today, checking project dependencies every week. Updating critical libraries within a week of release.' Alex creates tasks: 'Update React from version sixteen to eighteen. Migrate webpack configuration. Update TypeScript types.' Anya takes on work: 'I'll handle updating testing libraries. From Jest twenty-six to twenty-eight.' Maxim chooses a task: 'And I'll update project build dependencies. The new Babel version will improve performance.' A week later, the team successfully completes updating most dependencies. The project works stably with new versions of all critical libraries.",
+
+  "vocabulary": [
+    {
+      "russian": "зави́симости прое́кта",
+      "english": "project dependencies",
+      "context": "Genitive construction: 'dependencies of the project'. Libraries the project depends on."
+    },
+    {
+      "russian": "устаре́вшие библиоте́ки",
+      "english": "outdated libraries",
+      "context": "'Устаревший' = outdated, obsolete. Plural nominative here, but can be genitive after 'много'."
+    },
+    {
+      "russian": "спи́сок устаре́вших паке́тов",
+      "english": "list of outdated packages",
+      "context": "Double genitive: 'список' (list) + 'устаревших пакетов' (genitive plural of outdated packages)."
+    },
+    {
+      "russian": "обновле́ние библиоте́ки",
+      "english": "library update / updating the library",
+      "context": "Genitive construction: 'update of the library' or 'updating the library'."
+    },
+    {
+      "russian": "от ве́рсии один до ве́рсии два",
+      "english": "from version one to version two",
+      "context": "'От' (from) + genitive, 'до' (to/until) + genitive. 'Версии' is genitive of 'версия'."
+    },
+    {
+      "russian": "исправле́ния безопа́сности",
+      "english": "security fixes",
+      "context": "Genitive construction: 'fixes of security' = security fixes."
+    },
+    {
+      "russian": "устано́вка но́вой ве́рсии",
+      "english": "installation of new version",
+      "context": "'Установка' (installation) + genitive 'новой версии'."
+    },
+    {
+      "russian": "обновле́ние бо́льших библиоте́к",
+      "english": "updating large libraries",
+      "context": "Genitive plural: 'обновление' + 'больших библиотек'."
+    },
+    {
+      "russian": "рабо́та прило́жения",
+      "english": "application functionality / operation",
+      "context": "Genitive: 'work/operation of the application'."
+    },
+    {
+      "russian": "в тече́ние неде́ли",
+      "english": "within a week",
+      "context": "'В течение' (during/within) + genitive 'недели' = within a week's time."
+    },
+    {
+      "russian": "миѓра́ция конфигура́ции",
+      "english": "configuration migration",
+      "context": "Genitive: 'migration of configuration'. Moving config to new format."
+    },
+    {
+      "russian": "зави́симости сбо́рки прое́кта",
+      "english": "project build dependencies",
+      "context": "Multiple genitives: 'dependencies of build of project'."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form: обновление _______ (библиотека)",
+      "options": [
+        "библиотека (nominative)",
+        "библиотеки (genitive)",
+        "библиотеке (dative)",
+        "библиотекой (instrumental)"
+      ],
+      "correctAnswer": "библиотеки (genitive)",
+      "explanation": "After 'обновление' (update) we use genitive to show 'update of what?': 'обновление библиотеки' = update of the library."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form after 'от': от _______ (версия) один",
+      "options": [
+        "версия (nominative)",
+        "версии (genitive)",
+        "версию (accusative)",
+        "версией (instrumental)"
+      ],
+      "correctAnswer": "версии (genitive)",
+      "explanation": "The preposition 'от' (from) requires genitive case: 'от версии один' = from version one."
+    },
+    {
+      "type": "matching",
+      "question": "Match the dependency management terms:",
+      "pairs": [
+        { "russian": "зависимости проекта", "english": "project dependencies" },
+        { "russian": "обновление библиотеки", "english": "library update" },
+        { "russian": "установка пакета", "english": "package installation" },
+        { "russian": "список пакетов", "english": "list of packages" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All these expressions use genitive case to show 'X of Y' relationships."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Миграция от версии 1 до _______ (версия) 3.",
+      "wordBank": ["версии", "версия", "версию", "версией"],
+      "correctAnswer": "версии",
+      "explanation": "'До' (to/until) requires genitive case: 'до версии 3' = to version 3."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "зависимости",
+      "ipa": "zəˈvʲisʲɪməsʲtʲɪ",
+      "phonetic": "zah-VEE-see-moh-stee",
+      "pitfalls": "Stress on second syllable 'ви'. Genitive singular and nominative plural have same form. Soft 'с' and 'т'."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Dependency Management in Russian Development",
+    "content": "Russian developers use the same package managers as Western developers (npm, yarn, pip, etc.). Terms like 'зависимости', 'обновление пакетов', and 'устаревшие библиотеки' are standard. Security consciousness is high, with regular updates encouraged. Many Russian companies have strict policies about dependency versions and require regular audits ('проверка зависимостей')."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "Alex discovers outdated dependencies and the team creates a systematic plan to update all critical libraries.",
+  "wordCount": 243,
+  "estimatedMinutes": 28
+}

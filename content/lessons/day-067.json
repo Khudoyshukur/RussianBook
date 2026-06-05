@@ -1,0 +1,140 @@
+{
+  "day": 67,
+  "phase": 3,
+  "title": "Helping the Team",
+  "difficultyLevel": "B1",
+  "grammarNote": "This lesson introduces the Dative case alongside continued practice with Prepositional case. Dative case is used for indirect objects (recipient of action) and after certain verbs like помогать (to help), объяснять (to explain), показывать (to show). Common endings: masculine/neuter -у/-ю (коллега → коллеге, новичок → новичку), feminine -е (команда → команде). Dative answers the question 'кому?' (to whom?). Full coverage of Dative case will come in Phase 4.",
+
+  "textRussian": "Новый разработчик Никита присоединился <strong>к команде</strong>. Он работает первую неделю <strong>в офисе</strong>. Алекс вспоминает свои первые дни и решает <strong>помогать новичку</strong>. «Привет, Никита! Нужна помощь?» — спрашивает Алекс дружелюбно. «Да, спасибо!» — отвечает Никита. «Я не понимаю архитектуру <strong>проекта</strong>». Алекс садится рядом: «Давай я <strong>объясню тебе</strong> структуру. Мы работаем <strong>над микросервисами</strong>». Он открывает документацию <strong>на экране</strong>. «Смотри, я <strong>покажу тебе</strong> диаграмму», — говорит Алекс терпеливо. Никита внимательно слушает. Алекс объясняет <strong>о каждом сервисе</strong> подробно. Аня присоединяется <strong>к обсуждению</strong>: «Никита, если нужна помощь <strong>с базой данных</strong>, я <strong>помогу тебе</strong>. Я работала <strong>над этой частью</strong>». Максим тоже предлагает поддержку: «Я могу <strong>объяснить новичку</strong> процесс деплоя. У нас есть хорошая документация <strong>об этом</strong>». Дмитрий доволен атмосферой <strong>в команде</strong>: «Отлично видеть, как вы <strong>помогаете друг другу</strong>! Это именно та культура, которую мы строим». Елена <strong>показывает команде</strong> новый онбординг чеклист: «Я создала документ <strong>для новичков</strong>. Здесь все важные ссылки и контакты». В конце дня Никита благодарит всех: «Спасибо, что <strong>помогли мне</strong>! Я многое узнал <strong>о проекте</strong> и <strong>о команде</strong>. Вы очень friendly». Алекс улыбается: «Мне <strong>тоже помогали</strong> в первые дни. Теперь моя очередь <strong>помогать другим</strong>». На следующий день Алекс <strong>объясняет Никите</strong> процесс code review. Он <strong>показывает новичку</strong> примеры хороших pull requests <strong>в GitHub</strong>. «Обращай внимание <strong>на комментарии</strong> <strong>в code review</strong>», — советует Алекс. «Это лучший способ учиться». Команда работает <strong>в офисе</strong> вместе, <strong>помогая друг другу</strong> решать задачи.",
+
+  "textEnglish": "New developer Nikita joined the team. He's working his first week in the office. Alex remembers his first days and decides to help the newcomer. 'Hi, Nikita! Need help?' Alex asks in a friendly manner. 'Yes, thank you!' Nikita responds. 'I don't understand the project architecture.' Alex sits nearby: 'Let me explain the structure to you. We're working on microservices.' He opens the documentation on the screen. 'Look, I'll show you the diagram,' Alex says patiently. Nikita listens attentively. Alex explains about each service in detail. Anya joins the discussion: 'Nikita, if you need help with the database, I'll help you. I worked on this part.' Maxim also offers support: 'I can explain the deployment process to the newcomer. We have good documentation about this.' Dmitry is pleased with the team atmosphere: 'Great to see how you help each other! This is exactly the culture we're building.' Elena shows the team a new onboarding checklist: 'I created a document for newcomers. Here are all the important links and contacts.' At the end of the day, Nikita thanks everyone: 'Thank you for helping me! I learned a lot about the project and about the team. You're very friendly.' Alex smiles: 'They helped me in the first days too. Now it's my turn to help others.' The next day, Alex explains the code review process to Nikita. He shows the newcomer examples of good pull requests in GitHub. 'Pay attention to comments in code reviews,' Alex advises. 'It's the best way to learn.' The team works in the office together, helping each other solve tasks.",
+
+  "vocabulary": [
+    {
+      "russian": "помога́ть новичку́",
+      "english": "to help the newcomer",
+      "context": "Dative case! Verb 'помогать' (to help) takes dative case. 'Кому помогать?' → 'новичку' (to newcomer)."
+    },
+    {
+      "russian": "объясни́ть тебе́",
+      "english": "to explain to you",
+      "context": "Dative case! 'Объяснить' (to explain) uses dative for recipient. 'Тебе' is dative of 'ты' (you)."
+    },
+    {
+      "russian": "показа́ть тебе́",
+      "english": "to show to you",
+      "context": "Dative case! 'Показать' (to show) takes dative for the person shown to. 'Тебе' = to you."
+    },
+    {
+      "russian": "в прое́кте",
+      "english": "in the project",
+      "context": "Prepositional case with 'в'. 'Работать в проекте' = to work in/on the project."
+    },
+    {
+      "russian": "о ка́ждом се́рвисе",
+      "english": "about each service",
+      "context": "Prepositional case with 'о'. 'Рассказать о сервисе' = to tell about the service."
+    },
+    {
+      "russian": "помо́чь тебе́",
+      "english": "to help you",
+      "context": "Perfective of 'помогать'. 'Я помогу тебе' = I will help you. Dative case."
+    },
+    {
+      "russian": "к кома́нде",
+      "english": "to the team",
+      "context": "Dative case with preposition 'к' (to/toward). 'Присоединиться к команде' = to join the team."
+    },
+    {
+      "russian": "к обсужде́нию",
+      "english": "to the discussion",
+      "context": "Dative case with 'к'. 'Присоединиться к обсуждению' = to join the discussion."
+    },
+    {
+      "russian": "помога́ть друг дру́гу",
+      "english": "to help each other",
+      "context": "Dative case. 'Друг другу' = to each other. Reciprocal construction."
+    },
+    {
+      "russian": "для новичко́в",
+      "english": "for newcomers",
+      "context": "Genitive case after 'для' (for). Not dative! 'Документ для новичков' = document for newcomers."
+    },
+    {
+      "russian": "на экра́не",
+      "english": "on the screen",
+      "context": "Prepositional case with 'на'. Location: 'на экране' = on the screen."
+    },
+    {
+      "russian": "над микросе́рвисами",
+      "english": "on microservices",
+      "context": "Instrumental case with 'над' (on/over). 'Работать над проектом' = to work on a project."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "matching",
+      "question": "Match the dative case phrases:",
+      "pairs": [
+        { "russian": "помогать новичку", "english": "to help the newcomer" },
+        { "russian": "объяснить тебе", "english": "to explain to you" },
+        { "russian": "показать команде", "english": "to show to the team" },
+        { "russian": "к обсуждению", "english": "to the discussion" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "These phrases use dative case for indirect objects (recipients of help, explanations, etc.)."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct case: 'Я помогаю _____.'",
+      "options": [
+        "новичок (nominative)",
+        "новичка (genitive/accusative)",
+        "новичку (dative)",
+        "новичке (prepositional)"
+      ],
+      "correctAnswer": "новичку (dative)",
+      "explanation": "Verb 'помогать' (to help) requires dative case: 'помогаю новичку' (help the newcomer)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Я объясняю _____ структуру проекта. Я работаю в _____.",
+      "wordBank": ["тебе", "проекте", "команде", "офисе"],
+      "correctAnswer": "тебе, проекте",
+      "explanation": "'Объяснять тебе' (to explain to you) uses dative. 'В проекте' (in the project) uses prepositional case."
+    },
+    {
+      "type": "context-selection",
+      "question": "How does Alex help Nikita?",
+      "options": [
+        "Объясняет архитектуру и показывает документацию",
+        "Только показывает код",
+        "Даёт книги для чтения",
+        "Ничего не делает"
+      ],
+      "correctAnswer": "Объясняет архитектуру и показывает документацию",
+      "explanation": "Alex explains the architecture and shows documentation to help Nikita understand the project."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "новичку",
+      "ipa": "nɐˈvʲit͡ɕku",
+      "phonetic": "nah-VEECH-koo",
+      "pitfalls": "Dative ending -у. Stress shifts to second syllable in dative: новичо́к → новичку́."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Mentorship Culture in Russian Tech",
+    "content": "Russian tech companies increasingly adopt formal onboarding and mentorship programs. The concept of 'buddy system' (бадди-система) is popular in startups. Senior developers are expected to help newcomers ('помогать новичкам'), and this mentorship is often included in performance reviews. The phrase 'помогать друг другу' (help each other) reflects the collaborative culture many teams strive to build."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)", "Никита (Nikita)"],
+  "storyArc": "Alex takes on a mentorship role, helping new team member Nikita onboard, reflecting on his own early days and the team's supportive culture.",
+  "wordCount": 226,
+  "estimatedMinutes": 26,
+  "previousDayReferences": [1, 65, 66]
+}

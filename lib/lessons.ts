@@ -48,6 +48,31 @@ import day043 from '@/content/lessons/day-043.json';
 import day044 from '@/content/lessons/day-044.json';
 import day045 from '@/content/lessons/day-045.json';
 
+// Phase 3: Technical Workflows & Cases (Days 46-68)
+import day046 from '@/content/lessons/day-046.json';
+import day047 from '@/content/lessons/day-047.json';
+import day048 from '@/content/lessons/day-048.json';
+import day049 from '@/content/lessons/day-049.json';
+import day050 from '@/content/lessons/day-050.json';
+import day051 from '@/content/lessons/day-051.json';
+import day052 from '@/content/lessons/day-052.json';
+import day053 from '@/content/lessons/day-053.json';
+import day054 from '@/content/lessons/day-054.json';
+import day055 from '@/content/lessons/day-055.json';
+import day056 from '@/content/lessons/day-056.json';
+import day057 from '@/content/lessons/day-057.json';
+import day058 from '@/content/lessons/day-058.json';
+import day059 from '@/content/lessons/day-059.json';
+import day060 from '@/content/lessons/day-060.json';
+import day061 from '@/content/lessons/day-061.json';
+import day062 from '@/content/lessons/day-062.json';
+import day063 from '@/content/lessons/day-063.json';
+import day064 from '@/content/lessons/day-064.json';
+import day065 from '@/content/lessons/day-065.json';
+import day066 from '@/content/lessons/day-066.json';
+import day067 from '@/content/lessons/day-067.json';
+import day068 from '@/content/lessons/day-068.json';
+
 const lessonMap: Record<number, Lesson> = {
   // Phase 1: Foundation (Days 1-22)
   1: day001 as Lesson,
@@ -96,6 +121,30 @@ const lessonMap: Record<number, Lesson> = {
   43: day043 as Lesson,
   44: day044 as Lesson,
   45: day045 as Lesson,
+  // Phase 3: Technical Workflows & Cases (Days 46-68)
+  46: day046 as Lesson,
+  47: day047 as Lesson,
+  48: day048 as Lesson,
+  49: day049 as Lesson,
+  50: day050 as Lesson,
+  51: day051 as Lesson,
+  52: day052 as Lesson,
+  53: day053 as Lesson,
+  54: day054 as Lesson,
+  55: day055 as Lesson,
+  56: day056 as Lesson,
+  57: day057 as Lesson,
+  58: day058 as Lesson,
+  59: day059 as Lesson,
+  60: day060 as Lesson,
+  61: day061 as Lesson,
+  62: day062 as Lesson,
+  63: day063 as Lesson,
+  64: day064 as Lesson,
+  65: day065 as Lesson,
+  66: day066 as Lesson,
+  67: day067 as Lesson,
+  68: day068 as Lesson,
 };
 
 export const getLesson = (day: number): Lesson | null => {

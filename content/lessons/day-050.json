@@ -1,0 +1,180 @@
+{
+  "day": 50,
+  "phase": 3,
+  "title": "Writing Unit Tests",
+  "difficultyLevel": "B1",
+  "textRussian": "Сего́дня Алекс до́лжен <strong>написа́ть юни́т-те́сты</strong> для но́вого мо́дуля. Кома́нда хо́чет <strong>покры́ть все случаи</strong> тестáми.\n\n«Снача́ла я напишу́ <strong>те́сты для основно́й функциона́льности</strong>,» — ре́шает Алекс. Он созда́ет <strong>но́вый те́стовый файл</strong> и импорти́рует <strong>необходи́мые библиоте́ки</strong>.\n\nАлекс пи́шет <strong>пе́рвый тест</strong>, кото́рый прове́ряет <strong>успе́шную аутентифика́цию</strong>. «Мне ну́жно <strong>протести́ровать счастли́вый путь</strong>,» — объясня́ет он себе́. Тест прохо́дит!\n\n«Тепе́рь ну́жно <strong>покры́ть edge cases</strong>,» — ду́мает Алекс. Он созда́ет <strong>тест для некорре́ктных да́нных</strong>. Что произойдёт, е́сли по́льзователь вво́дит <strong>непра́вильный па́роль</strong>?\n\nАлекс пи́шет <strong>тест</strong>, кото́рый прове́ряет <strong>обрабо́тку оши́бок</strong>. Систе́ма до́лжна возвраща́ть <strong>пра́вильное сообще́ние</strong> об оши́бке. Всё рабо́тает корре́ктно!\n\nПо́сле обе́да Алекс тести́рует <strong>гра́ничные усло́вия</strong>. Он созда́ет <strong>тест</strong> для <strong>о́чень дли́нного логина</strong> и для <strong>пусто́го по́ля</strong>. «Ва́жно <strong>провери́ть все возмо́жные сцена́рии</strong>,» — говори́т он.\n\nАлекс добавля́ет <strong>те́сты производи́тельности</strong>. Он прове́ряет, мо́жет ли систе́ма обраба́тывать <strong>ты́сячу за́просов</strong> одновреме́нно. «Э́то вы́явит <strong>потенциа́льные пробле́мы</strong>,» — размышля́ет он.\n\nВе́чером Алекс запуска́ет <strong>все те́сты</strong>. Он ви́дит <strong>зелёные га́лочки</strong> — <strong>100% покры́тие</strong>! «Я успе́шно <strong>протести́ровал весь мо́дуль</strong>,» — дово́лен Алекс.\n\nОн де́лает <strong>коми́т</strong> и пи́шет в сообще́нии: «Добавля́ю <strong>полно́е те́стовое покры́тие</strong> для мо́дуля аутентифика́ции.» Кома́нда хва́лит <strong>его́ рабо́ту</strong>.",
+  "textEnglish": "Today Alex must write unit tests for the new module. The team wants to cover all cases with tests.\n\n\"First, I'll write tests for the main functionality,\" Alex decides. He creates a new test file and imports the necessary libraries.\n\nAlex writes the first test that checks successful authentication. \"I need to test the happy path,\" he explains to himself. The test passes!\n\n\"Now I need to cover edge cases,\" Alex thinks. He creates a test for incorrect data. What happens if a user enters an incorrect password?\n\nAlex writes a test that checks error handling. The system should return the correct error message. Everything works correctly!\n\nAfter lunch, Alex tests boundary conditions. He creates a test for a very long login and for an empty field. \"It's important to check all possible scenarios,\" he says.\n\nAlex adds performance tests. He checks whether the system can handle a thousand requests simultaneously. \"This will reveal potential problems,\" he reflects.\n\nIn the evening, Alex runs all the tests. He sees green checkmarks — 100% coverage! \"I successfully tested the entire module,\" Alex is satisfied.\n\nHe makes a commit and writes in the message: \"Adding complete test coverage for the authentication module.\" The team praises his work.",
+  "vocabulary": [
+    {
+      "russian": "тест",
+      "english": "test",
+      "context": "писать тест (accusative) — to write a test"
+    },
+    {
+      "russian": "слу́чай",
+      "english": "case",
+      "context": "покрыть случаи (accusative plural) — to cover cases"
+    },
+    {
+      "russian": "функциона́льность",
+      "english": "functionality",
+      "context": "тестировать функциональность (accusative) — to test functionality"
+    },
+    {
+      "russian": "усло́вие",
+      "english": "condition",
+      "context": "проверять условия (accusative plural) — to check conditions"
+    },
+    {
+      "russian": "сцена́рий",
+      "english": "scenario",
+      "context": "проверить сценарии (accusative plural) — to check scenarios"
+    },
+    {
+      "russian": "за́прос",
+      "english": "request",
+      "context": "обрабатывать запросы (accusative plural) — to process requests"
+    },
+    {
+      "russian": "покры́тие",
+      "english": "coverage",
+      "context": "добавить покрытие (accusative) — to add coverage"
+    },
+    {
+      "russian": "edge case",
+      "english": "edge case",
+      "context": "покрыть edge cases (accusative plural) — to cover edge cases"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "case-selection",
+      "instruction": "Select the correct accusative form for each testing action.",
+      "items": [
+        {
+          "question": "Алекс пишет ___.",
+          "options": [
+            "тест",
+            "теста"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Masculine inanimate noun doesn't change: тест (nom.) = тест (acc.)"
+        },
+        {
+          "question": "Он проверяет ___.",
+          "options": [
+            "функциональность",
+            "функциональности"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Feminine noun ending in -ь doesn't change in accusative."
+        },
+        {
+          "question": "Алекс тестирует ___.",
+          "options": [
+            "сценарии",
+            "сценариев"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Plural inanimate accusative equals nominative: сценарии."
+        },
+        {
+          "question": "Он покрывает ___.",
+          "options": [
+            "случаи",
+            "случаев"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Plural inanimate accusative: случаи (no change)."
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "instruction": "Match the testing verbs with what they test (accusative objects).",
+      "pairs": [
+        {
+          "left": "писать",
+          "right": "tests"
+        },
+        {
+          "left": "проверять",
+          "right": "conditions"
+        },
+        {
+          "left": "тестировать",
+          "right": "functionality"
+        },
+        {
+          "left": "покрывать",
+          "right": "cases"
+        }
+      ]
+    },
+    {
+      "type": "verb-conjugation",
+      "instruction": "Conjugate the verbs and add the correct accusative object.",
+      "items": [
+        {
+          "infinitive": "писать (он) + тест",
+          "answer": "пишет тест",
+          "explanation": "Он пишет (present) + тест (accusative, no change)"
+        },
+        {
+          "infinitive": "проверять (я) + сценарии",
+          "answer": "проверяю сценарии",
+          "explanation": "Я проверяю + сценарии (plural accusative = nominative)"
+        },
+        {
+          "infinitive": "тестировать (мы) + функциональность",
+          "answer": "тестируем функциональность",
+          "explanation": "Мы тестируем + функциональность (feminine -ь, no change)"
+        },
+        {
+          "infinitive": "добавлять (он) + покрытие",
+          "answer": "добавляет покрытие",
+          "explanation": "Он добавляет + покрытие (neuter, no change)"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blanks",
+      "instruction": "Fill in the blanks with the correct accusative forms.",
+      "sentences": [
+        {
+          "russian": "Алекс создаёт ___ (тест).",
+          "answer": "тест",
+          "explanation": "Masculine inanimate doesn't change."
+        },
+        {
+          "russian": "Он проверяет ___ (условия).",
+          "answer": "условия",
+          "explanation": "Plural neuter accusative equals nominative."
+        },
+        {
+          "russian": "Алекс тестирует ___ (обработка) ошибок.",
+          "answer": "обработку",
+          "explanation": "Feminine -а changes to -у: обработка → обработку."
+        },
+        {
+          "russian": "Система обрабатывает ___ (запросы).",
+          "answer": "запросы",
+          "explanation": "Plural inanimate accusative equals nominative."
+        }
+      ]
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Testing Culture in Russian IT",
+    "content": "Russian developers highly value test coverage (покрытие тестами). The term 'юнит-тесты' (unit tests) is commonly used alongside 'edge cases' (borrowed from English). Achieving 100% coverage is often mentioned as a professional achievement. The phrase 'покрыть все случаи' (cover all cases) is standard testing vocabulary."
+  },
+  "grammarNote": {
+    "topic": "Accusative Case with Testing Verbs",
+    "content": "Testing verbs take accusative objects: тестировать что? (to test what?), проверять что? (to check what?), покрывать что? (to cover what?). Remember plural inanimate nouns don't change in accusative: сценарии (nom.) = сценарии (acc.), тесты (nom.) = тесты (acc.)."
+  },
+  "characters": ["Alex"],
+  "storyArc": "Alex writes comprehensive unit tests for the authentication module, achieving 100% test coverage by checking all scenarios including edge cases.",
+  "wordCount": 243,
+  "estimatedMinutes": 25
+}

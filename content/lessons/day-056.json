@@ -1,0 +1,139 @@
+{
+  "day": 56,
+  "phase": 3,
+  "title": "API Versioning",
+  "difficultyLevel": "B1",
+  "grammarNote": "Genitive case: time expressions and versions (до релиза, конец поддержки, версия API). Genitive is used with time prepositions like 'до' (until/before), 'после' (after), 'во время' (during), and in constructions showing versions or periods: 'версия чего?' (version of what?), 'конец чего?' (end of what?).",
+
+  "textRussian": "Дмитрий созывает команду на важную встречу о <strong>версионировании API</strong>. «Нам нужно обсудить <strong>стратегию версий</strong>», — говорит он серьёзно. Аня открывает документ: «Сейчас у нас версия два <strong>API</strong>. Но скоро выйдет версия три». Алекс спрашивает: «А что случится с версией два после <strong>релиза</strong> третьей версии?» Дмитрий объясняет: «Мы будем поддерживать версию два до конца <strong>года</strong>. Это шесть <strong>месяцев</strong> с момента релиза версии три». Максим обеспокоен: «Шесть месяцев — это мало для <strong>миграции</strong> всех клиентов. У нас много <strong>пользователей</strong> старой версии». Елена смотрит в аналитику: «Семьдесят процентов <strong>запросов</strong> идут на версию два. Только тридцать процентов используют версию три». «Когда начало <strong>миграции</strong>?» — интересуется Аня. Дмитрий проверяет календарь: «Первого <strong>июля</strong>. До этого момента нужно закончить все <strong>новые фичи</strong> версии три». Алекс считает время: «До июля осталось пять <strong>недель</strong>. Это немного для завершения <strong>разработки</strong>». Максим добавляет: «И после релиза начнётся период <strong>поддержки</strong> двух версий одновременно. Это удвоит нашу работу». Елена предлагает: «Можем автоматизировать часть <strong>тестирования</strong>. Это сэкономит много <strong>времени</strong>». Дмитрий соглашается: «Хорошая идея. Напишем тесты до начала <strong>миграционного периода</strong>». Аня спрашивает о деталях: «А что насчёт <strong>обратной совместимости</strong>? Версия три совместима с версией два?» «Частично», — отвечает Дмитрий. «Большинство <strong>эндпоинтов</strong> работают одинаково. Но есть несколько <strong>breaking changes</strong>». Алекс делает заметку: «Нужно чётко документировать все изменения до конца <strong>мая</strong>». Максим добавляет в календарь: «И провести вебинар для клиентов за неделю до <strong>дедлайна миграции</strong>». Команда составляет <strong>временную шкалу</strong>: разработка версии три до июля, поддержка двух версий до конца года, <strong>прекращение</strong> поддержки версии два с января следующего <strong>года</strong>.",
+
+  "textEnglish": "Dmitry calls the team for an important meeting about API versioning. 'We need to discuss the versioning strategy,' he says seriously. Anya opens a document: 'We currently have version two of the API. But version three will be released soon.' Alex asks: 'What will happen to version two after the release of version three?' Dmitry explains: 'We'll support version two until the end of the year. That's six months from the release of version three.' Maxim is concerned: 'Six months is not enough for migrating all clients. We have many users of the old version.' Elena looks at the analytics: 'Seventy percent of requests go to version two. Only thirty percent use version three.' 'When does migration start?' Anya is interested. Dmitry checks the calendar: 'July first. Before this moment we need to finish all the new features of version three.' Alex counts the time: 'Five weeks remain until July. That's not much for completing development.' Maxim adds: 'And after the release, a period of supporting two versions simultaneously will begin. This will double our work.' Elena suggests: 'We can automate part of testing. This will save a lot of time.' Dmitry agrees: 'Good idea. Let's write tests before the start of the migration period.' Anya asks about details: 'What about backward compatibility? Is version three compatible with version two?' 'Partially,' Dmitry replies. 'Most endpoints work the same. But there are several breaking changes.' Alex makes a note: 'Need to clearly document all changes before the end of May.' Maxim adds to the calendar: 'And conduct a webinar for clients a week before the migration deadline.' The team creates a timeline: development of version three until July, support of two versions until year-end, termination of version two support from January of next year.",
+
+  "vocabulary": [
+    {
+      "russian": "версиони́рование API",
+      "english": "API versioning",
+      "context": "Genitive construction: 'versioning of API'. Managing different API versions."
+    },
+    {
+      "russian": "страте́гия ве́рсий",
+      "english": "versioning strategy",
+      "context": "Genitive plural: 'strategy of versions'. Plan for managing multiple versions."
+    },
+    {
+      "russian": "по́сле релиза",
+      "english": "after the release",
+      "context": "'После' (after) + genitive: 'после релиза' = after the release."
+    },
+    {
+      "russian": "до конца́ го́да",
+      "english": "until the end of the year",
+      "context": "'До' (until) + genitive: 'до конца года'. 'Конец' (end) also takes genitive 'года'."
+    },
+    {
+      "russian": "нача́ло миѓра́ции",
+      "english": "start of migration",
+      "context": "Genitive construction: 'начало' (start) + 'миграции' (genitive of migration)."
+    },
+    {
+      "russian": "пе́рвого ию́ля",
+      "english": "July first / the first of July",
+      "context": "Date expression using genitive. 'Первого' (genitive of 'первое') + 'июля' (genitive of 'июль')."
+    },
+    {
+      "russian": "до э́того моме́нта",
+      "english": "before this moment / until then",
+      "context": "'До' + genitive 'этого момента' = before/until this moment."
+    },
+    {
+      "russian": "пери́од подде́ржки",
+      "english": "support period",
+      "context": "Genitive: 'период' (period) + 'поддержки' (genitive of support)."
+    },
+    {
+      "russian": "обра́тная совмести́мость",
+      "english": "backward compatibility",
+      "context": "Ability of new version to work with old data/clients."
+    },
+    {
+      "russian": "breaking changes",
+      "english": "breaking changes",
+      "context": "English term used as-is. Changes that break compatibility with older versions."
+    },
+    {
+      "russian": "вре́менная шкала́",
+      "english": "timeline",
+      "context": "'Временная шкала' or 'таймлайн'. Schedule showing events over time."
+    },
+    {
+      "russian": "прекраще́ние",
+      "english": "termination / cessation",
+      "context": "Stopping or ending something. 'Прекращение поддержки' = end of support."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form after 'до': до конца _______ (год)",
+      "options": [
+        "год (nominative)",
+        "года (genitive)",
+        "году (dative)",
+        "годом (instrumental)"
+      ],
+      "correctAnswer": "года (genitive)",
+      "explanation": "'До' (until/before) requires genitive case: 'до конца года' = until the end of the year. 'Конец' also takes genitive."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form: версия _______ (API)",
+      "options": [
+        "API (nominative)",
+        "API (genitive - same form)",
+        "API (dative)",
+        "API (instrumental)"
+      ],
+      "correctAnswer": "API (genitive - same form)",
+      "explanation": "After nouns like 'версия' we use genitive to show 'version of what?': 'версия API'. Note: API is indeclinable in Russian."
+    },
+    {
+      "type": "matching",
+      "question": "Match the time expressions with genitive:",
+      "pairs": [
+        { "russian": "до релиза", "english": "before the release" },
+        { "russian": "после миграции", "english": "after migration" },
+        { "russian": "до конца года", "english": "until year-end" },
+        { "russian": "начало поддержки", "english": "start of support" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All these expressions use genitive case with time prepositions or to show 'X of Y' relationships."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: Первого _______ (июль) начнётся миграция.",
+      "wordBank": ["июля", "июль", "июлю", "июлем"],
+      "correctAnswer": "июля",
+      "explanation": "Dates in Russian use genitive case: 'первого июля' = July first (literally 'of the first of July')."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "версионирование",
+      "ipa": "vʲɪrsʲɪənʲˈiravənʲɪjə",
+      "phonetic": "vyer-see-oh-NEE-rah-vah-nee-yeh",
+      "pitfalls": "Stress on 'ни'. Long word with many soft consonants. 'Версио-' has three syllables."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "API Versioning Practices in Russia",
+    "content": "Russian tech companies typically follow Western API versioning practices. Common terms like 'breaking changes', 'backward compatibility', and 'deprecation' are often used in English even in Russian discussions. Version numbers are typically written as 'версия два' or 'v2'. Support periods ('период поддержки') are taken seriously, with clear deprecation timelines communicated to clients."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team plans their API versioning strategy, balancing new feature development with support for existing clients.",
+  "wordCount": 249,
+  "estimatedMinutes": 28
+}

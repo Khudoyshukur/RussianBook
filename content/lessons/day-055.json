@@ -1,0 +1,139 @@
+{
+  "day": 55,
+  "phase": 3,
+  "title": "Performance Metrics",
+  "difficultyLevel": "B1",
+  "grammarNote": "Genitive case: quantities (много запросов, несколько секунд, миллион пользователей). Russian uses genitive case after quantity words like 'много' (many/much), 'мало' (few/little), 'несколько' (several), and with numbers in certain patterns. With numbers 2-4, genitive singular is used; with 5+, genitive plural is used.",
+
+  "textRussian": "Команда собралась на встречу по <strong>производительности</strong> системы. Дмитрий открывает <strong>дашборд мониторинга</strong>: «Давайте посмотрим на метрики за прошлую неделю». На экране появляются графики. «У нас много <strong>запросов</strong> в час пик», — замечает Аня. «Сколько именно?» — спрашивает Алекс. Дмитрий увеличивает график: «Около миллиона <strong>запросов</strong> в час. Это двадцать тысяч <strong>запросов</strong> в минуту». Максим <strong>свистит</strong>: «Это много! А сколько <strong>времени</strong> занимает один запрос?» Елена проверяет данные: «Средний <strong>response time</strong> — две <strong>секунды</strong>. Но у нас есть несколько медленных <strong>эндпоинтов</strong>». «Два секунды — это слишком много для <strong>API</strong>», — <strong>комментирует</strong> Дмитрий. «Нам нужно меньше <strong>времени</strong> на обработку». Аня анализирует: «У нас пять процентов <strong>запросов</strong> выполняются дольше пяти <strong>секунд</strong>. Это <strong>проблемные</strong> случаи». Алекс смотрит на <strong>CPU usage</strong>: «Много <strong>процессорного времени</strong> уходит на сериализацию данных». Максим добавляет: «И много <strong>памяти</strong> используется для кеширования. У нас несколько гигабайт <strong>данных</strong> в кеше». Елена предлагает решение: «Можем <strong>оптимизировать</strong> сериализацию. Это сэкономит несколько сотен <strong>миллисекунд</strong>». Дмитрий смотрит на график пользователей: «У нас сейчас сто тысяч <strong>активных пользователей</strong>. К концу года ожидаем миллион <strong>пользователей</strong>». Аня <strong>считает</strong>: «Значит, нагрузка вырастет в десять раз. Нам нужно много <strong>работы</strong> над оптимизацией». Максим соглашается: «Да, и мало <strong>времени</strong>. У нас всего несколько <strong>месяцев</strong> до запуска». Алекс записывает задачи: «Уменьшить <strong>response time</strong> до одной секунды. Оптимизировать использование <strong>памяти</strong>. Подготовиться к миллиону <strong>пользователей</strong>». Команда <strong>составляет</strong> план оптимизации с конкретными метриками и <strong>дедлайнами</strong>.",
+
+  "textEnglish": "The team gathered for a meeting about system performance. Dmitry opens the monitoring dashboard: 'Let's look at the metrics from last week.' Graphs appear on the screen. 'We have many requests during peak hours,' Anya notes. 'How many exactly?' Alex asks. Dmitry zooms in on the graph: 'About a million requests per hour. That's twenty thousand requests per minute.' Maxim whistles: 'That's a lot! And how much time does one request take?' Elena checks the data: 'Average response time is two seconds. But we have several slow endpoints.' 'Two seconds is too much for an API,' Dmitry comments. 'We need less time for processing.' Anya analyzes: 'We have five percent of requests taking longer than five seconds. These are problematic cases.' Alex looks at CPU usage: 'A lot of processor time goes to data serialization.' Maxim adds: 'And a lot of memory is used for caching. We have several gigabytes of data in cache.' Elena proposes a solution: 'We can optimize serialization. This will save several hundred milliseconds.' Dmitry looks at the user graph: 'We currently have a hundred thousand active users. By the end of the year we expect a million users.' Anya calculates: 'So the load will grow tenfold. We need a lot of work on optimization.' Maxim agrees: 'Yes, and little time. We only have a few months until launch.' Alex writes down tasks: 'Reduce response time to one second. Optimize memory usage. Prepare for a million users.' The team creates an optimization plan with specific metrics and deadlines.",
+
+  "vocabulary": [
+    {
+      "russian": "производи́тельность",
+      "english": "performance",
+      "context": "System or application performance. 'Производительность системы' = system performance."
+    },
+    {
+      "russian": "дашбо́рд монито́ринга",
+      "english": "monitoring dashboard",
+      "context": "Genitive construction: 'dashboard of monitoring'. Dashboard showing system metrics."
+    },
+    {
+      "russian": "мно́го запро́сов",
+      "english": "many requests",
+      "context": "Genitive plural after 'много'. 'Запрос' becomes 'запросов' in genitive plural."
+    },
+    {
+      "russian": "миллио́н запро́сов",
+      "english": "a million requests",
+      "context": "After 'миллион' we use genitive plural: 'миллион запросов'."
+    },
+    {
+      "russian": "две секу́нды",
+      "english": "two seconds",
+      "context": "After number 2 with feminine nouns, genitive singular is used: 'две секунды'."
+    },
+    {
+      "russian": "не́сколько эндпо́интов",
+      "english": "several endpoints",
+      "context": "'Несколько' (several) takes genitive plural: 'несколько эндпоинтов'."
+    },
+    {
+      "russian": "ма́ло вре́мени",
+      "english": "little time",
+      "context": "'Мало' (little/few) takes genitive: 'мало времени' = not much time."
+    },
+    {
+      "russian": "проце́нт",
+      "english": "percent",
+      "context": "Used like in English. 'Пять процентов запросов' = five percent of requests."
+    },
+    {
+      "russian": "не́сколько сотен миллисеку́нд",
+      "english": "several hundred milliseconds",
+      "context": "Genitive construction: 'сотен' (genitive of 'сотни' = hundreds) + 'миллисекунд' (genitive plural)."
+    },
+    {
+      "russian": "акти́вные по́льзователи",
+      "english": "active users",
+      "context": "Users currently using the system. Nominative plural here."
+    },
+    {
+      "russian": "наѓрузка",
+      "english": "load / workload",
+      "context": "System load or stress. 'Нагрузка вырастет' = load will increase."
+    },
+    {
+      "russian": "де́длайн",
+      "english": "deadline",
+      "context": "Borrowed from English. 'К дедлайну' = by the deadline."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form after 'много': много _______ (запросы)",
+      "options": [
+        "запросы (nominative plural)",
+        "запросов (genitive plural)",
+        "запросам (dative plural)",
+        "запросами (instrumental plural)"
+      ],
+      "correctAnswer": "запросов (genitive plural)",
+      "explanation": "After 'много' (many) we always use genitive plural: 'много запросов' = many requests."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form: две _______ (секунда)",
+      "options": [
+        "секунда (nominative singular)",
+        "секунды (genitive singular)",
+        "секунд (genitive plural)",
+        "секундам (dative plural)"
+      ],
+      "correctAnswer": "секунды (genitive singular)",
+      "explanation": "After numbers 2, 3, 4 we use genitive singular: 'две секунды' = two seconds. Note: 'секунды' is genitive singular here."
+    },
+    {
+      "type": "matching",
+      "question": "Match the quantity expressions:",
+      "pairs": [
+        { "russian": "много времени", "english": "a lot of time" },
+        { "russian": "несколько месяцев", "english": "several months" },
+        { "russian": "мало памяти", "english": "little memory" },
+        { "russian": "миллион пользователей", "english": "a million users" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All these expressions use genitive case after quantity words."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: У нас несколько _______ (гигабайт) данных в кеше.",
+      "wordBank": ["гигабайтов", "гигабайта", "гигабайты", "гигабайтами"],
+      "correctAnswer": "гигабайтов",
+      "explanation": "After 'несколько' (several) we use genitive plural: 'несколько гигабайтов' = several gigabytes."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "производительность",
+      "ipa": "prəɪzvədʲˈitʲɪlʲnəsʲtʲ",
+      "phonetic": "prah-eez-vah-DEE-tel'-nost'",
+      "pitfalls": "Long word with stress on 'ди'. Multiple consonant clusters. Soft 'л' and 'н'."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Performance Culture in Russian Tech",
+    "content": "Russian tech companies place heavy emphasis on system performance and metrics. Terms like 'response time', 'CPU usage', and 'throughput' are often used in English even in Russian conversations. Performance monitoring dashboards are called 'дашборды' or 'панели мониторинга'. Developers are expected to understand and optimize for metrics like latency, throughput, and resource usage."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team reviews performance metrics and realizes they need significant optimization work to handle future growth.",
+  "wordCount": 235,
+  "estimatedMinutes": 27
+}

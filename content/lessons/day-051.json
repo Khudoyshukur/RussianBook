@@ -1,0 +1,193 @@
+{
+  "day": 51,
+  "phase": 3,
+  "title": "Reviewing Pull Request",
+  "difficultyLevel": "B1",
+  "textRussian": "У́тром Алекс получа́ет <strong>уведомле́ние</strong> о но́вом <strong>pull request</strong>. Его́ колле́га Ма́рия хо́чет <strong>доба́вить но́вую фи́чу</strong> в прое́кт.\n\n«Мне ну́жно внима́тельно <strong>провери́ть все измене́ния</strong>,» — ду́мает Алекс. Он открыва́ет <strong>pull request</strong> и начина́ет <strong>чита́ть описа́ние</strong>. Ма́рия хо́чет <strong>реализова́ть экспо́рт да́нных</strong> в CSV форма́т.\n\nАлекс изуча́ет <strong>ка́ждый коми́т</strong>. Он ви́дит, что Ма́рия измени́ла <strong>три́ файла</strong> и доба́вила <strong>но́вый мо́дуль</strong>. «Интере́сное <strong>реше́ние</strong>,» — замеча́ет Алекс.\n\nОн внима́тельно <strong>анализи́рует код</strong>. «Здесь мо́жно <strong>улучши́ть производи́тельность</strong>,» — ду́мает Алекс. Он оставля́ет <strong>коммента́рий</strong>: «Предлага́ю <strong>испо́льзовать stream API</strong> для бо́льших фа́йлов.»\n\nАлекс прове́ряет <strong>те́сты</strong>. Ма́рия напи́сала <strong>хоро́шее покры́тие</strong>, но Алекс нахо́дит <strong>оди́н пропу́щенный слу́чай</strong>. «Ну́жно <strong>протести́ровать пусты́е да́нные</strong>,» — пи́шет он в <strong>коммента́рии</strong>.\n\n«Я вижу <strong>потенциа́льную пробле́му</strong> с <strong>безопа́сностью</strong>,» — замеча́ет Алекс. Он оставля́ет <strong>детальный коммента́рий</strong> о том, как <strong>валиди́ровать вход́ные да́нные</strong>.\n\nМа́рия быстро <strong>исправля́ет все замеча́ния</strong>. Она́ добавля́ет <strong>stream обрабо́тку</strong>, <strong>дополни́тельные те́сты</strong> и <strong>валида́цию</strong>. Алекс снова <strong>чита́ет код</strong>.\n\n«Тепе́рь всё вы́глядит отли́чно!» — пи́шет Алекс. Он одобря́ет <strong>pull request</strong> и оставля́ет <strong>положи́тельный коммента́рий</strong>: «Отли́чная рабо́та! Ты реали́зовала <strong>чи́стое и эффекти́вное реше́ние</strong>.» Ма́рия благодари́т <strong>его́</strong> за <strong>конструкти́вный ревью́</strong>.",
+  "textEnglish": "In the morning, Alex receives a notification about a new pull request. His colleague Maria wants to add a new feature to the project.\n\n\"I need to carefully check all the changes,\" Alex thinks. He opens the pull request and begins reading the description. Maria wants to implement data export to CSV format.\n\nAlex studies each commit. He sees that Maria changed three files and added a new module. \"Interesting solution,\" Alex notes.\n\nHe carefully analyzes the code. \"Here we can improve performance,\" Alex thinks. He leaves a comment: \"I suggest using stream API for large files.\"\n\nAlex checks the tests. Maria wrote good coverage, but Alex finds one missed case. \"We need to test empty data,\" he writes in a comment.\n\n\"I see a potential security problem,\" Alex notices. He leaves a detailed comment about how to validate input data.\n\nMaria quickly fixes all the remarks. She adds stream processing, additional tests, and validation. Alex reads the code again.\n\n\"Now everything looks great!\" Alex writes. He approves the pull request and leaves a positive comment: \"Excellent work! You implemented a clean and effective solution.\" Maria thanks him for the constructive review.",
+  "vocabulary": [
+    {
+      "russian": "измене́ние",
+      "english": "change",
+      "context": "проверить изменения (accusative plural) — to check changes"
+    },
+    {
+      "russian": "описа́ние",
+      "english": "description",
+      "context": "читать описание (accusative) — to read description"
+    },
+    {
+      "russian": "коми́т",
+      "english": "commit",
+      "context": "изучать коммит (accusative) — to study a commit"
+    },
+    {
+      "russian": "реше́ние",
+      "english": "solution",
+      "context": "анализировать решение (accusative) — to analyze a solution"
+    },
+    {
+      "russian": "коммента́рий",
+      "english": "comment",
+      "context": "оставлять комментарий (accusative) — to leave a comment"
+    },
+    {
+      "russian": "замеча́ние",
+      "english": "remark, observation",
+      "context": "исправлять замечания (accusative plural) — to fix remarks"
+    },
+    {
+      "russian": "валида́ция",
+      "english": "validation",
+      "context": "добавить валидацию (accusative) — to add validation"
+    },
+    {
+      "russian": "ревью́",
+      "english": "review",
+      "context": "за конструктивный ревью (accusative) — for constructive review"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "case-selection",
+      "instruction": "Select the correct accusative form for each code review action.",
+      "items": [
+        {
+          "question": "Алекс читает ___.",
+          "options": [
+            "описание",
+            "описания"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Neuter noun doesn't change: описание (nom.) = описание (acc.)"
+        },
+        {
+          "question": "Он проверяет ___.",
+          "options": [
+            "изменения",
+            "изменениев"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Plural neuter accusative equals nominative: изменения."
+        },
+        {
+          "question": "Алекс анализирует ___.",
+          "options": [
+            "решение",
+            "решения"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Neuter noun remains the same in accusative."
+        },
+        {
+          "question": "Он оставляет ___.",
+          "options": [
+            "комментарий",
+            "комментария"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Masculine inanimate doesn't change in accusative."
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "instruction": "Match the review verbs with what they act upon (accusative objects).",
+      "pairs": [
+        {
+          "left": "читать",
+          "right": "description"
+        },
+        {
+          "left": "проверять",
+          "right": "changes"
+        },
+        {
+          "left": "анализировать",
+          "right": "code"
+        },
+        {
+          "left": "оставлять",
+          "right": "comments"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blanks",
+      "instruction": "Fill in the blanks with the correct accusative forms.",
+      "sentences": [
+        {
+          "russian": "Алекс изучает ___ (коммит).",
+          "answer": "коммит",
+          "explanation": "Masculine inanimate doesn't change."
+        },
+        {
+          "russian": "Он проверяет ___ (тесты).",
+          "answer": "тесты",
+          "explanation": "Plural inanimate accusative equals nominative."
+        },
+        {
+          "russian": "Мария исправляет ___ (замечания).",
+          "answer": "замечания",
+          "explanation": "Plural neuter accusative: замечания (no change)."
+        },
+        {
+          "russian": "Алекс одобряет ___ (pull request).",
+          "answer": "pull request",
+          "explanation": "Borrowed term doesn't decline."
+        }
+      ]
+    },
+    {
+      "type": "context-selection",
+      "instruction": "Choose the correct code review action for each situation.",
+      "items": [
+        {
+          "context": "Алекс получил новый pull request от коллеги.",
+          "question": "Что он должен сделать первым делом?",
+          "options": [
+            "Прочитать описание и изучить изменения",
+            "Сразу одобрить",
+            "Закрыть pull request"
+          ],
+          "correctAnswer": 0,
+          "explanation": "First step in code review is reading the description and studying changes."
+        },
+        {
+          "context": "Алекс нашёл проблему с производительностью.",
+          "question": "Как он должен отреагировать?",
+          "options": [
+            "Оставить детальный комментарий с предложением",
+            "Промолчать",
+            "Отклонить pull request"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Good reviewers leave detailed comments with constructive suggestions."
+        },
+        {
+          "context": "Мария исправила все замечания.",
+          "question": "Что делать Алексу?",
+          "options": [
+            "Проверить код снова и одобрить",
+            "Искать новые проблемы",
+            "Игнорировать изменения"
+          ],
+          "correctAnswer": 0,
+          "explanation": "After fixes, reviewer should check the code again and approve if everything is good."
+        }
+      ]
+    }
+  ],
+  "culturalInsight": {
+    "topic": "Code Review Culture in Russian IT",
+    "content": "Russian developers value thorough code reviews (ревью кода). The phrase 'конструктивный ревью' (constructive review) emphasizes the importance of helpful feedback. It's common to use borrowed English terms like 'pull request', 'коммит' (commit), but decline them in Russian: проверять pull request, изучать коммит."
+  },
+  "grammarNote": {
+    "topic": "Accusative Case with Review Verbs",
+    "content": "Review verbs take accusative objects: читать что? (to read what?), проверять что? (to check what?), анализировать что? (to analyze what?). Neuter nouns don't change: описание (nom.) = описание (acc.), решение (nom.) = решение (acc.). Borrowed terms often don't decline at all."
+  },
+  "characters": ["Alex", "Maria"],
+  "storyArc": "Alex performs a thorough code review of Maria's pull request, providing constructive feedback that helps improve the solution before approval.",
+  "wordCount": 234,
+  "estimatedMinutes": 25
+}

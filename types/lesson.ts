@@ -20,13 +20,30 @@ export interface Exercise {
     | 'matching'               // Match Russian to English
     | 'code-switching';        // Complete sentence using word bank
 
-  question: string;
+  // Standard format
+  question?: string;
   options?: string[];           // for multiple choice types
   wordBank?: string[];          // for fill-in-blanks, code-switching
   scrambledWords?: string[];    // for sentence-reordering
   pairs?: { russian: string; english: string }[];  // for matching
-  correctAnswer: string | string[];
+  correctAnswer?: string | string[];
   explanation?: string;
+
+  // Alternative format (for multi-item exercises like case-selection)
+  instruction?: string;
+  items?: Array<{
+    context?: string;
+    question: string;
+    options: string[];
+    correctAnswer: number | string;
+    explanation: string;
+  }>;
+
+  // Alternative matching format
+  sentences?: Array<{
+    russian: string;
+    english: string;
+  }>;
 }
 
 export interface PronunciationNote {
@@ -58,6 +75,14 @@ export interface Lesson {
   // Optional enrichment
   pronunciation?: PronunciationNote[];
   culturalInsight?: CulturalInsight;
+  grammarNote?: {
+    topic: string;
+    content: string;
+  } | {
+    title: string;
+    summary: string;
+    examples: string[];
+  } | string;
 
   // Narrative continuity
   characters?: string[];

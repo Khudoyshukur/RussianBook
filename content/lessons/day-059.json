@@ -1,0 +1,144 @@
+{
+  "day": 59,
+  "phase": 3,
+  "title": "Team Roles and Structure",
+  "difficultyLevel": "B1",
+  "grammarNote": "Genitive case: с предлогами 'у' и 'для' (у команды, для проекта, роль разработчика, у каждого члена). The prepositions 'у' (at/by/with - showing possession) and 'для' (for - showing purpose) require genitive case. Example: 'у команды есть план' = the team has a plan (literally: at the team there is a plan), 'для проекта нужен лидер' = a leader is needed for the project.",
+
+  "textRussian": "Компания <strong>реорганизует</strong> структуру команды. Дмитрий <strong>проводит</strong> встречу о новых ролях. «У каждого <strong>члена команды</strong> должна быть чёткая роль», — объясняет он. Аня спрашивает: «А какие роли у нашей <strong>команды</strong> сейчас?» Дмитрий показывает <strong>организационную диаграмму</strong>: «У меня роль <strong>тимлида</strong>. Я отвечаю за <strong>координацию работы</strong>». Алекс смотрит внимательно: «А у остальных <strong>разработчиков</strong> какие роли?» «У Ани роль <strong>фронтенд-лида</strong>», — продолжает Дмитрий. «Она <strong>руководит</strong> всей работой по <strong>интерфейсу</strong>». Аня кивает: «Для <strong>фронтенда</strong> у нас два <strong>джуниор-разработчика</strong>. Я <strong>менторю</strong> их». Максим поднимает руку: «А у меня какая роль?» Дмитрий улыбается: «У тебя роль <strong>DevOps-инженера</strong>. Для <strong>инфраструктуры проекта</strong> ты незаменим». Елена интересуется: «А для <strong>бэкенда</strong> кто отвечает?» «У нас нет отдельного <strong>бэкенд-лида</strong>», — признаёт Дмитрий. «Для этой <strong>позиции</strong> мы ищем человека». Алекс <strong>задумывается</strong>: «А у каждого <strong>разработчика</strong> есть возможность роста?» Дмитрий кивает: «Конечно. У каждого члена <strong>команды</strong> есть <strong>карьерный путь</strong>. Для <strong>джуниоров</strong> — рост до мидла. Для <strong>мидлов</strong> — до сеньора». Аня добавляет: «А для <strong>сеньоров</strong> есть два пути: технический <strong>лид</strong> или <strong>менеджер</strong>». Максим спрашивает о деталях: «А у технического <strong>лида</strong> и у <strong>менеджера</strong> разные обязанности?» Елена объясняет: «Да. У технического лида роль <strong>архитектора</strong>. Для важных <strong>технических решений</strong> он главный». Дмитрий продолжает: «А у менеджера роль <strong>координатора людей</strong>. Для управления <strong>командой</strong> нужны другие навыки». Алекс понимает: «То есть для <strong>карьеры</strong> в технологиях и для карьеры в <strong>менеджменте</strong> разные пути». Аня соглашается: «Правильно. У каждого <strong>разработчика</strong> есть выбор. Для <strong>проекта</strong> нужны оба типа людей». Максим <strong>резюмирует</strong>: «У команды сейчас есть <strong>структура</strong>. Для каждой <strong>роли</strong> понятны обязанности и возможности роста». Дмитрий <strong>завершает</strong> встречу: «У нас хорошая <strong>основа</strong>. Для будущего <strong>расширения команды</strong> это важно». Команда чувствует ясность в своей <strong>организационной структуре</strong>.",
+
+  "textEnglish": "The company is reorganizing the team structure. Dmitry conducts a meeting about new roles. 'Each team member should have a clear role,' he explains. Anya asks: 'What roles does our team have now?' Dmitry shows an organizational chart: 'I have the role of team lead. I'm responsible for work coordination.' Alex looks attentively: 'What roles do the other developers have?' 'Anya has the role of frontend lead,' Dmitry continues. 'She manages all interface work.' Anya nods: 'For the frontend we have two junior developers. I mentor them.' Maxim raises his hand: 'What's my role?' Dmitry smiles: 'You have the role of DevOps engineer. You're indispensable for the project infrastructure.' Elena is interested: 'Who's responsible for the backend?' 'We don't have a separate backend lead,' Dmitry admits. 'We're looking for someone for this position.' Alex ponders: 'Does each developer have growth opportunities?' Dmitry nods: 'Of course. Each team member has a career path. For juniors — growth to middle. For middles — to senior.' Anya adds: 'And for seniors there are two paths: technical lead or manager.' Maxim asks about details: 'Do technical lead and manager have different responsibilities?' Elena explains: 'Yes. The technical lead has the role of architect. For important technical decisions, he's the main one.' Dmitry continues: 'And the manager has the role of people coordinator. Managing a team requires different skills.' Alex understands: 'So for a career in technology and for a career in management, there are different paths.' Anya agrees: 'Correct. Each developer has a choice. The project needs both types of people.' Maxim summarizes: 'The team now has a structure. For each role, responsibilities and growth opportunities are clear.' Dmitry concludes the meeting: 'We have a good foundation. This is important for future team expansion.' The team feels clarity in their organizational structure.",
+
+  "vocabulary": [
+    {
+      "russian": "реоргани́зует (реоргани́зовать)",
+      "english": "reorganizes / restructures",
+      "context": "Present tense. 'Реорганизовать структуру' = to reorganize the structure."
+    },
+    {
+      "russian": "у ка́ждого чле́на кома́нды",
+      "english": "each team member has / at each team member",
+      "context": "'У' + genitive shows possession. 'У каждого члена' = literally 'at each member', meaning 'each member has'."
+    },
+    {
+      "russian": "организацио́нная диаѓра́мма",
+      "english": "organizational chart / org chart",
+      "context": "Visual representation of team structure and reporting relationships."
+    },
+    {
+      "russian": "роль ти́млида",
+      "english": "role of team lead",
+      "context": "Genitive construction: 'роль' (role) + 'тимлида' (genitive of team lead)."
+    },
+    {
+      "russian": "для фронте́нда",
+      "english": "for the frontend",
+      "context": "'Для' (for) + genitive: 'для фронтенда'. Showing purpose or area."
+    },
+    {
+      "russian": "менто́рю (менто́рить)",
+      "english": "I mentor",
+      "context": "Russified verb from English 'mentor'. Present tense, 1st person."
+    },
+    {
+      "russian": "для инфраструкту́ры прое́кта",
+      "english": "for the project infrastructure",
+      "context": "Double genitive: 'для инфраструктуры' (for infrastructure) + 'проекта' (of project)."
+    },
+    {
+      "russian": "незамени́м",
+      "english": "indispensable / irreplaceable",
+      "context": "Short form adjective. 'Незаменимый' = indispensable, can't be replaced."
+    },
+    {
+      "russian": "карье́рный путь",
+      "english": "career path",
+      "context": "'Карьерный' = career (adjective). 'Путь' = path, way. Professional development trajectory."
+    },
+    {
+      "russian": "для джу́ниоров",
+      "english": "for juniors",
+      "context": "'Для' + genitive plural: 'для джуниоров'. Junior developers."
+    },
+    {
+      "russian": "роль архите́ктора",
+      "english": "role of architect",
+      "context": "Genitive: 'роль' + 'архитектора'. Technical architect who designs system architecture."
+    },
+    {
+      "russian": "для управле́ния кома́ндой",
+      "english": "for managing the team",
+      "context": "'Для' + genitive 'управления' (management) + instrumental 'командой' (with team)."
+    },
+    {
+      "russian": "для бу́дущего расшире́ния кома́нды",
+      "english": "for future team expansion",
+      "context": "Multiple genitives: 'для будущего расширения' (for future expansion) + 'команды' (of team)."
+    }
+  ],
+
+  "exercises": [
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form after 'у': у каждого _______ (член команды)",
+      "options": [
+        "член команды (nominative)",
+        "члена команды (genitive)",
+        "члену команды (dative)",
+        "членом команды (instrumental)"
+      ],
+      "correctAnswer": "члена команды (genitive)",
+      "explanation": "'У' (at/by - showing possession) requires genitive case: 'у каждого члена команды' = each team member has."
+    },
+    {
+      "type": "case-selection",
+      "question": "Choose the correct form after 'для': для _______ (проект)",
+      "options": [
+        "проект (nominative)",
+        "проекта (genitive)",
+        "проекту (dative)",
+        "проектом (instrumental)"
+      ],
+      "correctAnswer": "проекта (genitive)",
+      "explanation": "'Для' (for) requires genitive case: 'для проекта' = for the project."
+    },
+    {
+      "type": "matching",
+      "question": "Match the role and team vocabulary:",
+      "pairs": [
+        { "russian": "у команды есть структура", "english": "the team has structure" },
+        { "russian": "роль разработчика", "english": "role of developer" },
+        { "russian": "для карьеры", "english": "for career" },
+        { "russian": "у каждого члена", "english": "each member has" }
+      ],
+      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
+      "explanation": "All these expressions use genitive case with prepositions 'у' (possession) or 'для' (purpose)."
+    },
+    {
+      "type": "fill-in-blanks",
+      "question": "Complete: У технического _______ (лид) роль архитектора.",
+      "wordBank": ["лида", "лид", "лиду", "лидом"],
+      "correctAnswer": "лида",
+      "explanation": "After 'у' we use genitive case: 'у технического лида' = the technical lead has."
+    }
+  ],
+
+  "pronunciation": [
+    {
+      "word": "организационная",
+      "ipa": "ərɡənʲɪˈzat͡sɨjənːəjə",
+      "phonetic": "ohr-gah-nee-ZAH-tsee-ohn-nah-yah",
+      "pitfalls": "Long word with stress on 'за'. Multiple soft consonants. Three syllables before stress."
+    }
+  ],
+
+  "culturalInsight": {
+    "topic": "Tech Roles in Russian Companies",
+    "content": "Russian tech companies use English role titles extensively: 'тимлид' (team lead), 'фронтенд-лид' (frontend lead), 'DevOps-инженер', 'джуниор/мидл/сеньор' (junior/middle/senior). Career paths typically split between technical ('технический путь') and management ('менеджерский путь'). The concept of 'у каждого есть карьерный путь' (everyone has a career path) reflects modern HR practices adopted from Western tech culture."
+  },
+
+  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "storyArc": "The team discusses their organizational structure, clarifying roles, responsibilities, and career paths for each member.",
+  "wordCount": 238,
+  "estimatedMinutes": 27
+}
