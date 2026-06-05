@@ -21,17 +21,8 @@ export default function ExerciseSet({ exercises, onComplete }: ExerciseSetProps)
     let correct = 0;
     exercises.forEach((exercise, index) => {
       const userAnswer = answers[index];
-      if (Array.isArray(exercise.correctAnswer)) {
-        if (
-          Array.isArray(userAnswer) &&
-          userAnswer.sort().join(',') === exercise.correctAnswer.sort().join(',')
-        ) {
-          correct++;
-        }
-      } else {
-        if (userAnswer === exercise.correctAnswer) {
-          correct++;
-        }
+      if (checkAnswer(exercise, userAnswer)) {
+        correct++;
       }
     });
 
@@ -90,7 +81,9 @@ export default function ExerciseSet({ exercises, onComplete }: ExerciseSetProps)
                     <p className="text-sm text-gray-600">
                       <span className="font-medium">Correct answer:</span>{' '}
                       {Array.isArray(exercise.correctAnswer)
-                        ? exercise.correctAnswer.join(', ')
+                        ? exercise.type === 'sentence-reordering'
+                          ? exercise.correctAnswer.join(' ')
+                          : exercise.correctAnswer.join(', ')
                         : exercise.correctAnswer}
                     </p>
                   )}
@@ -150,30 +143,7 @@ function renderExerciseInput(
   switch (exercise.type) {
     case 'fill-in-blanks':
     case 'verb-conjugation':
-      return (
-        <div className="space-y-2">
-          {exercise.wordBank && (
-            <div className="bg-gray-100 p-3 rounded mb-3">
-              <p className="text-xs font-semibold text-gray-600 mb-2">Word Bank:</p>
-              <div className="flex flex-wrap gap-2">
-                {exercise.wordBank.map((word, i) => (
-                  <span key={i} className="px-3 py-1 bg-white rounded border border-gray-300 text-sm">
-                    {word}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-          <input
-            type="text"
-            value={value as string || ''}
-            onChange={(e) => onChange(index, e.target.value)}
-            disabled={disabled}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100"
-            placeholder="Enter your answer..."
-          />
-        </div>
-      );
+      return <FillInBlanksExercise exercise={exercise} value={value as string || ''} onChange={(v) => onChange(index, v)} disabled={disabled} />;
 
     case 'context-selection':
     case 'code-debugging':
@@ -215,12 +185,18 @@ function renderExerciseInput(
         <div className="space-y-2">
           {exercise.wordBank && (
             <div className="bg-gray-100 p-3 rounded mb-3">
-              <p className="text-xs font-semibold text-gray-600 mb-2">Word Bank:</p>
+              <p className="text-xs font-semibold text-gray-600 mb-2">Word Bank (click to select):</p>
               <div className="flex flex-wrap gap-2">
                 {exercise.wordBank.map((word, i) => (
-                  <span key={i} className="px-3 py-1 bg-white rounded border border-gray-300 text-sm">
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => !disabled && onChange(index, (value as string || '') + (value ? ' ' : '') + word)}
+                    disabled={disabled}
+                    className="px-3 py-1 bg-white rounded border border-gray-300 text-sm hover:bg-blue-50 hover:border-blue-500 transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
+                  >
                     {word}
-                  </span>
+                  </button>
                 ))}
               </div>
             </div>
@@ -231,7 +207,7 @@ function renderExerciseInput(
             disabled={disabled}
             rows={3}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:bg-gray-100"
-            placeholder="Complete the sentence..."
+            placeholder="Complete the sentence or click words above..."
           />
         </div>
       );
@@ -265,6 +241,16 @@ function checkAnswer(exercise: Exercise, userAnswer: string | string[] | undefin
     );
   }
 
+  // For fill-in-blanks and verb-conjugation, normalize by removing punctuation and extra spaces
+  if (exercise.type === 'fill-in-blanks' || exercise.type === 'verb-conjugation') {
+    const normalize = (str: string) =>
+      str.toString().trim().toLowerCase()
+        .replace(/[,;.!?]/g, '') // Remove common punctuation
+        .replace(/\s+/g, ' '); // Normalize multiple spaces to single space
+
+    return normalize(userAnswer.toString()) === normalize(exercise.correctAnswer.toString());
+  }
+
   // For string answers, trim whitespace and compare
   return userAnswer.toString().trim() === exercise.correctAnswer.toString().trim();
 }
@@ -274,6 +260,102 @@ function formatExerciseType(type: string): string {
     .split('-')
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
+}
+
+// Fill In Blanks Component
+function FillInBlanksExercise({
+  exercise,
+  value,
+  onChange,
+  disabled,
+}: {
+  exercise: Exercise;
+  value: string;
+  onChange: (value: string) => void;
+  disabled: boolean;
+}) {
+  // Parse current value into array of selected words
+  const selectedWords = value ? value.trim().split(' ').filter(Boolean) : [];
+  const wordBank = exercise.wordBank || [];
+
+  // Calculate available words (not yet selected)
+  const availableWords = wordBank.filter(word => {
+    const timesInBank = wordBank.filter(w => w === word).length;
+    const timesSelected = selectedWords.filter(w => w === word).length;
+    return timesSelected < timesInBank;
+  });
+
+  const handleWordClick = (word: string, fromAvailable: boolean) => {
+    if (disabled) return;
+
+    if (fromAvailable) {
+      // Add word to selected
+      const newSelected = [...selectedWords, word];
+      onChange(newSelected.join(' '));
+    } else {
+      // Remove word from selected (first occurrence)
+      const newSelected = [...selectedWords];
+      const indexToRemove = newSelected.indexOf(word);
+      if (indexToRemove > -1) {
+        newSelected.splice(indexToRemove, 1);
+      }
+      onChange(newSelected.join(' '));
+    }
+  };
+
+  return (
+    <div className="space-y-4">
+      {/* Word bank area */}
+      {wordBank.length > 0 && (
+        <div className="bg-gray-100 p-4 rounded-lg">
+          <p className="text-xs font-semibold text-gray-600 mb-2">
+            Word Bank (click to add):
+          </p>
+          <div className="flex flex-wrap gap-2 min-h-[40px]">
+            {availableWords.length > 0 ? (
+              availableWords.map((word, i) => (
+                <button
+                  key={`avail-${i}-${word}`}
+                  type="button"
+                  onClick={() => handleWordClick(word, true)}
+                  disabled={disabled}
+                  className="px-3 py-2 bg-white border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {word}
+                </button>
+              ))
+            ) : (
+              <p className="text-gray-500 italic text-sm">All words used</p>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Answer area */}
+      <div className="bg-blue-50 p-4 rounded-lg border-2 border-blue-200">
+        <p className="text-xs font-semibold text-blue-900 mb-2">
+          Your Answer (click to remove):
+        </p>
+        <div className="flex flex-wrap gap-2 min-h-[40px]">
+          {selectedWords.length === 0 ? (
+            <p className="text-gray-500 italic text-sm">Click words above to build your answer...</p>
+          ) : (
+            selectedWords.map((word, i) => (
+              <button
+                key={`sel-${i}-${word}`}
+                type="button"
+                onClick={() => handleWordClick(word, false)}
+                disabled={disabled}
+                className="px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {word}
+              </button>
+            ))
+          )}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 // Sentence Reordering Component
