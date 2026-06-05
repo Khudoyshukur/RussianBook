@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { getLesson, getNextLesson, getPreviousLesson } from '@/lib/lessons';
-import { markDayCompleted, updateExerciseScore, isDayCompleted } from '@/lib/progress';
+import { markDayCompleted, updateExerciseScore, isDayCompleted, getProgress } from '@/lib/progress';
+import { TEST_MODE } from '@/lib/config';
 import { Lesson } from '@/types/lesson';
 import CollapsibleSection from '@/components/CollapsibleSection';
 import ExerciseSet from '@/components/ExerciseSet';
@@ -49,6 +50,10 @@ export default function LessonPage() {
 
   const nextLesson = getNextLesson(day);
   const previousLesson = getPreviousLesson(day);
+
+  // Check if next lesson is unlocked
+  const progress = getProgress();
+  const isNextLessonUnlocked = TEST_MODE || (nextLesson && nextLesson.day <= progress.currentDay);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -214,13 +219,13 @@ export default function LessonPage() {
           )}
 
           <Link
-            href="/lessons"
+            href="/"
             className="px-4 py-2 text-gray-600 hover:text-gray-900 transition-colors"
           >
-            All Lessons
+            Home
           </Link>
 
-          {nextLesson ? (
+          {nextLesson && isNextLessonUnlocked ? (
             <Link
               href={`/lesson/${nextLesson.day}`}
               className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -228,6 +233,11 @@ export default function LessonPage() {
               <span>Day {nextLesson.day}</span>
               <span>→</span>
             </Link>
+          ) : nextLesson ? (
+            <div className="flex items-center space-x-2 px-4 py-2 bg-gray-300 text-gray-500 rounded-lg cursor-not-allowed opacity-60">
+              <span>Day {nextLesson.day}</span>
+              <span>🔒</span>
+            </div>
           ) : (
             <div />
           )}

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { getProgress } from '@/lib/progress';
+import { TEST_MODE } from '@/lib/config';
 import Link from 'next/link';
 
 export default function ProgressTracker() {
@@ -40,21 +41,37 @@ export default function ProgressTracker() {
           <p className="text-blue-600 text-sm font-medium">Continue learning →</p>
         </Link>
 
-        {/* Next Day Card */}
+        {/* Next Day Card - locked in production mode, unlocked in test mode */}
         {nextDay <= 90 && (
-          <Link
-            href={`/lesson/${nextDay}`}
-            className="bg-white bg-opacity-90 rounded-lg p-6 hover:bg-opacity-100 hover:shadow-lg transition-all"
-          >
-            <div className="flex items-center justify-between mb-3">
-              <span className="text-sm font-semibold text-purple-600">UP NEXT</span>
-              <div className="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold">
-                {nextDay}
+          TEST_MODE ? (
+            <Link
+              href={`/lesson/${nextDay}`}
+              className="bg-white bg-opacity-90 rounded-lg p-6 hover:bg-opacity-100 hover:shadow-lg transition-all"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-sm font-semibold text-purple-600">UP NEXT</span>
+                <div className="w-10 h-10 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center font-bold">
+                  {nextDay}
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-gray-900">Day {nextDay}</h3>
+              <p className="text-purple-600 text-sm font-medium">Preview next lesson →</p>
+            </Link>
+          ) : (
+            <div className="bg-white bg-opacity-60 rounded-lg p-6 cursor-not-allowed relative">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-sm font-semibold text-gray-500">UP NEXT</span>
+                <div className="w-10 h-10 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-bold">
+                  {nextDay}
+                </div>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-gray-600">Day {nextDay}</h3>
+              <div className="flex items-center justify-between">
+                <p className="text-gray-500 text-sm font-medium">Complete current day to unlock</p>
+                <span className="text-2xl">🔒</span>
               </div>
             </div>
-            <h3 className="text-xl font-bold mb-2 text-gray-900">Day {nextDay}</h3>
-            <p className="text-purple-600 text-sm font-medium">Preview next lesson →</p>
-          </Link>
+          )
         )}
       </div>
     </div>
