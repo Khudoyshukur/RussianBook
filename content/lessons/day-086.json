@@ -22,7 +22,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Нужно было нанять десять новых инженеров ___ три месяца.",
       "wordBank": ["за", "в", "на", "через"],
       "correctAnswer": "за",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Мы уделили внимание процессу онбординга новых ___.",
       "options": [
         "сотрудники",
@@ -50,7 +50,7 @@
       "explanation": "Genitive plural 'сотрудников' (employees) after 'онбординга'."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Новые члены команды стали продуктивными в среднем за три ___.",
       "wordBank": ["недели", "месяца", "года", "дня"],
       "correctAnswer": "недели",

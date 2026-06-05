@@ -21,7 +21,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Запросы выполнялись всё ___, особенно в часы пик.",
       "wordBank": ["медленнее", "быстрее", "проще", "сложнее"],
       "correctAnswer": "медленнее",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Мы могли бы направлять запросы на чтение к ___.",
       "options": [
         "реплики",
@@ -49,8 +49,9 @@
       "explanation": "Dative case 'репликам' after 'к' (to) indicating direction."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Производительность улучшилась в ___ раза.",
+      "wordBank": ["три", "два", "четыре", "пять"],
       "correctAnswer": "три",
       "explanation": "The number 'три' (three) with 'раза' (times) indicates multiplication factor."
     }

@@ -21,7 +21,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Это была не просто юридическая формальность, а серьёзная ___ задача.",
       "wordBank": ["техническая", "простая", "лёгкая", "маленькая"],
       "correctAnswer": "техническая",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Мы обеспечили, что все соединения используют ___.",
       "options": [
         "TLS",
@@ -49,7 +49,7 @@
       "explanation": "Accusative (same as nominative for abbreviations) after 'используют'."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Процесс занял четыре месяца ___ работы.",
       "wordBank": ["напряжённой", "лёгкой", "простой", "быстрой"],
       "correctAnswer": "напряжённой",

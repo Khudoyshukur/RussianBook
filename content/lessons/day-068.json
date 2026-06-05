@@ -4,11 +4,8 @@
   "title": "Sending to Production",
   "difficultyLevel": "B1",
   "grammarNote": "This lesson focuses on Dative case with 'giving/sending' verbs: отправить (to send), дать (to give), показать (to show), сообщить (to inform/notify). These verbs answer 'кому?' (to whom?). Common dative endings: masculine -у/-ю (клиент → клиенту, менеджер → менеджеру), feminine -е (команда → команде), plural -ам/-ям (пользователи → пользователям). Note: Some dative forms are irregular and will be covered more thoroughly in Phase 4.",
-
   "textRussian": "Команда готовит <strong>релиз</strong> новой фичи <strong>в production</strong>. Алекс завершил разработку и тестирование. «Пора <strong>отправить клиенту</strong> обновление», — говорит он уверенно. Дмитрий проверяет последние детали: «Отлично! Не забудь <strong>показать менеджеру</strong> release notes перед деплоем». Алекс открывает документ и <strong>отправляет менеджеру</strong> ссылку <strong>на Confluence</strong>. Менеджер продукта Ирина быстро отвечает: «Спасибо! Я <strong>покажу клиенту</strong> список изменений». Через час она пишет: «Клиент одобрил. Можете деплоить». Максим готовит инфраструктуру: «Я <strong>дам команде</strong> доступ <strong>к production окружению</strong>. Проверьте права». Елена настраивает мониторинг: «Я <strong>отправлю всем</strong> дашборд <strong>в Grafana</strong>. Будем следить <strong>за метриками</strong> в реальном времени». Аня работает над коммуникацией: «Мне нужно <strong>сообщить пользователям</strong> о новой фиче. Я <strong>отправлю им</strong> email уведомление». Она составляет письмо и <strong>показывает тексту команде</strong>: «Как вам? Понятно написано?» «Да, хорошо», — соглашается Дмитрий. «Только <strong>дай пользователям</strong> ссылку <strong>на документацию</strong>». Аня добавляет линк. Алекс запускает деплой pipeline <strong>в Jenkins</strong>. Все наблюдают <strong>за процессом</strong> <strong>на экране</strong>. «Deploy successful!» — показывает система. Команда радуется. «Теперь нужно <strong>сообщить клиенту</strong>, что всё готово», — напоминает Ирина. Дмитрий пишет короткое сообщение и <strong>отправляет клиенту</strong> <strong>в Slack</strong>. Через несколько минут приходит ответ: «Отлично работает! Спасибо <strong>команде</strong>!» Елена проверяет метрики: «Всё стабильно. Нет ошибок». Максим <strong>даёт всем</strong> five: «Отличная работа, team!» Аня <strong>отправляет пользователям</strong> финальное уведомление <strong>об обновлении</strong>. В конце дня Дмитрий <strong>сообщает директору</strong> о успешном релизе. Директор доволен и <strong>благодарит команде</strong> <strong>за работу</strong>. «<strong>Покажите менеджменту</strong> <strong>на встрече</strong> в пятницу, как прошёл релиз», — просит он. Команда празднует успех.",
-
   "textEnglish": "The team is preparing to release a new feature to production. Alex finished development and testing. 'It's time to send the update to the client,' he says confidently. Dmitry checks the final details: 'Excellent! Don't forget to show the manager the release notes before deployment.' Alex opens the document and sends a link to the manager on Confluence. Product manager Irina quickly responds: 'Thank you! I'll show the client the list of changes.' An hour later she writes: 'The client approved. You can deploy.' Maxim prepares the infrastructure: 'I'll give the team access to the production environment. Check the permissions.' Elena sets up monitoring: 'I'll send everyone the dashboard in Grafana. We'll monitor the metrics in real-time.' Anya works on communication: 'I need to notify users about the new feature. I'll send them an email notification.' She composes the letter and shows the text to the team: 'What do you think? Clearly written?' 'Yes, good,' Dmitry agrees. 'Just give users a link to the documentation.' Anya adds the link. Alex runs the deployment pipeline in Jenkins. Everyone watches the process on the screen. 'Deploy successful!' the system shows. The team rejoices. 'Now we need to notify the client that everything is ready,' Irina reminds. Dmitry writes a short message and sends it to the client in Slack. A few minutes later a response arrives: 'Works great! Thanks to the team!' Elena checks metrics: 'Everything is stable. No errors.' Maxim gives everyone a high five: 'Great job, team!' Anya sends users the final notification about the update. At the end of the day, Dmitry informs the director about the successful release. The director is pleased and thanks the team for their work. 'Show management at the Friday meeting how the release went,' he asks. The team celebrates success.",
-
   "vocabulary": [
     {
       "russian": "отпра́вить клие́нту",
@@ -71,19 +68,27 @@
       "context": "Dative case! 'Благодарить' (to thank) takes dative: 'благодарит команде' (thanks the team)."
     }
   ],
-
   "exercises": [
     {
       "type": "matching",
-      "question": "Match the dative case 'sending' phrases:",
       "pairs": [
-        { "russian": "отправить клиенту", "english": "to send to client" },
-        { "russian": "показать менеджеру", "english": "to show to manager" },
-        { "russian": "дать команде", "english": "to give to team" },
-        { "russian": "сообщить пользователям", "english": "to notify users" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "All these verbs (send, show, give, notify) require dative case for the recipient."
+        {
+          "russian": "отправить клиенту",
+          "english": "to send to client"
+        },
+        {
+          "russian": "показать менеджеру",
+          "english": "to show to manager"
+        },
+        {
+          "russian": "дать команде",
+          "english": "to give to team"
+        },
+        {
+          "russian": "сообщить пользователям",
+          "english": "to notify users"
+        }
+      ]
     },
     {
       "type": "case-selection",
@@ -100,7 +105,12 @@
     {
       "type": "fill-in-blanks",
       "question": "Complete: Я отправляю ссылку _____. Я даю доступ _____.",
-      "wordBank": ["менеджеру", "команде", "клиента", "пользователи"],
+      "wordBank": [
+        "менеджеру",
+        "команде",
+        "клиента",
+        "пользователи"
+      ],
       "correctAnswer": "менеджеру, команде",
       "explanation": "Both 'отправлять' (send) and 'давать' (give) use dative: менеджеру (to manager), команде (to team)."
     },
@@ -117,7 +127,6 @@
       "explanation": "Anya sends email notification to users: 'Я отправлю им email уведомление' and 'отправляет пользователям'."
     }
   ],
-
   "pronunciation": [
     {
       "word": "пользователям",
@@ -126,15 +135,23 @@
       "pitfalls": "Dative plural ending -ям. Stress on 'ва'. Long word, practice slowly: поль-зо-ва-те-лям."
     }
   ],
-
   "culturalInsight": {
     "topic": "Production Deployment Culture in Russia",
     "content": "Russian tech teams often use English terms: 'production', 'staging', 'deploy'. 'Продакшн' is the Russified version, and 'прод' is common slang. Release communication is formalized: teams notify clients, users, and management at different stages. Tools like Confluence, Jira, and Slack are standard. The phrase 'отправить в production' (send to production) is universally understood in Russian tech culture."
   },
-
-  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)", "Ирина (Irina)"],
+  "characters": [
+    "Алекс (Alex)",
+    "Дмитрий (Dmitry)",
+    "Аня (Anya)",
+    "Максим (Maxim)",
+    "Елена (Elena)",
+    "Ирина (Irina)"
+  ],
   "storyArc": "The team successfully deploys a new feature to production, coordinating with product manager and notifying stakeholders throughout the process.",
   "wordCount": 243,
   "estimatedMinutes": 27,
-  "previousDayReferences": [66, 67]
+  "previousDayReferences": [
+    66,
+    67
+  ]
 }

@@ -50,132 +50,33 @@
   "exercises": [
     {
       "type": "case-selection",
-      "instruction": "Select the correct accusative form for each refactoring action.",
-      "items": [
-        {
-          "question": "Алекс переписывает ___.",
-          "options": [
-            "модуль",
-            "модуля"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Masculine inanimate noun doesn't change: модуль (nom.) = модуль (acc.)"
-        },
-        {
-          "question": "Он улучшает ___.",
-          "options": [
-            "структуру",
-            "структура"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine -а changes to -у in accusative: структура → структуру."
-        },
-        {
-          "question": "Алекс создаёт ___.",
-          "options": [
-            "архитектуру",
-            "архитектура"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine accusative: архитектура → архитектуру."
-        },
-        {
-          "question": "Он проверяет ___.",
-          "options": [
-            "производительность",
-            "производительности"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine noun ending in -ь doesn't change in accusative."
-        }
-      ]
+      "question": "Алекс переписывает ___.",
+      "options": ["модуль", "модуля"],
+      "correctAnswer": "модуль",
+      "explanation": "Masculine inanimate noun doesn't change: модуль (nom.) = модуль (acc.)"
     },
     {
       "type": "matching",
-      "instruction": "Match the refactoring verbs with what they modify (accusative objects).",
       "pairs": [
-        {
-          "left": "переписывать",
-          "right": "module"
-        },
-        {
-          "left": "оптимизировать",
-          "right": "algorithm"
-        },
-        {
-          "left": "улучшать",
-          "right": "structure"
-        },
-        {
-          "left": "заменять",
-          "right": "methods"
-        }
+        { "russian": "переписывать", "english": "module" },
+        { "russian": "оптимизировать", "english": "algorithm" },
+        { "russian": "улучшать", "english": "structure" },
+        { "russian": "заменять", "english": "methods" }
       ]
     },
     {
       "type": "fill-in-blanks",
-      "instruction": "Fill in the blanks with the correct accusative forms.",
-      "sentences": [
-        {
-          "russian": "Алекс модернизирует ___ (система).",
-          "answer": "систему",
-          "explanation": "Feminine -а changes to -у: система → систему."
-        },
-        {
-          "russian": "Он разделяет ___ (ответственность).",
-          "answer": "ответственность",
-          "explanation": "Feminine -ь doesn't change in accusative."
-        },
-        {
-          "russian": "Алекс тестирует ___ (сценарии).",
-          "answer": "сценарии",
-          "explanation": "Plural inanimate accusative equals nominative."
-        },
-        {
-          "russian": "Он заменяет ___ (код).",
-          "answer": "код",
-          "explanation": "Masculine inanimate doesn't change."
-        }
-      ]
+      "question": "Алекс модернизирует ___ (система).",
+      "wordBank": ["систему", "система", "системы", "системе"],
+      "correctAnswer": "систему",
+      "explanation": "Feminine -а changes to -у: система → систему."
     },
     {
       "type": "context-selection",
-      "instruction": "Choose the correct refactoring approach for each situation.",
-      "items": [
-        {
-          "context": "Алекс видит старый код с плохой структурой.",
-          "question": "Что нужно сделать?",
-          "options": [
-            "Переписать модуль с современной архитектурой",
-            "Удалить весь код",
-            "Ничего не менять"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Old code with poor structure should be rewritten with modern architecture."
-        },
-        {
-          "context": "В коде один большой класс делает всё.",
-          "question": "Как улучшить дизайн?",
-          "options": [
-            "Разделить ответственность на маленькие модули",
-            "Добавить больше кода в класс",
-            "Переименовать класс"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Large classes should be divided into smaller modules with separated responsibilities."
-        },
-        {
-          "context": "Алекс закончил рефакторинг.",
-          "question": "Что нужно проверить?",
-          "options": [
-            "Все тесты и производительность",
-            "Только интерфейс",
-            "Цвета в коде"
-          ],
-          "correctAnswer": 0,
-          "explanation": "After refactoring, you must check all tests and performance."
-        }
-      ]
+      "question": "Что нужно сделать?",
+      "options": ["Переписать модуль с современной архитектурой", "Удалить весь код", "Ничего не менять"],
+      "correctAnswer": "Переписать модуль с современной архитектурой",
+      "explanation": "Old code with poor structure should be rewritten with modern architecture."
     }
   ],
   "culturalInsight": {

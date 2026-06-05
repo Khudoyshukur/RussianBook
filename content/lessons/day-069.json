@@ -20,8 +20,9 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Микросервисная архитектура позволит нам ___ отдельные компоненты независимо.",
+      "wordBank": ["масштабировать", "удалить", "объединить", "скрыть"],
       "correctAnswer": "масштабировать",
       "explanation": "The verb 'масштабировать' (to scale) is used when discussing the ability to scale components."
     },
@@ -35,7 +36,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Мария выразила озабоченность относительно ___ инфраструктуры.",
       "options": [
         "сложность",
@@ -47,7 +48,7 @@
       "explanation": "Genitive case 'сложности' is used after 'относительно' (regarding)."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Команда согласилась попробовать этот ___ подход.",
       "wordBank": ["эволюционный", "монолитный", "сложный", "простой"],
       "correctAnswer": "эволюционный",

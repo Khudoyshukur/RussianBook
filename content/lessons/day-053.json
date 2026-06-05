@@ -65,37 +65,24 @@
   "exercises": [
     {
       "type": "matching",
-      "question": "Match the ownership vocabulary:",
       "pairs": [
         { "russian": "владелец", "english": "owner" },
         { "russian": "ответственность", "english": "responsibility" },
         { "russian": "модуль", "english": "module" },
         { "russian": "границы", "english": "boundaries" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "Essential vocabulary for discussing code ownership and responsibility areas."
+      ]
     },
     {
       "type": "case-selection",
       "question": "Choose the correct genitive form: 'владелец _______' (module owner)",
-      "options": [
-        "модуль (nominative)",
-        "модуля (genitive)",
-        "модулю (dative)",
-        "модулем (instrumental)"
-      ],
+      "options": ["модуль (nominative)", "модуля (genitive)", "модулю (dative)", "модулем (instrumental)"],
       "correctAnswer": "модуля (genitive)",
       "explanation": "After 'владелец' (owner) we use genitive case to show possession: 'владелец модуля' = owner of the module."
     },
     {
       "type": "case-selection",
       "question": "Choose the correct genitive form: 'часть _______' (part of my module)",
-      "options": [
-        "мой модуль (nominative)",
-        "моего модуля (genitive)",
-        "моему модулю (dative)",
-        "моим модулем (instrumental)"
-      ],
+      "options": ["мой модуль (nominative)", "моего модуля (genitive)", "моему модулю (dative)", "моим модулем (instrumental)"],
       "correctAnswer": "моего модуля (genitive)",
       "explanation": "After 'часть' (part) we use genitive case: 'часть моего модуля' = part of my module. Note that 'мой' becomes 'моего' in genitive."
     },

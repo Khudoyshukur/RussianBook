@@ -50,132 +50,33 @@
   "exercises": [
     {
       "type": "case-selection",
-      "instruction": "Select the correct accusative form for each debugging action.",
-      "items": [
-        {
-          "question": "Алекс ищет ___.",
-          "options": [
-            "ошибку",
-            "ошибка"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine accusative: ошибка → ошибку after the verb 'ищет'."
-        },
-        {
-          "question": "Он проверяет ___.",
-          "options": [
-            "подключение",
-            "подключения"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Neuter noun doesn't change: подключение (nom.) = подключение (acc.)"
-        },
-        {
-          "question": "Алекс изучает ___.",
-          "options": [
-            "логи",
-            "логов"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Plural inanimate accusative equals nominative: логи."
-        },
-        {
-          "question": "Он находит ___.",
-          "options": [
-            "функцию",
-            "функция"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine -ия changes to -ию in accusative: функция → функцию."
-        }
-      ]
+      "question": "Алекс ищет ___.",
+      "options": ["ошибку", "ошибка"],
+      "correctAnswer": "ошибку",
+      "explanation": "Feminine accusative: ошибка → ошибку after the verb 'ищет'."
     },
     {
       "type": "matching",
-      "instruction": "Match the debugging verbs with what they act upon (accusative objects).",
       "pairs": [
-        {
-          "left": "искать",
-          "right": "error"
-        },
-        {
-          "left": "изучать",
-          "right": "logs"
-        },
-        {
-          "left": "проверять",
-          "right": "connection"
-        },
-        {
-          "left": "исправлять",
-          "right": "code"
-        }
+        { "russian": "искать", "english": "error" },
+        { "russian": "изучать", "english": "logs" },
+        { "russian": "проверять", "english": "connection" },
+        { "russian": "исправлять", "english": "code" }
       ]
     },
     {
       "type": "fill-in-blanks",
-      "instruction": "Fill in the blanks with the correct accusative forms.",
-      "sentences": [
-        {
-          "russian": "Алекс копирует ___ (stack trace).",
-          "answer": "stack trace",
-          "explanation": "Masculine borrowed term doesn't change in accusative."
-        },
-        {
-          "russian": "Он анализирует ___ (запись).",
-          "answer": "запись",
-          "explanation": "Feminine noun ending in -ь doesn't change: запись."
-        },
-        {
-          "russian": "Алекс тестирует ___ (сценарии).",
-          "answer": "сценарии",
-          "explanation": "Plural inanimate accusative equals nominative."
-        },
-        {
-          "russian": "Он исправляет ___ (проблема).",
-          "answer": "проблему",
-          "explanation": "Feminine -а changes to -у: проблема → проблему."
-        }
-      ]
+      "question": "Алекс копирует ___ (stack trace).",
+      "wordBank": ["stack trace", "stack traces", "stack tracer", "трейс"],
+      "correctAnswer": "stack trace",
+      "explanation": "Masculine borrowed term doesn't change in accusative."
     },
     {
       "type": "context-selection",
-      "instruction": "Choose the correct debugging step for each situation.",
-      "items": [
-        {
-          "context": "Алекс видит ошибку на продукшене.",
-          "question": "Что он должен сделать первым делом?",
-          "options": [
-            "Изучить логи",
-            "Переписать весь код",
-            "Деплоить новую версию"
-          ],
-          "correctAnswer": 0,
-          "explanation": "First step in debugging is always to study the logs."
-        },
-        {
-          "context": "Алекс нашёл подозрительную функцию.",
-          "question": "Что нужно проверить?",
-          "options": [
-            "Логику и условия в коде",
-            "Цвет интерфейса",
-            "Документацию"
-          ],
-          "correctAnswer": 0,
-          "explanation": "When finding suspicious code, check the logic and conditions."
-        },
-        {
-          "context": "Алекс исправил код локально.",
-          "question": "Что делать дальше?",
-          "options": [
-            "Протестировать все сценарии",
-            "Сразу деплоить на продакшен",
-            "Удалить старый код"
-          ],
-          "correctAnswer": 0,
-          "explanation": "After fixing code, you must test all scenarios before deployment."
-        }
-      ]
+      "question": "Что он должен сделать первым делом?",
+      "options": ["Изучить логи", "Переписать весь код", "Деплоить новую версию"],
+      "correctAnswer": "Изучить логи",
+      "explanation": "First step in debugging is always to study the logs."
     }
   ],
   "culturalInsight": {

@@ -4,11 +4,8 @@
   "title": "In the Office vs Remote",
   "difficultyLevel": "B1",
   "grammarNote": "This lesson focuses on the Prepositional case, used primarily with prepositions в (in/at), на (on/at), о/об (about), and при (in the presence of/during). The Prepositional case indicates location and is essential for describing where work happens. Note the endings: masculine nouns typically end in -е (офис → в офисе), and feminine nouns in -е (встреча → на встрече). Some nouns take -у ending (на удалёнку, при разработке).",
-
   "textRussian": "В <strong>понедельник</strong> команда обсуждает формат работы на новый квартал. «Мы можем работать <strong>в офисе</strong> или <strong>на удалёнке</strong>», — объясняет Дмитрий. Алекс предпочитает <strong>гибридный</strong> формат: «Я люблю работать <strong>в офисе</strong> три дня в неделю. <strong>При разработке</strong> сложных фич мне нужна команда рядом». Аня соглашается: «Да, <strong>в команде</strong> легче обсуждать архитектурные решения. <strong>На встрече</strong> мы можем использовать whiteboard». Максим любит удалённую работу: «Я работаю эффективнее <strong>на удалёнке</strong>. Меньше отвлечений, больше фокуса. <strong>При программировании</strong> мне нужна тишина». Елена делится опытом: «Я работаю три дня <strong>в офисе</strong>, два дня дома. <strong>На встречах</strong> я предпочитаю быть <strong>в офисе</strong>, но <strong>при code review</strong> локация не важна». Дмитрий резюмирует: «<strong>В нашей команде</strong> каждый выбирает свой режим. Главное — быть <strong>на daily встречах</strong> и активно участвовать <strong>в обсуждениях</strong>». Они договариваются о правилах: все <strong>в офисе</strong> по вторникам и четвергам для совместной работы. «<strong>В эти дни</strong> мы планируем важные встречи и <strong>при необходимости</strong> проводим brainstorming сессии», — добавляет Дмитрий. Алекс спрашивает: «А что насчёт онбординга новых разработчиков?» «Первый месяц они работают <strong>в офисе</strong> полную неделю», — отвечает Дмитрий. «<strong>При обучении</strong> личный контакт критичен». Все согласны с этим подходом. Команда довольна гибкостью.",
-
   "textEnglish": "On Monday, the team discusses the work format for the new quarter. 'We can work in the office or remotely,' Dmitry explains. Alex prefers a hybrid format: 'I like to work in the office three days a week. When developing complex features, I need the team nearby.' Anya agrees: 'Yes, in the team it's easier to discuss architectural decisions. At meetings we can use a whiteboard.' Maxim loves remote work: 'I work more efficiently remotely. Fewer distractions, more focus. When programming, I need silence.' Elena shares her experience: 'I work three days in the office, two days at home. At meetings I prefer to be in the office, but during code review location doesn't matter.' Dmitry summarizes: 'In our team, everyone chooses their own mode. The main thing is to be at daily meetings and actively participate in discussions.' They agree on rules: everyone in the office on Tuesdays and Thursdays for collaborative work. 'On these days we plan important meetings and when necessary conduct brainstorming sessions,' Dmitry adds. Alex asks: 'What about onboarding new developers?' 'The first month they work in the office full-time,' Dmitry answers. 'During training, personal contact is critical.' Everyone agrees with this approach. The team is happy with the flexibility.",
-
   "vocabulary": [
     {
       "russian": "в о́фисе",
@@ -61,19 +58,27 @@
       "context": "Prepositional case with 'при'. 'При обучении новичков' = when training newcomers."
     }
   ],
-
   "exercises": [
     {
       "type": "matching",
-      "question": "Match the prepositional phrases with their meanings:",
       "pairs": [
-        { "russian": "в офисе", "english": "in the office" },
-        { "russian": "на удалёнке", "english": "remotely" },
-        { "russian": "при разработке", "english": "when developing" },
-        { "russian": "на встрече", "english": "at the meeting" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "These prepositional phrases describe work locations and circumstances. All use prepositional case."
+        {
+          "russian": "в офисе",
+          "english": "in the office"
+        },
+        {
+          "russian": "на удалёнке",
+          "english": "remotely"
+        },
+        {
+          "russian": "при разработке",
+          "english": "when developing"
+        },
+        {
+          "russian": "на встрече",
+          "english": "at the meeting"
+        }
+      ]
     },
     {
       "type": "case-selection",
@@ -90,7 +95,12 @@
     {
       "type": "fill-in-blanks",
       "question": "Complete: Я предпочитаю быть на _______, но при _______ локация не важна.",
-      "wordBank": ["встрече", "code review", "офисе", "команде"],
+      "wordBank": [
+        "встрече",
+        "code review",
+        "офисе",
+        "команде"
+      ],
       "correctAnswer": "встрече, code review",
       "explanation": "'На встрече' (at the meeting) uses prepositional case. 'При code review' (during code review) also uses prepositional case."
     },
@@ -107,7 +117,6 @@
       "explanation": "The team agreed that everyone works in the office on Tuesdays and Thursdays for collaborative work."
     }
   ],
-
   "pronunciation": [
     {
       "word": "при разработке",
@@ -116,15 +125,21 @@
       "pitfalls": "Stress on 'бот' in 'разработке'. The preposition 'при' is unstressed."
     }
   ],
-
   "culturalInsight": {
     "topic": "Hybrid Work in Russian Tech",
     "content": "Russian tech companies, especially in Moscow and St. Petersburg, have widely adopted hybrid work models since 2020. The term 'удалёнка' (remote work) became part of everyday vocabulary. Many companies follow a 3-2 or 2-3 split (days in office vs home). Tech hubs like Skolkovo actively promote flexible work arrangements, though traditional companies still prefer full-time office presence."
   },
-
-  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "characters": [
+    "Алекс (Alex)",
+    "Дмитрий (Dmitry)",
+    "Аня (Anya)",
+    "Максим (Maxim)",
+    "Елена (Elena)"
+  ],
   "storyArc": "The team discusses and establishes a flexible hybrid work policy, balancing individual preferences with team collaboration needs.",
   "wordCount": 186,
   "estimatedMinutes": 24,
-  "previousDayReferences": [45]
+  "previousDayReferences": [
+    45
+  ]
 }

@@ -22,7 +22,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Это решение не ___ на несколько серверов.",
       "wordBank": ["масштабировалось", "устанавливалось", "копировалось", "удалялось"],
       "correctAnswer": "масштабировалось",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Мы уделили внимание мониторингу и ___.",
       "options": [
         "логирование",
@@ -50,7 +50,7 @@
       "explanation": "Dative case 'логированию' paired with dative 'мониторингу' after 'уделили внимание'."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Helm chart могла развёртываться в любое окружение с соответствующими ___.",
       "wordBank": ["параметрами", "файлами", "ошибками", "логами"],
       "correctAnswer": "параметрами",

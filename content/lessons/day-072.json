@@ -21,7 +21,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Миграция такой системы требовала тщательного ___.",
       "wordBank": ["планирования", "развёртывания", "удаления", "копирования"],
       "correctAnswer": "планирования",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct form: Мы уделили внимание вопросам ___.",
       "options": [
         "безопасность",
@@ -49,8 +49,9 @@
       "explanation": "Genitive case 'безопасности' after 'вопросам' (questions of)."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Мы снизили операционные расходы на ___ процентов.",
+      "wordBank": ["тридцать", "десять", "пятьдесят", "двадцать"],
       "correctAnswer": "тридцать",
       "explanation": "The number 'тридцать' (thirty) is used with accusative case after 'на' (by)."
     }

@@ -20,7 +20,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "SQL-инъекция могла бы ___ злоумышленнику получить доступ к данным.",
       "wordBank": ["позволить", "запретить", "предотвратить", "ограничить"],
       "correctAnswer": "позволить",
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Дмитрий рекомендовал использовать ___ вместо конкатенации.",
       "options": [
         "параметризованные запросы",
@@ -48,8 +48,9 @@
       "explanation": "Accusative case (same as nominative for inanimate objects) after 'использовать' (to use)."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Теперь каждый pull request проходит автоматическую ___ на потенциальные угрозы.",
+      "wordBank": ["проверку", "проверка", "проверки", "проверкой"],
       "correctAnswer": "проверку",
       "explanation": "Accusative case 'проверку' (check/verification) is used after 'проходит' (undergoes)."
     }

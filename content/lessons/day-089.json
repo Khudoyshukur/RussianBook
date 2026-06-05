@@ -21,7 +21,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "В небольшой команде культура формируется ___.",
       "wordBank": ["органически", "искусственно", "медленно", "случайно"],
       "correctAnswer": "органически",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Мы инвестировали в развитие ___.",
       "options": [
         "инженеры",
@@ -49,7 +49,7 @@
       "explanation": "Genitive plural 'инженеров' (engineers) after 'развитие'."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Лучше сделать что-то и получить обратную ___, чем бесконечно планировать.",
       "wordBank": ["связь", "помощь", "информацию", "поддержку"],
       "correctAnswer": "связь",

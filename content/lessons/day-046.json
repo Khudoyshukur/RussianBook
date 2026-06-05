@@ -50,121 +50,33 @@
   "exercises": [
     {
       "type": "case-selection",
-      "instruction": "Select the correct form (nominative or accusative) for each sentence.",
-      "items": [
-        {
-          "question": "Алекс читает ___.",
-          "options": [
-            "документ",
-            "документа"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Accusative case is needed after the verb 'читает' (reads) — direct object."
-        },
-        {
-          "question": "Он анализирует ___.",
-          "options": [
-            "требования",
-            "требование"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Accusative plural 'требования' after the verb 'анализирует'."
-        },
-        {
-          "question": "Клиент объясняет ___.",
-          "options": [
-            "детали",
-            "деталей"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Accusative plural 'детали' is used as direct object."
-        },
-        {
-          "question": "Алекс получил ___.",
-          "options": [
-            "задачу",
-            "задача"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine noun in accusative 'задачу' (ending changes -а to -у)."
-        }
-      ]
+      "question": "Алекс читает ___.",
+      "options": ["документ", "документа"],
+      "correctAnswer": "документ",
+      "explanation": "Accusative case is needed after the verb 'читает' (reads) — direct object."
     },
     {
       "type": "matching",
-      "instruction": "Match the verbs with their accusative objects.",
       "pairs": [
-        {
-          "left": "читать",
-          "right": "specification"
-        },
-        {
-          "left": "анализировать",
-          "right": "requirements"
-        },
-        {
-          "left": "понимать",
-          "right": "task"
-        },
-        {
-          "left": "отправлять",
-          "right": "notifications"
-        }
+        { "russian": "читать", "english": "specification" },
+        { "russian": "анализировать", "english": "requirements" },
+        { "russian": "понимать", "english": "task" },
+        { "russian": "отправлять", "english": "notifications" }
       ]
     },
     {
       "type": "fill-in-blanks",
-      "instruction": "Fill in the blanks with the correct accusative forms.",
-      "sentences": [
-        {
-          "russian": "Алекс изучает ___ (документ).",
-          "answer": "документ",
-          "explanation": "Masculine inanimate nouns don't change in accusative."
-        },
-        {
-          "russian": "Он пишет ___ (план).",
-          "answer": "план",
-          "explanation": "Masculine inanimate noun remains the same in accusative."
-        },
-        {
-          "russian": "Клиент хочет создать ___ (система).",
-          "answer": "систему",
-          "explanation": "Feminine noun -а changes to -у in accusative."
-        },
-        {
-          "russian": "Алекс задаёт ___ (вопросы).",
-          "answer": "вопросы",
-          "explanation": "Plural inanimate accusative equals nominative."
-        }
-      ]
+      "question": "Алекс изучает ___ (документ).",
+      "wordBank": ["документ", "документа", "документу", "документом"],
+      "correctAnswer": "документ",
+      "explanation": "Masculine inanimate nouns don't change in accusative."
     },
     {
-      "type": "context-selection",
-      "instruction": "Choose the best continuation for each scenario.",
-      "items": [
-        {
-          "context": "Алекс получил новую задачу от клиента.",
-          "question": "Что он должен сделать первым делом?",
-          "options": [
-            "Прочитать спецификацию",
-            "Написать код",
-            "Отправить релиз"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Before coding, a developer must read the specification."
-        },
-        {
-          "context": "Клиент хочет систему уведомлений.",
-          "question": "Что нужно анализировать?",
-          "options": [
-            "Требования и детали",
-            "Старый код",
-            "Тесты"
-          ],
-          "correctAnswer": 0,
-          "explanation": "First step is analyzing requirements and details."
-        }
-      ]
+      "type": "case-selection",
+      "question": "Он анализирует ___.",
+      "options": ["требования", "требование"],
+      "correctAnswer": "требования",
+      "explanation": "Accusative plural 'требования' after the verb 'анализирует'."
     }
   ],
   "culturalInsight": {

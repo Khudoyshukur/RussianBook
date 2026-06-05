@@ -99,15 +99,12 @@
     },
     {
       "type": "matching",
-      "question": "Match the time expressions with genitive:",
       "pairs": [
         { "russian": "до релиза", "english": "before the release" },
         { "russian": "после миграции", "english": "after migration" },
         { "russian": "до конца года", "english": "until year-end" },
         { "russian": "начало поддержки", "english": "start of support" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "All these expressions use genitive case with time prepositions or to show 'X of Y' relationships."
+      ]
     },
     {
       "type": "fill-in-blanks",

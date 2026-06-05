@@ -21,7 +21,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Это создавало сложности при переходе инженеров между ___.",
       "wordBank": ["командами", "проектами", "компаниями", "должностями"],
       "correctAnswer": "командами",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Наша цель была не в том, чтобы навязывать ___.",
       "options": [
         "единообразие",
@@ -49,7 +49,7 @@
       "explanation": "Accusative 'единообразие' (uniformity) as direct object after 'навязывать'."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Time-to-market для новых фичей ___.",
       "wordBank": ["сократилось", "увеличилось", "осталось", "появилось"],
       "correctAnswer": "сократилось",

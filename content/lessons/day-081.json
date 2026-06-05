@@ -22,7 +22,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Неправильный выбор может привести к техническим ___ и сложностям с наймом.",
       "wordBank": ["ограничениям", "преимуществам", "возможностям", "решениям"],
       "correctAnswer": "ограничениям",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct form: Каждая технология имела свои преимущества и ___.",
       "options": [
         "недостаток",
@@ -50,7 +50,7 @@
       "explanation": "Accusative plural 'недостатки' (disadvantages) as direct object."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Это решение обеспечило баланс между производительностью и ___ разработчиков.",
       "wordBank": ["доступностью", "сложностью", "невозможностью", "отсутствием"],
       "correctAnswer": "доступностью",

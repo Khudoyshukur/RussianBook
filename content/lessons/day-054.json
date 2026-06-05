@@ -99,15 +99,12 @@
     },
     {
       "type": "matching",
-      "question": "Match the 'without' expressions:",
       "pairs": [
         { "russian": "без проблем", "english": "without problems" },
         { "russian": "без интернета", "english": "without internet" },
         { "russian": "без доступа", "english": "without access" },
         { "russian": "без возможности", "english": "without ability" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "All these expressions use 'без' + genitive case to express lack or absence."
+      ]
     },
     {
       "type": "fill-in-blanks",

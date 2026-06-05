@@ -3,11 +3,8 @@
   "phase": 3,
   "title": "Collaboration with Team",
   "difficultyLevel": "B1",
-
   "textRussian": "Алекс работает <strong>вместе с Дмитрием</strong> над важной фичей. Они обсуждают архитектуру <strong>между собой</strong>. «Давай сделаем это <strong>совместно</strong>», — предлагает Дмитрий дружелюбно. «Я хочу поделиться <strong>с тобой</strong> своим опытом». Алекс соглашается с энтузиазмом. Они садятся рядом <strong>с экраном</strong>. Дмитрий начинает объяснение <strong>с примеров</strong> из прошлых проектов. «Год назад я работал <strong>с командой</strong> из пяти разработчиков <strong>над похожей задачей</strong>», — вспоминает он задумчиво. «Тогда мы столкнулись <strong>с проблемой</strong> масштабирования». Алекс внимательно слушает. «Мы решили её <strong>с помощью кеширования</strong>», — продолжает Дмитрий уверенно. Потом к ним присоединяется Аня. Теперь они работают <strong>втроём</strong>. «Отлично, что вы занимаетесь <strong>этим вопросом</strong>», — говорит Аня одобрительно. Она делится <strong>со всеми</strong> своими идеями. «Я предлагаю координировать работу <strong>с бэкенд-командой</strong>», — советует она практично. Максим тоже присоединяется к дискуссии. Он работает <strong>с фронтенд-частью</strong>. «Мне нужно синхронизироваться <strong>с вами</strong>», — объясняет Максим серьёзно. Они обсуждают интеграцию <strong>с API</strong>. Вся команда работает <strong>слаженно</strong>. Алекс чувствует, как важна коллаборация. «Работа <strong>с опытными коллегами</strong> — лучшее обучение», — думает он благодарно. К концу дня они достигают прогресса. «Завтра продолжим <strong>вместе</strong>», — договариваются все.",
-
   "textEnglish": "Alex is working together with Dmitry on an important feature. They discuss architecture among themselves. 'Let's do this jointly,' Dmitry suggests in a friendly manner. 'I want to share my experience with you.' Alex agrees enthusiastically. They sit down next to the screen. Dmitry begins the explanation with examples from past projects. 'A year ago I worked with a team of five developers on a similar task,' he recalls thoughtfully. 'Back then we encountered a scaling problem.' Alex listens attentively. 'We solved it using caching,' Dmitry continues confidently. Then Anya joins them. Now they're working as a trio. 'It's great that you're addressing this issue,' says Anya approvingly. She shares her ideas with everyone. 'I suggest coordinating work with the backend team,' she advises practically. Maxim also joins the discussion. He's working with the frontend part. 'I need to synchronize with you,' Maxim explains seriously. They discuss integration with the API. The whole team works cohesively. Alex feels how important collaboration is. 'Working with experienced colleagues is the best learning,' he thinks gratefully. By the end of the day they make progress. 'We'll continue together tomorrow,' everyone agrees.",
-
   "vocabulary": [
     {
       "russian": "вме́сте с",
@@ -60,7 +57,6 @@
       "context": "Adverb. From 'слаженный' (well-coordinated, harmonious)."
     }
   ],
-
   "exercises": [
     {
       "type": "case-selection",
@@ -76,20 +72,34 @@
     },
     {
       "type": "matching",
-      "question": "Match the collaboration phrases:",
       "pairs": [
-        { "russian": "вместе с командой", "english": "together with the team" },
-        { "russian": "между собой", "english": "among themselves" },
-        { "russian": "со всеми", "english": "with everyone" },
-        { "russian": "втроём", "english": "as a trio" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "All these phrases use instrumental case to express collaboration and togetherness."
+        {
+          "russian": "вместе с командой",
+          "english": "together with the team"
+        },
+        {
+          "russian": "между собой",
+          "english": "among themselves"
+        },
+        {
+          "russian": "со всеми",
+          "english": "with everyone"
+        },
+        {
+          "russian": "втроём",
+          "english": "as a trio"
+        }
+      ]
     },
     {
       "type": "fill-in-blanks",
       "question": "Complete: Мы работаем _______ над задачей и обсуждаем всё _______ собой.",
-      "wordBank": ["совместно", "между", "вместе", "с"],
+      "wordBank": [
+        "совместно",
+        "между",
+        "вместе",
+        "с"
+      ],
       "correctAnswer": "совместно, между",
       "explanation": "'Совместно' (jointly) and 'между собой' (among themselves) describe collaborative work."
     },
@@ -106,7 +116,6 @@
       "explanation": "Four people collaborate: Alex, Dmitry, Anya, and Maxim all join the discussion."
     }
   ],
-
   "pronunciation": [
     {
       "word": "слаженно",
@@ -115,12 +124,10 @@
       "pitfalls": "Stress on first syllable. The 'жн' combination sounds like 'zhn'."
     }
   ],
-
   "culturalInsight": {
     "topic": "Collaborative Work Culture",
     "content": "Russian tech companies increasingly emphasize collaborative work, especially pair programming and mob programming. Phrases like 'работать вместе' (work together) and 'совместная работа' (collaborative work) are common. The instrumental case naturally expresses these collaborative relationships, with 'с' (with) being one of the most frequently used prepositions in team settings."
   },
-
   "grammarNote": {
     "title": "Instrumental Case with 'With' (People)",
     "summary": "The preposition 'с' (with) always takes instrumental case when referring to people you're with. This is essential for expressing collaboration and companionship.",
@@ -132,8 +139,12 @@
       "работать над задачей (to work on a task - 'над' also takes instrumental)"
     ]
   },
-
-  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)"],
+  "characters": [
+    "Алекс (Alex)",
+    "Дмитрий (Dmitry)",
+    "Аня (Anya)",
+    "Максим (Maxim)"
+  ],
   "storyArc": "Alex experiences the power of collaborative work as he teams up with Dmitry, Anya, and Maxim to tackle an important feature together.",
   "wordCount": 207,
   "estimatedMinutes": 25

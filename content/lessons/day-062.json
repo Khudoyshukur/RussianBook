@@ -3,11 +3,8 @@
   "phase": 3,
   "title": "Becoming Tech Lead",
   "difficultyLevel": "B1",
-
   "textRussian": "Прошло полтора года с момента, когда Алекс стал <strong>разработчиком</strong> в компании. Сегодня директор приглашает его на встречу. «Алекс, мы довольны твоей работой», — начинает директор серьёзно. «Ты показываешь отличные результаты. Хочешь стать <strong>тимлидом</strong>?» Алекс удивлён и взволнован одновременно. «Это большая ответственность», — отвечает он честно. «Я всегда был <strong>разработчиком</strong>, а не <strong>менеджером</strong>». Директор кивает понимающе. «Быть <strong>техническим лидером</strong> — это не только менеджмент», — объясняет он спокойно. «Ты будешь <strong>ментором</strong> для младших разработчиков. Также останешься <strong>архитектором</strong> решений». Алекс задумывается. Он вспоминает, как сам учился <strong>под руководством</strong> Дмитрия. Теперь появляется возможность стать <strong>наставником</strong> для других. «Я готов попробовать», — соглашается Алекс решительно. «Отлично! — радуется директор искренне. — С завтрашнего дня ты официально становишься <strong>тимлидом</strong> фронтенд-команды». Вечером Алекс делится новостью <strong>с Дмитрием</strong>. «Поздравляю! — говорит Дмитрий тепло. — Ты будешь отличным <strong>лидером</strong>. Помни: быть <strong>руководителем</strong> значит служить команде». На следующий день Алекс встречается <strong>со своей новой командой</strong>. Там работают трое джуниоров и два мидла. «Привет всем», — начинает Алекс уверенно. «Я буду <strong>вашим тимлидом</strong>. Но я не просто <strong>начальник</strong>. Я хочу быть <strong>партнёром</strong> для каждого из вас». Команда внимательно слушает. «Моя цель — помочь вам расти <strong>профессионалами</strong>», — продолжает он искренне. Все улыбаются. Алекс чувствует ответственность, но также и вдохновение. Новая глава его карьеры началась.",
-
   "textEnglish": "A year and a half has passed since Alex became a developer at the company. Today the director invites him to a meeting. 'Alex, we're pleased with your work,' the director begins seriously. 'You're showing excellent results. Do you want to become a tech lead?' Alex is surprised and excited at the same time. 'That's a big responsibility,' he answers honestly. 'I've always been a developer, not a manager.' The director nods understandingly. 'Being a technical leader isn't just management,' he explains calmly. 'You'll be a mentor for junior developers. You'll also remain an architect of solutions.' Alex thinks. He remembers how he himself learned under Dmitry's guidance. Now there's an opportunity to become a mentor for others. 'I'm ready to try,' Alex agrees decisively. 'Excellent!' the director rejoices sincerely. 'Starting tomorrow you officially become the tech lead of the frontend team.' In the evening Alex shares the news with Dmitry. 'Congratulations!' says Dmitry warmly. 'You'll be an excellent leader. Remember: being a manager means serving the team.' The next day Alex meets with his new team. Three juniors and two mid-level developers work there. 'Hello everyone,' Alex begins confidently. 'I'll be your tech lead. But I'm not just a boss. I want to be a partner for each of you.' The team listens attentively. 'My goal is to help you grow as professionals,' he continues sincerely. Everyone smiles. Alex feels responsibility, but also inspiration. A new chapter of his career has begun.",
-
   "vocabulary": [
     {
       "russian": "ста́ть",
@@ -60,7 +57,6 @@
       "context": "Instrumental plural. 'Расти профессионалами' = to grow as professionals."
     }
   ],
-
   "exercises": [
     {
       "type": "case-selection",
@@ -76,20 +72,34 @@
     },
     {
       "type": "matching",
-      "question": "Match the profession words in instrumental:",
       "pairs": [
-        { "russian": "разработчиком", "english": "developer" },
-        { "russian": "ментором", "english": "mentor" },
-        { "russian": "архитектором", "english": "architect" },
-        { "russian": "руководителем", "english": "leader" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "All profession nouns use instrumental case after verbs like 'быть' (to be) and 'стать' (to become)."
+        {
+          "russian": "разработчиком",
+          "english": "developer"
+        },
+        {
+          "russian": "ментором",
+          "english": "mentor"
+        },
+        {
+          "russian": "архитектором",
+          "english": "architect"
+        },
+        {
+          "russian": "руководителем",
+          "english": "leader"
+        }
+      ]
     },
     {
       "type": "fill-in-blanks",
       "question": "Complete: Я был _______, а теперь стал _______.",
-      "wordBank": ["разработчиком", "тимлидом", "менеджером", "джуниором"],
+      "wordBank": [
+        "разработчиком",
+        "тимлидом",
+        "менеджером",
+        "джуниором"
+      ],
       "correctAnswer": "разработчиком, тимлидом",
       "explanation": "Both forms use instrumental: 'был разработчиком' (was a developer), 'стал тимлидом' (became a tech lead)."
     },
@@ -106,7 +116,6 @@
       "explanation": "Dmitry says: 'Быть руководителем значит служить команде' (Being a leader means serving the team)."
     }
   ],
-
   "pronunciation": [
     {
       "word": "руководителем",
@@ -115,12 +124,10 @@
       "pitfalls": "Stress on 'ди'. Long word with soft 'л' sound at the end. Instrumental ending '-ем'."
     }
   ],
-
   "culturalInsight": {
     "topic": "Tech Leadership in Russia",
     "content": "In Russian tech companies, the role of 'тимлид' (tech lead) combines technical expertise with people management. Unlike Western companies where leadership often means leaving coding behind, Russian tech leads typically continue hands-on work. The phrase 'быть наставником' (to be a mentor) is highly valued, reflecting the traditional Russian emphasis on knowledge transfer between generations."
   },
-
   "grammarNote": {
     "title": "Instrumental Case with Professions and Roles",
     "summary": "The instrumental case is used after the verbs 'быть' (to be) and 'стать' (to become) when stating someone's profession, role, or identity. This is one of the most common uses of instrumental.",
@@ -132,8 +139,12 @@
       "под руководством ментора (under a mentor's guidance)"
     ]
   },
-
-  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Директор (Director)", "Новая команда (New team)"],
+  "characters": [
+    "Алекс (Alex)",
+    "Дмитрий (Dmitry)",
+    "Директор (Director)",
+    "Новая команда (New team)"
+  ],
   "storyArc": "Alex receives a promotion to tech lead, marking a major career milestone and transition from individual contributor to team leader.",
   "wordCount": 242,
   "estimatedMinutes": 26

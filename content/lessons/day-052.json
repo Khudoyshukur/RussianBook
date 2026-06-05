@@ -3,157 +3,47 @@
   "phase": 3,
   "title": "Deploying to Production",
   "difficultyLevel": "B1",
-  "textRussian": "Э́то ва́жный день! Алекс до́лжен <strong>заде́плоить но́вый рели́з</strong> на проду́кшен. Кома́нда гото́вила <strong>э́тот рели́з</strong> це́лый ме́сяц.\n\n«Снача́ла мне ну́жно <strong>провери́ть все те́сты</strong>,» — ду́мает Алекс. Он запуска́ет <strong>полный набо́р те́стов</strong> на <strong>те́стовом се́рвере</strong>. Все те́сты прохо́дят успе́шно — <strong>зелёный свет</strong>!\n\nАлекс откры́вает <strong>deployment checklist</strong>. Он внима́тельно <strong>чита́ет ка́ждый пункт</strong>: провери́ть <strong>migráции</strong>, обнови́ть <strong>конфигура́цию</strong>, созда́ть <strong>бэкап ба́зы да́нных</strong>.\n\n«Сейча́с я созда́м <strong>бэкап</strong>,» — говори́т Алекс колле́гам. Он запуска́ет <strong>скрипт резе́рвного копи́рования</strong>. Систе́ма сохраня́ет <strong>полну́ю ко́пию</strong> ба́зы да́нных. «Безопа́сность — превы́ше всего́!»\n\nПо́сле э́того Алекс прове́ряет <strong>migráции</strong>. Он тести́рует <strong>все измене́ния</strong> схе́мы ба́зы на <strong>те́стовых да́нных</strong>. Migráции рабо́тают коррéктно.\n\n«Тепе́рь мо́жно <strong>запуска́ть deployment</strong>,» — ре́шает Алекс. Он откры́вает <strong>CI/CD систе́му</strong> и нажима́ет <strong>кно́пку Deploy to Production</strong>. Систе́ма начина́ет <strong>автомати́ческий процéсс</strong>.\n\nАлекс мониторит <strong>ка́ждый этап</strong>. Систе́ма обновля́ет <strong>се́рверы</strong>, запуска́ет <strong>migráции</strong>, перезапуска́ет <strong>се́рвисы</strong>. «Всё идёт по пла́ну,» — дово́лен Алекс.\n\nЧе́рез пятна́дцать мину́т deployment заверша́ется. Алекс прове́ряет <strong>мониторинговую систе́му</strong> — все <strong>ме́трики</strong> норма́льные! Он тести́рует <strong>основну́ю функциона́льность</strong> на <strong>реальной систе́ме</strong>.\n\n«Отли́чно! Я успе́шно <strong>заде́плоил рели́з</strong>!» — радуется Алекс. Он отправля́ет <strong>сообще́ние</strong> кома́нде: «Рели́з 2.5.0 успе́шно развёрнут на проду́кшене. Мониторю <strong>систе́му</strong>.» Коман́да поздравля́ет <strong>его́</strong> с успе́хом!",
+  "textRussian": "Это важный день! Алекс должен задеплоить новый релиз на продукшен. Команда готовила этот релиз целый месяц.\n\n«Сначала мне нужно проверить все тесты,» — думает Алекс. Он запускает полный набор тестов на тестовом сервере. Все тесты проходят успешно — зелёный свет!\n\nАлекс открывает deployment checklist. Он внимательно читает каждый пункт: проверить миграции, обновить конфигурацию, создать бэкап базы данных.\n\n«Сейчас я создам бэкап,» — говорит Алекс коллегам. Он запускает скрипт резервного копирования. Система сохраняет полную копию базы данных. «Безопасность — превыше всего!»\n\nПосле этого Алекс проверяет миграции. Он тестирует все изменения схемы базы на тестовых данных. Миграции работают корректно.\n\n«Теперь можно запускать deployment,» — решает Алекс. Он открывает CI/CD систему и нажимает кнопку Deploy to Production. Система начинает автоматический процесс.\n\nАлекс мониторит каждый этап. Система обновляет серверы, запускает миграции, перезапускает сервисы. «Всё идёт по плану,» — доволен Алекс.\n\nЧерез пятнадцать минут deployment завершается. Алекс проверяет мониторинговую систему — все метрики нормальные! Он тестирует основную функциональность на реальной системе.\n\n«Отлично! Я успешно задеплоил релиз!» — радуется Алекс. Он отправляет сообщение команде: «Релиз 2.5.0 успешно развёрнут на продукшене. Мониторю систему.» Команда поздравляет его с успехом!",
   "textEnglish": "This is an important day! Alex must deploy a new release to production. The team has been preparing this release for a whole month.\n\n\"First, I need to check all the tests,\" Alex thinks. He runs the full test suite on the test server. All tests pass successfully — green light!\n\nAlex opens the deployment checklist. He carefully reads each item: check migrations, update configuration, create database backup.\n\n\"Now I'll create a backup,\" Alex tells his colleagues. He runs the backup script. The system saves a complete copy of the database. \"Safety above all!\"\n\nAfter that, Alex checks the migrations. He tests all schema changes on test data. The migrations work correctly.\n\n\"Now we can start deployment,\" Alex decides. He opens the CI/CD system and presses the Deploy to Production button. The system begins the automatic process.\n\nAlex monitors each stage. The system updates the servers, runs migrations, restarts services. \"Everything is going according to plan,\" Alex is pleased.\n\nAfter fifteen minutes, the deployment completes. Alex checks the monitoring system — all metrics are normal! He tests the main functionality on the real system.\n\n\"Excellent! I successfully deployed the release!\" Alex rejoices. He sends a message to the team: \"Release 2.5.0 successfully deployed to production. Monitoring the system.\" The team congratulates him on the success!",
   "vocabulary": [
-    {
-      "russian": "рели́з",
-      "english": "release",
-      "context": "задеплоить релиз (accusative) — to deploy a release"
-    },
-    {
-      "russian": "набо́р",
-      "english": "set, suite",
-      "context": "запускать набор (accusative) — to run a suite"
-    },
-    {
-      "russian": "migráция",
-      "english": "migration",
-      "context": "проверять миграции (accusative plural) — to check migrations"
-    },
-    {
-      "russian": "конфигура́ция",
-      "english": "configuration",
-      "context": "обновить конфигурацию (accusative) — to update configuration"
-    },
-    {
-      "russian": "бэкап",
-      "english": "backup",
-      "context": "создать бэкап (accusative) — to create a backup"
-    },
-    {
-      "russian": "процéсс",
-      "english": "process",
-      "context": "запускать процесс (accusative) — to start a process"
-    },
-    {
-      "russian": "эта́п",
-      "english": "stage",
-      "context": "мониторить этап (accusative) — to monitor a stage"
-    },
-    {
-      "russian": "ме́трика",
-      "english": "metric",
-      "context": "проверять метрики (accusative plural) — to check metrics"
-    }
+    { "russian": "релиз", "english": "release" },
+    { "russian": "набор тестов", "english": "test suite" },
+    { "russian": "миграция", "english": "migration" },
+    { "russian": "конфигурация", "english": "configuration" },
+    { "russian": "бэкап", "english": "backup" },
+    { "russian": "процесс", "english": "process" },
+    { "russian": "этап", "english": "stage" },
+    { "russian": "метрика", "english": "metric" }
   ],
   "exercises": [
     {
-      "type": "case-selection",
-      "instruction": "Select the correct accusative form for each deployment action.",
-      "items": [
-        {
-          "question": "Алекс деплоит ___.",
-          "options": [
-            "релиз",
-            "релиза"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Masculine inanimate noun doesn't change: релиз (nom.) = релиз (acc.)"
-        },
-        {
-          "question": "Он проверяет ___.",
-          "options": [
-            "миграции",
-            "миграций"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Plural feminine accusative equals nominative: миграции."
-        },
-        {
-          "question": "Алекс создаёт ___.",
-          "options": [
-            "бэкап",
-            "бэкапа"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Masculine inanimate borrowed term doesn't change."
-        },
-        {
-          "question": "Он обновляет ___.",
-          "options": [
-            "конфигурацию",
-            "конфигурация"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine -ия changes to -ию in accusative: конфигурация → конфигурацию."
-        }
-      ]
+      "type": "context-selection",
+      "question": "Алекс деплоит ___.",
+      "options": ["релиз", "релиза", "релизу", "релизом"],
+      "correctAnswer": "релиз",
+      "explanation": "Accusative case: masculine inanimate noun doesn't change — релиз."
     },
     {
       "type": "matching",
-      "instruction": "Match the deployment verbs with what they act upon (accusative objects).",
       "pairs": [
-        {
-          "left": "деплоить",
-          "right": "release"
-        },
-        {
-          "left": "запускать",
-          "right": "migrations"
-        },
-        {
-          "left": "создавать",
-          "right": "backup"
-        },
-        {
-          "left": "мониторить",
-          "right": "system"
-        }
+        { "russian": "деплоить", "english": "to deploy" },
+        { "russian": "миграция", "english": "migration" },
+        { "russian": "бэкап", "english": "backup" },
+        { "russian": "метрика", "english": "metric" }
       ]
     },
     {
       "type": "fill-in-blanks",
-      "instruction": "Fill in the blanks with the correct accusative forms.",
-      "sentences": [
-        {
-          "russian": "Алекс запускает ___ (тесты).",
-          "answer": "тесты",
-          "explanation": "Plural masculine inanimate accusative equals nominative."
-        },
-        {
-          "russian": "Он проверяет ___ (метрики).",
-          "answer": "метрики",
-          "explanation": "Plural feminine accusative: метрики (no change)."
-        },
-        {
-          "russian": "Система обновляет ___ (серверы).",
-          "answer": "серверы",
-          "explanation": "Plural inanimate accusative equals nominative."
-        },
-        {
-          "russian": "Алекс мониторит ___ (процесс).",
-          "answer": "процесс",
-          "explanation": "Masculine inanimate doesn't change."
-        }
-      ]
+      "question": "Алекс запускает ___ тестов на сервере.",
+      "wordBank": ["набор", "процесс", "этап", "релиз"],
+      "correctAnswer": "набор",
+      "explanation": "The phrase 'набор тестов' (test suite) is the correct collocation."
     },
     {
       "type": "sentence-reordering",
-      "instruction": "Put the deployment steps in the correct order.",
-      "scrambledSentence": [
-        "Деплоить релиз на продакшен",
-        "Проверить все тесты",
-        "Создать бэкап базы данных",
-        "Мониторить систему после деплоя"
-      ],
-      "correctOrder": [
-        "Проверить все тесты",
-        "Создать бэкап базы данных",
-        "Деплоить релиз на продакшен",
-        "Мониторить систему после деплоя"
-      ],
-      "explanation": "Correct deployment sequence: 1) Run tests, 2) Create backup, 3) Deploy release, 4) Monitor system."
+      "scrambledWords": ["Проверить", "все", "тесты", "перед", "deployment"],
+      "correctAnswer": ["Проверить", "все", "тесты", "перед", "deployment"],
+      "explanation": "Correct word order in Russian: verb + object + prepositional phrase."
     }
   ],
   "culturalInsight": {
@@ -162,10 +52,8 @@
   },
   "grammarNote": {
     "topic": "Accusative Case with Action Verbs",
-    "content": "Deployment action verbs take accusative: деплоить что? (to deploy what?), запускать что? (to run what?), мониторить что? (to monitor what?). Feminine nouns ending in -ия have special accusative: конфигурация → конфигурацию, миграция → миграцию. Most borrowed IT terms don't change: бэкап → бэкап."
+    "content": "Deployment action verbs take accusative: деплоить что? (to deploy what?), запускать что? (to run what?), мониторить что? (to monitor what?). Most borrowed IT terms don't change in accusative: релиз → релиз, бэкап → бэкап."
   },
-  "characters": ["Alex"],
-  "storyArc": "Alex successfully deploys a major release to production, following best practices including testing, backup creation, and careful monitoring.",
   "wordCount": 248,
   "estimatedMinutes": 25
 }

@@ -50,119 +50,33 @@
   "exercises": [
     {
       "type": "case-selection",
-      "instruction": "Select the correct accusative form for each testing action.",
-      "items": [
-        {
-          "question": "Алекс пишет ___.",
-          "options": [
-            "тест",
-            "теста"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Masculine inanimate noun doesn't change: тест (nom.) = тест (acc.)"
-        },
-        {
-          "question": "Он проверяет ___.",
-          "options": [
-            "функциональность",
-            "функциональности"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine noun ending in -ь doesn't change in accusative."
-        },
-        {
-          "question": "Алекс тестирует ___.",
-          "options": [
-            "сценарии",
-            "сценариев"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Plural inanimate accusative equals nominative: сценарии."
-        },
-        {
-          "question": "Он покрывает ___.",
-          "options": [
-            "случаи",
-            "случаев"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Plural inanimate accusative: случаи (no change)."
-        }
-      ]
+      "question": "Алекс пишет ___.",
+      "options": ["тест", "теста"],
+      "correctAnswer": "тест",
+      "explanation": "Masculine inanimate noun doesn't change: тест (nom.) = тест (acc.)"
     },
     {
       "type": "matching",
-      "instruction": "Match the testing verbs with what they test (accusative objects).",
       "pairs": [
-        {
-          "left": "писать",
-          "right": "tests"
-        },
-        {
-          "left": "проверять",
-          "right": "conditions"
-        },
-        {
-          "left": "тестировать",
-          "right": "functionality"
-        },
-        {
-          "left": "покрывать",
-          "right": "cases"
-        }
-      ]
-    },
-    {
-      "type": "verb-conjugation",
-      "instruction": "Conjugate the verbs and add the correct accusative object.",
-      "items": [
-        {
-          "infinitive": "писать (он) + тест",
-          "answer": "пишет тест",
-          "explanation": "Он пишет (present) + тест (accusative, no change)"
-        },
-        {
-          "infinitive": "проверять (я) + сценарии",
-          "answer": "проверяю сценарии",
-          "explanation": "Я проверяю + сценарии (plural accusative = nominative)"
-        },
-        {
-          "infinitive": "тестировать (мы) + функциональность",
-          "answer": "тестируем функциональность",
-          "explanation": "Мы тестируем + функциональность (feminine -ь, no change)"
-        },
-        {
-          "infinitive": "добавлять (он) + покрытие",
-          "answer": "добавляет покрытие",
-          "explanation": "Он добавляет + покрытие (neuter, no change)"
-        }
+        { "russian": "писать", "english": "tests" },
+        { "russian": "проверять", "english": "conditions" },
+        { "russian": "тестировать", "english": "functionality" },
+        { "russian": "покрывать", "english": "cases" }
       ]
     },
     {
       "type": "fill-in-blanks",
-      "instruction": "Fill in the blanks with the correct accusative forms.",
-      "sentences": [
-        {
-          "russian": "Алекс создаёт ___ (тест).",
-          "answer": "тест",
-          "explanation": "Masculine inanimate doesn't change."
-        },
-        {
-          "russian": "Он проверяет ___ (условия).",
-          "answer": "условия",
-          "explanation": "Plural neuter accusative equals nominative."
-        },
-        {
-          "russian": "Алекс тестирует ___ (обработка) ошибок.",
-          "answer": "обработку",
-          "explanation": "Feminine -а changes to -у: обработка → обработку."
-        },
-        {
-          "russian": "Система обрабатывает ___ (запросы).",
-          "answer": "запросы",
-          "explanation": "Plural inanimate accusative equals nominative."
-        }
-      ]
+      "question": "Алекс создаёт ___ (тест).",
+      "wordBank": ["тест", "теста", "тесту", "тестом"],
+      "correctAnswer": "тест",
+      "explanation": "Masculine inanimate doesn't change."
+    },
+    {
+      "type": "case-selection",
+      "question": "Он проверяет ___.",
+      "options": ["функциональность", "функциональности"],
+      "correctAnswer": "функциональность",
+      "explanation": "Feminine noun ending in -ь doesn't change in accusative."
     }
   ],
   "culturalInsight": {

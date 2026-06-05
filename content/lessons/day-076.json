@@ -21,7 +21,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Я был назначен его ментором на период ___.",
       "wordBank": ["испытательного срока", "работы", "обучения", "стажировки"],
       "correctAnswer": "испытательного срока",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct form: Я объяснял причины каждого ___.",
       "options": [
         "комментарий",
@@ -49,7 +49,7 @@
       "explanation": "Genitive case 'комментария' after 'каждого' (of each)."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Менторство — это инвестиция времени, которая ___.",
       "wordBank": ["окупается", "теряется", "забывается", "исчезает"],
       "correctAnswer": "окупается",

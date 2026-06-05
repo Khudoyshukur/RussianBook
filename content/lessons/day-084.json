@@ -2,7 +2,7 @@
   "day": 84,
   "phase": 4,
   "title": "Code Quality and Static Analysis",
-  "difficulityLevel": "B2",
+  "difficultyLevel": "B2",
   "textRussian": "На code review я заметил, что качество кода в новых pull request-ах начало ухудшаться. Появлялось всё больше потенциальных багов, code smells и нарушений принятых в команде соглашений. Нужно было внедрить системный подход к обеспечению качества кода.\n\nМы решили интегрировать инструменты статического анализа в наш CI/CD пайплайн. Для JavaScript выбрали ESLint с строгими правилами, для TypeScript добавили проверку типов с опцией `strict`, а для Python настроили Pylint и mypy. Эти инструменты автоматически выявляют многие категории ошибок еще до code review.\n\nОднако просто установить линтеры недостаточно. Важно было настроить правила так, чтобы они действительно помогали, а не создавали ложных тревог и не раздражали разработчиков. Мы начали с базового набора правил и постепенно добавляли новые, обсуждая каждое изменение с командой.\n\nОсобенно полезным оказался SonarQube для комплексного анализа качества кода. Он отслеживает метрики вроде code coverage, cognitive complexity, code duplication и технический долг. Мы настроили quality gates: pull request не мог быть смерджен, если coverage падал ниже восьмидесяти процентов или появлялись critical issues.\n\nВажным аспектом стало образование команды. Мы проводили сессии, где разбирали типичные проблемы, обнаруженные статическим анализом, и объясняли, почему определённые паттерны считаются антипаттернами. Через три месяца количество багов в production снизилось на сорок процентов, а code reviews стали фокусироваться на архитектурных вопросах, а не на синтаксических ошибках.",
   "textEnglish": "During code review, I noticed that code quality in new pull requests started declining. More and more potential bugs, code smells, and violations of team conventions appeared. We needed to implement a systematic approach to ensuring code quality.\n\nWe decided to integrate static analysis tools into our CI/CD pipeline. For JavaScript, we chose ESLint with strict rules, for TypeScript added type checking with the `strict` option, and for Python configured Pylint and mypy. These tools automatically identify many error categories even before code review.\n\nHowever, simply installing linters is not enough. It was important to configure rules so they actually help rather than create false alarms and annoy developers. We started with a basic set of rules and gradually added new ones, discussing each change with the team.\n\nSonarQube turned out to be especially useful for comprehensive code quality analysis. It tracks metrics like code coverage, cognitive complexity, code duplication, and technical debt. We set up quality gates: a pull request couldn't be merged if coverage dropped below eighty percent or critical issues appeared.\n\nTeam education became an important aspect. We held sessions where we analyzed typical problems discovered by static analysis and explained why certain patterns are considered anti-patterns. After three months, the number of production bugs decreased by forty percent, and code reviews began focusing on architectural questions rather than syntactic errors.",
   "vocabulary": [
@@ -21,7 +21,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Качество кода начало ___.",
       "wordBank": ["ухудшаться", "улучшаться", "появляться", "исчезать"],
       "correctAnswer": "ухудшаться",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Pull request не мог быть смерджен, если coverage падал ниже восьмидесяти ___.",
       "options": [
         "процент",
@@ -49,7 +49,7 @@
       "explanation": "Genitive plural 'процентов' after numbers 5 and above."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Количество багов ___ на сорок процентов.",
       "wordBank": ["снизилось", "повысилось", "осталось", "началось"],
       "correctAnswer": "снизилось",

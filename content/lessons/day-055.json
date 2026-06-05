@@ -99,15 +99,12 @@
     },
     {
       "type": "matching",
-      "question": "Match the quantity expressions:",
       "pairs": [
         { "russian": "много времени", "english": "a lot of time" },
         { "russian": "несколько месяцев", "english": "several months" },
         { "russian": "мало памяти", "english": "little memory" },
         { "russian": "миллион пользователей", "english": "a million users" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "All these expressions use genitive case after quantity words."
+      ]
     },
     {
       "type": "fill-in-blanks",

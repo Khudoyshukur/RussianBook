@@ -21,7 +21,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Это был отличный шанс ___ знаниями с сообществом.",
       "wordBank": ["поделиться", "скрыть", "потерять", "забыть"],
       "correctAnswer": "поделиться",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct form: Я особенно подчеркнул то, что микросервисы — не серебряная ___.",
       "options": [
         "пуля",
@@ -49,7 +49,7 @@
       "explanation": "Nominative 'пуля' (bullet) after 'не' in predicate position."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Тема действительно ___ с аудиторией.",
       "wordBank": ["резонировала", "конфликтовала", "спорила", "противоречила"],
       "correctAnswer": "резонировала",

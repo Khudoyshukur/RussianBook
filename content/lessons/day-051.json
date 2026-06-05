@@ -50,132 +50,33 @@
   "exercises": [
     {
       "type": "case-selection",
-      "instruction": "Select the correct accusative form for each code review action.",
-      "items": [
-        {
-          "question": "Алекс читает ___.",
-          "options": [
-            "описание",
-            "описания"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Neuter noun doesn't change: описание (nom.) = описание (acc.)"
-        },
-        {
-          "question": "Он проверяет ___.",
-          "options": [
-            "изменения",
-            "изменениев"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Plural neuter accusative equals nominative: изменения."
-        },
-        {
-          "question": "Алекс анализирует ___.",
-          "options": [
-            "решение",
-            "решения"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Neuter noun remains the same in accusative."
-        },
-        {
-          "question": "Он оставляет ___.",
-          "options": [
-            "комментарий",
-            "комментария"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Masculine inanimate doesn't change in accusative."
-        }
-      ]
+      "question": "Алекс читает ___.",
+      "options": ["описание", "описания"],
+      "correctAnswer": "описание",
+      "explanation": "Neuter noun doesn't change: описание (nom.) = описание (acc.)"
     },
     {
       "type": "matching",
-      "instruction": "Match the review verbs with what they act upon (accusative objects).",
       "pairs": [
-        {
-          "left": "читать",
-          "right": "description"
-        },
-        {
-          "left": "проверять",
-          "right": "changes"
-        },
-        {
-          "left": "анализировать",
-          "right": "code"
-        },
-        {
-          "left": "оставлять",
-          "right": "comments"
-        }
+        { "russian": "читать", "english": "description" },
+        { "russian": "проверять", "english": "changes" },
+        { "russian": "анализировать", "english": "code" },
+        { "russian": "оставлять", "english": "comments" }
       ]
     },
     {
       "type": "fill-in-blanks",
-      "instruction": "Fill in the blanks with the correct accusative forms.",
-      "sentences": [
-        {
-          "russian": "Алекс изучает ___ (коммит).",
-          "answer": "коммит",
-          "explanation": "Masculine inanimate doesn't change."
-        },
-        {
-          "russian": "Он проверяет ___ (тесты).",
-          "answer": "тесты",
-          "explanation": "Plural inanimate accusative equals nominative."
-        },
-        {
-          "russian": "Мария исправляет ___ (замечания).",
-          "answer": "замечания",
-          "explanation": "Plural neuter accusative: замечания (no change)."
-        },
-        {
-          "russian": "Алекс одобряет ___ (pull request).",
-          "answer": "pull request",
-          "explanation": "Borrowed term doesn't decline."
-        }
-      ]
+      "question": "Алекс изучает ___ (коммит).",
+      "wordBank": ["коммит", "коммита", "коммиту", "коммитом"],
+      "correctAnswer": "коммит",
+      "explanation": "Masculine inanimate doesn't change."
     },
     {
       "type": "context-selection",
-      "instruction": "Choose the correct code review action for each situation.",
-      "items": [
-        {
-          "context": "Алекс получил новый pull request от коллеги.",
-          "question": "Что он должен сделать первым делом?",
-          "options": [
-            "Прочитать описание и изучить изменения",
-            "Сразу одобрить",
-            "Закрыть pull request"
-          ],
-          "correctAnswer": 0,
-          "explanation": "First step in code review is reading the description and studying changes."
-        },
-        {
-          "context": "Алекс нашёл проблему с производительностью.",
-          "question": "Как он должен отреагировать?",
-          "options": [
-            "Оставить детальный комментарий с предложением",
-            "Промолчать",
-            "Отклонить pull request"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Good reviewers leave detailed comments with constructive suggestions."
-        },
-        {
-          "context": "Мария исправила все замечания.",
-          "question": "Что делать Алексу?",
-          "options": [
-            "Проверить код снова и одобрить",
-            "Искать новые проблемы",
-            "Игнорировать изменения"
-          ],
-          "correctAnswer": 0,
-          "explanation": "After fixes, reviewer should check the code again and approve if everything is good."
-        }
-      ]
+      "question": "Что он должен сделать первым делом?",
+      "options": ["Прочитать описание и изучить изменения", "Сразу одобрить", "Закрыть pull request"],
+      "correctAnswer": "Прочитать описание и изучить изменения",
+      "explanation": "First step in code review is reading the description and studying changes."
     }
   ],
   "culturalInsight": {

@@ -4,11 +4,8 @@
   "title": "After the Incident",
   "difficultyLevel": "B1",
   "grammarNote": "Genitive case: prepositions (после инцидента, из-за ошибки, около полуночи, кроме тестов). Several prepositions require genitive case: 'после' (after), 'из-за' (because of), 'около' (around/about), 'кроме' (except). These are essential for describing time, cause, and exclusions.",
-
   "textRussian": "После <strong>ночного инцидента</strong> команда собирается на <strong>post-mortem</strong> встречу. «Давайте обсудим, что произошло», — начинает Дмитрий серьёзно. Алекс <strong>докладывает</strong>: «Инцидент случился около <strong>полуночи</strong>. Система <strong>упала</strong> из-за <strong>ошибки в коде</strong>». Аня уточняет: «Точнее, около одиннадцати <strong>вечера</strong>. Я получила <strong>алерт</strong> от системы мониторинга». Максим добавляет детали: «После первого <strong>алерта</strong> я проверил логи. Проблема была из-за утечки <strong>памяти</strong>». Елена анализирует: «Утечка началась после <strong>деплоя</strong> новой версии. Около восьми часов <strong>вечера</strong>». Дмитрий спрашивает: «Кроме <strong>утечки памяти</strong>, были другие проблемы?» Алекс кивает: «Да, из-за высокой нагрузки <strong>CPU</strong> некоторые запросы <strong>таймаутились</strong>». Аня продолжает: «После перезагрузки <strong>сервера</strong> система работала нормально. Но около двух часов <strong>ночи</strong> проблема вернулась». Максим объясняет причину: «Из-за <strong>бага в кеше</strong> данные накапливались в памяти. После каждого <strong>запроса</strong> память не <strong>очищалась</strong>». Елена нашла решение: «Я добавила <strong>очистку кеша</strong> после обработки запросов. Кроме того, увеличила лимит <strong>памяти</strong>». Дмитрий интересуется: «А кроме <strong>технических мер</strong>, что мы можем улучшить в процессе?» Аня предлагает: «Нужно добавить больше <strong>мониторинга</strong>. Особенно после <strong>каждого деплоя</strong>». Максим соглашается: «И <strong>алерты</strong> должны приходить не только из-за <strong>критических ошибок</strong>, но и из-за <strong>предупреждений</strong>». Алекс добавляет: «После этого <strong>инцидента</strong> я понял важность <strong>нагрузочного тестирования</strong>. Кроме <strong>юнит-тестов</strong>, нам нужны тесты производительности». Елена записывает <strong>action items</strong>: «Исправить баг. Добавить мониторинг. Написать тесты производительности». Дмитрий <strong>подытоживает</strong>: «Хорошо, что мы <strong>восстановили</strong> систему быстро. Но из-за этого <strong>инцидента</strong> мы потеряли <strong>доверие</strong> нескольких клиентов. Важно не повторять таких ошибок». Команда соглашается работать более внимательно, особенно после <strong>деплоев</strong> и во время <strong>пиковых нагрузок</strong>.",
-
   "textEnglish": "After the night incident, the team gathers for a post-mortem meeting. 'Let's discuss what happened,' Dmitry begins seriously. Alex reports: 'The incident happened around midnight. The system crashed because of a code error.' Anya clarifies: 'More precisely, around eleven in the evening. I received an alert from the monitoring system.' Maxim adds details: 'After the first alert I checked the logs. The problem was due to a memory leak.' Elena analyzes: 'The leak started after deploying the new version. Around eight in the evening.' Dmitry asks: 'Besides the memory leak, were there other problems?' Alex nods: 'Yes, due to high CPU load some requests timed out.' Anya continues: 'After restarting the server, the system worked normally. But around two in the morning the problem returned.' Maxim explains the cause: 'Due to a cache bug, data was accumulating in memory. After each request, memory wasn't being cleared.' Elena found a solution: 'I added cache cleanup after processing requests. Besides that, I increased the memory limit.' Dmitry is interested: 'And besides technical measures, what can we improve in the process?' Anya suggests: 'We need to add more monitoring. Especially after each deploy.' Maxim agrees: 'And alerts should come not only because of critical errors, but also because of warnings.' Alex adds: 'After this incident I understood the importance of load testing. Besides unit tests, we need performance tests.' Elena writes down action items: 'Fix the bug. Add monitoring. Write performance tests.' Dmitry summarizes: 'Good that we restored the system quickly. But because of this incident we lost the trust of several clients. It's important not to repeat such mistakes.' The team agrees to work more carefully, especially after deploys and during peak loads.",
-
   "vocabulary": [
     {
       "russian": "по́сле но́чного инциде́нта",
@@ -76,7 +73,6 @@
       "context": "Genitive: 'trust of clients'. Customer confidence in the service."
     }
   ],
-
   "exercises": [
     {
       "type": "case-selection",
@@ -116,18 +112,26 @@
     },
     {
       "type": "matching",
-      "question": "Match the genitive preposition phrases:",
       "pairs": [
-        { "russian": "после деплоя", "english": "after the deploy" },
-        { "russian": "из-за бага", "english": "because of the bug" },
-        { "russian": "около полуночи", "english": "around midnight" },
-        { "russian": "кроме мониторинга", "english": "besides monitoring" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "All these prepositions (после, из-за, около, кроме) require genitive case."
+        {
+          "russian": "после деплоя",
+          "english": "after the deploy"
+        },
+        {
+          "russian": "из-за бага",
+          "english": "because of the bug"
+        },
+        {
+          "russian": "около полуночи",
+          "english": "around midnight"
+        },
+        {
+          "russian": "кроме мониторинга",
+          "english": "besides monitoring"
+        }
+      ]
     }
   ],
-
   "pronunciation": [
     {
       "word": "из-за",
@@ -136,13 +140,17 @@
       "pitfalls": "Two separate words written with hyphen. Stress on first syllable 'из'. Second part is unstressed."
     }
   ],
-
   "culturalInsight": {
     "topic": "Post-Mortem Culture in Russian Tech",
     "content": "Russian tech companies have adopted the Western practice of post-mortem meetings (called 'post-mortem' or 'разбор инцидента'). These meetings focus on learning from failures without blame. Key phrases include 'что произошло' (what happened), 'почему произошло' (why it happened), and 'как избежать в будущем' (how to avoid in the future). The term 'инцидент' is standard for production incidents."
   },
-
-  "characters": ["Алекс (Alex)", "Дмитрий (Dmitry)", "Аня (Anya)", "Максим (Maxim)", "Елена (Elena)"],
+  "characters": [
+    "Алекс (Alex)",
+    "Дмитрий (Dmitry)",
+    "Аня (Anya)",
+    "Максим (Maxim)",
+    "Елена (Elena)"
+  ],
   "storyArc": "The team conducts a post-mortem analysis after a night incident, identifying causes and improvements.",
   "wordCount": 242,
   "estimatedMinutes": 28

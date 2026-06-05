@@ -50,119 +50,33 @@
   "exercises": [
     {
       "type": "case-selection",
-      "instruction": "Select the correct accusative form for each sentence.",
-      "items": [
-        {
-          "question": "Алекс создаёт ___.",
-          "options": [
-            "компонент",
-            "компонента"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Masculine inanimate nouns don't change: компонент (nom.) = компонент (acc.)"
-        },
-        {
-          "question": "Он пишет ___.",
-          "options": [
-            "логику",
-            "логика"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine noun -а changes to -у in accusative: логика → логику."
-        },
-        {
-          "question": "Алекс добавляет ___.",
-          "options": [
-            "поддержку",
-            "поддержка"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Feminine accusative: поддержка → поддержку."
-        },
-        {
-          "question": "Он реализует ___.",
-          "options": [
-            "метод",
-            "метода"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Masculine inanimate noun stays the same in accusative."
-        }
-      ]
-    },
-    {
-      "type": "verb-conjugation",
-      "instruction": "Conjugate the verbs in present tense and add the correct accusative object.",
-      "items": [
-        {
-          "infinitive": "создавать (я) + файл",
-          "answer": "создаю файл",
-          "explanation": "Я создаю (present) + файл (accusative, no change for masculine inanimate)"
-        },
-        {
-          "infinitive": "писать (он) + код",
-          "answer": "пишет код",
-          "explanation": "Он пишет + код (accusative = nominative)"
-        },
-        {
-          "infinitive": "добавлять (я) + функциональность",
-          "answer": "добавляю функциональность",
-          "explanation": "Я добавляю + функциональность (feminine, ends in -ь, no change)"
-        },
-        {
-          "infinitive": "проверять (они) + изменения",
-          "answer": "проверяют изменения",
-          "explanation": "Они проверяют + изменения (plural accusative = nominative for inanimates)"
-        }
-      ]
+      "question": "Алекс создаёт ___.",
+      "options": ["компонент", "компонента"],
+      "correctAnswer": "компонент",
+      "explanation": "Masculine inanimate nouns don't change: компонент (nom.) = компонент (acc.)"
     },
     {
       "type": "fill-in-blanks",
-      "instruction": "Fill in the blanks with the correct accusative forms.",
-      "sentences": [
-        {
-          "russian": "Алекс разрабатывает ___ (фича).",
-          "answer": "фичу",
-          "explanation": "Feminine -а changes to -у: фича → фичу."
-        },
-        {
-          "russian": "Он продумывает ___ (архитектура).",
-          "answer": "архитектуру",
-          "explanation": "Feminine accusative: архитектура → архитектуру."
-        },
-        {
-          "russian": "Система отправляет ___ (сообщения).",
-          "answer": "сообщения",
-          "explanation": "Plural inanimate accusative equals nominative."
-        },
-        {
-          "russian": "Он создаёт ___ (класс).",
-          "answer": "класс",
-          "explanation": "Masculine inanimate noun doesn't change."
-        }
-      ]
+      "question": "Алекс разрабатывает ___ (фича).",
+      "wordBank": ["фичу", "фича", "фичи", "фиче"],
+      "correctAnswer": "фичу",
+      "explanation": "Feminine -а changes to -у: фича → фичу."
     },
     {
       "type": "matching",
-      "instruction": "Match the development verbs with what they create (accusative objects).",
       "pairs": [
-        {
-          "left": "создавать",
-          "right": "component"
-        },
-        {
-          "left": "писать",
-          "right": "code"
-        },
-        {
-          "left": "добавлять",
-          "right": "functionality"
-        },
-        {
-          "left": "реализовать",
-          "right": "method"
-        }
+        { "russian": "создавать", "english": "component" },
+        { "russian": "писать", "english": "code" },
+        { "russian": "добавлять", "english": "functionality" },
+        { "russian": "реализовать", "english": "method" }
       ]
+    },
+    {
+      "type": "case-selection",
+      "question": "Он пишет ___.",
+      "options": ["логику", "логика"],
+      "correctAnswer": "логику",
+      "explanation": "Feminine noun -а changes to -у in accusative: логика → логику."
     }
   ],
   "culturalInsight": {

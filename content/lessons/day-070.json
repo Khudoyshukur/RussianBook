@@ -19,7 +19,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "База данных ___ отвечать на запросы.",
       "wordBank": ["перестала", "начала", "продолжала", "будет"],
       "correctAnswer": "перестала",
@@ -35,7 +35,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct form: Я созвал экстренную конференцию с ___.",
       "options": [
         "команда",
@@ -47,7 +47,7 @@
       "explanation": "Instrumental case 'командой' is used after 'с' (with)."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Превентивный мониторинг ___ реактивного устранения проблем.",
       "wordBank": ["критичнее", "важный", "хороший", "плохой"],
       "correctAnswer": "критичнее",

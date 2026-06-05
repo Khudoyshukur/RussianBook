@@ -22,7 +22,7 @@
   ],
   "exercises": [
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Модель показывала отличные результаты на ___ данных.",
       "wordBank": ["тестовых", "рабочих", "старых", "новых"],
       "correctAnswer": "тестовых",
@@ -38,7 +38,7 @@
       ]
     },
     {
-      "type": "contextSelection",
+      "type": "context-selection",
       "question": "Choose the correct case: Это позволяло data scientists обновлять модель без перезапуска основного ___.",
       "options": [
         "приложение",
@@ -50,7 +50,7 @@
       "explanation": "Genitive 'приложения' (application) after 'перезапуска'."
     },
     {
-      "type": "fillInBlank",
+      "type": "fill-in-blanks",
       "question": "Система увеличила engagement пользователей на двадцать пять ___.",
       "wordBank": ["процентов", "раз", "человек", "минут"],
       "correctAnswer": "процентов",

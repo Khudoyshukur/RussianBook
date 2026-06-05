@@ -3,11 +3,8 @@
   "phase": 3,
   "title": "Automated Processes",
   "difficultyLevel": "B1",
-
   "textRussian": "Как тимлид, Алекс хочет улучшить процессы команды. «Нам нужно всё делать <strong>автоматически</strong>», — объявляет он на встрече уверенно. «Сейчас мы тратим много времени на ручные задачи». Команда внимательно слушает. «Я предлагаю настроить CI/CD <strong>автоматизированным способом</strong>», — продолжает Алекс решительно. Максим поддерживает идею. «Можем управлять <strong>процессом деплоя</strong> <strong>с помощью скриптов</strong>», — предлагает он практично. «Я уже работал <strong>с Jenkins</strong> раньше». Елена добавляет свой опыт. «В прошлом проекте мы всё делали <strong>автоматизированным методом</strong>», — вспоминает она задумчиво. «Это сэкономило нам недели работы». Алекс создаёт план действий. Первая задача — настроить автоматическое тестирование. «Тесты должны запускаться <strong>автоматически</strong> при каждом коммите», — объясняет он серьёзно. Максим берётся за GitHub Actions. Он работает <strong>с конфигурацией</strong> внимательно. «Настраиваю workflow <strong>пошаговым способом</strong>», — отчитывается он регулярно. Через неделю система работает. Код проверяется <strong>автоматически</strong>. «Теперь управлять <strong>качеством кода</strong> намного проще», — радуется Алекс искренне. Следующий шаг — автоматический деплой. Елена настраивает pipeline <strong>с использованием Docker</strong>. «Деплоим на продакшн <strong>автоматизированно</strong>», — показывает она довольно. «Процесс контролируется <strong>системой мониторинга</strong>». Максим интегрирует уведомления. «Теперь мы узнаём о проблемах <strong>моментально</strong>», — сообщает он удовлетворённо. Аня впечатлена результатами. «Вы справились <strong>с автоматизацией</strong> отлично», — хвалит она команду тепло. «Теперь мы можем управлять <strong>релизами</strong> <strong>с уверенностью</strong>». Алекс доволен. «Мы работали <strong>с энтузиазмом</strong> и достигли цели», — заключает он гордо. «Автоматизация — это будущее разработки».",
-
   "textEnglish": "As a tech lead, Alex wants to improve team processes. 'We need to do everything automatically,' he announces at the meeting confidently. 'Currently we spend a lot of time on manual tasks.' The team listens attentively. 'I propose setting up CI/CD in an automated way,' Alex continues decisively. Maxim supports the idea. 'We can manage the deployment process using scripts,' he suggests practically. 'I've worked with Jenkins before.' Elena adds her experience. 'In a past project we did everything using an automated method,' she recalls thoughtfully. 'It saved us weeks of work.' Alex creates an action plan. The first task is setting up automated testing. 'Tests should run automatically with every commit,' he explains seriously. Maxim takes on GitHub Actions. He works with the configuration attentively. 'I'm setting up the workflow in a step-by-step manner,' he reports regularly. After a week the system works. Code is checked automatically. 'Now managing code quality is much easier,' Alex rejoices sincerely. The next step is automated deployment. Elena sets up a pipeline using Docker. 'We deploy to production automatically,' she shows contentedly. 'The process is controlled by a monitoring system.' Maxim integrates notifications. 'Now we learn about problems instantly,' he reports satisfiedly. Anya is impressed with the results. 'You handled automation excellently,' she praises the team warmly. 'Now we can manage releases with confidence.' Alex is satisfied. 'We worked with enthusiasm and achieved our goal,' he concludes proudly. 'Automation is the future of development.'",
-
   "vocabulary": [
     {
       "russian": "автомати́чески",
@@ -60,19 +57,27 @@
       "context": "Instrumental for manner. Common way to describe how something is done."
     }
   ],
-
   "exercises": [
     {
       "type": "matching",
-      "question": "Match the manner expressions (all instrumental):",
       "pairs": [
-        { "russian": "автоматически", "english": "automatically" },
-        { "russian": "с энтузиазмом", "english": "with enthusiasm" },
-        { "russian": "с уверенностью", "english": "with confidence" },
-        { "russian": "пошаговым способом", "english": "step-by-step" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "These expressions describe how actions are performed, using instrumental case for manner and method."
+        {
+          "russian": "автоматически",
+          "english": "automatically"
+        },
+        {
+          "russian": "с энтузиазмом",
+          "english": "with enthusiasm"
+        },
+        {
+          "russian": "с уверенностью",
+          "english": "with confidence"
+        },
+        {
+          "russian": "пошаговым способом",
+          "english": "step-by-step"
+        }
+      ]
     },
     {
       "type": "case-selection",
@@ -89,7 +94,12 @@
     {
       "type": "fill-in-blanks",
       "question": "Complete: Тесты запускаются _______. Мы работали _______ и достигли цели.",
-      "wordBank": ["автоматически", "с энтузиазмом", "методом", "способом"],
+      "wordBank": [
+        "автоматически",
+        "с энтузиазмом",
+        "методом",
+        "способом"
+      ],
       "correctAnswer": "автоматически, с энтузиазмом",
       "explanation": "'Автоматически' (automatically) describes how tests run; 'с энтузиазмом' (with enthusiasm) describes how they worked."
     },
@@ -106,7 +116,6 @@
       "explanation": "Maxim takes on GitHub Actions: 'Максим берётся за GitHub Actions' and sets up the workflow."
     }
   ],
-
   "pronunciation": [
     {
       "word": "автоматизированным",
@@ -115,12 +124,10 @@
       "pitfalls": "Stress on 'зи'. Very long word (17 letters). Instrumental ending '-ым' for adjectives."
     }
   ],
-
   "culturalInsight": {
     "topic": "DevOps and Automation in Russia",
     "content": "Russian tech companies have embraced DevOps culture and automation, with 'автоматизация' (automation) being a key buzzword. Phrases like 'работать с помощью скриптов' (work using scripts) and 'автоматизированным способом' (in an automated way) are common in technical discussions. CI/CD practices are standard in modern Russian startups, with Jenkins, GitHub Actions, and GitLab CI being popular tools."
   },
-
   "grammarNote": {
     "title": "Instrumental Case for Manner and Method",
     "summary": "Instrumental case expresses how something is done - the manner, method, or means. Common patterns: 'способом' (by way/method), 'с + instrumental' (with), adverbs ending in '-ски', and 'с помощью + genitive' (using/with help of).",
@@ -132,8 +139,12 @@
       "с помощью скриптов (using scripts - note: genitive after 'с помощью')"
     ]
   },
-
-  "characters": ["Алекс (Alex)", "Максим (Maxim)", "Елена (Elena)", "Аня (Anya)"],
+  "characters": [
+    "Алекс (Alex)",
+    "Максим (Maxim)",
+    "Елена (Elena)",
+    "Аня (Anya)"
+  ],
   "storyArc": "Alex leads his team in implementing comprehensive automation, including CI/CD pipelines, automated testing, and deployment processes, demonstrating his growth as a technical leader.",
   "wordCount": 223,
   "estimatedMinutes": 26

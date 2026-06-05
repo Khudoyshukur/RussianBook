@@ -99,15 +99,12 @@
     },
     {
       "type": "matching",
-      "question": "Match the dependency management terms:",
       "pairs": [
         { "russian": "зависимости проекта", "english": "project dependencies" },
         { "russian": "обновление библиотеки", "english": "library update" },
         { "russian": "установка пакета", "english": "package installation" },
         { "russian": "список пакетов", "english": "list of packages" }
-      ],
-      "correctAnswer": ["0-0", "1-1", "2-2", "3-3"],
-      "explanation": "All these expressions use genitive case to show 'X of Y' relationships."
+      ]
     },
     {
       "type": "fill-in-blanks",
