@@ -58,16 +58,16 @@ export default function ProgressTracker() {
               <p className="text-purple-600 text-sm font-medium">Preview next lesson →</p>
             </Link>
           ) : (
-            <div className="bg-white bg-opacity-60 rounded-lg p-6 cursor-not-allowed relative">
+            <div className="bg-gray-100 border-2 border-gray-400 rounded-lg p-6 cursor-not-allowed relative">
               <div className="flex items-center justify-between mb-3">
-                <span className="text-sm font-semibold text-gray-500">UP NEXT</span>
-                <div className="w-10 h-10 bg-gray-200 text-gray-500 rounded-full flex items-center justify-center font-bold">
+                <span className="text-sm font-bold text-gray-600">UP NEXT</span>
+                <div className="w-10 h-10 bg-gray-300 text-gray-700 rounded-full flex items-center justify-center font-bold border-2 border-gray-400">
                   {nextDay}
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2 text-gray-600">Day {nextDay}</h3>
+              <h3 className="text-xl font-bold mb-2 text-gray-700">Day {nextDay}</h3>
               <div className="flex items-center justify-between">
-                <p className="text-gray-500 text-sm font-medium">Complete current day to unlock</p>
+                <p className="text-gray-600 text-sm font-bold">Complete current day to unlock</p>
                 <span className="text-2xl">🔒</span>
               </div>
             </div>

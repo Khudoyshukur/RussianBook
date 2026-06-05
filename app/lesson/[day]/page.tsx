@@ -87,9 +87,9 @@ export default function LessonPage() {
 
         {/* Story Arc */}
         {lesson.storyArc && (
-          <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 rounded">
-            <p className="text-sm text-blue-900">
-              <span className="font-semibold">Story:</span> {lesson.storyArc}
+          <div className="bg-blue-100 border-l-4 border-blue-600 p-4 mb-6 rounded">
+            <p className="text-sm text-blue-900 font-medium">
+              <span className="font-bold">Story:</span> {lesson.storyArc}
             </p>
           </div>
         )}
@@ -115,25 +115,25 @@ export default function LessonPage() {
 
         {/* Vocabulary */}
         <CollapsibleSection title="📚 Vocabulary (Словарный запас)" defaultOpen={true} icon="">
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead className="bg-gray-50">
+          <div className="overflow-x-auto -mx-2 sm:mx-0">
+            <table className="w-full min-w-full">
+              <thead className="bg-gray-100">
                 <tr>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 uppercase">
+                  <th className="px-3 sm:px-4 py-3 text-left text-xs font-semibold text-gray-700 uppercase whitespace-nowrap">
                     Russian
                   </th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 uppercase">
+                  <th className="px-3 sm:px-4 py-3 text-left text-xs font-semibold text-gray-700 uppercase whitespace-nowrap">
                     English
                   </th>
-                  <th className="px-4 py-3 text-left text-xs font-semibold text-gray-700 uppercase">
+                  <th className="px-3 sm:px-4 py-3 text-left text-xs font-semibold text-gray-700 uppercase hidden md:table-cell">
                     Context
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {lesson.vocabulary.map((item, index) => (
-                  <tr key={index} className="hover:bg-gray-50">
-                    <td className="px-4 py-3 font-medium text-gray-900">
+                  <tr key={index} className="hover:bg-gray-100">
+                    <td className="px-3 sm:px-4 py-3 font-medium text-gray-900 whitespace-nowrap">
                       {item.russian}
                       {item.reactivatedFrom && (
                         <span className="ml-2 text-xs text-blue-600">
@@ -141,12 +141,24 @@ export default function LessonPage() {
                         </span>
                       )}
                     </td>
-                    <td className="px-4 py-3 text-gray-700">{item.english}</td>
-                    <td className="px-4 py-3 text-sm text-gray-600">{item.context}</td>
+                    <td className="px-3 sm:px-4 py-3 text-gray-700">{item.english}</td>
+                    <td className="px-3 sm:px-4 py-3 text-sm text-gray-600 hidden md:table-cell">{item.context}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
+          </div>
+          {/* Mobile context info */}
+          <div className="md:hidden mt-4 space-y-3">
+            <p className="text-xs font-semibold text-gray-600 uppercase">Context Notes:</p>
+            {lesson.vocabulary.map((item, index) => (
+              item.context && (
+                <div key={index} className="bg-gray-100 p-3 rounded-lg border-2 border-gray-300">
+                  <p className="font-medium text-sm text-gray-900 mb-1">{item.russian}</p>
+                  <p className="text-xs text-gray-600">{item.context}</p>
+                </div>
+              )
+            ))}
           </div>
         </CollapsibleSection>
 
@@ -175,11 +187,11 @@ export default function LessonPage() {
         {/* Cultural Insight */}
         {lesson.culturalInsight && (
           <CollapsibleSection title="🌍 Cultural Insight (Культурный контекст)" icon="">
-            <div className="bg-purple-50 rounded-lg p-4">
-              <h4 className="font-semibold text-purple-900 mb-2">
+            <div className="bg-purple-100 border-2 border-purple-300 rounded-lg p-4">
+              <h4 className="font-bold text-purple-900 mb-2">
                 {lesson.culturalInsight.topic}
               </h4>
-              <p className="text-gray-700">{lesson.culturalInsight.content}</p>
+              <p className="text-gray-800 font-medium">{lesson.culturalInsight.content}</p>
             </div>
           </CollapsibleSection>
         )}
@@ -209,7 +221,7 @@ export default function LessonPage() {
           {previousLesson ? (
             <Link
               href={`/lesson/${previousLesson.day}`}
-              className="flex items-center space-x-2 px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              className="flex items-center space-x-2 px-4 py-2 bg-white border-2 border-gray-300 rounded-lg hover:bg-gray-100 transition-colors"
             >
               <span>←</span>
               <span>Day {previousLesson.day}</span>
@@ -234,8 +246,8 @@ export default function LessonPage() {
               <span>→</span>
             </Link>
           ) : nextLesson ? (
-            <div className="flex items-center space-x-2 px-4 py-2 bg-gray-300 text-gray-500 rounded-lg cursor-not-allowed opacity-60">
-              <span>Day {nextLesson.day}</span>
+            <div className="flex items-center space-x-2 px-4 py-2 bg-gray-200 border-2 border-gray-400 text-gray-600 rounded-lg cursor-not-allowed">
+              <span className="font-medium">Day {nextLesson.day}</span>
               <span>🔒</span>
             </div>
           ) : (

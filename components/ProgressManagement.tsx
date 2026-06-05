@@ -52,29 +52,29 @@ export default function ProgressManagement() {
 
       <div className="space-y-3">
         {/* Export Progress */}
-        <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+        <div className="flex items-center justify-between p-3 bg-gray-100 rounded-lg border-2 border-gray-300">
           <div className="flex-1">
-            <h4 className="font-semibold text-sm text-gray-800">Export Progress</h4>
-            <p className="text-xs text-gray-600">Download as JSON</p>
+            <h4 className="font-bold text-sm text-gray-900">Export Progress</h4>
+            <p className="text-xs text-gray-700">Download as JSON</p>
           </div>
           <button
             onClick={handleExport}
-            className="px-3 py-1.5 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors"
+            className="px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
             Export
           </button>
         </div>
 
         {/* Import Progress */}
-        <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+        <div className="flex items-center justify-between p-3 bg-gray-100 rounded-lg border-2 border-gray-300">
           <div className="flex-1">
-            <h4 className="font-semibold text-sm text-gray-800">Import Progress</h4>
-            <p className="text-xs text-gray-600">Upload JSON file</p>
+            <h4 className="font-bold text-sm text-gray-900">Import Progress</h4>
+            <p className="text-xs text-gray-700">Upload JSON file</p>
             {importSuccess && (
-              <p className="text-xs text-green-600 mt-1">✓ Imported! Reloading...</p>
+              <p className="text-xs text-green-700 font-medium mt-1">✓ Imported! Reloading...</p>
             )}
             {importError && (
-              <p className="text-xs text-red-600 mt-1">✗ {importError}</p>
+              <p className="text-xs text-red-700 font-medium mt-1">✗ {importError}</p>
             )}
           </div>
           <div>
@@ -87,7 +87,7 @@ export default function ProgressManagement() {
             />
             <button
               onClick={handleImportClick}
-              className="px-3 py-1.5 bg-green-600 text-white text-sm rounded-lg hover:bg-green-700 transition-colors"
+              className="px-3 py-1.5 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition-colors"
             >
               Import
             </button>
@@ -95,14 +95,14 @@ export default function ProgressManagement() {
         </div>
 
         {/* Reset Progress */}
-        <div className="flex items-center justify-between p-3 bg-red-50 rounded-lg border border-red-200">
+        <div className="flex items-center justify-between p-3 bg-red-100 rounded-lg border-2 border-red-300">
           <div className="flex-1">
-            <h4 className="font-semibold text-sm text-red-800">Reset Progress</h4>
-            <p className="text-xs text-red-600">Clear all data</p>
+            <h4 className="font-bold text-sm text-red-900">Reset Progress</h4>
+            <p className="text-xs text-red-700">Clear all data</p>
           </div>
           <button
             onClick={() => setShowConfirmReset(true)}
-            className="px-3 py-1.5 bg-red-600 text-white text-sm rounded-lg hover:bg-red-700 transition-colors"
+            className="px-3 py-1.5 bg-red-600 text-white text-sm font-medium rounded-lg hover:bg-red-700 transition-colors"
           >
             Reset
           </button>
@@ -121,13 +121,13 @@ export default function ProgressManagement() {
             <div className="flex gap-4">
               <button
                 onClick={() => setShowConfirmReset(false)}
-                className="flex-1 px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition-colors"
+                className="flex-1 px-4 py-2 bg-gray-200 text-gray-900 font-medium rounded-lg hover:bg-gray-300 border-2 border-gray-400 transition-colors"
               >
                 Cancel
               </button>
               <button
                 onClick={handleReset}
-                className="flex-1 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+                className="flex-1 px-4 py-2 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors"
               >
                 Reset Progress
               </button>

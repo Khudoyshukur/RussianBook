@@ -107,7 +107,7 @@ export default function Home() {
                     {/* Toggle Button */}
                     <button
                       onClick={() => togglePhase(phase.phase)}
-                      className="flex items-center justify-center space-x-2 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors shadow-md"
+                      className="flex items-center justify-center space-x-2 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-100 transition-colors shadow-md border-2 border-blue-600"
                     >
                       <span className="text-sm">
                         {isExpanded ? 'Hide' : 'Show'} Lessons ({phaseLessons.length})
@@ -132,7 +132,7 @@ export default function Home() {
 
                   {/* Expandable Lesson Cards */}
                   {isExpanded && mounted && (
-                    <div className="p-6 bg-gray-50">
+                    <div className="p-6 bg-gray-100">
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         {phaseLessons.map((lesson) => {
                           const completed = isDayCompleted(lesson.day);
@@ -145,12 +145,12 @@ export default function Home() {
                               href={isLocked ? '#' : `/lesson/${lesson.day}`}
                               className={`block bg-white rounded-lg shadow hover:shadow-lg transition-all p-4 border-2 ${
                                 completed
-                                  ? 'border-green-500 bg-green-50'
+                                  ? 'border-green-600 bg-green-100'
                                   : isCurrent
-                                  ? 'border-blue-500 bg-blue-50'
+                                  ? 'border-blue-600 bg-blue-100'
                                   : isLocked
-                                  ? 'border-gray-300 opacity-60 cursor-not-allowed'
-                                  : 'border-gray-200 hover:border-blue-400'
+                                  ? 'border-gray-400 opacity-60 cursor-not-allowed bg-gray-100'
+                                  : 'border-gray-300 hover:border-blue-500'
                               }`}
                               onClick={(e) => isLocked && e.preventDefault()}
                             >

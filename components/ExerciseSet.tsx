@@ -43,12 +43,12 @@ export default function ExerciseSet({ exercises, onComplete }: ExerciseSetProps)
       {exercises.map((exercise, index) => (
         <div
           key={index}
-          className={`border rounded-lg p-4 ${
+          className={`border-2 rounded-lg p-4 ${
             showResults
               ? checkAnswer(exercise, answers[index])
-                ? 'border-green-500 bg-green-50'
-                : 'border-red-500 bg-red-50'
-              : 'border-gray-200 bg-white'
+                ? 'border-green-600 bg-green-100'
+                : 'border-red-600 bg-red-100'
+              : 'border-gray-300 bg-white'
           }`}
         >
           <div className="flex items-start space-x-2 mb-3">
@@ -64,7 +64,7 @@ export default function ExerciseSet({ exercises, onComplete }: ExerciseSetProps)
               {renderExerciseInput(exercise, index, answers[index], handleAnswerChange, showResults)}
 
               {showResults && (
-                <div className="mt-3 p-3 bg-white rounded border border-gray-200">
+                <div className="mt-3 p-3 bg-white rounded border-2 border-gray-300">
                   <p className="text-sm font-semibold text-gray-700 mb-1">
                     {checkAnswer(exercise, answers[index]) ? '✓ Correct!' : '✗ Incorrect'}
                   </p>
@@ -153,10 +153,10 @@ function renderExerciseInput(
           {exercise.options?.map((option, i) => (
             <label
               key={i}
-              className={`flex items-center p-3 border rounded-lg cursor-pointer transition-colors ${
+              className={`flex items-center p-3 border-2 rounded-lg cursor-pointer transition-colors ${
                 value === option
-                  ? 'border-blue-500 bg-blue-50'
-                  : 'border-gray-300 hover:bg-gray-50'
+                  ? 'border-blue-600 bg-blue-100'
+                  : 'border-gray-400 hover:bg-gray-100 hover:border-blue-500'
               } ${disabled ? 'cursor-not-allowed opacity-60' : ''}`}
             >
               <input
@@ -193,7 +193,7 @@ function renderExerciseInput(
                     type="button"
                     onClick={() => !disabled && onChange(index, (value as string || '') + (value ? ' ' : '') + word)}
                     disabled={disabled}
-                    className="px-3 py-1 bg-white rounded border border-gray-300 text-sm hover:bg-blue-50 hover:border-blue-500 transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
+                    className="px-3 py-1 bg-white rounded border-2 border-gray-300 text-sm hover:bg-blue-100 hover:border-blue-500 transition-colors cursor-pointer disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {word}
                   </button>
@@ -319,7 +319,7 @@ function FillInBlanksExercise({
                   type="button"
                   onClick={() => handleWordClick(word, true)}
                   disabled={disabled}
-                  className="px-3 py-2 bg-white border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-3 py-2 bg-white border-2 border-gray-300 rounded-lg hover:border-blue-500 hover:bg-blue-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {word}
                 </button>
@@ -332,8 +332,8 @@ function FillInBlanksExercise({
       )}
 
       {/* Answer area */}
-      <div className="bg-blue-50 p-4 rounded-lg border-2 border-blue-200">
-        <p className="text-xs font-semibold text-blue-900 mb-2">
+      <div className="bg-blue-100 p-4 rounded-lg border-2 border-blue-400">
+        <p className="text-xs font-bold text-blue-900 mb-2">
           Your Answer (click to remove):
         </p>
         <div className="flex flex-wrap gap-2 min-h-[40px]">
@@ -425,8 +425,8 @@ function SentenceReordering({
       </div>
 
       {/* Sentence construction area */}
-      <div className="bg-blue-50 p-4 rounded-lg border-2 border-blue-200">
-        <p className="text-xs font-semibold text-blue-900 mb-2">
+      <div className="bg-blue-100 p-4 rounded-lg border-2 border-blue-400">
+        <p className="text-xs font-bold text-blue-900 mb-2">
           Your Sentence (click to remove):
         </p>
         <div className="flex flex-wrap gap-2 min-h-[40px]">
@@ -528,65 +528,88 @@ function MatchingExercise({
   };
 
   return (
-    <div className="grid md:grid-cols-2 gap-4">
-      {/* Russian column */}
-      <div className="space-y-2">
-        <p className="text-xs font-semibold text-gray-600 mb-2">Russian:</p>
-        {russianItems.map((russian, idx) => {
-          const isMatched = matches[idx] !== undefined;
-          const isSelected = selectedRussian === idx;
-
-          return (
-            <button
-              key={idx}
-              onClick={() => handleRussianClick(idx)}
-              disabled={disabled}
-              className={`w-full text-left p-3 rounded-lg border-2 transition-colors ${
-                isSelected
-                  ? 'border-blue-500 bg-blue-50'
-                  : isMatched
-                  ? 'border-green-500 bg-green-50 hover:bg-green-100'
-                  : 'border-gray-300 hover:border-blue-400 bg-white'
-              } ${disabled ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer'}`}
-            >
-              <div className="flex items-center justify-between">
-                <span className="font-medium">{russian}</span>
-                {isMatched && <span className="text-green-600">✓</span>}
-              </div>
-              {isMatched && !disabled && (
-                <p className="text-xs text-gray-500 mt-1">Click to unmatch</p>
-              )}
-            </button>
-          );
-        })}
+    <div className="space-y-6">
+      {/* Instructions */}
+      <div className="bg-blue-100 border-2 border-blue-300 rounded-lg p-4">
+        <p className="text-sm text-blue-900 font-medium">
+          <span className="font-bold">How to match:</span> Click a Russian word, then click its English translation.
+        </p>
       </div>
 
-      {/* English column */}
-      <div className="space-y-2">
-        <p className="text-xs font-semibold text-gray-600 mb-2">English:</p>
-        {englishItems.map((english, idx) => {
-          const isMatched = Object.values(matches).includes(idx);
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Russian column */}
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">
+              1
+            </div>
+            <p className="text-sm font-bold text-gray-800">Select Russian word:</p>
+          </div>
+          <div className="space-y-2">
+            {russianItems.map((russian, idx) => {
+              const isMatched = matches[idx] !== undefined;
+              const isSelected = selectedRussian === idx;
 
-          return (
-            <button
-              key={idx}
-              onClick={() => handleEnglishClick(idx)}
-              disabled={disabled || isMatched || selectedRussian === null}
-              className={`w-full text-left p-3 rounded-lg border-2 transition-colors ${
-                isMatched
-                  ? 'border-green-500 bg-green-50'
-                  : selectedRussian !== null
-                  ? 'border-blue-400 hover:bg-blue-50 bg-white'
-                  : 'border-gray-300 bg-white'
-              } ${disabled || isMatched || selectedRussian === null ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer'}`}
-            >
-              <div className="flex items-center justify-between">
-                <span>{english}</span>
-                {isMatched && <span className="text-green-600">✓</span>}
-              </div>
-            </button>
-          );
-        })}
+              return (
+                <button
+                  key={idx}
+                  onClick={() => handleRussianClick(idx)}
+                  disabled={disabled}
+                  className={`w-full text-left p-4 rounded-lg border-2 transition-all font-medium ${
+                    isSelected
+                      ? 'border-blue-600 bg-blue-100 shadow-lg ring-2 ring-blue-300'
+                      : isMatched
+                      ? 'border-green-600 bg-green-100 hover:bg-green-200'
+                      : 'border-gray-400 hover:border-blue-500 hover:shadow-md bg-white hover:bg-blue-100'
+                  } ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer active:scale-98'}`}
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="text-gray-900 break-words">{russian}</span>
+                    {isMatched && <span className="text-green-700 text-2xl flex-shrink-0 font-bold">✓</span>}
+                  </div>
+                  {isMatched && !disabled && (
+                    <p className="text-xs text-gray-600 mt-2 font-normal">Click to unmatch</p>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* English column */}
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 mb-3">
+            <div className="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-md">
+              2
+            </div>
+            <p className="text-sm font-bold text-gray-800">Then select English translation:</p>
+          </div>
+          <div className="space-y-2">
+            {englishItems.map((english, idx) => {
+              const isMatched = Object.values(matches).includes(idx);
+
+              return (
+                <button
+                  key={idx}
+                  onClick={() => handleEnglishClick(idx)}
+                  disabled={disabled || isMatched || selectedRussian === null}
+                  className={`w-full text-left p-4 rounded-lg border-2 transition-all font-medium ${
+                    isMatched
+                      ? 'border-green-600 bg-green-100'
+                      : selectedRussian !== null
+                      ? 'border-purple-500 hover:bg-purple-100 hover:shadow-md bg-white hover:border-purple-600'
+                      : 'border-gray-300 bg-gray-100'
+                  } ${disabled || isMatched || selectedRussian === null ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer active:scale-98'}`}
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="text-gray-900 break-words">{english}</span>
+                    {isMatched && <span className="text-green-700 text-2xl flex-shrink-0 font-bold">✓</span>}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
