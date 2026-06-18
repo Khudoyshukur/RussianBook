@@ -66,7 +66,8 @@ Rules:
 - Grammar: name the concept + one-line reason. No examples unless asked.
 - If asked to elaborate, then go deeper.
 - Respond in English unless the learner writes in Russian.
-- Plain text only. No markdown: no tables, no bold (**), no italics (*), no headers (#), no bullet lists with dashes. Use plain line breaks and simple punctuation instead.`;
+- Plain text only. No markdown: no tables, no bold (**), no italics (*), no headers (#), no bullet lists with dashes. Use plain line breaks and simple punctuation instead.
+- Always write Russian words in Cyrillic script, never in Latin transliteration (e.g. вести́, not "vesti").`;
 
   if (!ctx) return base;
 
