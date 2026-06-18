@@ -5,6 +5,7 @@ import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { getLesson, getNextLesson, getPreviousLesson } from '@/lib/lessons';
 import { markDayCompleted, updateExerciseScore, isDayCompleted, getProgress } from '@/lib/progress';
+import { getDueCards } from '@/lib/flashcards';
 import { TEST_MODE } from '@/lib/config';
 import { Lesson } from '@/types/lesson';
 import CollapsibleSection from '@/components/CollapsibleSection';
@@ -19,12 +20,14 @@ export default function LessonPage() {
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [completed, setCompleted] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [dueFlashcards, setDueFlashcards] = useState(0);
 
   useEffect(() => {
     setMounted(true);
     const lessonData = getLesson(day);
     setLesson(lessonData);
     setCompleted(isDayCompleted(day));
+    setDueFlashcards(getDueCards().length);
 
     if (!lessonData) {
       // Redirect to home if lesson doesn't exist
@@ -93,6 +96,19 @@ export default function LessonPage() {
               <span className="font-bold">Story:</span> {lesson.storyArc}
             </p>
           </div>
+        )}
+
+        {/* Flashcard due reminder */}
+        {dueFlashcards > 0 && (
+          <Link
+            href="/flashcards"
+            className="flex items-center justify-between bg-purple-50 border border-purple-200 rounded-lg px-4 py-3 mb-6 hover:bg-purple-100 transition-colors"
+          >
+            <p className="text-sm font-semibold text-purple-800">
+              🗂️ {dueFlashcards} flashcard{dueFlashcards !== 1 ? 's' : ''} due for review
+            </p>
+            <span className="text-xs text-purple-600 font-medium">Review →</span>
+          </Link>
         )}
 
         {/* Main Text */}

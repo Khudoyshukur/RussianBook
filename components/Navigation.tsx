@@ -4,19 +4,24 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect, useRef } from 'react';
 import { getProgress } from '@/lib/progress';
+import { getDueCards } from '@/lib/flashcards';
 import ProgressManagement from './ProgressManagement';
+import FlashcardModal from './FlashcardModal';
 
 export default function Navigation() {
   const pathname = usePathname();
   const [currentDay, setCurrentDay] = useState(1);
   const [mounted, setMounted] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  const [showAddFlashcard, setShowAddFlashcard] = useState(false);
+  const [dueCount, setDueCount] = useState(0);
   const settingsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
     const progress = getProgress();
     setCurrentDay(progress.currentDay);
+    setDueCount(getDueCards().length);
   }, []);
 
   // Close settings dropdown when clicking outside
@@ -39,6 +44,7 @@ export default function Navigation() {
   const isActive = (path: string) => pathname === path;
 
   return (
+    <>
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -84,6 +90,28 @@ export default function Navigation() {
             {/* Dropdown */}
             {showSettings && (
               <div className="absolute right-0 mt-2 w-screen max-w-sm sm:w-96 bg-white rounded-lg shadow-xl border-2 border-gray-300 z-50 mx-2 sm:mx-0">
+                <div className="p-4 border-b border-gray-200 space-y-2">
+                  <Link
+                    href="/flashcards"
+                    onClick={() => setShowSettings(false)}
+                    className="flex items-center justify-between w-full px-4 py-2.5 bg-purple-50 hover:bg-purple-100 text-purple-700 text-sm font-semibold rounded-lg border border-purple-200 transition-colors"
+                  >
+                    <span className="flex items-center gap-2">
+                      🗂️ Flashcards
+                    </span>
+                    {dueCount > 0 && (
+                      <span className="bg-purple-600 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                        {dueCount} due
+                      </span>
+                    )}
+                  </Link>
+                  <button
+                    onClick={() => { setShowSettings(false); setShowAddFlashcard(true); }}
+                    className="flex items-center gap-2 w-full px-4 py-2.5 bg-gray-50 hover:bg-gray-100 text-gray-700 text-sm font-semibold rounded-lg border border-gray-200 transition-colors"
+                  >
+                    + Add Flashcard
+                  </button>
+                </div>
                 <div className="p-4">
                   <ProgressManagement />
                 </div>
@@ -106,5 +134,13 @@ export default function Navigation() {
         </div>
       </div>
     </nav>
+
+    {showAddFlashcard && (
+      <FlashcardModal
+        onClose={() => setShowAddFlashcard(false)}
+        onSaved={() => setDueCount(getDueCards().length)}
+      />
+    )}
+    </>
   );
 }
