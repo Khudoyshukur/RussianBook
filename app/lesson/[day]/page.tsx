@@ -9,6 +9,7 @@ import { TEST_MODE } from '@/lib/config';
 import { Lesson } from '@/types/lesson';
 import CollapsibleSection from '@/components/CollapsibleSection';
 import ExerciseSet from '@/components/ExerciseSet';
+import AiChat from '@/components/AiChat';
 
 export default function LessonPage() {
   const params = useParams();
@@ -57,7 +58,7 @@ export default function LessonPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="lesson-page-content max-w-4xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <div className="flex items-center justify-between mb-4">
@@ -215,6 +216,9 @@ export default function LessonPage() {
             </button>
           </div>
         )}
+
+        {/* AI Tutor */}
+        <AiChat lesson={lesson} />
 
         {/* Navigation */}
         <div className="flex justify-between items-center mt-8">
