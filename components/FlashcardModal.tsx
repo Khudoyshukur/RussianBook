@@ -6,16 +6,17 @@ import { getAiKey, getAiModel, DEFAULT_MODEL } from '@/lib/aiKey';
 
 interface Props {
   card?: Flashcard;
+  initialFront?: string;
   onClose: () => void;
   onSaved: () => void;
 }
 
-export default function FlashcardModal({ card, onClose, onSaved }: Props) {
-  const [front, setFront] = useState(card?.front ?? '');
+export default function FlashcardModal({ card, initialFront, onClose, onSaved }: Props) {
+  const [front, setFront] = useState(card?.front ?? initialFront ?? '');
   const [back, setBack] = useState(card?.back ?? '');
   const [error, setError] = useState<string | null>(null);
   const [hasApiKey, setHasApiKey] = useState(false);
-  const [aiInput, setAiInput] = useState('');
+  const [aiInput, setAiInput] = useState(initialFront ?? '');
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState<string | null>(null);
   const frontRef = useRef<HTMLInputElement>(null);

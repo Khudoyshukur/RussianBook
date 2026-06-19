@@ -11,6 +11,7 @@ import { Lesson } from '@/types/lesson';
 import CollapsibleSection from '@/components/CollapsibleSection';
 import ExerciseSet from '@/components/ExerciseSet';
 import AiChat from '@/components/AiChat';
+import SelectionPopup from '@/components/SelectionPopup';
 
 export default function LessonPage() {
   const params = useParams();
@@ -235,6 +236,9 @@ export default function LessonPage() {
 
         {/* AI Tutor */}
         <AiChat lesson={lesson} />
+
+        {/* Selection-to-flashcard popup */}
+        <SelectionPopup />
 
         {/* Navigation */}
         <div className="flex justify-between items-center mt-8">
