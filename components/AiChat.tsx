@@ -184,7 +184,7 @@ export default function AiChat({ lesson }: { lesson: LessonContext }) {
                       onChange={(e) => setKeyInput(e.target.value)}
                       onKeyDown={(e) => e.key === 'Enter' && handleSaveKey()}
                       placeholder="AIza..."
-                      className="flex-1 text-sm border border-amber-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="flex-1 text-sm text-gray-900 bg-white border border-amber-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <button
                       onClick={handleSaveKey}
@@ -204,7 +204,7 @@ export default function AiChat({ lesson }: { lesson: LessonContext }) {
                       value={keyInput || '••••••••••••••••'}
                       onChange={(e) => setKeyInput(e.target.value)}
                       placeholder="Paste new key to replace..."
-                      className="flex-1 text-sm border border-amber-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="flex-1 text-sm text-gray-900 bg-white border border-amber-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <button
                       onClick={handleSaveKey}
@@ -227,7 +227,7 @@ export default function AiChat({ lesson }: { lesson: LessonContext }) {
                 <select
                   value={model}
                   onChange={(e) => { setModel(e.target.value); saveAiModel(e.target.value); }}
-                  className="w-full text-sm border border-amber-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-sm text-gray-900 border border-amber-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                   {GEMINI_MODELS.map((m) => (
                     <option key={m.id} value={m.id}>{m.label}</option>
@@ -317,7 +317,7 @@ export default function AiChat({ lesson }: { lesson: LessonContext }) {
                   onKeyDown={handleKeyDown}
                   placeholder="Ask about Russian grammar, vocabulary..."
                   rows={1}
-                  className="flex-1 resize-none text-sm border border-gray-300 rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="flex-1 resize-none text-sm text-gray-900 bg-white border border-gray-300 rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   style={{ lineHeight: '1.4', height: '40px', maxHeight: '200px' }}
                 />
                 <button

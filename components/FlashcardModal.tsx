@@ -39,7 +39,7 @@ export default function FlashcardModal({ card, onClose, onSaved }: Props) {
       const model = getAiModel() || DEFAULT_MODEL;
       const prompt = `You are a Russian language flashcard generator. Given a Russian word, phrase, or sentence, output EXACTLY two lines:
 Line 1: The Russian text with stress marks added (use the acute accent ́ after the stressed vowel). Keep it exactly as given — do not extract or shorten. If it is a full sentence, keep the full sentence.
-Line 2: The English translation. For a single word: concise definition (max 5 words). For a phrase or sentence: natural English translation.
+Line 2: The English translation. For a single word: concise definition (max 5 words), and few examples in russian of its usage (in different persons or forms etc.). For a phrase or sentence: natural English translation.
 
 No extra text, no punctuation changes, no explanations. Just two lines.
 
@@ -118,7 +118,7 @@ Input: ${query}`;
                 onChange={(e) => setAiInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleAiGenerate()}
                 placeholder="Paste a word or sentence..."
-                className="flex-1 text-sm border border-blue-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
+                className="flex-1 text-sm text-gray-900 border border-blue-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
               />
               <button
                 onClick={handleAiGenerate}
@@ -143,7 +143,7 @@ Input: ${query}`;
               value={front}
               onChange={(e) => setFront(e.target.value)}
               placeholder="e.g. програ́ммист"
-              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
@@ -156,7 +156,7 @@ Input: ${query}`;
               value={back}
               onChange={(e) => setBack(e.target.value)}
               placeholder="e.g. programmer"
-              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
