@@ -105,6 +105,13 @@ export default function Navigation() {
                       </span>
                     )}
                   </Link>
+                  <Link
+                    href="/grammar"
+                    onClick={() => setShowSettings(false)}
+                    className="flex items-center gap-2 w-full px-4 py-2.5 bg-green-50 hover:bg-green-100 text-green-700 text-sm font-semibold rounded-lg border border-green-200 transition-colors"
+                  >
+                    📋 Grammar Cheatsheet
+                  </Link>
                   <button
                     onClick={() => { setShowSettings(false); setShowAddFlashcard(true); }}
                     className="flex items-center gap-2 w-full px-4 py-2.5 bg-gray-50 hover:bg-gray-100 text-gray-700 text-sm font-semibold rounded-lg border border-gray-200 transition-colors"
