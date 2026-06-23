@@ -108,7 +108,7 @@ Input: ${query}`;
         </h2>
 
         {/* AI input */}
-        {hasApiKey && !card && (
+        {hasApiKey && (
           <div className="mb-5 bg-blue-50 border border-blue-200 rounded-lg p-3 space-y-2">
             <p className="text-xs font-semibold text-blue-700">✨ Fill with AI</p>
             <div className="flex gap-2">
