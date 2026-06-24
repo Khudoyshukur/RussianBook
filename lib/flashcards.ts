@@ -2,10 +2,13 @@
 
 const STORAGE_KEY = 'russian-book-flashcards';
 
+export type CardType = 'classic' | 'cloze' | 'definition';
+
 export interface Flashcard {
   id: string;
   front: string; // Russian
   back: string;  // English / meaning
+  cardType?: CardType;
   createdAt: string;
   // SM-2 fields
   interval: number;      // days until next review
@@ -31,13 +34,14 @@ export function saveFlashcards(cards: Flashcard[]): void {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(cards));
 }
 
-export function addFlashcard(front: string, back: string): Flashcard {
+export function addFlashcard(front: string, back: string, cardType?: CardType): Flashcard {
   const cards = getFlashcards();
   const now = new Date().toISOString();
   const card: Flashcard = {
     id: crypto.randomUUID(),
     front: front.trim(),
     back: back.trim(),
+    cardType: cardType ?? 'classic',
     createdAt: now,
     interval: 1,
     easeFactor: 2.5,

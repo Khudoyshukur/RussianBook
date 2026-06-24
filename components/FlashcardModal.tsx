@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { addFlashcard, updateFlashcard, Flashcard } from '@/lib/flashcards';
+import { addFlashcard, updateFlashcard, Flashcard, CardType } from '@/lib/flashcards';
 import { getAiKey, getAiModel, DEFAULT_MODEL } from '@/lib/aiKey';
 
 interface Props {
@@ -9,6 +9,60 @@ interface Props {
   initialFront?: string;
   onClose: () => void;
   onSaved: () => void;
+}
+
+const CARD_MODES: { type: CardType; label: string; description: string }[] = [
+  {
+    type: 'classic',
+    label: 'Classic',
+    description: 'Russian word → English meaning + usage examples',
+  },
+  {
+    type: 'cloze',
+    label: 'Cloze',
+    description: 'Sentence with blank → answer + different context',
+  },
+  {
+    type: 'definition',
+    label: 'Definition',
+    description: 'Russian word → Russian definition + example',
+  },
+];
+
+function buildPrompt(mode: CardType, query: string): string {
+  if (mode === 'cloze') {
+    return `You are a Russian language flashcard generator using cloze deletion.
+
+Given a Russian word or phrase, create a cloze flashcard in EXACTLY three lines:
+Line 1: A natural Russian engineering/tech sentence that uses the word, with the target word replaced by "______" and its English meaning in parentheses after the blank. Example: Нам нужно ________ (to deploy) приложение на сервер.
+Line 2: The Russian word with stress marks (use acute accent ́ after the stressed vowel).
+Line 3: A completely different Russian sentence using the same word in a different context (no translation needed).
+
+No extra text, no explanations. Just three lines.
+
+Input: ${query}`;
+  }
+
+  if (mode === 'definition') {
+    return `You are a Russian language flashcard generator.
+
+Given a Russian word, output EXACTLY two lines:
+Line 1: The Russian word with stress marks added (use acute accent ́ after the stressed vowel).
+Line 2: A short Russian definition of the word (1 sentence), followed by a dash and one example Russian sentence using it. Do not include any English.
+
+No extra text, no explanations. Just two lines.
+
+Input: ${query}`;
+  }
+
+  // classic
+  return `You are a Russian language flashcard generator. Given a Russian word, phrase, or sentence, output EXACTLY two lines:
+Line 1: The Russian text with stress marks added (use the acute accent ́ after the stressed vowel). Keep it exactly as given — do not extract or shorten. If it is a full sentence, keep the full sentence.
+Line 2: The English translation. For a single word: concise definition (max 5 words), and few examples in russian of its usage (in different persons or forms etc.). For a phrase or sentence: natural English translation.
+
+No extra text, no punctuation changes, no explanations. Just two lines.
+
+Input: ${query}`;
 }
 
 export default function FlashcardModal({ card, initialFront, onClose, onSaved }: Props) {
@@ -19,6 +73,7 @@ export default function FlashcardModal({ card, initialFront, onClose, onSaved }:
   const [aiInput, setAiInput] = useState(initialFront ?? '');
   const [aiLoading, setAiLoading] = useState(false);
   const [aiError, setAiError] = useState<string | null>(null);
+  const [cardMode, setCardMode] = useState<CardType>(card?.cardType ?? 'classic');
   const frontRef = useRef<HTMLInputElement>(null);
   const aiInputRef = useRef<HTMLInputElement>(null);
 
@@ -38,20 +93,14 @@ export default function FlashcardModal({ card, initialFront, onClose, onSaved }:
 
     try {
       const model = getAiModel() || DEFAULT_MODEL;
-      const prompt = `You are a Russian language flashcard generator. Given a Russian word, phrase, or sentence, output EXACTLY two lines:
-Line 1: The Russian text with stress marks added (use the acute accent ́ after the stressed vowel). Keep it exactly as given — do not extract or shorten. If it is a full sentence, keep the full sentence.
-Line 2: The English translation. For a single word: concise definition (max 5 words), and few examples in russian of its usage (in different persons or forms etc.). For a phrase or sentence: natural English translation.
-
-No extra text, no punctuation changes, no explanations. Just two lines.
-
-Input: ${query}`;
+      const prompt = buildPrompt(cardMode, query);
 
       const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           contents: [{ role: 'user', parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.1, maxOutputTokens: 120 },
+          generationConfig: { temperature: 0.1, maxOutputTokens: 200 },
         }),
       });
 
@@ -67,12 +116,23 @@ Input: ${query}`;
 
       const text = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim() ?? '';
       const lines = text.split('\n').map((l) => l.trim()).filter(Boolean);
-      if (lines.length >= 2) {
-        setFront(lines[0]);
-        setBack(lines[1]);
-        setAiInput('');
+
+      if (cardMode === 'cloze') {
+        if (lines.length >= 3) {
+          setFront(lines[0]);
+          setBack(`${lines[1]}\n${lines[2]}`);
+          setAiInput('');
+        } else {
+          setAiError('Unexpected AI response. Try again.');
+        }
       } else {
-        setAiError('Unexpected AI response. Try again.');
+        if (lines.length >= 2) {
+          setFront(lines[0]);
+          setBack(lines[1]);
+          setAiInput('');
+        } else {
+          setAiError('Unexpected AI response. Try again.');
+        }
       }
     } catch {
       setAiError('Network error. Try again.');
@@ -89,7 +149,7 @@ Input: ${query}`;
     if (card) {
       updateFlashcard(card.id, front, back);
     } else {
-      addFlashcard(front, back);
+      addFlashcard(front, back, cardMode);
     }
     onSaved();
     onClose();
@@ -109,8 +169,29 @@ Input: ${query}`;
 
         {/* AI input */}
         {hasApiKey && (
-          <div className="mb-5 bg-blue-50 border border-blue-200 rounded-lg p-3 space-y-2">
-            <p className="text-xs font-semibold text-blue-700">✨ Fill with AI</p>
+          <div className="mb-5 bg-blue-50 border border-blue-200 rounded-lg p-3 space-y-3">
+            <p className="text-xs font-semibold text-blue-700">Fill with AI</p>
+
+            {/* Mode selector */}
+            <div className="flex gap-1.5">
+              {CARD_MODES.map((mode) => (
+                <button
+                  key={mode.type}
+                  onClick={() => setCardMode(mode.type)}
+                  title={mode.description}
+                  className={`flex-1 px-2 py-1.5 text-xs font-semibold rounded-md border transition-colors ${
+                    cardMode === mode.type
+                      ? 'bg-blue-600 text-white border-blue-600'
+                      : 'bg-white text-gray-600 border-gray-200 hover:border-blue-300'
+                  }`}
+                >
+                  {mode.label}
+                </button>
+              ))}
+            </div>
+
+            <p className="text-xs text-blue-600">{CARD_MODES.find((m) => m.type === cardMode)?.description}</p>
+
             <div className="flex gap-2">
               <input
                 ref={aiInputRef}
@@ -136,28 +217,34 @@ Input: ${query}`;
         <div className="space-y-4">
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1">
-              Russian (front)
+              {cardMode === 'cloze' ? 'Sentence with blank (front)' : 'Russian (front)'}
             </label>
             <input
               ref={frontRef}
               type="text"
               value={front}
               onChange={(e) => setFront(e.target.value)}
-              placeholder="e.g. програ́ммист"
+              placeholder={cardMode === 'cloze' ? 'e.g. Нам нужно ________ (to deploy) приложение.' : 'e.g. програ́ммист'}
               className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1">
-              Meaning (back)
+              {cardMode === 'cloze' ? 'Answer + swap context (back)' : cardMode === 'definition' ? 'Russian definition (back)' : 'Meaning (back)'}
             </label>
-            <input
-              type="text"
+            <textarea
               value={back}
               onChange={(e) => setBack(e.target.value)}
-              placeholder="e.g. programmer"
-              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder={
+                cardMode === 'cloze'
+                  ? 'e.g. Разверну́ть\nПожалуйста, разверни базу данных локально.'
+                  : cardMode === 'definition'
+                  ? 'e.g. Специалист по программированию — Програ́ммист написал новый код.'
+                  : 'e.g. programmer'
+              }
+              rows={cardMode === 'cloze' ? 3 : 2}
+              className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
             />
           </div>
 

@@ -134,7 +134,21 @@ export default function FlashcardsPage() {
             {flipped ? (
               <>
                 <div className="w-12 border-t border-gray-200" />
-                <p className="text-lg text-gray-700">{current.back}</p>
+                {current.cardType === 'cloze' ? (
+                  (() => {
+                    const [answer, swapContext] = current.back.split('\n');
+                    return (
+                      <div className="flex flex-col items-center gap-3">
+                        <p className="text-lg font-semibold text-gray-900">{answer}</p>
+                        {swapContext && (
+                          <p className="text-sm text-gray-500 italic">{swapContext}</p>
+                        )}
+                      </div>
+                    );
+                  })()
+                ) : (
+                  <p className="text-lg text-gray-700">{current.back}</p>
+                )}
               </>
             ) : (
               <p className="text-sm text-gray-400 mt-2">Tap to reveal</p>
@@ -277,8 +291,15 @@ export default function FlashcardsPage() {
                   className="bg-white rounded-xl shadow-sm border border-gray-200 px-5 py-4 flex items-center gap-4"
                 >
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-gray-900">{card.front}</p>
-                    <p className="text-sm text-gray-600">{card.back}</p>
+                    <div className="flex items-center gap-2 mb-0.5">
+                      <p className="font-semibold text-gray-900 truncate">{card.front}</p>
+                      {card.cardType && card.cardType !== 'classic' && (
+                        <span className="text-xs px-1.5 py-0.5 rounded bg-purple-100 text-purple-600 font-medium flex-shrink-0">
+                          {card.cardType}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-gray-600 truncate">{card.back.split('\n')[0]}</p>
                   </div>
                   <div className="flex items-center gap-3 flex-shrink-0">
                     <span className={`text-xs font-medium px-2 py-1 rounded-full ${due ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-500'}`}>
