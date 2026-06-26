@@ -7,11 +7,13 @@ import { getLesson, getNextLesson, getPreviousLesson } from '@/lib/lessons';
 import { markDayCompleted, updateExerciseScore, isDayCompleted, getProgress } from '@/lib/progress';
 import { getDueCards } from '@/lib/flashcards';
 import { TEST_MODE } from '@/lib/config';
+import { getAiKey } from '@/lib/aiKey';
 import { Lesson } from '@/types/lesson';
 import CollapsibleSection from '@/components/CollapsibleSection';
 import ExerciseSet from '@/components/ExerciseSet';
 import AiChat from '@/components/AiChat';
 import SelectionPopup from '@/components/SelectionPopup';
+import ListenButton from '@/components/ListenButton';
 
 export default function LessonPage() {
   const params = useParams();
@@ -22,6 +24,7 @@ export default function LessonPage() {
   const [completed, setCompleted] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [dueFlashcards, setDueFlashcards] = useState(0);
+  const [hasAiKey, setHasAiKey] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -29,6 +32,7 @@ export default function LessonPage() {
     setLesson(lessonData);
     setCompleted(isDayCompleted(day));
     setDueFlashcards(getDueCards().length);
+    setHasAiKey(!!getAiKey());
 
     if (!lessonData) {
       // Redirect to home if lesson doesn't exist
@@ -115,6 +119,11 @@ export default function LessonPage() {
         {/* Main Text */}
         <CollapsibleSection title="📖 The Text (Текст)" defaultOpen={true} icon="">
           <div className="space-y-4">
+            {hasAiKey && (
+              <ListenButton
+                text={lesson.textRussian.replace(/<[^>]*>/g, '')}
+              />
+            )}
             <div className="prose max-w-none">
               <div
                 className="text-lg leading-relaxed text-gray-800"

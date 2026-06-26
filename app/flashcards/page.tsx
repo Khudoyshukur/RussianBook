@@ -9,8 +9,10 @@ import {
   Flashcard,
   Rating,
 } from '@/lib/flashcards';
+import { getAiKey } from '@/lib/aiKey';
 import FlashcardModal from '@/components/FlashcardModal';
 import FlashcardManagement from '@/components/FlashcardManagement';
+import ListenButton from '@/components/ListenButton';
 import Link from 'next/link';
 
 type View = 'list' | 'review';
@@ -31,6 +33,8 @@ export default function FlashcardsPage() {
   const [flipped, setFlipped] = useState(false);
   const [reviewDone, setReviewDone] = useState(false);
 
+  const [hasAiKey, setHasAiKey] = useState(false);
+
   function reload() {
     const all = getFlashcards();
     setCards(all);
@@ -40,6 +44,7 @@ export default function FlashcardsPage() {
   useEffect(() => {
     setMounted(true);
     reload();
+    setHasAiKey(!!getAiKey());
   }, []);
 
   function startReview() {
@@ -137,11 +142,15 @@ export default function FlashcardsPage() {
                 {current.cardType === 'cloze' ? (
                   (() => {
                     const [answer, swapContext] = current.back.split('\n');
+                    const fullSentence = current.front.replace('___', answer);
                     return (
                       <div className="flex flex-col items-center gap-3">
                         <p className="text-lg font-semibold text-gray-900">{answer}</p>
                         {swapContext && (
                           <p className="text-sm text-gray-500 italic">{swapContext}</p>
+                        )}
+                        {hasAiKey && (
+                          <ListenButton text={fullSentence} className="mt-1" />
                         )}
                       </div>
                     );
