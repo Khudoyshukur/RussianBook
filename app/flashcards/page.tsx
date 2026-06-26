@@ -150,7 +150,7 @@ export default function FlashcardsPage() {
                           <p className="text-sm text-gray-500 italic">{swapContext}</p>
                         )}
                         {hasAiKey && (
-                          <ListenButton text={fullSentence} className="mt-1" />
+                          <ListenButton text={fullSentence} cacheKey={`card-${current.id}`} className="mt-1" />
                         )}
                       </div>
                     );
