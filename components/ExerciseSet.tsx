@@ -223,8 +223,11 @@ function checkAnswer(exercise: Exercise, userAnswer: string | string[] | undefin
 
   // For sentence reordering, check if words are in correct order
   if (exercise.type === 'sentence-reordering') {
-    if (!Array.isArray(userAnswer) || !Array.isArray(exercise.correctAnswer)) return false;
-    return userAnswer.join(' ') === exercise.correctAnswer.join(' ');
+    if (!Array.isArray(userAnswer)) return false;
+    const correct = Array.isArray(exercise.correctAnswer)
+      ? exercise.correctAnswer.join(' ')
+      : String(exercise.correctAnswer);
+    return userAnswer.join(' ') === correct;
   }
 
   // For matching, check if all pairs match correctly
@@ -373,12 +376,11 @@ function SentenceReordering({
   // Initialize state only once on mount
   const [selectedWords, setSelectedWords] = useState<string[]>(() => value || []);
   const [availableWords, setAvailableWords] = useState<string[]>(() => {
+    const wordList = exercise.scrambledWords || (exercise as unknown as { words?: string[] }).words || [];
     if (value && value.length > 0) {
-      // If there's already a value, calculate available words by removing selected ones
-      const scrambled = exercise.scrambledWords || [];
-      return scrambled.filter(word => !value.includes(word));
+      return wordList.filter(word => !value.includes(word));
     }
-    return exercise.scrambledWords || [];
+    return wordList;
   });
 
   const handleWordClick = (word: string, fromAvailable: boolean) => {
