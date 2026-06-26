@@ -5,10 +5,11 @@ import { speakRussian } from '@/lib/tts';
 
 interface Props {
   text: string;
+  cacheKey?: string;
   className?: string;
 }
 
-export default function ListenButton({ text, className = '' }: Props) {
+export default function ListenButton({ text, cacheKey, className = '' }: Props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -16,7 +17,7 @@ export default function ListenButton({ text, className = '' }: Props) {
     setError(null);
     setLoading(true);
     try {
-      await speakRussian(text);
+      await speakRussian(text, cacheKey);
     } catch (e) {
       setError(e instanceof Error ? e.message : 'TTS failed');
     } finally {

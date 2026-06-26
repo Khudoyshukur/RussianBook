@@ -13,7 +13,7 @@ import CollapsibleSection from '@/components/CollapsibleSection';
 import ExerciseSet from '@/components/ExerciseSet';
 import AiChat from '@/components/AiChat';
 import SelectionPopup from '@/components/SelectionPopup';
-import ListenButton from '@/components/ListenButton';
+import LessonAudioPlayer from '@/components/LessonAudioPlayer';
 
 export default function LessonPage() {
   const params = useParams();
@@ -120,8 +120,9 @@ export default function LessonPage() {
         <CollapsibleSection title="📖 The Text (Текст)" defaultOpen={true} icon="">
           <div className="space-y-4">
             {hasAiKey && (
-              <ListenButton
+              <LessonAudioPlayer
                 text={lesson.textRussian.replace(/<[^>]*>/g, '')}
+                cacheKey={`lesson-${day}`}
               />
             )}
             <div className="prose max-w-none">
