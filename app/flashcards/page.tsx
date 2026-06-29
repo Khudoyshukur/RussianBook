@@ -70,6 +70,24 @@ export default function FlashcardsPage() {
     }
   }
 
+  type MasteryLevel = 'new' | 'learning' | 'good' | 'mastered' | 'struggling';
+
+  function getMastery(card: Flashcard): MasteryLevel {
+    if (card.repetitions === 0) return 'new';
+    if (card.easeFactor < 1.8) return 'struggling';
+    if (card.easeFactor >= 2.3 && card.interval >= 21) return 'mastered';
+    if (card.easeFactor >= 2.0 && card.repetitions >= 3) return 'good';
+    return 'learning';
+  }
+
+  const masteryConfig: Record<MasteryLevel, { label: string; className: string }> = {
+    new:        { label: 'New',        className: 'bg-gray-100 text-gray-500' },
+    learning:   { label: 'Learning',   className: 'bg-yellow-100 text-yellow-700' },
+    good:       { label: 'Good',       className: 'bg-blue-100 text-blue-700' },
+    mastered:   { label: 'Mastered',   className: 'bg-green-100 text-green-700' },
+    struggling: { label: 'Struggling', className: 'bg-red-100 text-red-700' },
+  };
+
   function formatNextReview(iso: string): string {
     const date = new Date(iso);
     const now = new Date();
@@ -289,11 +307,55 @@ export default function FlashcardsPage() {
           </div>
         )}
 
+        {/* Stats bar */}
+        {cards.length > 0 && (() => {
+          const counts = { new: 0, learning: 0, good: 0, mastered: 0, struggling: 0 };
+          cards.forEach((c) => counts[getMastery(c)]++);
+          const masteredPct = Math.round((counts.mastered / cards.length) * 100);
+          const segments: { level: MasteryLevel; color: string }[] = [
+            { level: 'mastered',   color: 'bg-green-400' },
+            { level: 'good',       color: 'bg-blue-400' },
+            { level: 'learning',   color: 'bg-yellow-400' },
+            { level: 'struggling', color: 'bg-red-400' },
+            { level: 'new',        color: 'bg-gray-300' },
+          ];
+          return (
+            <div className="bg-white rounded-xl shadow-sm border border-gray-200 px-5 py-4 mb-4">
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-sm font-semibold text-gray-700">Mastery overview</span>
+                <span className="text-sm font-bold text-green-600">{masteredPct}% mastered</span>
+              </div>
+              <div className="flex rounded-full overflow-hidden h-2.5 mb-3">
+                {segments.map(({ level, color }) =>
+                  counts[level] > 0 ? (
+                    <div
+                      key={level}
+                      className={`${color} transition-all`}
+                      style={{ width: `${(counts[level] / cards.length) * 100}%` }}
+                      title={`${masteryConfig[level].label}: ${counts[level]}`}
+                    />
+                  ) : null
+                )}
+              </div>
+              <div className="flex flex-wrap gap-3">
+                {segments.map(({ level, color }) => (
+                  <div key={level} className="flex items-center gap-1.5 text-xs text-gray-600">
+                    <span className={`inline-block w-2.5 h-2.5 rounded-full ${color}`} />
+                    {masteryConfig[level].label}
+                    <span className="font-semibold text-gray-800">{counts[level]}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
         {/* Card list */}
         {cards.length > 0 && (
           <div className="space-y-3">
             {cards.map((card) => {
               const due = new Date(card.nextReviewAt) <= new Date();
+              const mastery = getMastery(card);
               return (
                 <div
                   key={card.id}
@@ -311,6 +373,9 @@ export default function FlashcardsPage() {
                     <p className="text-sm text-gray-600 truncate">{card.back.split('\n')[0]}</p>
                   </div>
                   <div className="flex items-center gap-3 flex-shrink-0">
+                    <span className={`text-xs font-medium px-2 py-1 rounded-full ${masteryConfig[mastery].className}`}>
+                      {masteryConfig[mastery].label}
+                    </span>
                     <span className={`text-xs font-medium px-2 py-1 rounded-full ${due ? 'bg-blue-100 text-blue-700' : 'bg-gray-100 text-gray-500'}`}>
                       {formatNextReview(card.nextReviewAt)}
                     </span>

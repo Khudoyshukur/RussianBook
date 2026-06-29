@@ -72,6 +72,13 @@ export function reviewFlashcard(id: string, rating: Rating): void {
   const card = { ...cards[idx] };
   const q = rating === 'easy' ? 5 : rating === 'hard' ? 3 : 1;
 
+  if (card.repetitions > 0) {
+    card.easeFactor = Math.max(
+      1.3,
+      card.easeFactor + 0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)
+    );
+  }
+
   if (q < 3) {
     // Forgot — reset streak, review again tomorrow
     card.repetitions = 0;
@@ -81,10 +88,6 @@ export function reviewFlashcard(id: string, rating: Rating): void {
     else if (card.repetitions === 1) card.interval = 6;
     else card.interval = Math.round(card.interval * card.easeFactor);
 
-    card.easeFactor = Math.max(
-      1.3,
-      card.easeFactor + 0.1 - (5 - q) * (0.08 + (5 - q) * 0.02)
-    );
     card.repetitions += 1;
   }
 
